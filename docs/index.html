@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Radar proteste e conflitto sociale in Italia</title>
+<meta name="description" content="Scioperi, cortei, occupazioni e manifestazioni in Italia: cronologia, ragioni e copertura delle fonti.">
+<style>
+:root{--bg:#f6f5f1;--sf:#fff;--tx:#1c1b19;--mu:#6b6860;--bd:#e2dfd6;--ac:#b4361f;--ac2:#1f5fb4;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161512;--sf:#201f1b;--tx:#efece4;--mu:#9a968b;--bd:#35332d;--ac:#ff7a5c;--ac2:#6aa5ff;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#161512;--sf:#201f1b;--tx:#efece4;--mu:#9a968b;--bd:#35332d;--ac:#ff7a5c;--ac2:#6aa5ff;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 Georgia,'Times New Roman',serif}
+h1,h2,h3,button,input,textarea,.ui{font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+header{padding:18px 20px;border-bottom:1px solid var(--bd)}h1{margin:0;font-size:22px}header p{margin:4px 0 0;color:var(--mu);font-size:13px}
+.wrap{display:grid;grid-template-columns:290px 1fr;gap:16px;padding:16px 20px;max-width:1280px;margin:auto}
+@media(max-width:820px){.wrap{grid-template-columns:1fr;padding:12px}}
+aside,.card{background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:14px}
+aside h3,.card h2{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--mu)}
+main{display:grid;gap:16px;min-width:0}
+input[type=search]{width:100%;padding:8px 10px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 14px}
+.chip{border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:99px;padding:3px 10px;font-size:12px;cursor:pointer}.chip.on{background:var(--ac2);color:#fff;border-color:var(--ac2)}
+.src{display:flex;align-items:center;gap:7px;padding:3px 0;font:13px system-ui}.src a{color:var(--tx)}.src small{color:var(--mu);margin-left:auto}
+.tools{display:flex;gap:6px;margin:6px 0;flex-wrap:wrap}.tools button{font-size:12px;padding:4px 9px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:6px;cursor:pointer}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}.kpi b{display:block;font:700 26px system-ui}.kpi span{font:12px system-ui;color:var(--mu)}
+.bar{display:grid;grid-template-columns:120px 1fr 70px;gap:8px;align-items:center;margin:6px 0;font:13px system-ui;cursor:pointer}.bar.on .lbl{font-weight:700;color:var(--ac)}
+.track{height:14px;background:var(--bg);border-radius:7px;overflow:hidden}.fill{height:100%;border-radius:7px}.bar small{color:var(--mu);text-align:right}
+#cloud{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;justify-content:center;padding:6px;line-height:1.1}
+#cloud span{cursor:pointer}#cloud span:hover{text-decoration:underline}#cloud span.on{outline:2px solid var(--ac);border-radius:4px}
+.ev{padding:12px 0;border-top:1px solid var(--bd);display:grid;grid-template-columns:64px 1fr;gap:12px}.ev:first-child{border:0}
+.date{font:700 13px system-ui;text-align:center;border:1px solid var(--bd);border-radius:8px;padding:6px 2px;height:fit-content}.date i{display:block;font:normal 11px system-ui;color:var(--mu);margin-top:2px}
+.date.fut{border-color:var(--ac2);color:var(--ac2)}.date.now{background:var(--ac);color:#fff;border-color:var(--ac)}.date.now i{color:#fff}
+.ev b{font-weight:600}.meta{font:12px system-ui;color:var(--mu);margin-top:4px;display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.tag{background:var(--bg);border:1px solid var(--bd);border-radius:4px;padding:0 6px}.ev p{margin:4px 0 0;font-size:14px}.ev .es{color:var(--mu)}
+.rare{border-left:4px solid var(--ac);padding-left:12px}.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:820px){.two{grid-template-columns:1fr}}
+textarea{width:100%;min-height:150px;background:var(--bg);color:var(--tx);border:1px solid var(--bd);border-radius:8px;padding:8px;font:12px monospace}
+.note{font:12px system-ui;color:var(--mu)}a{color:var(--ac2)}
+</style></head><body>
+<header><h1>Radar proteste e conflitto sociale in Italia</h1><p>Scioperi, cortei, blocchi, occupazioni: cronologia, ragioni, copertura delle fonti e scaletta per il video · <span id="upd"></span></p></header>
+<div class="wrap">
+<aside>
+<h3>Cerca termine</h3><input type="search" id="q" placeholder="es. Ex Ilva, scuola, caporalato…">
+<div class="chips" id="termnav"></div>
+<h3>Tipo di evento</h3><div class="chips" id="types"></div>
+<h3>Fonti monitorate <span class="note" id="nsrc"></span></h3>
+<div class="tools"><button onclick="allSrc(1)">Tutte</button><button onclick="allSrc(0)">Nessuna</button><button onclick="resetAll()">Reset filtri</button></div>
+<div id="srcs" style="max-height:340px;overflow:auto"></div>
+</aside>
+<main>
+<div class="kpis card" id="kpis"></div>
+<div class="two">
+<div class="card"><h2>Ragioni (temi) delle mobilitazioni</h2><div id="themes"></div><p class="note">Barra = quota di fonti selezionate che documentano eventi di quel tema. Clic per filtrare.</p></div>
+<div class="card"><h2>Mappa dei termini</h2><div id="cloud"></div><p class="note">Dimensione = frequenza ponderata per numero di fonti; colore = tema prevalente.</p></div>
+</div>
+<div class="card"><h2>Cronologia degli eventi</h2><div id="tl"></div></div>
+<div class="card rare"><h2>Eventi meno coperti: da verificare prima di usarli</h2><div id="low"></div></div>
+<div class="card"><h2>Scaletta per il video</h2><p class="note">Generata dagli eventi filtrati, in ordine cronologico. Copiala e completala con riprese, dati e dichiarazioni verificate.</p><textarea id="script" readonly></textarea><div class="tools"><button onclick="navigator.clipboard&&navigator.clipboard.writeText($('script').value)">Copia</button></div></div>
+<div class="card"><h2>Aggiungi o aggiorna eventi</h2>
+<p class="note">Una riga per evento: <code>AAAA-MM-GG | tipo | tema | regione | luogo | attori | titolo | ragioni (virgola) | esito | fonti (numeri catalogo, virgola)</code></p>
+<textarea id="imp" style="min-height:80px"></textarea>
+<div class="tools"><button onclick="doImport()">Aggiungi</button><button onclick="load(DEMO)">Ripristina dati</button></div></div>
+</main></div>
+<footer class="note" style="max-width:1280px;margin:auto;padding:0 20px 24px">Dati aggregati da titoli e link di feed pubblici; gli eventi «auto» sono classificati automaticamente e possono contenere errori. Per i dettagli consulta sempre le fonti collegate.</footer>
+<script>
+let SRC=[],DEMO=[];const E=(d,t,h,r,l,a,x,m,o,s)=>({d,t,h,r,l,a,x,m:m.split(","),o,s});
+const TH={Lavoro:"#1f5fb4","Diritti e libertà":"#b4361f","Scuola e università":"#7a3fb4","Costo della vita":"#8a6d1a","Pace e riarmo":"#1f8a4c",Sfruttamento:"#b41f7a","Cultura e spettacolo":"#1f8a8a","Ambiente e territorio":"#4c8a1f","Migrazioni e accoglienza":"#555"};
+const STOP=new Set("della delle degli dello alla alle agli sulla sulle dopo anni tutti sono nuovo nuova come tra fra per con che non una uno gli dei del dal dai nel nei sui sul più già ancora verso contro tutta italia".split(" "));
+let data=[],sel=new Set(),th=null,ty=null,term="";const $=id=>document.getElementById(id),pct=x=>Math.round(x*100)+"%";
+const today=()=>new Date().toISOString().slice(0,10);
+function load(d){data=d;render()}
+function init(){sel=new Set(SRC.map((_,i)=>i));
+ $("srcs").innerHTML=SRC.map((s,i)=>`<label class="src"><input type="checkbox" checked data-i="${i}"><span>${i+1}. <a href="${s[2]}" target="_blank" rel="noopener">${s[0]}</a></span><small>${s[1]}</small></label>`).join("");
+ $("srcs").onchange=e=>{if(!e.target.dataset.i)return;const i=+e.target.dataset.i;e.target.checked?sel.add(i):sel.delete(i);render()};
+ $("q").oninput=e=>{term=e.target.value.trim().toLowerCase();render()};load(DEMO)}
+function allSrc(v){sel=new Set(v?SRC.map((_,i)=>i):[]);document.querySelectorAll("#srcs input").forEach(c=>c.checked=!!v);render()}
+function resetAll(){th=null;ty=null;term="";$("q").value="";allSrc(1)}
+function setTh(t){th=th===t?null:t;render()}function setTy(t){ty=ty===t?null:t;render()}
+function setTerm(w){term=term===w?"":w;$("q").value=term;render()}
+const cov=e=>e.s.filter(i=>sel.has(i));
+const hay=e=>(e.x+" "+e.m.join(" ")+" "+e.l+" "+e.a).toLowerCase();
+function base(){return data.map(e=>({...e,c:cov(e)})).filter(e=>e.c.length)}
+function view(){return base().filter(e=>(!th||e.h===th)&&(!ty||e.t===ty)&&(!term||hay(e).includes(term))).sort((a,b)=>a.d.localeCompare(b.d))}
+function fmt(d){const[y,m,g]=d.split("-");return[g,["gen","feb","mar","apr","mag","giu","lug","ago","set","ott","nov","dic"][m-1]]}
+function srcLinks(e){return e.c.map(i=>`<a class="tag" href="${SRC[i][2]}" target="_blank" rel="noopener">${i+1}</a>`).join("")}
+function ev(e){const t=today(),k=e.d===t?"now":e.d>t?"fut":"",[g,m]=fmt(e.d);
+ return `<div class="ev"><div class="date ${k}">${g}<i>${m}</i></div><div><b>${e.x}</b><div class="meta"><span class="tag">${e.t}</span>${e.auto?'<span class="tag" title="Classificazione automatica: da verificare">auto</span>':""}<span class="tag" style="color:${TH[e.h]}">${e.h}</span>${e.l}, ${e.r} · ${e.a} · fonti ${srcLinks(e)}</div><p class="es">${e.o}</p></div></div>`}
+function render(){
+ const n=sel.size||1,all=base(),v=view(),t=today();$("nsrc").textContent="("+sel.size+"/"+SRC.length+")";
+ const up=v.filter(e=>e.d>=t&&e.d<=new Date(Date.now()+7*864e5).toISOString().slice(0,10)).length;
+ $("kpis").innerHTML=[[v.length,"eventi in vista"],[up,"nei prossimi 7 giorni"],[new Set(v.map(e=>e.r)).size,"aree geografiche"],[pct(v.length?v.reduce((a,e)=>a+e.c.length,0)/v.length/n:0),"copertura media fonti"]].map(k=>`<div class="kpi"><b>${k[0]}</b><span>${k[1]}</span></div>`).join("");
+ const types=[...new Set(data.map(e=>e.t))];$("types").innerHTML=types.map(x=>`<button class="chip ${ty===x?"on":""}" onclick="setTy('${x}')">${x}</button>`).join("");
+ const rows=Object.keys(TH).map(h=>{const it=all.filter(e=>e.h===h);return{h,n:it.length,r:new Set(it.flatMap(e=>e.c)).size/n}}).filter(r=>r.n).sort((a,b)=>b.r-a.r);
+ $("themes").innerHTML=rows.map(r=>`<div class="bar ${th===r.h?"on":""}" onclick="setTh('${r.h}')"><span class="lbl">${r.h}</span><div class="track"><div class="fill" style="width:${r.r*100}%;background:${TH[r.h]}"></div></div><small>${pct(r.r)} · ${r.n}</small></div>`).join("")||"<p class='note'>Nessun dato.</p>";
+ const f={},col={};all.filter(e=>!th||e.h===th).forEach(e=>{const ws=[...e.m.map(x=>x.toLowerCase()),...e.x.toLowerCase().replace(/[^\p{L}\s]/gu," ").split(/\s+/).filter(w=>w.length>4&&!STOP.has(w))];new Set(ws).forEach(w=>{f[w]=(f[w]||0)+e.c.length;col[w]=col[w]||e.h})});
+ const ws=Object.entries(f).sort((a,b)=>b[1]-a[1]).slice(0,40),mx=ws.length?ws[0][1]:1;
+ $("cloud").innerHTML=[...ws].sort((a,b)=>a[0].localeCompare(b[0])).map(([w,c])=>`<span class="${term===w?"on":""}" style="font-size:${12+22*Math.sqrt(c/mx)}px;color:${TH[col[w]]}" onclick="setTerm('${w.replace(/'/g,"")}')">${w}</span>`).join("");
+ $("termnav").innerHTML=ws.slice(0,10).map(([w])=>`<button class="chip ${term===w?"on":""}" onclick="setTerm('${w.replace(/'/g,"")}')">${w}</button>`).join("");
+ $("tl").innerHTML=v.map(ev).join("")||"<p class='note'>Nessun evento con questi filtri.</p>";
+ const low=[...v].filter(e=>e.c.length<=1).slice(0,8);
+ $("low").innerHTML=low.map(ev).join("")||"<p class='note'>Tutti gli eventi in vista hanno almeno due fonti.</p>";
+ $("script").value=v.map((e,i)=>`${i+1}. ${e.x.toUpperCase()}\n   Quando e dove: ${e.d} · ${e.l} (${e.r})\n   Chi: ${e.a}\n   Perché: ${e.m.join(", ")}\n   Cosa è successo / esito: ${e.o}\n   Fonti: ${e.c.map(i=>SRC[i][0]).join("; ")}\n`).join("\n")}
+function doImport(){const names=Object.keys(TH),out=[];
+ $("imp").value.split("\n").forEach(r=>{const p=r.split("|").map(s=>s.trim());if(p.length<10)return;
+  out.push(E(p[0],p[1],names.find(h=>h.toLowerCase()===p[2].toLowerCase())||"Lavoro",p[3],p[4],p[5],p[6],p[7],p[8],p[9].split(",").map(x=>+x-1).filter(i=>i>=0&&i<SRC.length)))});
+ if(out.length)load([...data,...out])}
+fetch('data.json',{cache:'no-store'}).then(r=>r.json()).then(j=>{SRC=j.sources;DEMO=j.events;$('upd').textContent=' · aggiornato '+new Date(j.updated).toLocaleString('it-IT',{dateStyle:'short',timeStyle:'short'});init()}).catch(()=>{document.querySelector('main').insertAdjacentHTML('afterbegin','<div class="card">Impossibile caricare data.json. Se apri il file in locale, avvia un server: <code>python -m http.server -d docs</code></div>')});
+</script></body></html>

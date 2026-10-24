@@ -1,0 +1,307 @@
+{
+ "sources": [
+  [
+   "CGIL · calendario scioperi 12–18 ott",
+   "Sindacato",
+   "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-12-18-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-vx57hswz"
+  ],
+  [
+   "CGIL · calendario scioperi 19–25 ott",
+   "Sindacato",
+   "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo"
+  ],
+  [
+   "Sky TG24 · cortei studenti 16 ott",
+   "TV",
+   "https://tg24.sky.it/cronaca/2026/10/16/manifestazioni-studenti-cortei-sciopero-scuola"
+  ],
+  [
+   "Sky TG24 · corteo Cgil Roma 17 ott",
+   "TV",
+   "https://tg24.sky.it/cronaca/2026/10/17/manifestazione-cgil-roma"
+  ],
+  [
+   "Napolike · sciopero 30 ott",
+   "Locale",
+   "https://www.napolike.it/sciopero-generale-30-ottobre-2026-napoli"
+  ],
+  [
+   "GreenMe · sciopero 30 ott",
+   "Online",
+   "https://www.greenme.it/?p=1442990"
+  ],
+  [
+   "LentePubblica · sciopero 30 ott",
+   "Specializzata",
+   "https://lentepubblica.it/?p=439184"
+  ],
+  [
+   "Pixidia · sciopero 30 ott",
+   "Online",
+   "https://pixidia.com/?p=76208"
+  ]
+ ],
+ "events": [
+  {
+   "d": "2026-10-13",
+   "t": "Corteo",
+   "h": "Lavoro",
+   "r": "Friuli-Venezia Giulia",
+   "l": "Trieste",
+   "a": "Lavoratori Startech",
+   "x": "Corteo per il futuro di Startech",
+   "m": [
+    "futuro azienda",
+    "occupazione"
+   ],
+   "o": "Dettagli da verificare.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "d": "2026-10-14",
+   "t": "Sciopero",
+   "h": "Diritti e libertà",
+   "r": "Toscana",
+   "l": "Massa",
+   "a": "CGIL Toscana",
+   "x": "Sciopero generale regionale e manifestazione a Massa",
+   "m": [
+    "diritto di manifestare",
+    "conflitto sociale",
+    "misure restrittive"
+   ],
+   "o": "Sciopero regionale proclamato contro le misure che limitano il diritto di manifestazione e di conflitto sociale.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "d": "2026-10-14",
+   "t": "Manifestazione",
+   "h": "Costo della vita",
+   "r": "Sicilia",
+   "l": "Palermo",
+   "a": "Reti sociali e sindacali",
+   "x": "Manifestazione contro carovita e ingiustizia sociale",
+   "m": [
+    "carovita",
+    "ingiustizia sociale"
+   ],
+   "o": "Dettagli da verificare.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "d": "2026-10-16",
+   "t": "Sciopero",
+   "h": "Scuola e università",
+   "r": "Nazionale",
+   "l": "Torino, Milano, Roma, Verona",
+   "a": "SISA, USB Scuola (Livorno), studenti",
+   "x": "Sciopero della scuola e cortei studenteschi",
+   "m": [
+    "riforma scolastica",
+    "caro affitti",
+    "riarmo",
+    "scuola"
+   ],
+   "o": "Cortei in molte città. A Torino, in piazza Castello, alcune centinaia di manifestanti hanno lanciato sassi e torce; le forze dell’ordine hanno usato idranti e lacrimogeni.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "d": "2026-10-16",
+   "t": "Occupazione",
+   "h": "Scuola e università",
+   "r": "Lombardia",
+   "l": "Milano, via Sforza",
+   "a": "Studenti del corteo «Nessuno è straniero»",
+   "x": "Occupato l’ex obitorio alle spalle della Statale",
+   "m": [
+    "caro affitti",
+    "spazi",
+    "riarmo",
+    "occupazione"
+   ],
+   "o": "Al termine del corteo alcuni partecipanti hanno occupato l’edificio, al momento vuoto.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "d": "2026-10-17",
+   "t": "Manifestazione",
+   "h": "Diritti e libertà",
+   "r": "Lazio",
+   "l": "Roma, da piazza della Repubblica a piazza del Popolo",
+   "a": "CGIL e oltre 100 associazioni («La Via Maestra»)",
+   "x": "Manifestazione nazionale «La Via Maestra»",
+   "m": [
+    "welfare",
+    "Costituzione",
+    "lavoro",
+    "partecipazione"
+   ],
+   "o": "Migliaia in piazza. Landini annuncia lo sciopero generale del 20 novembre; Schlein e Conte parlano di lavoro comune.",
+   "s": [
+    0,
+    3
+   ]
+  },
+  {
+   "d": "2026-10-19",
+   "t": "Occupazione",
+   "h": "Lavoro",
+   "r": "Liguria",
+   "l": "Genova, stabilimento e aeroporto",
+   "a": "RSU lavoratori Ex Ilva",
+   "x": "Corteo dei lavoratori Ex Ilva e occupazione dell’aeroporto",
+   "m": [
+    "Ex Ilva",
+    "cassa integrazione",
+    "siderurgia",
+    "governo"
+   ],
+   "o": "Dopo l’assemblea ai cancelli, il corteo ha raggiunto e occupato l’aeroporto per sollecitare governo e commissari.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "d": "2026-10-20",
+   "t": "Sciopero",
+   "h": "Lavoro",
+   "r": "Friuli-Venezia Giulia",
+   "l": "Porcia (PN)",
+   "a": "FIOM, FIM, UILM",
+   "x": "Sciopero e corteo allo stabilimento Electrolux",
+   "m": [
+    "Electrolux",
+    "piano industriale",
+    "occupazione",
+    "elettrodomestici"
+   ],
+   "o": "Protesta contro un piano industriale giudicato insufficiente.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "d": "2026-10-21",
+   "t": "Sciopero",
+   "h": "Cultura e spettacolo",
+   "r": "Trentino-Alto Adige",
+   "l": "Bolzano e Trento",
+   "a": "Slc CGIL, Fistel CISL, Uilfpc UIL",
+   "x": "Sciopero dei lavoratori dei teatri per il contratto nazionale",
+   "m": [
+    "contratto nazionale",
+    "teatri",
+    "rinnovo"
+   ],
+   "o": "Prime iniziative il 21 a Bolzano e Trento e il 23 in Emilia-Romagna.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "d": "2026-10-24",
+   "t": "Corteo",
+   "h": "Sfruttamento",
+   "r": "Piemonte",
+   "l": "Alba (CN), da via Pola a piazza Ferrero",
+   "a": "Caritas, CGIL, CISL, UIL, Libera, Arci",
+   "x": "Corteo contro caporalato e sfruttamento nelle vigne",
+   "m": [
+    "caporalato",
+    "lavoro nero",
+    "braccianti",
+    "vigne"
+   ],
+   "o": "In programma alle 14.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "d": "2026-10-24",
+   "t": "Manifestazione",
+   "h": "Scuola e università",
+   "r": "Lazio",
+   "l": "Roma",
+   "a": "Azione Universitaria",
+   "x": "Manifestazione di Azione Universitaria",
+   "m": [
+    "università",
+    "mobilitazione"
+   ],
+   "o": "Citata come tappa intermedia verso lo sciopero generale; da verificare.",
+   "s": [
+    5
+   ]
+  },
+  {
+   "d": "2026-10-30",
+   "t": "Sciopero",
+   "h": "Lavoro",
+   "r": "Nazionale",
+   "l": "Tutta Italia",
+   "a": "USB, CUB SUR, USI-CIT",
+   "x": "Sciopero generale dei sindacati di base",
+   "m": [
+    "sciopero generale",
+    "sindacati di base",
+    "trasporti",
+    "scuola",
+    "sanità"
+   ],
+   "o": "Treni dalle 21 del 29 alle 20:59 del 30; autostrade dalle 22 del 29. USI-CIT esclude il trasporto locale. Nessuna proclamazione aerea al 9 ottobre. Motivazioni da verificare nelle schede di proclamazione.",
+   "s": [
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "d": "2026-10-30",
+   "t": "Corteo",
+   "h": "Lavoro",
+   "r": "Campania",
+   "l": "Napoli, piazza Mancini",
+   "a": "Sindacati di base",
+   "x": "Concentramento e corteo a Napoli",
+   "m": [
+    "sciopero generale",
+    "trasporti",
+    "Napoli"
+   ],
+   "o": "Possibili disagi su metro, bus, treni e scuole.",
+   "s": [
+    4
+   ]
+  },
+  {
+   "d": "2026-11-20",
+   "t": "Sciopero",
+   "h": "Lavoro",
+   "r": "Nazionale",
+   "l": "Tutta Italia",
+   "a": "CGIL",
+   "x": "Sciopero generale annunciato da Landini",
+   "m": [
+    "sciopero generale",
+    "welfare",
+    "lavoro"
+   ],
+   "o": "Annunciato dal palco di piazza del Popolo il 17 ottobre.",
+   "s": [
+    3
+   ]
+  }
+ ]
+}

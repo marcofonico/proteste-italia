@@ -1,0 +1,21 @@
+{
+ "_nota": "Verifica periodicamente che gli URL dei feed siano ancora attivi: i siti li cambiano spesso. Un feed non raggiungibile viene saltato.",
+ "feeds": [
+  {"name": "ANSA · Cronaca", "type": "Agenzia", "url": "https://www.ansa.it/sito/notizie/cronaca/cronaca_rss.xml"},
+  {"name": "ANSA · Politica", "type": "Agenzia", "url": "https://www.ansa.it/sito/notizie/politica/politica_rss.xml"},
+  {"name": "ANSA · Economia", "type": "Agenzia", "url": "https://www.ansa.it/sito/notizie/economia/economia_rss.xml"},
+  {"name": "la Repubblica · Homepage", "type": "Quotidiano", "url": "https://www.repubblica.it/rss/homepage/rss2.0.xml"},
+  {"name": "Corriere della Sera · Homepage", "type": "Quotidiano", "url": "https://xml2.corriereobjects.it/rss/homepage.xml"},
+  {"name": "Il Post", "type": "Nativo digitale", "url": "https://www.ilpost.it/feed/"},
+  {"name": "Fanpage", "type": "Nativo digitale", "url": "https://www.fanpage.it/feed/"},
+  {"name": "Il Fatto Quotidiano", "type": "Quotidiano", "url": "https://www.ilfattoquotidiano.it/feed/"}
+ ],
+ "google_news_queries": [
+  "sciopero generale",
+  "sciopero lavoratori corteo",
+  "manifestazione corteo studenti",
+  "occupazione presidio lavoratori",
+  "blocco stradale protesta",
+  "sciopero trasporti"
+ ]
+}
