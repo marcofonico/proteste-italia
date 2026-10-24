@@ -40,7 +40,7 @@ textarea{width:100%;min-height:150px;background:var(--bg);color:var(--tx);border
 
 .city{border:2px solid var(--ac)}.city h2{color:var(--ac);font-size:15px}
 .cityrow{display:flex;gap:8px;flex-wrap:wrap}.cityrow input{flex:1;min-width:200px;padding:12px;font-size:16px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx)}
-.cityrow button{padding:0 14px;font-size:13px}.city .chips{margin:10px 0 6px}.city label{display:flex;gap:6px;align-items:center;margin-top:4px}
+.cityrow button{padding:0 14px;font-size:13px}.cityrow button.apply{background:var(--ac);color:#fff;border-color:var(--ac);font-weight:600;font-size:15px;padding:0 22px}.city .chips{margin:10px 0 6px}.city label{display:flex;gap:6px;align-items:center;margin-top:4px}
 </style>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script></head><body>
 <header style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px"><div><h1>Radar proteste e conflitto sociale in Italia</h1><p>Scioperi, cortei, blocchi, occupazioni: cronologia, ragioni e copertura delle fonti · <span id="upd"></span></p></div><button id="thm" class="chip" style="white-space:nowrap" aria-label="Cambia tema"></button></header>
@@ -62,7 +62,7 @@ textarea{width:100%;min-height:150px;background:var(--bg);color:var(--tx);border
 <div class="card"><h2>Mappa dei termini</h2><div id="cloud"></div><p class="note">Dimensione = frequenza ponderata per numero di fonti; colore = tema prevalente.</p></div>
 </div>
 <div class="card city"><h2>La tua città</h2>
-<div class="cityrow"><input type="search" id="city" list="cities" placeholder="Scrivi la tua città, ad esempio Bologna…" autocomplete="off" aria-label="Filtra per città"><button class="chip" onclick="setCity('')">Tutte le città</button></div>
+<div class="cityrow"><input type="search" id="city" list="cities" placeholder="Scrivi la tua città, ad esempio Bologna, poi premi Applica" autocomplete="off" aria-label="Filtra per città"><button class="chip apply" onclick="applyCity()">Applica</button></div>
 <datalist id="cities"></datalist><div class="chips" id="citychips"></div>
 <p class="note" id="cityinfo" style="margin:0"></p>
 <label class="note"><input type="checkbox" id="nat" checked> Includi anche scioperi e mobilitazioni nazionali</label></div>
@@ -82,7 +82,7 @@ function init(){sel=new Set(SRC.map((_,i)=>i));
  $("srcs").onchange=e=>{if(!e.target.dataset.i)return;const i=+e.target.dataset.i;e.target.checked?sel.add(i):sel.delete(i);render()};
  $("q").oninput=e=>{term=e.target.value.trim().toLowerCase();render()};
  const dh=()=>{d1=$("d1").value;d2=$("d2").value;if(d1&&d2&&d1>d2)[d1,d2]=[d2,d1];render()};$("d1").onchange=dh;$("d2").onchange=dh;
- $("city").oninput=e=>{city=norm(e.target.value.trim());cityLabel=e.target.value.trim();render()};$("nat").onchange=e=>{nat=e.target.checked;render()};load(DEMO)}
+ $("city").onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();applyCity()}};$("nat").onchange=e=>{nat=e.target.checked;render()};load(DEMO)}
 function allSrc(v){sel=new Set(v?SRC.map((_,i)=>i):[]);document.querySelectorAll("#srcs input").forEach(c=>c.checked=!!v);render()}
 function resetAll(){th=null;ty=null;term="";d1="";d2="";city="";cityLabel="";nat=true;$("q").value="";$("city").value="";$("nat").checked=true;allSrc(1)}
 function setTh(t){th=th===t?null:t;render()}function setTy(t){ty=ty===t?null:t;render()}
@@ -104,10 +104,11 @@ const placesOf=e=>[...new Set([...citiesOf(e),...extra(e)])];
 const norm=s=>s.toLowerCase().replace(/’/g,"'");
 const matchCity=e=>norm(e.l+" "+e.r+" "+e.x).includes(city);
 const cityOk=e=>!city||matchCity(e)||(nat&&e.r==="Nazionale");
+function applyCity(){setCity($("city").value)}
 function setCity(c){city=norm(c.trim());cityLabel=c.trim();$("city").value=cityLabel;render()}
 function renderCity(){
  const cnt={};data.forEach(e=>placesOf(e).forEach(c=>cnt[c]=(cnt[c]||0)+1));
- $("citychips").innerHTML=Object.entries(cnt).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).slice(0,16).map(([c,n])=>`<button class="chip ${city===norm(c)?"on":""}" data-c="${c}" onclick="setCity(city===norm(this.dataset.c)?'':this.dataset.c)">${c} <small>${n}</small></button>`).join("");
+ $("citychips").innerHTML=`<button class="chip ${!city?"on":""}" onclick="setCity('')">Tutte le città</button>`+Object.entries(cnt).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).slice(0,16).map(([c,n])=>`<button class="chip ${city===norm(c)?"on":""}" data-c="${c}" onclick="setCity(city===norm(this.dataset.c)?'':this.dataset.c)">${c} <small>${n}</small></button>`).join("");
  $("cities").innerHTML=[...new Set([...CITIES,...Object.keys(cnt)])].sort((a,b)=>a.localeCompare(b)).map(c=>`<option value="${c}">`).join("");
  const info=$("cityinfo");
  if(!city){info.textContent="Mostro gli eventi di tutta Italia. Scegli una città per concentrarti sulla tua zona.";return}
