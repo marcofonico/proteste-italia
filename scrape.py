@@ -9,6 +9,7 @@ import html
 import json
 import re
 import sys
+import time
 import urllib.parse
 from pathlib import Path
 
@@ -96,17 +97,29 @@ def date_in_title(text, pub):
     return pub
 
 
+GQ = "(sciopero OR corteo OR manifestazione OR presidio OR occupazione OR protesta OR blocco)"
+
+
+def gnews(q):
+    return "https://news.google.com/rss/search?" + urllib.parse.urlencode(
+        {"q": q + " when:7d", "hl": "it", "gl": "IT", "ceid": "IT:it"})
+
+
 def feed_urls():
+    """(url, nome testata o None, tipo, (regione, città) per le testate locali)."""
     for f in CFG["feeds"]:
-        yield f["url"], f["name"], f.get("type", "Online")
+        yield f["url"], f["name"], f.get("type", "Online"), None
+    for r in CFG.get("regional", []):
+        yield gnews(f"{GQ} site:{r['domain']}"), r["name"], "Quotidiano locale", (r["region"], r["city"])
     for q in CFG["google_news_queries"]:
-        u = "https://news.google.com/rss/search?" + urllib.parse.urlencode({"q": q + " when:7d", "hl": "it", "gl": "IT", "ceid": "IT:it"})
-        yield u, None, "Online"
+        yield gnews(q), None, "Online", None
 
 
 def collect():
     items, seen = [], set()
-    for url, name, typ in feed_urls():
+    for url, name, typ, hint in feed_urls():
+        if "news.google.com" in url:
+            time.sleep(1)  # gentilezza verso Google News
         try:
             feed = feedparser.parse(url, agent="Mozilla/5.0 (radar-proteste)")
         except Exception as e:  # un feed rotto non deve fermare tutto
@@ -116,9 +129,10 @@ def collect():
             print("vuoto:", url, file=sys.stderr)
         for e in feed.entries:
             title = clean(e.get("title"))
-            outlet = name or (e.get("source") or {}).get("title") or ""
-            if not name and outlet and title.endswith(" - " + outlet):
-                title = title[: -len(outlet) - 3]
+            st = (e.get("source") or {}).get("title") or ""
+            if st and title.endswith(" - " + st):
+                title = title[: -len(st) - 3]
+            outlet = name or st
             summary = clean(e.get("summary"))
             if not title or not outlet or not KW.search(title + " " + summary[:200]) or NOISE.search(title):
                 continue
@@ -129,7 +143,7 @@ def collect():
             pub = parse_date(e)
             items.append({"title": title, "outlet": outlet, "type": typ, "url": e.get("link", ""),
                           "summary": summary if summary.lower() != title.lower() else "",
-                          "pub": pub, "date": date_in_title(title, pub)})
+                          "pub": pub, "date": date_in_title(title, pub), "hint": hint})
     return items
 
 
@@ -168,6 +182,11 @@ def to_event(c, src_index):
         if len(found) > best:
             best, theme, reasons = len(found), name, found
     region, place = region_of(text)
+    # se tutte le fonti sono quotidiani locali della stessa regione e il testo non parla di
+    # una mobilitazione nazionale, assegna l'evento a quella regione
+    hints = {i["hint"] for i in its}
+    if region == "Nazionale" and len(hints) == 1 and None not in hints and not re.search(r"generale|nazionale|tutta italia", low):
+        region, place = next(iter(hints))
     actors = sorted({a.upper() if a.isupper() else a for a in re.findall(ACTORS, text)}, key=str.lower)
     first = sorted(its, key=lambda i: (i["type"] != "Agenzia", len(i["title"])))[0]
     names = sorted({i["outlet"] for i in its})
@@ -181,6 +200,18 @@ def to_event(c, src_index):
 def main():
     sources = [list(s) for s in MANUAL["sources"]]
     idx = {s[0]: k for k, s in enumerate(sources)}
+
+    def add(name, typ, url):
+        if name not in idx:
+            idx[name] = len(sources)
+            sources.append([name, typ, url])
+
+    # il catalogo mostra tutte le testate monitorate, anche quelle senza eventi
+    for f in CFG["feeds"]:
+        u = urllib.parse.urlparse(f["url"])
+        add(f["name"], f.get("type", "Online"), f"{u.scheme}://{u.netloc}")
+    for r in CFG.get("regional", []):
+        add(r["name"], f"Locale · {r['city']}", "https://" + r["domain"])
 
     def src_index(name, item):
         if name not in idx:
