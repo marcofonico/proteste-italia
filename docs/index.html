@@ -41,6 +41,11 @@ textarea{width:100%;min-height:150px;background:var(--bg);color:var(--tx);border
 .city{border:2px solid var(--ac)}.city h2{color:var(--ac);font-size:15px}
 .cityrow{display:flex;gap:8px;flex-wrap:wrap}.cityrow input{flex:1;min-width:200px;padding:12px;font-size:16px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx)}
 .cityrow button{padding:0 14px;font-size:13px}.cityrow button.apply{background:var(--ac);color:#fff;border-color:var(--ac);font-weight:600;font-size:15px;padding:0 22px}.city .chips{margin:10px 0 6px}.city label{display:flex;gap:6px;align-items:center;margin-top:4px}
+
+.vc{border:1px solid var(--bd);border-radius:8px;padding:10px;margin:8px 0}.vc.on{border-color:var(--ac2);box-shadow:0 0 0 2px var(--ac2)}.vc b{font-weight:600}
+.vh{font:600 12px system-ui;color:var(--mu);margin:4px 0;text-transform:uppercase;letter-spacing:.05em}
+.badge{font:11px system-ui;border-radius:4px;padding:1px 6px;color:#fff;background:var(--ac2)}.badge.now{background:var(--ac)}.badge.past{background:var(--mu)}
+.vb{border:2px solid var(--ac2);border-radius:8px;padding:10px 12px;margin-bottom:10px}.vb ul{margin:6px 0;padding-left:18px;font:13px system-ui}.leg{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
 </style>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script></head><body>
 <header style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px"><div><h1>Radar proteste e conflitto sociale in Italia</h1><p>Scioperi, cortei, blocchi, occupazioni: cronologia, ragioni e copertura delle fonti · <span id="upd"></span></p></div><button id="thm" class="chip" style="white-space:nowrap" aria-label="Cambia tema"></button></header>
@@ -59,8 +64,10 @@ textarea{width:100%;min-height:150px;background:var(--bg);color:var(--tx);border
 <div class="kpis card" id="kpis"></div>
 <div class="two">
 <div class="card"><h2>Ragioni (temi) delle mobilitazioni</h2><div id="themes"></div><p class="note">Barra = quota di fonti selezionate che documentano eventi di quel tema. Clic per filtrare.</p></div>
-<div class="card"><h2>Mappa dei termini</h2><div id="cloud"></div><p class="note">Dimensione = frequenza ponderata per numero di fonti; colore = tema prevalente.</p></div>
+<div class="card"><h2>Mappa dei termini</h2><div id="cloud"></div><div class="leg" id="leg"></div><p class="note">Dimensione = frequenza ponderata per numero di fonti; colore = categoria (clic sulla legenda per filtrare).</p></div>
 </div>
+<div class="card" id="vic"><h2>Cosa sta succedendo</h2><div id="vbanner"></div>
+<div class="two"><div><div class="vh">In corso e in programma</div><div id="vnext"></div></div><div><div class="vh">Concluse di recente</div><div id="vpast"></div></div></div></div>
 <div class="card city"><h2>La tua città</h2>
 <div class="cityrow"><input type="search" id="city" list="cities" placeholder="Scrivi la tua città, ad esempio Bologna, poi premi Applica" autocomplete="off" aria-label="Filtra per città"><button class="chip apply" onclick="applyCity()">Applica</button></div>
 <datalist id="cities"></datalist><div class="chips" id="citychips"></div>
@@ -84,12 +91,12 @@ function init(){sel=new Set(SRC.map((_,i)=>i));
  const dh=()=>{d1=$("d1").value;d2=$("d2").value;if(d1&&d2&&d1>d2)[d1,d2]=[d2,d1];render()};$("d1").onchange=dh;$("d2").onchange=dh;
  $("city").onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();applyCity()}};$("nat").onchange=e=>{nat=e.target.checked;render()};load(DEMO)}
 function allSrc(v){sel=new Set(v?SRC.map((_,i)=>i):[]);document.querySelectorAll("#srcs input").forEach(c=>c.checked=!!v);render()}
-function resetAll(){th=null;ty=null;term="";d1="";d2="";city="";cityLabel="";nat=true;$("q").value="";$("city").value="";$("nat").checked=true;allSrc(1)}
+function resetAll(){th=null;ty=null;term="";d1="";d2="";city="";cityLabel="";nat=true;vic="";cat="";$("q").value="";$("city").value="";$("nat").checked=true;allSrc(1)}
 function setTh(t){th=th===t?null:t;render()}function setTy(t){ty=ty===t?null:t;render()}
 function setTerm(w){term=term===w?"":w;$("q").value=term;render()}
 const cov=e=>e.s.filter(i=>sel.has(i));
 const hay=e=>(e.x+" "+e.m.join(" ")+" "+e.l+" "+e.a).toLowerCase();
-function base(){return data.map(e=>({...e,c:cov(e)})).filter(e=>e.c.length&&(!d1||e.d>=d1)&&(!d2||e.d<=d2)&&cityOk(e))}
+function base(nv){return data.map(e=>({...e,c:cov(e)})).filter(e=>e.c.length&&(!d1||e.d>=d1)&&(!d2||e.d<=d2)&&cityOk(e)&&(nv||!vic||vk(e)===vic))}
 function view(){return base().filter(e=>(!th||e.h===th)&&(!ty||e.t===ty)&&(!term||hay(e).includes(term))).sort((a,b)=>a.d.localeCompare(b.d))}
 function fmt(d){const[y,m,g]=d.split("-");return[g,["gen","feb","mar","apr","mag","giu","lug","ago","set","ott","nov","dic"][m-1]]}
 function srcLinks(e){return e.c.map(i=>`<a class="tag" href="${SRC[i][2]}" target="_blank" rel="noopener">${i+1}</a>`).join("")}
@@ -114,21 +121,43 @@ function renderCity(){
  if(!city){info.textContent="Mostro gli eventi di tutta Italia. Scegli una città per concentrarti sulla tua zona.";return}
  const local=base().filter(matchCity).length;
  info.textContent=local?`${local} ${local===1?"evento":"eventi"} a «${cityLabel}»${nat?", più quelli nazionali":""}.`:`Nessun evento locale per «${cityLabel}» con i filtri attuali${nat?": mostro solo quelli nazionali.":"."}`}
+let vic="",cat="",VIC=[];
+const vk=e=>e.v||e.x,vt=id=>(VIC.find(v=>v.id===id)||{}).t;
+function setVic(id){vic=vic===id?"":id;render()}
+function setCat(c){cat=cat===c?"":c;render()}
+function newsOf(e){const on=new Set([...sel].map(i=>SRC[i][0]));return e.news?e.news.filter(n=>on.has(n.o)):e.c.map(i=>({t:SRC[i][0],o:SRC[i][1],u:SRC[i][2],d:e.d}))}
+function renderVic(){
+ const t=today(),g={};base(1).forEach(e=>(g[vk(e)]=g[vk(e)]||[]).push(e));
+ const L=Object.entries(g).map(([id,es])=>{const ds=es.map(e=>e.d).sort();return{id,es,t:vt(id)||es[0].x,a:ds[0],z:ds[ds.length-1],nx:ds.find(d=>d>=t)||"",src:new Set(es.flatMap(e=>e.c)).size}});
+ const lim=iso(new Date(Date.now()-21*864e5));
+ const nxt=L.filter(v=>v.z>=t).sort((x,y)=>x.nx.localeCompare(y.nx)).slice(0,8),past=L.filter(v=>v.z<t&&v.z>=lim).sort((x,y)=>y.z.localeCompare(x.z)).slice(0,8);
+ const card=v=>{const st=v.a>t?["In programma",""]:v.z>=t?["In corso","now"]:["Conclusa","past"];
+  const act=[...new Set(v.es.flatMap(e=>(e.terms||[]).filter(x=>x[1]==="attori").map(x=>x[0])))].slice(0,4),pl=[...new Set(v.es.flatMap(placesOf))].slice(0,3);
+  const [g1,m1]=fmt(v.a),[g2,m2]=fmt(v.z);
+  return `<div class="vc ${vic===v.id?"on":""}"><span class="badge ${st[1]}">${st[0]}</span> <b>${v.t}</b><div class="meta"><span>${v.a===v.z?g1+" "+m1:g1+" "+m1+" → "+g2+" "+m2}</span><span>${v.es.length} ${v.es.length===1?"evento":"eventi"} · ${v.src} fonti</span>${act.map(x=>`<span class="tag">${x}</span>`).join("")}${pl.map(x=>`<span class="tag">📍 ${x}</span>`).join("")}</div><div class="tools"><button data-v="${v.id}" onclick="setVic(this.dataset.v)">${vic===v.id?"Rimuovi filtro":"Vedi notizie correlate"}</button></div></div>`};
+ $("vnext").innerHTML=nxt.map(card).join("")||"<p class='note'>Niente in corso o in programma con questi filtri.</p>";
+ $("vpast").innerHTML=past.map(card).join("")||"<p class='note'>Nessuna vicenda conclusa nelle ultime 3 settimane.</p>";
+ const es=vic?base(1).filter(e=>vk(e)===vic):[];
+ if(!es.length){$("vbanner").innerHTML="";return}
+ const seen=new Set(),ns=[];es.forEach(e=>newsOf(e).forEach(n=>{if(!seen.has(n.u)){seen.add(n.u);ns.push(n)}}));ns.sort((a,b)=>b.d.localeCompare(a.d));
+ $("vbanner").innerHTML=`<div class="vb"><b>${vt(vic)||es[0].x}</b><div class="note">Filtro attivo su tutta la pagina · ${es.length} eventi · ${ns.length} notizie correlate</div><ul>${ns.map(n=>`<li><a href="${n.u}" target="_blank" rel="noopener">${n.t}</a> <span class="note">· ${n.o}, ${n.d.slice(8,10)}/${n.d.slice(5,7)}</span></li>`).join("")}</ul><div class="tools"><button onclick="setVic('')">Rimuovi filtro</button></div></div>`}
 const PRE=[["Tutti",null,null],["Oggi",0,0],["Ultimi 7 giorni",-6,0],["Prossimi 7 giorni",0,7],["Ultimi 30 giorni",-29,0]];
 const off=n=>iso(new Date(Date.now()+n*864e5));
 function setRange(a,b){d1=a===null?"":off(a);d2=b===null?"":off(b);render()}
 function renderDates(){$("d1").value=d1;$("d2").value=d2;
  $("presets").innerHTML=PRE.map(([l,a,b])=>{const on=(a===null?"":off(a))===d1&&(b===null?"":off(b))===d2;return `<button class="chip ${on?"on":""}" onclick="setRange(${a},${b})">${l}</button>`}).join("")}
-function render(){renderDates();renderCity();
+function render(){renderDates();renderCity();renderVic();
  const n=sel.size||1,all=base(),v=view(),t=today();$("nsrc").textContent="("+sel.size+"/"+SRC.length+")";
  const up=v.filter(e=>e.d>=t&&e.d<=iso(new Date(Date.now()+7*864e5))).length;
  $("kpis").innerHTML=[[v.length,"eventi in vista"],[up,"nei prossimi 7 giorni"],[new Set(v.map(e=>e.r)).size,"aree geografiche"],[pct(v.length?v.reduce((a,e)=>a+e.c.length,0)/v.length/n:0),"copertura media fonti"]].map(k=>`<div class="kpi"><b>${k[0]}</b><span>${k[1]}</span></div>`).join("");
  const types=[...new Set(data.map(e=>e.t))];$("types").innerHTML=types.map(x=>`<button class="chip ${ty===x?"on":""}" onclick="setTy('${x}')">${x}</button>`).join("");
  const rows=Object.keys(TH).map(h=>{const it=all.filter(e=>e.h===h);return{h,n:it.length,r:new Set(it.flatMap(e=>e.c)).size/n}}).filter(r=>r.n).sort((a,b)=>b.r-a.r);
  $("themes").innerHTML=rows.map(r=>`<div class="bar ${th===r.h?"on":""}" onclick="setTh('${r.h}')"><span class="lbl">${r.h}</span><div class="track"><div class="fill" style="width:${r.r*100}%;background:${TH[r.h]}"></div></div><small>${pct(r.r)} · ${r.n}</small></div>`).join("")||"<p class='note'>Nessun dato.</p>";
- const f={},col={};all.filter(e=>!th||e.h===th).forEach(e=>{const ws=[...e.m.map(x=>x.toLowerCase()),...e.x.toLowerCase().replace(/[^\p{L}\s]/gu," ").split(/\s+/).filter(w=>w.length>4&&!STOP.has(w))];new Set(ws).forEach(w=>{f[w]=(f[w]||0)+e.c.length;col[w]=col[w]||e.h})});
- const ws=Object.entries(f).sort((a,b)=>b[1]-a[1]).slice(0,40),mx=ws.length?ws[0][1]:1;
- $("cloud").innerHTML=[...ws].sort((a,b)=>a[0].localeCompare(b[0])).map(([w,c])=>`<span class="${term===w?"on":""}" style="font-size:${12+22*Math.sqrt(c/mx)}px;color:${TH[col[w]]}" onclick="setTerm('${w.replace(/'/g,"")}')">${w}</span>`).join("");
+ const CATC={temi:"#1f5fb4",attori:"#b4361f",vertenze:"#1f8a4c"},f={},col={};
+ all.filter(e=>!th||e.h===th).forEach(e=>(e.terms||e.m.map(x=>[x.toLowerCase(),"temi"])).forEach(([w,c])=>{if(cat&&c!==cat)return;f[w]=(f[w]||0)+e.c.length;col[w]=c}));
+ const ws=Object.entries(f).sort((a,b)=>b[1]-a[1]).slice(0,30),mx=ws.length?ws[0][1]:1;
+ $("cloud").innerHTML=[...ws].sort((a,b)=>a[0].localeCompare(b[0])).map(([w,c])=>`<span class="${term===w?"on":""}" style="font-size:${12+22*Math.sqrt(c/mx)}px;color:${CATC[col[w]]}" data-w="${w}" onclick="setTerm(this.dataset.w)">${w}</span>`).join("");
+ $("leg").innerHTML=[["temi","Temi"],["attori","Attori"],["vertenze","Vertenze e aziende"]].map(([k,l])=>`<button class="chip ${cat===k?"on":""}" style="border-color:${CATC[k]}" onclick="setCat('${k}')">${l}</button>`).join("");
  $("termnav").innerHTML=ws.slice(0,10).map(([w])=>`<button class="chip ${term===w?"on":""}" onclick="setTerm('${w.replace(/'/g,"")}')">${w}</button>`).join("");
  $("tl").innerHTML=[...v].reverse().map(ev).join("")||"<p class='note'>Nessun evento con questi filtri.</p>";
  const low=[...v].filter(e=>e.c.length<=1).reverse().slice(0,8);
@@ -138,7 +167,7 @@ const THM=["auto","light","dark"],LBL={auto:"Tema: automatico",light:"Tema: chia
 let tm="auto";try{tm=localStorage.getItem("theme")||"auto"}catch(e){}
 function applyTheme(m){const r=document.documentElement;m==="auto"?r.removeAttribute("data-theme"):r.setAttribute("data-theme",m);$("thm").textContent=LBL[m]}
 $("thm").onclick=()=>{tm=THM[(THM.indexOf(tm)+1)%3];try{localStorage.setItem("theme",tm)}catch(e){}applyTheme(tm)};applyTheme(tm);
-fetch('data.json',{cache:'no-store'}).then(r=>r.json()).then(j=>{SRC=j.sources;DEMO=j.events;$('upd').textContent=' · aggiornato '+new Date(j.updated).toLocaleString('it-IT',{dateStyle:'short',timeStyle:'short'});init()}).catch(()=>{document.querySelector('main').insertAdjacentHTML('afterbegin','<div class="card">Impossibile caricare data.json. Se apri il file in locale, avvia un server: <code>python -m http.server -d docs</code></div>')});
+fetch('data.json',{cache:'no-store'}).then(r=>r.json()).then(j=>{SRC=j.sources;DEMO=j.events;VIC=j.vicende||[];$('upd').textContent=' · aggiornato '+new Date(j.updated).toLocaleString('it-IT',{dateStyle:'short',timeStyle:'short'});init()}).catch(()=>{document.querySelector('main').insertAdjacentHTML('afterbegin','<div class="card">Impossibile caricare data.json. Se apri il file in locale, avvia un server: <code>python -m http.server -d docs</code></div>')});
 </script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a392a812161445aabb6413c478f281bb"}'></script><!-- End Cloudflare Web Analytics -->
 </body></html>
