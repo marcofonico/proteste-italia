@@ -14,7 +14,10 @@
   "cig": "cassa integrazione",
   "acciaierie d'italia": "ex ilva",
   "sindacato": "sindacati",
-  "riders": "rider"
+  "riders": "rider",
+  "tir": "autotrasportatori",
+  "camionisti": "autotrasportatori",
+  "autotrasportatore": "autotrasportatori"
  },
  "frasi": [
   "cassa integrazione",
@@ -32,7 +35,15 @@
   "la via maestra",
   "sciopero scuola",
   "blocco stradale",
-  "caro vita"
+  "caro vita",
+  "caro carburante",
+  "caro gasolio",
+  "italia in piazza",
+  "movimento 17 ottobre",
+  "ordine pubblico",
+  "decreto sicurezza",
+  "porto di napoli",
+  "mobilitazione permanente"
  ],
  "attori": [
   "cgil",
@@ -55,7 +66,13 @@
   "azione universitaria",
   "slc cgil",
   "rider",
-  "ultima generazione"
+  "ultima generazione",
+  "italia in piazza",
+  "movimento 17 ottobre",
+  "autotrasportatori",
+  "agricoltori",
+  "fedralog",
+  "comitato autotrasportatori siciliani"
  ],
  "vertenze": [
   "ex ilva",
@@ -223,6 +240,20 @@
   "futuro azienda"
  ],
  "vicende": [
+  {
+   "id": "tir-caro-carburante",
+   "t": "Autotrasportatori contro il caro carburante: blocchi nel Sud",
+   "rx": "autotrasportator|caro carburante|caro gasolio",
+   "from": "2026-10-12",
+   "to": "2026-11-30"
+  },
+  {
+   "id": "italia-in-piazza",
+   "t": "Italia in Piazza e Movimento 17 ottobre: dalle piazze contro il carovita ai disordini",
+   "rx": "italia in piazza|movimento 17 ottobre|palazzo chigi|disordini a milano",
+   "from": "2026-10-17",
+   "to": "2026-11-30"
+  },
   {
    "id": "sg-30-ott",
    "t": "Sciopero generale dei sindacati di base · 30 ottobre",
