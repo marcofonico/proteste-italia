@@ -64,6 +64,8 @@ REGIONS = {
     "Sicilia": r"palermo|catania|messina|siracusa|trapani|sicilia",
     "Sardegna": r"cagliari|sassari|nuoro|sardegna",
 }
+TOWN = re.compile(r"\b(?:a|ad)\s+([A-ZÀ-Ý][\wà-ÿ'’]+(?:\s+[A-ZÀ-Ý][\wà-ÿ'’]+)?)")
+TOWN_STOP = {"Natale", "Pasqua", "Capodanno", "Ferragosto", "Palazzo", "Piazza", "Via", "Ministero", "Stazione", "Bruxelles"}
 ACTORS = r"CGIL|CISL|UIL|USB|CUB|Cobas|USI-CIT|FIOM|FIM|UILM|FLC|SISA|Unicobas|Libera|Arci|Caritas|Ultima Generazione|Extinction Rebellion|studenti|lavoratori|agricoltori|riders?"
 STOP = set("della delle degli dello alla alle agli sulla sulle dopo anni tutti sono nuovo nuova come tra fra per con che non una uno gli dei del dal dai nel nei sui sul più già ancora verso contro oggi ieri domani italia italiano italiane".split())
 
@@ -182,6 +184,10 @@ def to_event(c, src_index):
         if len(found) > best:
             best, theme, reasons = len(found), name, found
     region, place = region_of(text)
+    if place == "Italia":  # comune non in elenco: prova a leggerlo da «a/ad <Località>» nei titoli
+        m = TOWN.search(" ".join(i["title"] for i in its))
+        if m and m.group(1).split()[0] not in TOWN_STOP:
+            place = m.group(1)
     # se tutte le fonti sono quotidiani locali della stessa regione e il testo non parla di
     # una mobilitazione nazionale, assegna l'evento a quella regione
     hints = {i["hint"] for i in its}
