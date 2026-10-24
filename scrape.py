@@ -11,6 +11,7 @@ import re
 import sys
 import time
 import urllib.parse
+from collections import Counter
 from pathlib import Path
 
 try:
@@ -200,7 +201,53 @@ def to_event(c, src_index):
             "a": ", ".join(actors) or "da verificare", "x": first["title"],
             "m": list(dict.fromkeys(reasons))[:6] or ["da verificare"],
             "o": (first["summary"][:240] or "Da verificare sulle fonti."),
-            "s": [src_index(n, next(i for i in its if i["outlet"] == n)) for n in names], "auto": True}
+            "s": [src_index(n, next(i for i in its if i["outlet"] == n)) for n in names], "auto": True,
+            "news": [{"t": i["title"], "o": i["outlet"], "u": i["url"], "d": i["pub"].isoformat()} for i in its]}
+
+
+G = json.loads((ROOT / "glossary.json").read_text(encoding="utf-8"))
+
+
+def _norm(t):
+    t = t.lower().replace("’", "'").strip()
+    return G["alias"].get(t, t)
+
+
+def build_terms(events):
+    """Termini significativi per evento: frasi curate, ragioni, attori, parole ricorrenti e bigrammi frequenti."""
+    stop, excl = set(G["stopterms"]), set(G["escludi_singole"])
+    att, vert, frasi = set(G["attori"]), set(G["vertenze"]), [p.lower() for p in G["frasi"]]
+    words = [[_norm(w) for w in re.findall(r"[a-zàèéìòù0-9'’-]{4,}", e["x"].lower())] for e in events]
+    ok = lambda w: w not in stop and w not in excl
+    freq = Counter(w for ws in words for w in set(ws) if ok(w))
+    big = Counter(b for ws in words for b in {f"{a} {c}" for a, c in zip(ws, ws[1:]) if ok(a) and ok(c)})
+    for i, e in enumerate(events):
+        text = (e["x"] + " " + e["a"]).lower().replace("’", "'")
+        S = {_norm(p) for p in frasi if p in text} | {_norm(m) for m in e["m"]}
+        S |= {a for a in att | vert if re.search(r"\b" + re.escape(a) + r"\b", text)}
+        S |= {w for w in set(words[i]) if ok(w) and freq[w] >= 2}
+        S |= {f"{a} {c}" for a, c in zip(words[i], words[i][1:]) if big[f"{a} {c}"] >= 2}
+        place = set(re.findall(r"[a-zàèéìòù']{3,}", (e["l"] + " " + e["r"]).lower()))
+        S = {t for t in S if t and t not in stop and t not in place and not (" " not in t and t in excl) and (len(t) >= 4 or t in att)}
+        S = {t for t in S if not any(t != u and re.search(r"\b" + re.escape(t) + r"\b", u) for u in S)}
+        e["terms"] = sorted([t, "attori" if t in att else "vertenze" if t in vert else "temi"] for t in S)
+
+
+def assign_vicende(events):
+    """Raggruppa gli eventi in vicende (regole del glossario); gli altri formano una vicenda a sé."""
+    rules = [(r, re.compile(r["rx"], re.I)) for r in G["vicende"]]
+    titles = {}
+    for e in events:
+        text = " ".join([e["x"], *e["m"], e["a"]])
+        for r, rx in rules:
+            if rx.search(text) and r.get("from", "0") <= e["d"] <= r.get("to", "9"):
+                e["v"] = r["id"]
+                titles[r["id"]] = r["t"]
+                break
+        else:
+            e["v"] = "e-" + re.sub(r"[^a-z0-9]+", "-", (e["d"] + " " + e["x"]).lower())[:60]
+            titles[e["v"]] = e["x"]
+    return [{"id": k, "t": v} for k, v in titles.items()]
 
 
 def main():
@@ -234,13 +281,16 @@ def main():
         twin = next((m for m in events if m["d"] == ev["d"] and len(tokens(m["x"]) & tokens(ev["x"])) >= 2), None)
         if twin:  # evento già curato a mano: aggiungi solo le fonti
             twin["s"] = sorted(set(twin["s"]) | set(ev["s"]))
+            twin["news"] = twin.get("news", []) + ev["news"]
         else:
             events.append(ev)
     events = [e for e in events if e["d"] >= cutoff]
     events.sort(key=lambda e: e["d"])
+    build_terms(events)
+    vicende = assign_vicende(events)
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps({"updated": dt.datetime.now().isoformat(timespec="minutes"),
-                               "sources": sources, "events": events}, ensure_ascii=False, indent=1), encoding="utf-8")
+                               "sources": sources, "vicende": vicende, "events": events}, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"scritto {OUT}: {len(events)} eventi, {len(sources)} fonti")
 
 
