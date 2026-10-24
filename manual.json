@@ -39,6 +39,76 @@
    "Pixidia · sciopero 30 ott",
    "Online",
    "https://pixidia.com/?p=76208"
+  ],
+  [
+   "Il Post",
+   "Nativo digitale",
+   "https://www.ilpost.it"
+  ],
+  [
+   "Sky TG24",
+   "TV",
+   "https://tg24.sky.it"
+  ],
+  [
+   "Open",
+   "Nativo digitale",
+   "https://www.open.online"
+  ],
+  [
+   "Quotidiano.net",
+   "Quotidiano",
+   "https://www.quotidiano.net"
+  ],
+  [
+   "Euronews",
+   "TV",
+   "https://it.euronews.com"
+  ],
+  [
+   "Reuters",
+   "Agenzia",
+   "https://www.internazionale.it/ultime-notizie-reuters"
+  ],
+  [
+   "Il Sole 24 Ore",
+   "Quotidiano",
+   "https://en.ilsole24ore.com"
+  ],
+  [
+   "La Voce di New York",
+   "Online",
+   "https://lavocedinewyork.com"
+  ],
+  [
+   "Domani",
+   "Quotidiano",
+   "https://www.editorialedomani.it"
+  ],
+  [
+   "L'Espresso",
+   "Quotidiano",
+   "https://lespresso.it"
+  ],
+  [
+   "Orizzontescuola",
+   "Specializzata",
+   "https://www.orizzontescuola.it"
+  ],
+  [
+   "Soldionline",
+   "Online",
+   "https://www.soldionline.it"
+  ],
+  [
+   "Trans.info",
+   "Specializzata",
+   "https://trans.info"
+  ],
+  [
+   "Geopop",
+   "Online",
+   "https://www.geopop.it"
   ]
  ],
  "events": [
@@ -301,6 +371,441 @@
    "o": "Annunciato dal palco di piazza del Popolo il 17 ottobre.",
    "s": [
     3
+   ]
+  },
+  {
+   "d": "2026-10-15",
+   "t": "Blocco",
+   "h": "Costo della vita",
+   "r": "Puglia",
+   "l": "Brindisi, Taranto e altre zone",
+   "a": "Autotrasportatori, agricoltori, operai ex Ilva",
+   "x": "Blocchi stradali in Puglia di autotrasportatori e agricoltori contro il caro carburante",
+   "m": [
+    "caro carburante",
+    "autotrasportatori",
+    "agricoltori",
+    "blocchi stradali"
+   ],
+   "o": "Presìdi e blocchi ai caselli autostradali, sulle tangenziali e sulle strade principali; a Brindisi sulla statale verso Lecce. Si uniscono agricoltori e operai dell’ex Ilva (sciopero a Taranto dal 12 ottobre).",
+   "s": [
+    8
+   ],
+   "news": [
+    {
+     "t": "Le proteste che stanno bloccando le strade in Puglia",
+     "o": "Il Post",
+     "u": "https://ilpost.it/2026/10/15/puglia-proteste-autotrasportatori-blocchi-stradali",
+     "d": "2026-10-15"
+    }
+   ]
+  },
+  {
+   "d": "2026-10-16",
+   "t": "Blocco",
+   "h": "Costo della vita",
+   "r": "Sud Italia",
+   "l": "Sicilia, Calabria, Puglia, Basilicata, Campania",
+   "a": "Comitato autotrasportatori siciliani, Fedralog Calabria, agricoltori",
+   "x": "Mobilitazione degli autotrasportatori in tutto il Sud: fermo in Sicilia dal 16 al 20 ottobre",
+   "m": [
+    "caro carburante",
+    "autotrasportatori",
+    "fermo dei camion",
+    "blocchi stradali"
+   ],
+   "o": "In Sicilia i camion restano nei piazzali, senza blocchi; in Calabria code di camion e minaccia di andare a Roma se non arrivano risposte entro il 20; blocchi anche in Basilicata e Campania. In Puglia 150 stazioni Enilive su 300 senza carburante, secondo l’azienda.",
+   "s": [
+    8,
+    11,
+    19,
+    20
+   ],
+   "news": [
+    {
+     "t": "Le proteste di autotrasportatori e agricoltori si sono estese a tutto il Sud",
+     "o": "Il Post",
+     "u": "https://www.ilpost.it/2026/10/16/proteste-autotrasportatori-sud-italia/",
+     "d": "2026-10-16"
+    },
+    {
+     "t": "Sciopero dei tir: blocchi e code nel Sud",
+     "o": "Quotidiano.net",
+     "u": "https://www.quotidiano.net/cronaca/sciopero-tir-twmioeu4",
+     "d": "2026-10-16"
+    },
+    {
+     "t": "Autotrasportatori siciliani fermi 5 giorni: cosa può succedere",
+     "o": "Soldionline",
+     "u": "https://www.soldionline.it/?p=177958",
+     "d": "2026-10-16"
+    },
+    {
+     "t": "Caro gasolio, la protesta dei camionisti paralizza il Sud",
+     "o": "Trans.info",
+     "u": "https://trans.info/caro-gasolio-la-protesta-dei-camionisti-paralizza-il-sud-508825",
+     "d": "2026-10-16"
+    }
+   ]
+  },
+  {
+   "d": "2026-10-19",
+   "t": "Blocco",
+   "h": "Costo della vita",
+   "r": "Sud Italia",
+   "l": "Campania, Molise, Sicilia",
+   "a": "Autotrasportatori, agricoltori",
+   "x": "Blocchi autostradali e del porto di Napoli; a Campobasso tir e trattori in centro",
+   "m": [
+    "caro carburante",
+    "blocchi autostradali",
+    "porto di napoli",
+    "supermercati vuoti",
+    "tavolo sud"
+   ],
+   "o": "Code soprattutto in Campania, benzinai senza carburante e accesso al porto di Napoli bloccato (Il Post). Salvini ha promesso un tavolo dedicato al Sud (Soldionline). Il Comitato trasportatori siciliani precisa che i camion fermi in autostrada non sono dei suoi aderenti (Quotidiano.net).",
+   "s": [
+    8,
+    10,
+    11,
+    12,
+    19
+   ],
+   "news": [
+    {
+     "t": "Al Sud continuano i blocchi stradali",
+     "o": "Il Post",
+     "u": "https://www.ilpost.it/2026/10/19/continuano-blocchi-stradali-proteste-sud-italia/",
+     "d": "2026-10-19"
+    },
+    {
+     "t": "Al Sud continuano le proteste degli autotrasportatori contro il caro carburante",
+     "o": "Open",
+     "u": "https://www.open.online/2026/10/19/proteste-autotrasportatori-sud-caro-carburante/",
+     "d": "2026-10-19"
+    },
+    {
+     "t": "A1 e A30 bloccate, porto di Napoli in tilt: la protesta dei tir paralizza il Sud",
+     "o": "Quotidiano.net",
+     "u": "https://www.quotidiano.net/cronaca/a1-e-a30-bloccate-porto-di-napoli-in-tilt-la-protesta-dei-tir-paralizza-il-sud-viijy8nd",
+     "d": "2026-10-19"
+    },
+    {
+     "t": "Autotrasportatori in protesta al Sud contro caro carburanti: blocchi stradali e supermercati vuoti",
+     "o": "Euronews",
+     "u": "https://it.euronews.com/2026/10/19/autotrasportatori-in-protesta-al-sud-contro-caro-carburanti-blocchi-stradali-e-supermercat",
+     "d": "2026-10-19"
+    },
+    {
+     "t": "Caro carburante, Salvini promette un tavolo Sud",
+     "o": "Soldionline",
+     "u": "https://www.soldionline.it/?p=177958",
+     "d": "2026-10-19"
+    }
+   ]
+  },
+  {
+   "d": "2026-10-20",
+   "t": "Blocco",
+   "h": "Costo della vita",
+   "r": "Lazio",
+   "l": "Frosinone, Ferentino (Ciociaria)",
+   "a": "Autotrasportatori, agricoltori",
+   "x": "Le proteste degli autotrasportatori arrivano nel Lazio",
+   "m": [
+    "caro carburante",
+    "autotrasportatori",
+    "blocchi stradali"
+   ],
+   "o": "File di tir occupano la carreggiata vicino ai caselli autostradali. Secondo Geopop le tensioni crescono dopo la scadenza, il 5 ottobre, del taglio dell’accisa sul gasolio, non prorogato.",
+   "s": [
+    8,
+    21
+   ],
+   "news": [
+    {
+     "t": "Ci sono proteste degli autotrasportatori anche nel Lazio",
+     "o": "Il Post",
+     "u": "https://www.ilpost.it/2026/10/20/proteste-autotrasportatori-lazio/",
+     "d": "2026-10-20"
+    },
+    {
+     "t": "Proteste autotrasportatori: blocchi al Sud e scaffali vuoti",
+     "o": "Geopop",
+     "u": "https://www.geopop.it/proteste-autotrasportatori-italia-caro-carburanti-scaffali-supermercati-vuoti/",
+     "d": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "d": "2026-10-17",
+   "t": "Corteo",
+   "h": "Costo della vita",
+   "r": "Lombardia",
+   "l": "Milano, piazza Duomo",
+   "a": "Italia in Piazza",
+   "x": "Corteo «Italia in Piazza» contro il carovita: scontri in piazza Duomo",
+   "m": [
+    "carovita",
+    "caro carburante",
+    "pressione fiscale",
+    "scontri"
+   ],
+   "o": "Circa 5.000 partecipanti secondo Il Post; una parte, perlopiù giovani a volto coperto, si è scontrata con la polizia (bombe carta, cariche, idranti). Il rappresentante milanese del movimento attribuisce le violenze a gruppi estranei (AGI, citato da Il Post).",
+   "s": [
+    8,
+    9,
+    10,
+    11
+   ],
+   "news": [
+    {
+     "t": "Gli scontri a Milano intorno a piazza del Duomo",
+     "o": "Il Post",
+     "u": "https://www.ilpost.it/2026/10/17/scontri-milano-manifestazione-carovita/",
+     "d": "2026-10-17"
+    },
+    {
+     "t": "Milano, scontri tra manifestanti e polizia in piazza Duomo e Galleria: fermati e feriti",
+     "o": "Sky TG24",
+     "u": "https://tg24.sky.it/cronaca/2026/10/17/milano-corteo-scontri-feriti",
+     "d": "2026-10-17"
+    },
+    {
+     "t": "Proteste in tutta Italia, guerriglia al Duomo di Milano",
+     "o": "Open",
+     "u": "https://www.open.online/2026/10/17/proteste-italia-in-piazza-via-maestra-aggiornamenti/",
+     "d": "2026-10-17"
+    },
+    {
+     "t": "Corteo, scontri a Milano: feriti agenti della Digos",
+     "o": "Quotidiano.net",
+     "u": "https://www.quotidiano.net/cronaca/corteo-scontri-yms2d0bu",
+     "d": "2026-10-17"
+    }
+   ]
+  },
+  {
+   "d": "2026-10-17",
+   "t": "Corteo",
+   "h": "Costo della vita",
+   "r": "Piemonte",
+   "l": "Torino, da piazza Castello a Porta Nuova",
+   "a": "Italia in Piazza",
+   "x": "Corteo contro il carovita a Torino: scontri e assalto alla Feltrinelli",
+   "m": [
+    "carovita",
+    "scontri",
+    "ordine pubblico"
+   ],
+   "o": "Il corteo sfugge al controllo degli organizzatori, che si dissociano dalle violenze. Devastata la libreria Feltrinelli di Porta Nuova; 12 fermati e 3 feriti (Open). La polizia usa idranti e lacrimogeni (Il Sole 24 Ore).",
+   "s": [
+    10,
+    14
+   ],
+   "news": [
+    {
+     "t": "Milano, Torino e Bologna, dalle piazze contro il carovita alla guerriglia urbana",
+     "o": "Open",
+     "u": "https://www.open.online/2026/10/18/milano-torino-bologna-proteste-carovita-devastazioni-scontri-cosa-e-successo-foto-video/",
+     "d": "2026-10-18"
+    },
+    {
+     "t": "Anger and protests in Piazza Italia (video)",
+     "o": "Il Sole 24 Ore",
+     "u": "https://en.ilsole24ore.com/art/anger-and-protests-in-piazza-italia-video-AJK1pOnB",
+     "d": "2026-10-17"
+    }
+   ]
+  },
+  {
+   "d": "2026-10-17",
+   "t": "Corteo",
+   "h": "Costo della vita",
+   "r": "Emilia-Romagna",
+   "l": "Bologna, zona stazione",
+   "a": "Italia in Piazza",
+   "x": "Corteo contro il carovita a Bologna: scontri davanti alla stazione",
+   "m": [
+    "carovita",
+    "scontri",
+    "idranti"
+   ],
+   "o": "Almeno sette fermati; la polizia antisommossa usa gli idranti, secondo ANSA citata da La Voce di New York.",
+   "s": [
+    9,
+    13,
+    15
+   ],
+   "news": [
+    {
+     "t": "Milano, scontri in piazza Duomo e Galleria (con Bologna, almeno sette fermati)",
+     "o": "Sky TG24",
+     "u": "https://tg24.sky.it/cronaca/2026/10/17/milano-corteo-scontri-feriti",
+     "d": "2026-10-17"
+    },
+    {
+     "t": "Milan police clash with protesters on second day of unrest",
+     "o": "Reuters",
+     "u": "https://www.internazionale.it/ultime-notizie-reuters/2026/10/18/milan-police-clash-with-protesters-on-second-day-of-unrest",
+     "d": "2026-10-18"
+    },
+    {
+     "t": "Meloni: manifestare è un diritto, ma Milano brucia",
+     "o": "La Voce di New York",
+     "u": "https://lavocedinewyork.com/news/2026/10/17/meloni-manifestare-e-un-diritto-ma-milano-brucia-tra-scontri-e-barricate/",
+     "d": "2026-10-17"
+    }
+   ]
+  },
+  {
+   "d": "2026-10-18",
+   "t": "Manifestazione",
+   "h": "Costo della vita",
+   "r": "Lombardia",
+   "l": "Milano, centro (Duomo, via Torino, Cordusio)",
+   "a": "Gruppi di giovani, molti minorenni",
+   "x": "Secondo giorno di disordini a Milano: vetrine distrutte e saccheggi in centro",
+   "m": [
+    "disordini",
+    "saccheggi",
+    "minorenni",
+    "ordine pubblico"
+   ],
+   "o": "I numeri dei fermati variano tra le fonti: 50 secondo Euronews (18 ottobre), oltre 200 in questura quasi tutti minori secondo Quotidiano.net (18 ottobre), 271 fermi nel fine settimana secondo Euronews (19 ottobre). Da verificare con dati ufficiali di questura.",
+   "s": [
+    8,
+    11,
+    12,
+    16
+   ],
+   "news": [
+    {
+     "t": "Nel centro di Milano ci sono nuovi disordini",
+     "o": "Il Post",
+     "u": "https://www.ilpost.it/2026/10/18/proteste-ragazzi-milano-domenica/",
+     "d": "2026-10-18"
+    },
+    {
+     "t": "Secondo giorno di scontri a Milano: vetrine distrutte e negozi saccheggiati",
+     "o": "Euronews",
+     "u": "https://it.euronews.com/2026/10/18/secondo-giorno-di-scontri-a-milano-vetrine-distrutte-e-negozi-saccheggiati",
+     "d": "2026-10-18"
+    },
+    {
+     "t": "Guerriglia a Milano, negozi distrutti e saccheggiati: oltre 200 in questura",
+     "o": "Quotidiano.net",
+     "u": "https://www.quotidiano.net/cronaca/guerriglia-urbana-duomo-oggi-diretta-lrgscvuk",
+     "d": "2026-10-18"
+    },
+    {
+     "t": "Milano, nuove violenze in centro: danni a negozi e arredi urbani",
+     "o": "Domani",
+     "u": "https://www.editorialedomani.it/video/milano-nuove-violenze-in-centro-danni-a-negozi-e-arredi-urbani-t9j6rmmg",
+     "d": "2026-10-18"
+    }
+   ]
+  },
+  {
+   "d": "2026-10-19",
+   "t": "Risposta istituzionale",
+   "h": "Diritti e libertà",
+   "r": "Nazionale",
+   "l": "Roma, Palazzo Chigi",
+   "a": "Governo",
+   "x": "Vertice a Palazzo Chigi sull’ordine pubblico: il governo lavora a una stretta",
+   "m": [
+    "ordine pubblico",
+    "decreto sicurezza",
+    "minorenni",
+    "strade sicure"
+   ],
+   "o": "Il governo valuta più agenti e rafforzamento di Strade Sicure. Secondo Orizzontescuola il decreto prevede fino a 5 anni di carcere e 20.000 euro di multa per la partecipazione violenta ai cortei e una stretta sui minorenni; Euronews il 19 ottobre lo descriveva come «pronto»: stato dell’approvazione da verificare.",
+   "s": [
+    11,
+    12,
+    17,
+    18
+   ],
+   "news": [
+    {
+     "t": "Vertice a Palazzo Chigi, il governo lavora a una stretta dopo le violenze di Milano",
+     "o": "Euronews",
+     "u": "https://it.euronews.com/2026/10/19/vertice-a-palazzo-chigi-il-governo-lavora-a-una-stretta-dopo-le-devastazioni-di-milano",
+     "d": "2026-10-19"
+    },
+    {
+     "t": "Il governo prepara la stretta",
+     "o": "Quotidiano.net",
+     "u": "https://quotidiano.net/politica/il-governo-prepara-la-stretta-0133da43",
+     "d": "2026-10-19"
+    },
+    {
+     "t": "Vertice sicurezza a Palazzo Chigi: decreto legge dopo gli scontri",
+     "o": "L'Espresso",
+     "u": "https://lespresso.it/c/politica/2026/10/19/vertice-sicurezza-palazzo-chigi-meloni-manifestazioni-scontri-polizia-decreto-legge/65369",
+     "d": "2026-10-19"
+    },
+    {
+     "t": "Dopo gli scontri del 17 ottobre, sui social la promessa: «era solo un assaggio»",
+     "o": "Orizzontescuola",
+     "u": "https://www.orizzontescuola.it/dopo-gli-scontri-del-17-ottobre-sui-social-la-promessa-era-solo-un-assaggio-torneremo-il-24-e-il-governo-inasprisce-le-pene/",
+     "d": "2026-10-19"
+    }
+   ]
+  },
+  {
+   "d": "2026-10-24",
+   "t": "Manifestazione",
+   "h": "Diritti e libertà",
+   "r": "Nazionale",
+   "l": "Milano, Bologna, Torino, Roma",
+   "a": "Movimento 17 ottobre",
+   "x": "Movimento 17 ottobre: mobilitazione in otto città, la prima di una serie «ogni sabato»",
+   "m": [
+    "mobilitazione permanente",
+    "governo",
+    "ordine pubblico",
+    "scontri"
+   ],
+   "o": "Appuntamento alle 15: Milano piazza Duomo, Bologna piazza Nettuno, Torino piazza Castello, Roma Circo Massimo (Open). Il movimento annuncia proteste ogni sabato «fino alla caduta del governo» (Il Post). Milano si prepara con 1.400 agenti e negozi barricati (Il Post, 24 ottobre). Italia in Piazza non ha deciso se tornare subito o attendere il 29-30 ottobre.",
+   "s": [
+    8,
+    10,
+    11,
+    12
+   ],
+   "news": [
+    {
+     "t": "Movimento 17 ottobre, le chat Telegram dopo gli scontri di Milano",
+     "o": "Open",
+     "u": "https://www.open.online/2026/10/19/movimento-17-ottobre-chat-telegram-manifestazioni/",
+     "d": "2026-10-19"
+    },
+    {
+     "t": "I gruppi dietro alle proteste degli ultimi giorni",
+     "o": "Il Post",
+     "u": "https://www.ilpost.it/2026/10/20/gruppi-proteste-ottobre-milano-disordini/",
+     "d": "2026-10-20"
+    },
+    {
+     "t": "Milano si sta preparando a un’altra giornata di grosse proteste",
+     "o": "Il Post",
+     "u": "https://www.ilpost.it/2026/10/24/milano-proteste-preparazione/",
+     "d": "2026-10-24"
+    },
+    {
+     "t": "Vertice a Palazzo Chigi: nato il Movimento 17 ottobre",
+     "o": "Euronews",
+     "u": "https://it.euronews.com/2026/10/19/vertice-a-palazzo-chigi-il-governo-lavora-a-una-stretta-dopo-le-devastazioni-di-milano",
+     "d": "2026-10-19"
+    },
+    {
+     "t": "Mobilitazione permanente contro il «governo dei padroni»",
+     "o": "Quotidiano.net",
+     "u": "https://www.quotidiano.net/cronaca/mobilitazione-permanente-contro-il-governo-dei-padroni-upppng9y",
+     "d": "2026-10-20"
+    }
    ]
   }
  ]
