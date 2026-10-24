@@ -1,14 +1,46 @@
 {
  "_nota": "Verifica periodicamente che gli URL dei feed siano ancora attivi: i siti li cambiano spesso. Un feed non raggiungibile viene saltato.",
  "feeds": [
-  {"name": "ANSA · Cronaca", "type": "Agenzia", "url": "https://www.ansa.it/sito/notizie/cronaca/cronaca_rss.xml"},
-  {"name": "ANSA · Politica", "type": "Agenzia", "url": "https://www.ansa.it/sito/notizie/politica/politica_rss.xml"},
-  {"name": "ANSA · Economia", "type": "Agenzia", "url": "https://www.ansa.it/sito/notizie/economia/economia_rss.xml"},
-  {"name": "la Repubblica · Homepage", "type": "Quotidiano", "url": "https://www.repubblica.it/rss/homepage/rss2.0.xml"},
-  {"name": "Corriere della Sera · Homepage", "type": "Quotidiano", "url": "https://xml2.corriereobjects.it/rss/homepage.xml"},
-  {"name": "Il Post", "type": "Nativo digitale", "url": "https://www.ilpost.it/feed/"},
-  {"name": "Fanpage", "type": "Nativo digitale", "url": "https://www.fanpage.it/feed/"},
-  {"name": "Il Fatto Quotidiano", "type": "Quotidiano", "url": "https://www.ilfattoquotidiano.it/feed/"}
+  {
+   "name": "ANSA · Cronaca",
+   "type": "Agenzia",
+   "url": "https://www.ansa.it/sito/notizie/cronaca/cronaca_rss.xml"
+  },
+  {
+   "name": "ANSA · Politica",
+   "type": "Agenzia",
+   "url": "https://www.ansa.it/sito/notizie/politica/politica_rss.xml"
+  },
+  {
+   "name": "ANSA · Economia",
+   "type": "Agenzia",
+   "url": "https://www.ansa.it/sito/notizie/economia/economia_rss.xml"
+  },
+  {
+   "name": "la Repubblica · Homepage",
+   "type": "Quotidiano",
+   "url": "https://www.repubblica.it/rss/homepage/rss2.0.xml"
+  },
+  {
+   "name": "Corriere della Sera · Homepage",
+   "type": "Quotidiano",
+   "url": "https://xml2.corriereobjects.it/rss/homepage.xml"
+  },
+  {
+   "name": "Il Post",
+   "type": "Nativo digitale",
+   "url": "https://www.ilpost.it/feed/"
+  },
+  {
+   "name": "Fanpage",
+   "type": "Nativo digitale",
+   "url": "https://www.fanpage.it/feed/"
+  },
+  {
+   "name": "Il Fatto Quotidiano",
+   "type": "Quotidiano",
+   "url": "https://www.ilfattoquotidiano.it/feed/"
+  }
  ],
  "google_news_queries": [
   "sciopero generale",
@@ -17,5 +49,134 @@
   "occupazione presidio lavoratori",
   "blocco stradale protesta",
   "sciopero trasporti"
- ]
+ ],
+ "regional": [
+  {
+   "name": "La Stampa",
+   "region": "Piemonte",
+   "city": "Torino",
+   "domain": "lastampa.it"
+  },
+  {
+   "name": "Aostasera",
+   "region": "Valle d'Aosta",
+   "city": "Aosta",
+   "domain": "aostasera.it"
+  },
+  {
+   "name": "Il Giorno",
+   "region": "Lombardia",
+   "city": "Milano",
+   "domain": "ilgiorno.it"
+  },
+  {
+   "name": "l'Adige",
+   "region": "Trentino-Alto Adige",
+   "city": "Trento",
+   "domain": "ladige.it"
+  },
+  {
+   "name": "Alto Adige",
+   "region": "Trentino-Alto Adige",
+   "city": "Bolzano",
+   "domain": "altoadige.it"
+  },
+  {
+   "name": "Il Gazzettino",
+   "region": "Veneto",
+   "city": "Venezia",
+   "domain": "ilgazzettino.it"
+  },
+  {
+   "name": "Il Piccolo",
+   "region": "Friuli-Venezia Giulia",
+   "city": "Trieste",
+   "domain": "ilpiccolo.gelocal.it"
+  },
+  {
+   "name": "Il Secolo XIX",
+   "region": "Liguria",
+   "city": "Genova",
+   "domain": "ilsecoloxix.it"
+  },
+  {
+   "name": "Il Resto del Carlino",
+   "region": "Emilia-Romagna",
+   "city": "Bologna",
+   "domain": "ilrestodelcarlino.it"
+  },
+  {
+   "name": "La Nazione",
+   "region": "Toscana",
+   "city": "Firenze",
+   "domain": "lanazione.it"
+  },
+  {
+   "name": "Corriere dell'Umbria",
+   "region": "Umbria",
+   "city": "Perugia",
+   "domain": "corrieredellumbria.it"
+  },
+  {
+   "name": "Corriere Adriatico",
+   "region": "Marche",
+   "city": "Ancona",
+   "domain": "corriereadriatico.it"
+  },
+  {
+   "name": "Il Messaggero",
+   "region": "Lazio",
+   "city": "Roma",
+   "domain": "ilmessaggero.it"
+  },
+  {
+   "name": "Il Centro",
+   "region": "Abruzzo",
+   "city": "L'Aquila",
+   "domain": "ilcentro.it"
+  },
+  {
+   "name": "Primonumero",
+   "region": "Molise",
+   "city": "Campobasso",
+   "domain": "primonumero.it"
+  },
+  {
+   "name": "Il Mattino",
+   "region": "Campania",
+   "city": "Napoli",
+   "domain": "ilmattino.it"
+  },
+  {
+   "name": "La Gazzetta del Mezzogiorno",
+   "region": "Puglia",
+   "city": "Bari",
+   "domain": "lagazzettadelmezzogiorno.it"
+  },
+  {
+   "name": "La Nuova del Sud",
+   "region": "Basilicata",
+   "city": "Potenza",
+   "domain": "lanuovabasilicata.it"
+  },
+  {
+   "name": "Corriere della Calabria",
+   "region": "Calabria",
+   "city": "Catanzaro",
+   "domain": "corrieredellacalabria.it"
+  },
+  {
+   "name": "Giornale di Sicilia",
+   "region": "Sicilia",
+   "city": "Palermo",
+   "domain": "gds.it"
+  },
+  {
+   "name": "L'Unione Sarda",
+   "region": "Sardegna",
+   "city": "Cagliari",
+   "domain": "unionesarda.it"
+  }
+ ],
+ "_nota_regional": "Un quotidiano per capoluogo di regione, letto tramite Google News con site:dominio (non serve il feed RSS). Aggiungi righe per altre testate locali."
 }
