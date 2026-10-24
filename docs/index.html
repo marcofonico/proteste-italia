@@ -37,6 +37,10 @@ textarea{width:100%;min-height:150px;background:var(--bg);color:var(--tx);border
 
 .dates{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 14px}.dates label{font:12px system-ui;color:var(--mu);display:grid;gap:3px}
 .dates input{padding:6px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font-size:13px;min-width:0}
+
+.city{border:2px solid var(--ac)}.city h2{color:var(--ac);font-size:15px}
+.cityrow{display:flex;gap:8px;flex-wrap:wrap}.cityrow input{flex:1;min-width:200px;padding:12px;font-size:16px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx)}
+.cityrow button{padding:0 14px;font-size:13px}.city .chips{margin:10px 0 6px}.city label{display:flex;gap:6px;align-items:center;margin-top:4px}
 </style>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script></head><body>
 <header style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px"><div><h1>Radar proteste e conflitto sociale in Italia</h1><p>Scioperi, cortei, blocchi, occupazioni: cronologia, ragioni e copertura delle fonti · <span id="upd"></span></p></div><button id="thm" class="chip" style="white-space:nowrap" aria-label="Cambia tema"></button></header>
@@ -57,6 +61,11 @@ textarea{width:100%;min-height:150px;background:var(--bg);color:var(--tx);border
 <div class="card"><h2>Ragioni (temi) delle mobilitazioni</h2><div id="themes"></div><p class="note">Barra = quota di fonti selezionate che documentano eventi di quel tema. Clic per filtrare.</p></div>
 <div class="card"><h2>Mappa dei termini</h2><div id="cloud"></div><p class="note">Dimensione = frequenza ponderata per numero di fonti; colore = tema prevalente.</p></div>
 </div>
+<div class="card city"><h2>La tua città</h2>
+<div class="cityrow"><input type="search" id="city" list="cities" placeholder="Scrivi la tua città, ad esempio Bologna…" autocomplete="off" aria-label="Filtra per città"><button class="chip" onclick="setCity('')">Tutte le città</button></div>
+<datalist id="cities"></datalist><div class="chips" id="citychips"></div>
+<p class="note" id="cityinfo" style="margin:0"></p>
+<label class="note"><input type="checkbox" id="nat" checked> Includi anche scioperi e mobilitazioni nazionali</label></div>
 <div class="card"><h2>Cronologia degli eventi</h2><div id="tl"></div></div>
 <div class="card rare"><h2>Eventi meno coperti: da verificare prima di usarli</h2><div id="low"></div></div>
 </main></div>
@@ -65,32 +74,51 @@ textarea{width:100%;min-height:150px;background:var(--bg);color:var(--tx);border
 let SRC=[],DEMO=[];
 const TH={Lavoro:"#1f5fb4","Diritti e libertà":"#b4361f","Scuola e università":"#7a3fb4","Costo della vita":"#8a6d1a","Pace e riarmo":"#1f8a4c",Sfruttamento:"#b41f7a","Cultura e spettacolo":"#1f8a8a","Ambiente e territorio":"#4c8a1f","Migrazioni e accoglienza":"#555"};
 const STOP=new Set("della delle degli dello alla alle agli sulla sulle dopo anni tutti sono nuovo nuova come tra fra per con che non una uno gli dei del dal dai nel nei sui sul più già ancora verso contro tutta italia".split(" "));
-let data=[],sel=new Set(),th=null,ty=null,term="",d1="",d2="";const $=id=>document.getElementById(id),pct=x=>Math.round(x*100)+"%";
+let data=[],sel=new Set(),th=null,ty=null,term="",d1="",d2="",city="",cityLabel="",nat=true;const $=id=>document.getElementById(id),pct=x=>Math.round(x*100)+"%";
 const iso=d=>d.toLocaleDateString("sv-SE"),today=()=>iso(new Date());
 function load(d){data=d;render()}
 function init(){sel=new Set(SRC.map((_,i)=>i));
  $("srcs").innerHTML=SRC.map((s,i)=>`<label class="src"><input type="checkbox" checked data-i="${i}"><span>${i+1}. <a href="${s[2]}" target="_blank" rel="noopener">${s[0]}</a></span><small>${s[1]}</small></label>`).join("");
  $("srcs").onchange=e=>{if(!e.target.dataset.i)return;const i=+e.target.dataset.i;e.target.checked?sel.add(i):sel.delete(i);render()};
  $("q").oninput=e=>{term=e.target.value.trim().toLowerCase();render()};
- const dh=()=>{d1=$("d1").value;d2=$("d2").value;if(d1&&d2&&d1>d2)[d1,d2]=[d2,d1];render()};$("d1").onchange=dh;$("d2").onchange=dh;load(DEMO)}
+ const dh=()=>{d1=$("d1").value;d2=$("d2").value;if(d1&&d2&&d1>d2)[d1,d2]=[d2,d1];render()};$("d1").onchange=dh;$("d2").onchange=dh;
+ $("city").oninput=e=>{city=norm(e.target.value.trim());cityLabel=e.target.value.trim();render()};$("nat").onchange=e=>{nat=e.target.checked;render()};load(DEMO)}
 function allSrc(v){sel=new Set(v?SRC.map((_,i)=>i):[]);document.querySelectorAll("#srcs input").forEach(c=>c.checked=!!v);render()}
-function resetAll(){th=null;ty=null;term="";d1="";d2="";$("q").value="";allSrc(1)}
+function resetAll(){th=null;ty=null;term="";d1="";d2="";city="";cityLabel="";nat=true;$("q").value="";$("city").value="";$("nat").checked=true;allSrc(1)}
 function setTh(t){th=th===t?null:t;render()}function setTy(t){ty=ty===t?null:t;render()}
 function setTerm(w){term=term===w?"":w;$("q").value=term;render()}
 const cov=e=>e.s.filter(i=>sel.has(i));
 const hay=e=>(e.x+" "+e.m.join(" ")+" "+e.l+" "+e.a).toLowerCase();
-function base(){return data.map(e=>({...e,c:cov(e)})).filter(e=>e.c.length&&(!d1||e.d>=d1)&&(!d2||e.d<=d2))}
+function base(){return data.map(e=>({...e,c:cov(e)})).filter(e=>e.c.length&&(!d1||e.d>=d1)&&(!d2||e.d<=d2)&&cityOk(e))}
 function view(){return base().filter(e=>(!th||e.h===th)&&(!ty||e.t===ty)&&(!term||hay(e).includes(term))).sort((a,b)=>a.d.localeCompare(b.d))}
 function fmt(d){const[y,m,g]=d.split("-");return[g,["gen","feb","mar","apr","mag","giu","lug","ago","set","ott","nov","dic"][m-1]]}
 function srcLinks(e){return e.c.map(i=>`<a class="tag" href="${SRC[i][2]}" target="_blank" rel="noopener">${i+1}</a>`).join("")}
 function ev(e){const t=today(),k=e.d===t?"now":e.d>t?"fut":"",[g,m]=fmt(e.d);
  return `<div class="ev"><div class="date ${k}">${g}<i>${m}</i></div><div><b>${e.x}</b><div class="meta"><span class="tag">${e.t}</span>${e.auto?'<span class="tag" title="Classificazione automatica: da verificare">auto</span>':""}<span class="tag" style="color:${TH[e.h]}">${e.h}</span>${e.l}, ${e.r} · ${e.a} · fonti ${srcLinks(e)}</div><p class="es">${e.o}</p></div></div>`}
+const CITIES="Agrigento,Alessandria,Ancona,Aosta,Arezzo,Ascoli Piceno,Asti,Avellino,Bari,Barletta,Belluno,Benevento,Bergamo,Biella,Bologna,Bolzano,Brescia,Brindisi,Cagliari,Caltanissetta,Campobasso,Caserta,Catania,Catanzaro,Chieti,Como,Cosenza,Cremona,Crotone,Cuneo,Enna,Ferrara,Firenze,Foggia,Forlì,Frosinone,Genova,Gorizia,Grosseto,Imperia,Isernia,L'Aquila,La Spezia,Latina,Lecce,Lecco,Livorno,Lodi,Lucca,Macerata,Mantova,Massa,Matera,Messina,Milano,Modena,Monza,Napoli,Novara,Nuoro,Oristano,Padova,Palermo,Parma,Pavia,Perugia,Pesaro,Pescara,Piacenza,Pisa,Pistoia,Pordenone,Potenza,Prato,Ragusa,Ravenna,Reggio Calabria,Reggio Emilia,Rieti,Rimini,Roma,Rovigo,Salerno,Sassari,Savona,Siena,Siracusa,Sondrio,Taranto,Teramo,Terni,Torino,Trapani,Trento,Treviso,Trieste,Udine,Varese,Venezia,Mestre,Verbania,Vercelli,Verona,Vibo Valentia,Vicenza,Viterbo,Alba,Porcia,Carrara".split(",");
+const CRX=CITIES.map(c=>[c,new RegExp("(?<![\\p{L}])"+c.replace(/'/g,"['’]")+"(?![\\p{L}])","iu")]);
+const citiesOf=e=>CRX.filter(([c,r])=>r.test(e.l)).map(([c])=>c);
+const GEN=new Set(["tutta italia","italia","nazionale","online"]);
+const extra=e=>e.l.replace(/\([^)]*\)/g,"").split(/,|\s+e\s+/).map(s=>s.trim()).filter(s=>/^[A-ZÀ-Ý]/.test(s)&&s.split(/\s+/).length<=3&&!GEN.has(s.toLowerCase())&&!/^(Piazza|Via|Viale|Corso|Palazzo|Ministero|Stazione)\b/.test(s));
+const placesOf=e=>[...new Set([...citiesOf(e),...extra(e)])];
+const norm=s=>s.toLowerCase().replace(/’/g,"'");
+const matchCity=e=>norm(e.l+" "+e.r+" "+e.x).includes(city);
+const cityOk=e=>!city||matchCity(e)||(nat&&e.r==="Nazionale");
+function setCity(c){city=norm(c.trim());cityLabel=c.trim();$("city").value=cityLabel;render()}
+function renderCity(){
+ const cnt={};data.forEach(e=>placesOf(e).forEach(c=>cnt[c]=(cnt[c]||0)+1));
+ $("citychips").innerHTML=Object.entries(cnt).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).slice(0,16).map(([c,n])=>`<button class="chip ${city===norm(c)?"on":""}" data-c="${c}" onclick="setCity(city===norm(this.dataset.c)?'':this.dataset.c)">${c} <small>${n}</small></button>`).join("");
+ $("cities").innerHTML=[...new Set([...CITIES,...Object.keys(cnt)])].sort((a,b)=>a.localeCompare(b)).map(c=>`<option value="${c}">`).join("");
+ const info=$("cityinfo");
+ if(!city){info.textContent="Mostro gli eventi di tutta Italia. Scegli una città per concentrarti sulla tua zona.";return}
+ const local=base().filter(matchCity).length;
+ info.textContent=local?`${local} ${local===1?"evento":"eventi"} a «${cityLabel}»${nat?", più quelli nazionali":""}.`:`Nessun evento locale per «${cityLabel}» con i filtri attuali${nat?": mostro solo quelli nazionali.":"."}`}
 const PRE=[["Tutti",null,null],["Oggi",0,0],["Ultimi 7 giorni",-6,0],["Prossimi 7 giorni",0,7],["Ultimi 30 giorni",-29,0]];
 const off=n=>iso(new Date(Date.now()+n*864e5));
 function setRange(a,b){d1=a===null?"":off(a);d2=b===null?"":off(b);render()}
 function renderDates(){$("d1").value=d1;$("d2").value=d2;
  $("presets").innerHTML=PRE.map(([l,a,b])=>{const on=(a===null?"":off(a))===d1&&(b===null?"":off(b))===d2;return `<button class="chip ${on?"on":""}" onclick="setRange(${a},${b})">${l}</button>`}).join("")}
-function render(){renderDates();
+function render(){renderDates();renderCity();
  const n=sel.size||1,all=base(),v=view(),t=today();$("nsrc").textContent="("+sel.size+"/"+SRC.length+")";
  const up=v.filter(e=>e.d>=t&&e.d<=iso(new Date(Date.now()+7*864e5))).length;
  $("kpis").innerHTML=[[v.length,"eventi in vista"],[up,"nei prossimi 7 giorni"],[new Set(v.map(e=>e.r)).size,"aree geografiche"],[pct(v.length?v.reduce((a,e)=>a+e.c.length,0)/v.length/n:0),"copertura media fonti"]].map(k=>`<div class="kpi"><b>${k[0]}</b><span>${k[1]}</span></div>`).join("");
