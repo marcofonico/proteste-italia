@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T10:45",
+ "updated": "2026-10-24T11:24",
  "sources": [
   [
    "CGIL · calendario scioperi 12–18 ott",
@@ -40,6 +40,151 @@
    "Pixidia · sciopero 30 ott",
    "Online",
    "https://pixidia.com/?p=76208"
+  ],
+  [
+   "ANSA · Cronaca",
+   "Agenzia",
+   "https://www.ansa.it"
+  ],
+  [
+   "ANSA · Politica",
+   "Agenzia",
+   "https://www.ansa.it"
+  ],
+  [
+   "ANSA · Economia",
+   "Agenzia",
+   "https://www.ansa.it"
+  ],
+  [
+   "la Repubblica · Homepage",
+   "Quotidiano",
+   "https://www.repubblica.it"
+  ],
+  [
+   "Corriere della Sera · Homepage",
+   "Quotidiano",
+   "https://xml2.corriereobjects.it"
+  ],
+  [
+   "Il Post",
+   "Nativo digitale",
+   "https://www.ilpost.it"
+  ],
+  [
+   "Fanpage",
+   "Nativo digitale",
+   "https://www.fanpage.it"
+  ],
+  [
+   "Il Fatto Quotidiano",
+   "Quotidiano",
+   "https://www.ilfattoquotidiano.it"
+  ],
+  [
+   "La Stampa",
+   "Locale · Torino",
+   "https://lastampa.it"
+  ],
+  [
+   "Aostasera",
+   "Locale · Aosta",
+   "https://aostasera.it"
+  ],
+  [
+   "Il Giorno",
+   "Locale · Milano",
+   "https://ilgiorno.it"
+  ],
+  [
+   "l'Adige",
+   "Locale · Trento",
+   "https://ladige.it"
+  ],
+  [
+   "Alto Adige",
+   "Locale · Bolzano",
+   "https://altoadige.it"
+  ],
+  [
+   "Il Gazzettino",
+   "Locale · Venezia",
+   "https://ilgazzettino.it"
+  ],
+  [
+   "Il Piccolo",
+   "Locale · Trieste",
+   "https://ilpiccolo.gelocal.it"
+  ],
+  [
+   "Il Secolo XIX",
+   "Locale · Genova",
+   "https://ilsecoloxix.it"
+  ],
+  [
+   "Il Resto del Carlino",
+   "Locale · Bologna",
+   "https://ilrestodelcarlino.it"
+  ],
+  [
+   "La Nazione",
+   "Locale · Firenze",
+   "https://lanazione.it"
+  ],
+  [
+   "Corriere dell'Umbria",
+   "Locale · Perugia",
+   "https://corrieredellumbria.it"
+  ],
+  [
+   "Corriere Adriatico",
+   "Locale · Ancona",
+   "https://corriereadriatico.it"
+  ],
+  [
+   "Il Messaggero",
+   "Locale · Roma",
+   "https://ilmessaggero.it"
+  ],
+  [
+   "Il Centro",
+   "Locale · L'Aquila",
+   "https://ilcentro.it"
+  ],
+  [
+   "Primonumero",
+   "Locale · Campobasso",
+   "https://primonumero.it"
+  ],
+  [
+   "Il Mattino",
+   "Locale · Napoli",
+   "https://ilmattino.it"
+  ],
+  [
+   "La Gazzetta del Mezzogiorno",
+   "Locale · Bari",
+   "https://lagazzettadelmezzogiorno.it"
+  ],
+  [
+   "La Nuova del Sud",
+   "Locale · Potenza",
+   "https://lanuovabasilicata.it"
+  ],
+  [
+   "Corriere della Calabria",
+   "Locale · Catanzaro",
+   "https://corrieredellacalabria.it"
+  ],
+  [
+   "Giornale di Sicilia",
+   "Locale · Palermo",
+   "https://gds.it"
+  ],
+  [
+   "L'Unione Sarda",
+   "Locale · Cagliari",
+   "https://unionesarda.it"
   ]
  ],
  "events": [
