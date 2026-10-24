@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="it"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Radar proteste e manifestazioni in Italia</title>
+<title>Radar proteste e conflitto sociale in Italia</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="description" content="Scioperi, cortei, occupazioni e manifestazioni in Italia: cronologia, ragioni e copertura delle fonti.">
-<meta name="google-site-verification" content="-ddmWSDfXyu4zW_vuWDlZz1OeQWfdh7ADkOWge8NS6A" />
 <style>
 :root{--bg:#f6f5f1;--sf:#fff;--tx:#1c1b19;--mu:#6b6860;--bd:#e2dfd6;--ac:#b4361f;--ac2:#1f5fb4;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161512;--sf:#201f1b;--tx:#efece4;--mu:#9a968b;--bd:#35332d;--ac:#ff7a5c;--ac2:#6aa5ff;color-scheme:dark}}
@@ -16,7 +18,7 @@ header{padding:18px 20px;border-bottom:1px solid var(--bd)}h1{margin:0;font-size
 @media(max-width:820px){.wrap{grid-template-columns:1fr;padding:12px}}
 aside,.card{background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:14px}
 aside h3,.card h2{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--mu)}
-main{display:grid;gap:16px;min-width:0}
+main{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;min-width:0;grid-auto-flow:dense}.pn{grid-column:1/-1}.pn.half{grid-column:auto}@media(max-width:820px){main{grid-template-columns:1fr}.pn.half{grid-column:1/-1}}
 input[type=search]{width:100%;padding:8px 10px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font-size:14px}
 .chips{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 14px}
 .chip{border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:99px;padding:3px 10px;font-size:12px;cursor:pointer}.chip.on{background:var(--ac2);color:#fff;border-color:var(--ac2)}
@@ -47,9 +49,16 @@ textarea{width:100%;min-height:150px;background:var(--bg);color:var(--tx);border
 .vh{font:600 12px system-ui;color:var(--mu);margin:4px 0;text-transform:uppercase;letter-spacing:.05em}
 .badge{font:11px system-ui;border-radius:4px;padding:1px 6px;color:#fff;background:var(--ac2)}.badge.now{background:var(--ac)}.badge.past{background:var(--mu)}
 .vb{border:2px solid var(--ac2);border-radius:8px;padding:10px 12px;margin-bottom:10px}.vb ul{margin:6px 0;padding-left:18px;font:13px system-ui}.leg{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+
+#mapbox svg{display:block;margin:0 auto;max-width:380px;width:100%;height:auto}.land{fill:var(--bg);stroke:var(--mu);stroke-width:1.2;stroke-linejoin:round}
+.dot{fill:var(--ac);stroke:#fff;stroke-width:1.5;cursor:pointer}.dot:hover{fill:var(--ac2)}.dot.sel{stroke:var(--ac2);stroke-width:3}
+.more{width:100%;margin-top:8px;padding:8px;border:1px dashed var(--bd);background:var(--bg);color:var(--tx);border-radius:8px;cursor:pointer;font:13px system-ui}
+.pc{display:none;justify-content:space-between;align-items:center;margin:0 0 10px;padding:6px 8px;border:1px dashed var(--ac2);border-radius:8px;font:600 12px system-ui;color:var(--ac2)}
+main.editing .pc{display:flex}main.editing .pn{outline:2px dashed var(--bd);outline-offset:3px}.pc button{font:12px system-ui;padding:3px 9px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:6px;cursor:pointer}
+.hbtn{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}.sw{display:flex;gap:6px;align-items:center}
 </style>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script></head><body>
-<header style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px"><div><h1>Radar proteste e conflitto sociale in Italia</h1><p>Scioperi, cortei, blocchi, occupazioni: cronologia, ragioni e copertura delle fonti · <span id="upd"></span></p></div><button id="thm" class="chip" style="white-space:nowrap" aria-label="Cambia tema"></button></header>
+<header style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px"><div><h1>Radar proteste e conflitto sociale in Italia</h1><p>Scioperi, cortei, blocchi, occupazioni: cronologia, ragioni e copertura delle fonti · <span id="upd"></span></p></div><div class="hbtn"><label class="chip sw"><input type="checkbox" id="editmode"> Modifica ordine</label><button id="rst" class="chip" hidden>Ripristina ordine</button><button id="thm" class="chip" style="white-space:nowrap" aria-label="Cambia tema"></button></div></header>
 <div class="wrap">
 <aside>
 <h3>Cerca termine</h3><input type="search" id="q" placeholder="es. Ex Ilva, scuola, caporalato…">
@@ -62,20 +71,19 @@ textarea{width:100%;min-height:150px;background:var(--bg);color:var(--tx);border
 <div id="srcs" style="max-height:340px;overflow:auto"></div>
 </aside>
 <main>
-<div class="kpis card" id="kpis"></div>
-<div class="two">
-<div class="card"><h2>Ragioni (temi) delle mobilitazioni</h2><div id="themes"></div><p class="note">Barra = quota di fonti selezionate che documentano eventi di quel tema. Clic per filtrare.</p></div>
-<div class="card"><h2>Mappa dei termini</h2><div id="cloud"></div><div class="leg" id="leg"></div><p class="note">Dimensione = frequenza ponderata per numero di fonti; colore = categoria (clic sulla legenda per filtrare).</p></div>
-</div>
-<div class="card" id="vic"><h2>Cosa sta succedendo</h2><div id="vbanner"></div>
+<div class="card pn" data-p="kpis"><div class="kpis" id="kpis"></div></div>
+<div class="card pn" data-p="mappa"><h2>Mappa delle città coinvolte</h2><div id="mapbox"></div><p class="note" id="mapinfo"></p></div>
+<div class="card pn half" data-p="ragioni"><h2>Ragioni (temi) delle mobilitazioni</h2><div id="themes"></div><p class="note">Barra = quota di fonti selezionate che documentano eventi di quel tema. Clic per filtrare.</p></div>
+<div class="card pn half" data-p="termini"><h2>Mappa dei termini</h2><div id="cloud"></div><div class="leg" id="leg"></div><p class="note">Dimensione = frequenza ponderata per numero di fonti; colore = categoria (clic sulla legenda per filtrare).</p></div>
+<div class="card pn" data-p="vic" id="vic"><h2>Cosa sta succedendo</h2><div id="vbanner"></div>
 <div class="two"><div><div class="vh">In corso e in programma</div><div id="vnext"></div></div><div><div class="vh">Concluse di recente</div><div id="vpast"></div></div></div></div>
-<div class="card city"><h2>La tua città</h2>
+<div class="card city pn" data-p="city"><h2>La tua città</h2>
 <div class="cityrow"><input type="search" id="city" list="cities" placeholder="Scrivi la tua città, ad esempio Bologna, poi premi Applica" autocomplete="off" aria-label="Filtra per città"><button class="chip apply" onclick="applyCity()">Applica</button></div>
 <datalist id="cities"></datalist><div class="chips" id="citychips"></div>
 <p class="note" id="cityinfo" style="margin:0"></p>
 <label class="note"><input type="checkbox" id="nat" checked> Includi anche scioperi e mobilitazioni nazionali</label></div>
-<div class="card"><h2>Cronologia degli eventi</h2><div id="tl"></div></div>
-<div class="card rare"><h2>Eventi meno coperti: da verificare prima di usarli</h2><div id="low"></div></div>
+<div class="card pn" data-p="cron"><h2>Cronologia degli eventi</h2><div id="tl"></div></div>
+<div class="card rare pn" data-p="low"><h2>Eventi meno coperti</h2><div id="low"></div></div>
 </main></div>
 <footer class="note" style="max-width:1280px;margin:auto;padding:0 20px 24px">Dati aggregati da titoli e link di feed pubblici; gli eventi «auto» sono classificati automaticamente e possono contenere errori. Per i dettagli consulta sempre le fonti collegate. Il sito usa Cloudflare Web Analytics, un servizio di statistiche aggregate sulle visite che non utilizza cookie.</footer>
 <script>
@@ -97,8 +105,8 @@ function setTh(t){th=th===t?null:t;render()}function setTy(t){ty=ty===t?null:t;r
 function setTerm(w){term=term===w?"":w;$("q").value=term;render()}
 const cov=e=>e.s.filter(i=>sel.has(i));
 const hay=e=>(e.x+" "+e.m.join(" ")+" "+e.l+" "+e.a).toLowerCase();
-function base(nv){return data.map(e=>({...e,c:cov(e)})).filter(e=>e.c.length&&(!d1||e.d>=d1)&&(!d2||e.d<=d2)&&cityOk(e)&&(nv||!vic||vk(e)===vic))}
-function view(){return base().filter(e=>(!th||e.h===th)&&(!ty||e.t===ty)&&(!term||hay(e).includes(term))).sort((a,b)=>a.d.localeCompare(b.d))}
+function base(nv,nc){return data.map(e=>({...e,c:cov(e)})).filter(e=>e.c.length&&(!d1||e.d>=d1)&&(!d2||e.d<=d2)&&(nc||cityOk(e))&&(nv||!vic||vk(e)===vic))}
+function view(nc){return base(0,nc).filter(e=>(!th||e.h===th)&&(!ty||e.t===ty)&&(!term||hay(e).includes(term))).sort((a,b)=>a.d.localeCompare(b.d))}
 function fmt(d){const[y,m,g]=d.split("-");return[g,["gen","feb","mar","apr","mag","giu","lug","ago","set","ott","nov","dic"][m-1]]}
 function srcLinks(e){return e.c.map(i=>`<a class="tag" href="${SRC[i][2]}" target="_blank" rel="noopener">${i+1}</a>`).join("")}
 function ev(e){const t=today(),k=e.d===t?"now":e.d>t?"fut":"",[g,m]=fmt(e.d);
@@ -131,23 +139,44 @@ function renderVic(){
  const t=today(),g={};base(1).forEach(e=>(g[vk(e)]=g[vk(e)]||[]).push(e));
  const L=Object.entries(g).map(([id,es])=>{const ds=es.map(e=>e.d).sort();return{id,es,t:vt(id)||es[0].x,a:ds[0],z:ds[ds.length-1],nx:ds.find(d=>d>=t)||"",src:new Set(es.flatMap(e=>e.c)).size}});
  const lim=iso(new Date(Date.now()-21*864e5));
- const nxt=L.filter(v=>v.z>=t).sort((x,y)=>x.nx.localeCompare(y.nx)).slice(0,8),past=L.filter(v=>v.z<t&&v.z>=lim).sort((x,y)=>y.z.localeCompare(x.z)).slice(0,8);
+ const nxt=L.filter(v=>v.z>=t).sort((x,y)=>x.nx.localeCompare(y.nx)),past=L.filter(v=>v.z<t&&v.z>=lim).sort((x,y)=>y.z.localeCompare(x.z));
  const card=v=>{const st=v.a>t?["In programma",""]:v.z>=t?["In corso","now"]:["Conclusa","past"];
   const act=[...new Set(v.es.flatMap(e=>(e.terms||[]).filter(x=>x[1]==="attori").map(x=>x[0])))].slice(0,4),pl=[...new Set(v.es.flatMap(placesOf))].slice(0,3);
   const [g1,m1]=fmt(v.a),[g2,m2]=fmt(v.z);
   return `<div class="vc ${vic===v.id?"on":""}"><span class="badge ${st[1]}">${st[0]}</span> <b>${v.t}</b><div class="meta"><span>${v.a===v.z?g1+" "+m1:g1+" "+m1+" → "+g2+" "+m2}</span><span>${v.es.length} ${v.es.length===1?"evento":"eventi"} · ${v.src} fonti</span>${act.map(x=>`<span class="tag">${x}</span>`).join("")}${pl.map(x=>`<span class="tag">📍 ${x}</span>`).join("")}</div><div class="tools"><button data-v="${v.id}" onclick="setVic(this.dataset.v)">${vic===v.id?"Rimuovi filtro":"Vedi notizie correlate"}</button></div></div>`};
- $("vnext").innerHTML=nxt.map(card).join("")||"<p class='note'>Niente in corso o in programma con questi filtri.</p>";
- $("vpast").innerHTML=past.map(card).join("")||"<p class='note'>Nessuna vicenda conclusa nelle ultime 3 settimane.</p>";
+ $("vnext").innerHTML=acc("vnext",nxt.map(card))||"<p class='note'>Niente in corso o in programma con questi filtri.</p>";
+ $("vpast").innerHTML=acc("vpast",past.map(card))||"<p class='note'>Nessuna vicenda conclusa nelle ultime 3 settimane.</p>";
  const es=vic?base(1).filter(e=>vk(e)===vic):[];
  if(!es.length){$("vbanner").innerHTML="";return}
  const seen=new Set(),ns=[];es.forEach(e=>newsOf(e).forEach(n=>{if(!seen.has(n.u)){seen.add(n.u);ns.push(n)}}));ns.sort((a,b)=>b.d.localeCompare(a.d));
  $("vbanner").innerHTML=`<div class="vb"><b>${vt(vic)||es[0].x}</b><div class="note">Filtro attivo su tutta la pagina · ${es.length} eventi · ${ns.length} notizie correlate</div><ul>${ns.map(n=>`<li><a href="${n.u}" target="_blank" rel="noopener">${n.t}</a> <span class="note">· ${n.o}, ${n.d.slice(8,10)}/${n.d.slice(5,7)}</span></li>`).join("")}</ul><div class="tools"><button onclick="setVic('')">Rimuovi filtro</button></div></div>`}
+const EXP={},LIM=10;
+function acc(id,items){const o=EXP[id],n=items.length;return (o?items:items.slice(0,LIM)).join("")+(n>LIM?`<button class="more" data-a="${id}" aria-expanded="${!!o}" onclick="toggleExp(this.dataset.a)">${o?"Mostra meno ▴":"Mostra altri "+(n-LIM)+" ▾"}</button>`:"")}
+function toggleExp(id){EXP[id]=!EXP[id];render()}
+const COORD={};"Agrigento 37.31,13.58;Alessandria 44.91,8.61;Ancona 43.62,13.52;Aosta 45.74,7.32;Arezzo 43.46,11.88;Ascoli Piceno 42.85,13.58;Asti 44.90,8.21;Avellino 40.91,14.79;Bari 41.12,16.87;Barletta 41.32,16.28;Belluno 46.14,12.22;Benevento 41.13,14.78;Bergamo 45.70,9.67;Biella 45.57,8.05;Bologna 44.49,11.34;Bolzano 46.50,11.35;Brescia 45.54,10.22;Brindisi 40.63,17.94;Cagliari 39.22,9.12;Caltanissetta 37.49,14.06;Campobasso 41.56,14.66;Caserta 41.07,14.33;Catania 37.50,15.09;Catanzaro 38.91,16.59;Chieti 42.35,14.17;Como 45.81,9.09;Cosenza 39.30,16.25;Cremona 45.13,10.02;Crotone 39.08,17.13;Cuneo 44.38,7.54;Enna 37.57,14.28;Ferrara 44.84,11.62;Firenze 43.77,11.26;Foggia 41.46,15.55;Forlì 44.22,12.04;Frosinone 41.64,13.34;Genova 44.41,8.93;Gorizia 45.94,13.62;Grosseto 42.76,11.11;Imperia 43.89,8.03;Isernia 41.59,14.23;L'Aquila 42.35,13.40;La Spezia 44.10,9.82;Latina 41.47,12.90;Lecce 40.35,18.17;Lecco 45.86,9.40;Livorno 43.55,10.31;Lodi 45.31,9.50;Lucca 43.84,10.50;Macerata 43.30,13.45;Mantova 45.16,10.79;Massa 44.04,10.14;Matera 40.67,16.60;Messina 38.19,15.55;Milano 45.46,9.19;Modena 44.65,10.93;Monza 45.58,9.27;Napoli 40.85,14.27;Novara 45.45,8.62;Nuoro 40.32,9.33;Oristano 39.90,8.59;Padova 45.41,11.88;Palermo 38.12,13.36;Parma 44.80,10.33;Pavia 45.19,9.16;Perugia 43.11,12.39;Pesaro 43.91,12.91;Pescara 42.46,14.21;Piacenza 45.05,9.69;Pisa 43.72,10.40;Pistoia 43.93,10.92;Pordenone 45.96,12.66;Potenza 40.64,15.80;Prato 43.88,11.10;Ragusa 36.93,14.73;Ravenna 44.42,12.20;Reggio Calabria 38.11,15.65;Reggio Emilia 44.70,10.63;Rieti 42.40,12.86;Rimini 44.06,12.57;Roma 41.90,12.50;Rovigo 45.07,11.79;Salerno 40.68,14.77;Sassari 40.73,8.56;Savona 44.31,8.48;Siena 43.32,11.33;Siracusa 37.08,15.29;Sondrio 46.17,9.87;Taranto 40.47,17.24;Teramo 42.66,13.70;Terni 42.56,12.64;Torino 45.07,7.69;Trapani 38.02,12.51;Trento 46.07,11.12;Treviso 45.67,12.24;Trieste 45.65,13.78;Udine 46.06,13.24;Varese 45.82,8.83;Venezia 45.44,12.32;Mestre 45.49,12.24;Verbania 45.92,8.55;Vercelli 45.32,8.42;Verona 45.44,10.99;Vibo Valentia 38.68,16.10;Vicenza 45.55,11.55;Viterbo 42.42,12.11;Alba 44.70,8.04;Porcia 45.96,12.60;Carrara 44.08,10.10;Ferentino 41.69,13.25;Fossano 44.55,7.72;Cerignola 41.26,15.90".split(";").forEach(s=>{const i=s.lastIndexOf(" "),p=s.slice(i+1).split(",");COORD[s.slice(0,i)]=[+p[0],+p[1]]});
+const PX=(la,lo)=>[((lo-6.2)*0.743*42).toFixed(1),((47.3-la)*42).toFixed(1)];
+const LAND=[[[7.55, 43.78], [8.0, 43.9], [8.5, 44.3], [8.9, 44.4], [9.4, 44.3], [9.85, 44.05], [10.25, 43.85], [10.3, 43.45], [10.55, 42.95], [11.1, 42.4], [11.8, 42.1], [12.3, 41.7], [13.0, 41.25], [13.6, 41.2], [14.2, 40.85], [14.4, 40.6], [14.8, 40.6], [15.3, 40.0], [15.7, 39.95], [16.0, 39.4], [15.85, 38.65], [15.65, 38.1], [16.05, 37.92], [16.55, 38.4], [16.6, 38.85], [17.15, 39.05], [17.1, 39.4], [16.5, 39.65], [16.9, 40.2], [17.3, 40.45], [17.9, 40.3], [18.4, 39.8], [18.5, 40.15], [18.0, 40.65], [17.1, 41.0], [16.5, 41.3], [15.9, 41.6], [16.15, 41.93], [15.2, 41.95], [14.5, 42.2], [14.1, 42.5], [13.7, 43.0], [13.5, 43.6], [12.9, 43.9], [12.55, 44.05], [12.3, 44.4], [12.5, 44.95], [12.3, 45.3], [12.75, 45.65], [13.7, 45.65], [13.6, 46.0], [13.7, 46.5], [12.4, 46.65], [12.1, 47.0], [11.5, 47.0], [10.5, 46.85], [10.45, 46.55], [9.5, 46.4], [9.0, 46.0], [8.6, 46.1], [7.85, 45.95], [6.85, 45.85], [7.0, 45.1], [7.0, 44.5], [7.55, 44.15]], [[12.45, 38.0], [13.3, 38.2], [14.0, 38.05], [14.75, 38.15], [15.25, 38.27], [15.65, 38.25], [15.3, 37.8], [15.15, 37.4], [15.3, 37.0], [15.1, 36.7], [14.5, 36.75], [14.25, 37.05], [13.6, 37.28], [12.7, 37.6]], [[8.4, 39.05], [8.65, 38.87], [9.1, 39.15], [9.6, 39.2], [9.65, 39.6], [9.75, 40.3], [9.6, 40.85], [9.2, 41.25], [8.7, 40.95], [8.2, 40.6], [8.45, 40.3], [8.45, 39.9], [8.4, 39.45]]].map(r=>"M"+r.map(([lo,la])=>PX(la,lo).join(",")).join("L")+"Z").join("");
+function renderMap(){const m=new Map();let none=0;
+ view(1).forEach(e=>{const cs=placesOf(e).filter(c=>COORD[c]);if(!cs.length)none++;cs.forEach(c=>m.set(c,(m.get(c)||0)+1))});
+ const dots=[...m].map(([c,n])=>{const[x,y]=PX(...COORD[c]),s=city===norm(c);return `<circle class="dot${s?" sel":""}" cx="${x}" cy="${y}" r="${s?7:5.5}" data-c="${c}" onclick="setCity(city===norm(this.dataset.c)?'':this.dataset.c)"><title>${c} · ${n} ${n===1?"evento":"eventi"}</title></circle>`}).join("");
+ $("mapbox").innerHTML=`<svg viewBox="0 0 400 460" role="img" aria-label="Mappa dell’Italia con le città coinvolte"><path class="land" d="${LAND}"/>${dots}</svg>`;
+ $("mapinfo").textContent=m.size?`${m.size} ${m.size===1?"città coinvolta":"città coinvolte"} con i filtri attuali: un pallino per città, a prescindere dal numero di notizie. Clicca un pallino per filtrare.`+(none?` ${none} ${none===1?"evento non ha":"eventi non hanno"} una città localizzabile e non ${none===1?"compare":"compaiono"} sulla mappa.`:""):"Nessuna città localizzabile con i filtri attuali."}
+const PL={kpis:"Riepilogo",mappa:"Mappa",ragioni:"Ragioni per tema",termini:"Mappa dei termini",vic:"Cosa sta succedendo",city:"La tua città",cron:"Cronologia",low:"Eventi meno coperti"};
+const panels=()=>[...document.querySelectorAll("main > [data-p]")];
+const saveOrder=()=>{try{localStorage.setItem("order",JSON.stringify(panels().map(p=>p.dataset.p)))}catch(e){}};
+function initPanels(){const main=document.querySelector("main");let o=[];try{o=JSON.parse(localStorage.getItem("order")||"[]")}catch(e){}
+ const ids=panels().map(p=>p.dataset.p),ord=[...o.filter(i=>ids.includes(i)),...ids.filter(i=>!o.includes(i))];
+ ord.forEach(i=>main.appendChild(main.querySelector(`:scope > [data-p="${i}"]`)));
+ panels().forEach(p=>p.insertAdjacentHTML("afterbegin",`<div class="pc"><span>⠿ ${PL[p.dataset.p]}</span><span><button data-d="-1">▲ Su</button> <button data-d="1">▼ Giù</button></span></div>`));
+ main.addEventListener("click",e=>{const b=e.target.closest(".pc button");if(!b)return;const p=b.closest("[data-p]"),ps=panels(),i=ps.indexOf(p),j=i+Number(b.dataset.d);if(j<0||j>=ps.length)return;j<i?main.insertBefore(p,ps[j]):main.insertBefore(ps[j],p);saveOrder();p.scrollIntoView({block:"nearest",behavior:"smooth"})});
+ $("editmode").onchange=e=>{main.classList.toggle("editing",e.target.checked);$("rst").hidden=!e.target.checked};
+ $("rst").onclick=()=>{try{localStorage.removeItem("order")}catch(e){}location.reload()}}
 const PRE=[["Tutti",null,null],["Oggi",0,0],["Ultimi 7 giorni",-6,0],["Prossimi 7 giorni",0,7],["Ultimi 30 giorni",-29,0]];
 const off=n=>iso(new Date(Date.now()+n*864e5));
 function setRange(a,b){d1=a===null?"":off(a);d2=b===null?"":off(b);render()}
 function renderDates(){$("d1").value=d1;$("d2").value=d2;
  $("presets").innerHTML=PRE.map(([l,a,b])=>{const on=(a===null?"":off(a))===d1&&(b===null?"":off(b))===d2;return `<button class="chip ${on?"on":""}" onclick="setRange(${a},${b})">${l}</button>`}).join("")}
-function render(){renderDates();renderCity();renderVic();
+function render(){renderDates();renderCity();renderMap();renderVic();
  const n=sel.size||1,all=base(),v=view(),t=today();$("nsrc").textContent="("+sel.size+"/"+SRC.length+")";
  const up=v.filter(e=>e.d>=t&&e.d<=iso(new Date(Date.now()+7*864e5))).length;
  $("kpis").innerHTML=[[v.length,"eventi in vista"],[up,"nei prossimi 7 giorni"],[new Set(v.map(e=>e.r)).size,"aree geografiche"],[pct(v.length?v.reduce((a,e)=>a+e.c.length,0)/v.length/n:0),"copertura media fonti"]].map(k=>`<div class="kpi"><b>${k[0]}</b><span>${k[1]}</span></div>`).join("");
@@ -160,14 +189,15 @@ function render(){renderDates();renderCity();renderVic();
  $("cloud").innerHTML=[...ws].sort((a,b)=>a[0].localeCompare(b[0])).map(([w,c])=>`<span class="${term===w?"on":""}" style="font-size:${12+22*Math.sqrt(c/mx)}px;color:${CATC[col[w]]}" data-w="${w}" onclick="setTerm(this.dataset.w)">${w}</span>`).join("");
  $("leg").innerHTML=[["temi","Temi"],["attori","Attori"],["vertenze","Vertenze e aziende"]].map(([k,l])=>`<button class="chip ${cat===k?"on":""}" style="border-color:${CATC[k]}" onclick="setCat('${k}')">${l}</button>`).join("");
  $("termnav").innerHTML=ws.slice(0,10).map(([w])=>`<button class="chip ${term===w?"on":""}" onclick="setTerm('${w.replace(/'/g,"")}')">${w}</button>`).join("");
- $("tl").innerHTML=[...v].reverse().map(ev).join("")||"<p class='note'>Nessun evento con questi filtri.</p>";
- const low=[...v].filter(e=>e.c.length<=1).reverse().slice(0,8);
- $("low").innerHTML=low.map(ev).join("")||"<p class='note'>Tutti gli eventi in vista hanno almeno due fonti.</p>";
+ $("tl").innerHTML=acc("tl",[...v].reverse().map(ev))||"<p class='note'>Nessun evento con questi filtri.</p>";
+ const low=[...v].filter(e=>e.c.length<=1).reverse();
+ $("low").innerHTML=acc("low",low.map(ev))||"<p class='note'>Tutti gli eventi in vista hanno almeno due fonti.</p>";
 }
 const THM=["auto","light","dark"],LBL={auto:"Tema: automatico",light:"Tema: chiaro",dark:"Tema: scuro"};
 let tm="auto";try{tm=localStorage.getItem("theme")||"auto"}catch(e){}
 function applyTheme(m){const r=document.documentElement;m==="auto"?r.removeAttribute("data-theme"):r.setAttribute("data-theme",m);$("thm").textContent=LBL[m]}
 $("thm").onclick=()=>{tm=THM[(THM.indexOf(tm)+1)%3];try{localStorage.setItem("theme",tm)}catch(e){}applyTheme(tm)};applyTheme(tm);
+initPanels();
 fetch('data.json',{cache:'no-store'}).then(r=>r.json()).then(j=>{SRC=j.sources;DEMO=j.events;VIC=j.vicende||[];$('upd').textContent=' · aggiornato '+new Date(j.updated).toLocaleString('it-IT',{dateStyle:'short',timeStyle:'short'});init()}).catch(()=>{document.querySelector('main').insertAdjacentHTML('afterbegin','<div class="card">Impossibile caricare data.json. Se apri il file in locale, avvia un server: <code>python -m http.server -d docs</code></div>')});
 </script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a392a812161445aabb6413c478f281bb"}'></script><!-- End Cloudflare Web Analytics -->
