@@ -178,5 +178,153 @@
    "domain": "unionesarda.it"
   }
  ],
- "_nota_regional": "Un quotidiano per capoluogo di regione, letto tramite Google News con site:dominio (non serve il feed RSS). Aggiungi righe per altre testate locali."
+ "_nota_regional": "Un quotidiano per capoluogo di regione, letto tramite Google News con site:dominio (non serve il feed RSS). Aggiungi righe per altre testate locali.",
+ "extra": [
+  {
+   "name": "AGI",
+   "type": "Agenzia",
+   "domain": "agi.it"
+  },
+  {
+   "name": "Adnkronos",
+   "type": "Agenzia",
+   "domain": "adnkronos.com"
+  },
+  {
+   "name": "Dire",
+   "type": "Agenzia",
+   "domain": "dire.it"
+  },
+  {
+   "name": "Rai News",
+   "type": "TV",
+   "domain": "rainews.it"
+  },
+  {
+   "name": "Tgcom24",
+   "type": "TV",
+   "domain": "tgcom24.mediaset.it"
+  },
+  {
+   "name": "La7",
+   "type": "TV",
+   "domain": "la7.it"
+  },
+  {
+   "name": "Sky TG24",
+   "type": "TV",
+   "domain": "tg24.sky.it"
+  },
+  {
+   "name": "Euronews",
+   "type": "TV",
+   "domain": "it.euronews.com"
+  },
+  {
+   "name": "Avvenire",
+   "type": "Quotidiano",
+   "domain": "avvenire.it"
+  },
+  {
+   "name": "Il Giornale",
+   "type": "Quotidiano",
+   "domain": "ilgiornale.it"
+  },
+  {
+   "name": "Libero",
+   "type": "Quotidiano",
+   "domain": "liberoquotidiano.it"
+  },
+  {
+   "name": "Il Foglio",
+   "type": "Quotidiano",
+   "domain": "ilfoglio.it"
+  },
+  {
+   "name": "La Verità",
+   "type": "Quotidiano",
+   "domain": "laverita.info"
+  },
+  {
+   "name": "Il Tempo",
+   "type": "Quotidiano",
+   "domain": "iltempo.it"
+  },
+  {
+   "name": "Il Sole 24 Ore",
+   "type": "Quotidiano",
+   "domain": "ilsole24ore.com"
+  },
+  {
+   "name": "Quotidiano.net",
+   "type": "Quotidiano",
+   "domain": "quotidiano.net"
+  },
+  {
+   "name": "L'Espresso",
+   "type": "Settimanale",
+   "domain": "lespresso.it"
+  },
+  {
+   "name": "il manifesto",
+   "type": "Indipendente",
+   "domain": "ilmanifesto.it"
+  },
+  {
+   "name": "Domani",
+   "type": "Indipendente",
+   "domain": "editorialedomani.it"
+  },
+  {
+   "name": "Internazionale",
+   "type": "Indipendente",
+   "domain": "internazionale.it"
+  },
+  {
+   "name": "Valigia Blu",
+   "type": "Indipendente",
+   "domain": "valigiablu.it"
+  },
+  {
+   "name": "Pressenza",
+   "type": "Indipendente",
+   "domain": "pressenza.com"
+  },
+  {
+   "name": "Open",
+   "type": "Nativo digitale",
+   "domain": "open.online"
+  },
+  {
+   "name": "Today",
+   "type": "Nativo digitale",
+   "domain": "today.it"
+  },
+  {
+   "name": "Radio Popolare",
+   "type": "Radio",
+   "domain": "radiopopolare.it"
+  },
+  {
+   "name": "Radio Radicale",
+   "type": "Radio",
+   "domain": "radioradicale.it"
+  },
+  {
+   "name": "Radio 24",
+   "type": "Radio",
+   "domain": "radio24.ilsole24ore.com"
+  },
+  {
+   "name": "RTL 102.5",
+   "type": "Radio",
+   "domain": "rtl.it"
+  },
+  {
+   "name": "Radio Onda d'Urto",
+   "type": "Radio",
+   "domain": "radiondadurto.org"
+  }
+ ],
+ "_nota_extra": "Altre testate lette via Google News con site:dominio. Aggiungi righe per radio, giornali indipendenti o altri siti; i domini vanno verificati."
 }
