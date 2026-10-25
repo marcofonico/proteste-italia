@@ -114,6 +114,8 @@ def feed_urls():
         yield f["url"], f["name"], f.get("type", "Online"), None
     for r in CFG.get("regional", []):
         yield gnews(f"{GQ} site:{r['domain']}"), r["name"], "Quotidiano locale", (r["region"], r["city"])
+    for r in CFG.get("extra", []):
+        yield gnews(f"{GQ} site:{r['domain']}"), r["name"], r["type"], None
     for q in CFG["google_news_queries"]:
         yield gnews(q), None, "Online", None
 
@@ -252,11 +254,11 @@ def assign_vicende(events):
 
 def main():
     sources = [list(s) for s in MANUAL["sources"]]
-    idx = {s[0]: k for k, s in enumerate(sources)}
+    idx = {s[0].lower(): k for k, s in enumerate(sources)}
 
     def add(name, typ, url):
-        if name not in idx:
-            idx[name] = len(sources)
+        if name.lower() not in idx:
+            idx[name.lower()] = len(sources)
             sources.append([name, typ, url])
 
     # il catalogo mostra tutte le testate monitorate, anche quelle senza eventi
@@ -265,12 +267,22 @@ def main():
         add(f["name"], f.get("type", "Online"), f"{u.scheme}://{u.netloc}")
     for r in CFG.get("regional", []):
         add(r["name"], f"Locale · {r['city']}", "https://" + r["domain"])
+    for r in CFG.get("extra", []):
+        add(r["name"], r["type"], "https://" + r["domain"])
+    # il catalogo non si restringe mai: si mantengono le fonti già scoperte nelle esecuzioni precedenti
+    try:
+        prev = json.loads(OUT.read_text(encoding="utf-8"))
+    except Exception:
+        prev = {}
+    prev_src = prev.get("sources", [])
+    for ps in prev_src:
+        add(ps[0], ps[1], ps[2])
 
     def src_index(name, item):
-        if name not in idx:
-            idx[name] = len(sources)
+        if name.lower() not in idx:
+            idx[name.lower()] = len(sources)
             sources.append([name, item["type"], item["url"]])
-        return idx[name]
+        return idx[name.lower()]
 
     events = list(MANUAL["events"])
     cutoff = (TODAY - dt.timedelta(days=KEEP_DAYS)).isoformat()
@@ -284,6 +296,15 @@ def main():
             twin["news"] = twin.get("news", []) + ev["news"]
         else:
             events.append(ev)
+    # gli eventi automatici delle esecuzioni precedenti restano finché non scadono (KEEP_DAYS)
+    for pe in prev.get("events", []):
+        if not pe.get("auto") or pe["d"] < cutoff:
+            continue
+        if any(m["d"] == pe["d"] and len(tokens(m["x"]) & tokens(pe["x"])) >= 2 for m in events):
+            continue
+        pe["s"] = sorted({idx[prev_src[i][0].lower()] for i in pe["s"] if i < len(prev_src)})
+        if pe["s"]:
+            events.append(pe)
     events = [e for e in events if e["d"] >= cutoff]
     events.sort(key=lambda e: e["d"])
     build_terms(events)
