@@ -287,10 +287,13 @@ def main():
     events = [e for e in events if e["d"] >= cutoff]
     events.sort(key=lambda e: e["d"])
     build_terms(events)
+    # pannello stabile: fonti monitorate con continuità (denominatore della «copertura sulle fonti attese»)
+    panel = {"nazionali": list(dict.fromkeys(f["name"].split(" · ")[0] for f in CFG["feeds"])),
+             "locali": [{"n": r["name"], "r": r["region"], "c": r["city"]} for r in CFG.get("regional", [])]}
     vicende = assign_vicende(events)
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps({"updated": dt.datetime.now().isoformat(timespec="minutes"),
-                               "sources": sources, "vicende": vicende, "events": events}, ensure_ascii=False, indent=1), encoding="utf-8")
+                               "sources": sources, "panel": panel, "vicende": vicende, "events": events}, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"scritto {OUT}: {len(events)} eventi, {len(sources)} fonti")
 
 
