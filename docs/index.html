@@ -75,6 +75,9 @@ main.editing .pc{display:flex}main.editing .pn{outline:2px dashed var(--bd);outl
 .maplabel .sl button{border:0;background:var(--ac2);color:#fff;border-radius:99px;padding:4px 11px;font:12px system-ui;cursor:pointer}.maplabel .no{color:var(--mu)}
 .dl{font:700 14px system-ui;fill:var(--tx);paint-order:stroke;stroke:var(--sf);stroke-width:4px;stroke-linejoin:round}.halo{fill:none;stroke:var(--ac2);stroke-width:2.5}
 .ib{width:18px;height:18px;border-radius:50%;border:1px solid var(--mu);background:var(--bg);color:var(--mu);font:italic 700 11px Georgia,serif;cursor:pointer;padding:0;margin-left:5px;vertical-align:middle}.ip{font:12px/1.4 system-ui;color:var(--tx);background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:8px;margin-top:6px}
+.fbtn{width:100%;background:none;border:0;padding:0;color:var(--tx);text-align:left}.fbtn:focus-visible{outline:2px solid var(--ac2);outline-offset:2px}.fbtn .lbl{display:flex;gap:6px;align-items:center}.fbtn i{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none}
+.mxw{overflow-x:auto;margin:8px 0}.mx{border-collapse:collapse;font:12.5px system-ui;width:100%}.mx th,.mx td{padding:5px 6px;border-bottom:1px solid var(--bd);text-align:center;vertical-align:bottom}.mx th:first-child,.mx td:first-child{text-align:left}.mx th{font-weight:600;color:var(--mu)}.mx td small{color:var(--mu)}
+.lt{padding:7px 0;border-bottom:1px solid var(--bd);font:13.5px/1.35 system-ui}.lt .tag{font-size:11px;margin-right:4px}mark{background:rgba(255,196,0,.35);color:inherit;border-radius:2px;padding:0 1px}.lh{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:8px 0}.lintro{margin:0 0 8px}.lh b{font:600 14px system-ui}
 .tabs{display:flex;border-bottom:1px solid var(--bd);margin:0 0 12px}
 .tabs button{flex:1;padding:11px 8px;border:0;border-bottom:3px solid transparent;margin-bottom:-1px;background:none;color:var(--mu);font:600 14px system-ui;cursor:pointer}
 .tabs button[aria-selected="true"]{color:var(--tx);border-bottom-color:var(--ac2)}
@@ -103,8 +106,16 @@ main.editing .pc{display:flex}main.editing .pn{outline:2px dashed var(--bd);outl
 <p class="note" id="cityinfo" style="margin:0"></p>
 <label class="note"><input type="checkbox" id="nat" checked> Includi anche scioperi e mobilitazioni nazionali</label></div>
 <div class="card pn" data-p="mappa"><h2>Mappa delle città coinvolte</h2><div id="maplabel" class="maplabel" aria-live="polite"></div><div id="mapbox"></div><p class="note" id="mapinfo"></p></div>
-<div class="card pn half" data-p="ragioni"><h2>Ragioni (temi) delle mobilitazioni</h2><div id="themes"></div><p class="note">Barra = quota di fonti selezionate che documentano eventi di quel tema. Clic per filtrare.</p></div>
-<div class="card pn half" data-p="termini"><h2>Mappa dei termini</h2><div id="cloud"></div><div class="leg" id="leg"></div><p class="note">Dimensione = frequenza ponderata per numero di fonti; colore = categoria (clic sulla legenda per filtrare).</p></div>
+<div class="card pn" data-p="ragioni"><h2>Ragioni (temi) delle mobilitazioni</h2><div id="themes"></div><p class="note">Barra = quota di fonti selezionate che documentano eventi di quel tema. Clic per filtrare.</p></div>
+<div class="card pn" data-p="termini">
+<div class="tabs" id="ltabs" role="tablist" aria-label="Linguaggio delle notizie">
+<button role="tab" id="ltab-term" aria-selected="true" aria-controls="lview-term" onclick="setLtab('term')">Mappa dei termini</button>
+<button role="tab" id="ltab-lab" aria-selected="false" aria-controls="lview-lab" tabindex="-1" onclick="setLtab('lab')">Etichette a confronto</button>
+<button role="tab" id="ltab-time" aria-selected="false" aria-controls="lview-time" tabindex="-1" onclick="setLtab('time')">Nel tempo</button></div>
+<div role="tabpanel" id="lview-term" aria-labelledby="ltab-term"><div id="cloud"></div><div class="leg" id="leg"></div><p class="note">Dimensione = frequenza ponderata per numero di fonti; colore = categoria (clic sulla legenda per filtrare).</p></div>
+<div role="tabpanel" id="lview-lab" aria-labelledby="ltab-lab" hidden><div id="labbox"></div></div>
+<div role="tabpanel" id="lview-time" aria-labelledby="ltab-time" hidden><div id="timebox"></div></div>
+</div>
 <div class="card pn" data-p="feed">
 <div class="tabs" id="tabs" role="tablist" aria-label="Scegli la vista">
 <button role="tab" id="tab-vic" aria-selected="true" aria-controls="view-vic" onclick="setTab('vic')">Cosa sta succedendo <span class="cnt" id="cnt-vic"></span></button>
@@ -129,7 +140,7 @@ function init(){sel=new Set(SRC.map((_,i)=>i));
  const dh=()=>{d1=$("d1").value;d2=$("d2").value;if(d1&&d2&&d1>d2)[d1,d2]=[d2,d1];render()};$("d1").onchange=dh;$("d2").onchange=dh;
  $("city").onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();applyCity()}};$("nat").onchange=e=>{nat=e.target.checked;render()};load(DEMO)}
 function allSrc(v){sel=new Set(v?SRC.map((_,i)=>i):[]);document.querySelectorAll("#srcs input").forEach(c=>c.checked=!!v);render()}
-function resetAll(){th=null;ty=null;term="";defRange();city="";cityLabel="";nat=true;vic="";cat="";vst="all";$("q").value="";$("city").value="";$("nat").checked=true;allSrc(1)}
+function resetAll(){th=null;ty=null;term="";defRange();city="";cityLabel="";nat=true;vic="";cat="";vst="all";lf="";$("q").value="";$("city").value="";$("nat").checked=true;allSrc(1)}
 function setTh(t){th=th===t?null:t;render()}function setTy(t){ty=ty===t?null:t;render()}
 function setTerm(w){term=term===w?"":w;$("q").value=term;render()}
 const cov=e=>e.s.filter(i=>sel.has(i));
@@ -160,6 +171,38 @@ function renderCity(){
  const local=base().filter(matchCity).length;
  info.textContent=local?`${local} ${local===1?"evento":"eventi"} a «${cityLabel}»${nat?", più quelli nazionali":""}.`:`Nessun evento locale per «${cityLabel}» con i filtri attuali${nat?": mostro solo quelli nazionali.":"."}`}
 let vic="",cat="",VIC=[];
+let LAB=[],LABX=[],ltab="term",lf="";const LT=["term","lab","time"],MINT=5;try{const s=localStorage.getItem("ltab");if(LT.includes(s))ltab=s}catch(e){}
+function applyLtab(focus){LT.forEach(k=>{const on=ltab===k,b=$("ltab-"+k);b.setAttribute("aria-selected",String(on));b.tabIndex=on?0:-1;$("lview-"+k).hidden=!on});if(focus)$("ltab-"+ltab).focus()}
+function setLtab(t,focus){ltab=t;try{localStorage.setItem("ltab",t)}catch(e){}applyLtab(focus)}
+function setLf(id){lf=lf===id?"":id;render()}
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])),escRx=s=>s.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+function compileLab(){LABX=LAB.map(f=>({...f,rx:f.t.map(t=>new RegExp("(?<![\\p{L}])"+t.toLowerCase().replace(/[.+?^${}()|[\]\\*]/g,m=>m==="*"?"\\p{L}*":"\\"+m).replace(/\s+/g,"\\s+").replace(/['’]/g,"['’]")+"(?![\\p{L}])","giu"))}))}
+const NEG=/(?:senza|nessun\p{L}*|niente|evitat\p{L}*|scongiurat\p{L}*)\s+(?:\p{L}+\s+){0,2}$/u;
+function tagOf(t){const s=t.toLowerCase().replace(/’/g,"'"),out={};LABX.forEach(f=>{const hits=[];f.rx.forEach(r=>{r.lastIndex=0;let m;while((m=r.exec(s))){if(m[0]==="")r.lastIndex++;else if(!NEG.test(s.slice(Math.max(0,m.index-32),m.index)))hits.push(m[0])}});if(hits.length)out[f.id]=[...new Set(hits)]});return out}
+function titlesOf(es){const seen=new Set(),out=[];es.forEach(e=>(e.news?newsOf(e):[]).forEach(n=>{const k=n.u||n.t;if(seen.has(k))return;seen.add(k);out.push({...n,ev:e.d,tg:tagOf(n.t)})}));return out}
+const hl=(t,tg)=>{const h=[...new Set(Object.values(tg).flat())].sort((a,b)=>b.length-a.length);let x=esc(t);if(!h.length)return x;return x.replace(new RegExp(h.map(escRx).join("|"),"giu"),m=>"<mark>"+m+"</mark>")};
+const info=(txt)=>`<button class="ib" aria-label="Come leggere questa vista" aria-expanded="false" onclick="togInfo(this)">i</button><div class="ip" hidden>${txt}</div>`;
+const defs=()=>`<button class="chip" aria-expanded="false" onclick="togInfo(this)">Come sono definite le etichette?</button><div class="ip" hidden><p style="margin:0 0 6px">Ogni etichetta si assegna se il titolo contiene almeno una parola della sua famiglia (esempi sotto). Un titolo può avere più etichette o nessuna; «senza», «nessun…» escludono la parola.</p>${LABX.map(f=>`<p style="margin:0 0 6px"><b style="color:${f.c}">${f.n}</b>: ${esc(f.d)}.<br><span class="note">es. ${f.t.slice(0,6).map(t=>esc(t.replace(/\*$/,"…"))).join(", ")}</span></p>`).join("")}<p class="note" style="margin:0">Dizionario pubblico e modificabile; indica come è scritto il titolo, non se è corretto.</p></div>`;
+function labHead(ts,sc){const N=ts.length,no=ts.filter(t=>!Object.keys(t.tg).length).length,o=new Set(ts.map(t=>lw(t.o))).size;
+ return `<div class="note">${sc} · ${N} ${N===1?"titolo":"titoli"} da ${o} ${o===1?"testata":"testate"}${N?" · "+(N>=MINT?pct(no/N):no)+" senza etichetta":""}</div>`}
+function renderLang(){
+ const es=view(),ts=titlesOf(es),N=ts.length,sc=vic?"Vicenda «"+esc(vt(vic)||"")+"»":"Tutti gli eventi con i filtri attivi";
+ const empty=!LABX.length?"<p class='note'>Dizionario delle etichette non ancora presente nei dati: lancia «aggiorna dati» in Actions.</p>":!N?"<p class='note'>Nessun titolo collegato agli eventi con questi filtri. Gli eventi inseriti a mano o con una sola fonte possono non avere titoli.</p>":"";
+ const nof=ts.filter(t=>!Object.keys(t.tg).length).length,cnt=f=>ts.filter(t=>t.tg[f.id]).length;
+ const lead=`<p class="note lintro">Quanti titoli usano parole di ciascuna famiglia. Un titolo può avere più etichette o nessuna.${info("Si analizzano i <b>titoli</b>, non gli articoli, con un dizionario di parole (modificabile). Mostra come viene raccontato un fatto, non se una testata è giusta o sbagliata. Con meno di "+MINT+" titoli si vedono solo i conteggi.")}</p>${defs()}`;
+ if(empty){$("labbox").innerHTML=lead+empty;$("timebox").innerHTML=lead+empty;return}
+ const bars=LABX.map(f=>{const n=cnt(f);return `<button class="bar fbtn ${lf===f.id?"on":""}" aria-pressed="${lf===f.id}" title="${esc(f.d)}" onclick="setLf('${f.id}')"><span class="lbl"><i style="background:${f.c}"></i>${f.n}</span><div class="track">${N>=MINT?`<div class="fill" style="width:${n/N*100}%;background:${f.c}"></div>`:""}</div><small>${N>=MINT?pct(n/N)+" · ":""}${n}</small></button>`}).join("");
+ let mx="";
+ if(vic){const by={};ts.forEach(t=>(by[t.o]=by[t.o]||[]).push(t));const rows=Object.entries(by).sort((a,b)=>b[1].length-a[1].length);
+  mx=`<div class="mxw"><table class="mx"><thead><tr><th>Testata</th>${LABX.map(f=>`<th title="${esc(f.d)}" style="color:${f.c}">${f.n}</th>`).join("")}<th>Titoli</th></tr></thead><tbody>${rows.map(([o,a])=>`<tr><td>${esc(o)}</td>${LABX.map(f=>{const n=a.filter(t=>t.tg[f.id]).length;return `<td>${n?`<b style="color:${f.c}">${n}</b>`:`<span class="note">·</span>`}</td>`}).join("")}<td>${a.length}</td></tr>`).join("")}</tbody></table></div><p class="note">Ogni cella: quanti titoli di quella testata usano l’etichetta.</p>`}
+ else mx=`<p class="note">Vista aggregata sul filtro attivo. Scegli una vicenda in «Cosa sta succedendo» per confrontare come ne parlano le singole testate.</p>`;
+ const sh=lf?ts.filter(t=>t.tg[lf]):ts,lfn=(LABX.find(f=>f.id===lf)||{}).n;
+ const items=[...sh].sort((a,b)=>b.d.localeCompare(a.d)).map(t=>`<div class="lt"><a href="${esc(t.u)}" target="_blank" rel="noopener">${hl(t.t,t.tg)}</a> <span class="note">· ${esc(t.o)}, ${t.d.slice(8,10)}/${t.d.slice(5,7)}</span><div>${LABX.filter(f=>t.tg[f.id]).map(f=>`<span class="tag" style="border-color:${f.c};color:${f.c}">${f.n}</span>`).join("")||"<span class='note'>senza etichetta</span>"}</div></div>`);
+ $("labbox").innerHTML=lead+labHead(ts,sc)+(N<MINT?`<p class="note">Con pochi titoli (${N}) mostro solo i conteggi, senza percentuali.</p>`:"")+bars+mx+`<div class="lh"><b>${lf?"Titoli con l’etichetta «"+lfn+"»":"Titoli analizzati"}</b>${lf?`<button class="chip" onclick="setLf('${lf}')">✕ Rimuovi</button>`:""}</div>`+(acc("labt",items)||"<p class='note'>Nessun titolo.</p>");
+ const PH=[["Prima dell’evento",0],["Giorno dell’evento",1],["Dopo",2]],ph=t=>{const d=t.d.slice(0,10);return d<t.ev?0:d===t.ev?1:2},P=PH.map(([l,k])=>ts.filter(t=>ph(t)===k));
+ const cell=(a,n)=>n?`<b>${n}</b>${a.length>=MINT?` <small>${pct(n/a.length)}</small>`:""}`:`<span class="note">·</span>`;
+ $("timebox").innerHTML=`<p class="note lintro">Come cambia il linguaggio dei titoli prima, durante e dopo l’evento.${info("<b>Prima</b>: titoli pubblicati prima della data dell’evento; <b>giorno</b>: lo stesso giorno; <b>dopo</b>: nei giorni successivi. Le percentuali compaiono solo con almeno "+MINT+" titoli nella fase.")}</p>${defs()}`+labHead(ts,sc)+(vic?"":`<p class="note">Vista aggregata sul filtro attivo: scegli una vicenda per seguirne l’evoluzione.</p>`)+
+ `<div class="mxw"><table class="mx"><thead><tr><th>Famiglia</th>${PH.map(([l],i)=>`<th>${l}<br><small>${P[i].length} ${P[i].length===1?"titolo":"titoli"}</small></th>`).join("")}</tr></thead><tbody>${LABX.map(f=>`<tr><td><span class="fbtn"><span class="lbl"><i style="background:${f.c}"></i>${f.n}</span></span></td>${P.map(a=>`<td>${cell(a,a.filter(t=>t.tg[f.id]).length)}</td>`).join("")}</tr>`).join("")}<tr><td><span class="note">Senza etichetta</span></td>${P.map(a=>`<td>${cell(a,a.filter(t=>!Object.keys(t.tg).length).length)}</td>`).join("")}</tr></tbody></table></div>`}
 const vk=e=>e.v||e.x,vt=id=>(VIC.find(v=>v.id===id)||{}).t;
 function setVic(id){vic=vic===id?"":id;render()}
 function setCat(c){cat=cat===c?"":c;render()}
@@ -203,7 +246,7 @@ function renderMap(){const m=new Map();let none=0;
   ml.innerHTML=`<span class="sl">📍 ${esc(cityLabel||city)} · ${k} ${k===1?"evento":"eventi"}<button onclick="setCity('')">✕ Rimuovi</button></span>`+(known?"":`<span class="no">non presente sulla mappa</span>`)}
  else ml.innerHTML=`<span class="no">Nessuna città selezionata: tocca un pallino per sceglierla.</span>`;
  $("mapinfo").textContent=m.size?`${m.size} ${m.size===1?"città coinvolta":"città coinvolte"} con i filtri attuali: un pallino per città, a prescindere dal numero di notizie. Clicca un pallino per filtrare.`+(none?` ${none} ${none===1?"evento non ha":"eventi non hanno"} una città localizzabile e non ${none===1?"compare":"compaiono"} sulla mappa.`:""):"Nessuna città localizzabile con i filtri attuali."}
-const PL={kpis:"Riepilogo",mappa:"Mappa",ragioni:"Ragioni per tema",termini:"Mappa dei termini",feed:"Cosa sta succedendo / Cronologia",city:"La tua città",low:"Eventi meno coperti"};
+const PL={kpis:"Riepilogo",mappa:"Mappa",ragioni:"Ragioni per tema",termini:"Linguaggio: termini, etichette, tempo",feed:"Cosa sta succedendo / Cronologia",city:"La tua città",low:"Eventi meno coperti"};
 const panels=()=>[...document.querySelectorAll("main > [data-p]")];
 const saveOrder=()=>{try{localStorage.setItem("order",JSON.stringify(panels().map(p=>p.dataset.p)))}catch(e){}};
 function initPanels(){const main=document.querySelector("main");let o=[];try{o=JSON.parse(localStorage.getItem("order")||"[]")}catch(e){}
@@ -214,7 +257,8 @@ function initPanels(){const main=document.querySelector("main");let o=[];try{o=J
  main.addEventListener("click",e=>{const b=e.target.closest(".pc button");if(!b)return;const p=b.closest("[data-p]"),ps=panels(),i=ps.indexOf(p),j=i+Number(b.dataset.d);if(j<0||j>=ps.length)return;j<i?main.insertBefore(p,ps[j]):main.insertBefore(ps[j],p);saveOrder();p.scrollIntoView({block:"nearest",behavior:"smooth"})});
  $("editmode").onchange=e=>{main.classList.toggle("editing",e.target.checked);$("rst").hidden=!e.target.checked};
  $("rst").onclick=()=>{try{localStorage.removeItem("order")}catch(e){}location.reload()}
- $("tabs").onkeydown=e=>{if(e.key==="ArrowRight"||e.key==="ArrowLeft"){e.preventDefault();setTab(tab==="vic"?"cron":"vic",true)}};applyTab()}
+ $("tabs").onkeydown=e=>{if(e.key==="ArrowRight"||e.key==="ArrowLeft"){e.preventDefault();setTab(tab==="vic"?"cron":"vic",true)}};
+ $("ltabs").onkeydown=e=>{const d=e.key==="ArrowRight"?1:e.key==="ArrowLeft"?-1:0;if(d){e.preventDefault();setLtab(LT[(LT.indexOf(ltab)+d+3)%3],true)}};applyTab();applyLtab()}
 const lw=s=>s.toLowerCase(),og=i=>SRC[i][0].split(" · ")[0],outs=e=>new Set(e.c.map(i=>lw(og(i)))),PANEL0={nazionali:[],locali:[]};let PANEL=PANEL0;
 const HX={},hit=(t,n)=>(HX[n]=HX[n]||new RegExp("(?<![\\p{L}-])"+lw(n).replace(/[.*+?^${}()|[\]\\]/g,"\\$&").replace(/'/g,"['’]")+"(?![\\p{L}-])","u")).test(t);
 function expected(e){const so=new Set([...sel].map(i=>lw(og(i)))),t=lw(e.l+" "+e.r);return new Set([...PANEL.nazionali.map(lw),...PANEL.locali.filter(x=>hit(t,x.r)||hit(t,x.c)).map(x=>lw(x.n))].filter(n=>so.has(n)))}
@@ -226,7 +270,7 @@ function togInfo(b){const p=b.nextElementSibling;p.hidden=!p.hidden;b.setAttribu
 function setRange(a,b){d1=a===null?"":off(a);d2=b===null?"":off(b);render()}
 function renderDates(){$("d1").value=d1;$("d2").value=d2;
  $("presets").innerHTML=PRE.map(([l,a,b])=>{const on=(a===null?"":off(a))===d1&&(b===null?"":off(b))===d2;return `<button class="chip ${on?"on":""}" onclick="setRange(${a},${b})">${l}</button>`}).join("")}
-function render(){renderDates();renderCity();renderMap();renderVic();
+function render(){renderDates();renderCity();renderMap();renderVic();renderLang();
  const n=sel.size||1,all=base(),v=view(),t=today();$("nsrc").textContent="("+sel.size+"/"+SRC.length+")";
  const up=v.filter(e=>e.d>=t&&e.d<=iso(new Date(Date.now()+7*864e5))).length,t0=UPD?UPD.slice(0,10):t,upc=v.filter(e=>e.d>=t0).length;
  const ncit=new Set(v.flatMap(e=>placesOf(e).filter(c=>COORD[c]))).size,rt=v.map(ratio).filter(x=>x!==null),cov=rt.length?rt.reduce((a,b)=>a+b,0)/rt.length:null,conf=v.length?v.filter(e=>outs(e).size>=2).length/v.length:0;
@@ -256,7 +300,7 @@ let tm="auto";try{tm=localStorage.getItem("theme")||"auto"}catch(e){}
 function applyTheme(m){const r=document.documentElement;m==="auto"?r.removeAttribute("data-theme"):r.setAttribute("data-theme",m);$("thm").textContent=LBL[m]}
 $("thm").onclick=()=>{tm=THM[(THM.indexOf(tm)+1)%3];try{localStorage.setItem("theme",tm)}catch(e){}applyTheme(tm)};applyTheme(tm);
 initPanels();
-fetch('data.json',{cache:'no-store'}).then(r=>r.json()).then(j=>{SRC=j.sources;DEMO=j.events;VIC=j.vicende||[];PANEL=j.panel||PANEL;UPD=j.updated||"";defRange();$('upd').textContent=' · aggiornato '+new Date(j.updated).toLocaleString('it-IT',{dateStyle:'short',timeStyle:'short'});init()}).catch(()=>{document.querySelector('main').insertAdjacentHTML('afterbegin','<div class="card">Impossibile caricare data.json. Se apri il file in locale, avvia un server: <code>python -m http.server -d docs</code></div>')});
+fetch('data.json',{cache:'no-store'}).then(r=>r.json()).then(j=>{SRC=j.sources;DEMO=j.events;VIC=j.vicende||[];PANEL=j.panel||PANEL;LAB=j.labels||[];compileLab();UPD=j.updated||"";defRange();$('upd').textContent=' · aggiornato '+new Date(j.updated).toLocaleString('it-IT',{dateStyle:'short',timeStyle:'short'});init()}).catch(()=>{document.querySelector('main').insertAdjacentHTML('afterbegin','<div class="card">Impossibile caricare data.json. Se apri il file in locale, avvia un server: <code>python -m http.server -d docs</code></div>')});
 </script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a392a812161445aabb6413c478f281bb"}'></script><!-- End Cloudflare Web Analytics -->
 </body></html>
