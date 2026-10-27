@@ -314,7 +314,7 @@ def main():
     vicende = assign_vicende(events)
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps({"updated": dt.datetime.now().isoformat(timespec="minutes"),
-                               "sources": sources, "panel": panel, "vicende": vicende, "events": events}, ensure_ascii=False, indent=1), encoding="utf-8")
+                               "sources": sources, "panel": panel, "labels": G.get("etichette", []), "vicende": vicende, "events": events}, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"scritto {OUT}: {len(events)} eventi, {len(sources)} fonti")
 
 
