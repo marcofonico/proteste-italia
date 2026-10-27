@@ -75,6 +75,12 @@ main.editing .pc{display:flex}main.editing .pn{outline:2px dashed var(--bd);outl
 .maplabel .sl button{border:0;background:var(--ac2);color:#fff;border-radius:99px;padding:4px 11px;font:12px system-ui;cursor:pointer}.maplabel .no{color:var(--mu)}
 .dl{font:700 14px system-ui;fill:var(--tx);paint-order:stroke;stroke:var(--sf);stroke-width:4px;stroke-linejoin:round}.halo{fill:none;stroke:var(--ac2);stroke-width:2.5}
 .ib{width:18px;height:18px;border-radius:50%;border:1px solid var(--mu);background:var(--bg);color:var(--mu);font:italic 700 11px Georgia,serif;cursor:pointer;padding:0;margin-left:5px;vertical-align:middle}.ip{font:12px/1.4 system-ui;color:var(--tx);background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:8px;margin-top:6px}
+.tabs{display:flex;border-bottom:1px solid var(--bd);margin:0 0 12px}
+.tabs button{flex:1;padding:11px 8px;border:0;border-bottom:3px solid transparent;margin-bottom:-1px;background:none;color:var(--mu);font:600 14px system-ui;cursor:pointer}
+.tabs button[aria-selected="true"]{color:var(--tx);border-bottom-color:var(--ac2)}
+.tabs button:focus-visible,.chip:focus-visible{outline:2px solid var(--ac2);outline-offset:2px}
+.cnt{font:600 11px system-ui;background:var(--bg);border:1px solid var(--bd);border-radius:99px;padding:1px 7px;margin-left:4px;color:var(--mu)}
+[role="tabpanel"][hidden]{display:none}
 </style>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script></head><body>
 <header style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px"><div><h1>Radar proteste e conflitto sociale in Italia</h1><p>Scioperi, cortei, blocchi, occupazioni: cronologia, ragioni e copertura delle fonti<span id="upd"></span></p></div><div class="hbtn"><label class="chip sw"><input type="checkbox" id="editmode"> Modifica ordine</label><button id="rst" class="chip" hidden>Ripristina ordine</button><button id="thm" class="chip" style="white-space:nowrap" aria-label="Cambia tema"></button></div></header>
@@ -99,9 +105,13 @@ main.editing .pc{display:flex}main.editing .pn{outline:2px dashed var(--bd);outl
 <div class="card pn" data-p="mappa"><h2>Mappa delle città coinvolte</h2><div id="maplabel" class="maplabel" aria-live="polite"></div><div id="mapbox"></div><p class="note" id="mapinfo"></p></div>
 <div class="card pn half" data-p="ragioni"><h2>Ragioni (temi) delle mobilitazioni</h2><div id="themes"></div><p class="note">Barra = quota di fonti selezionate che documentano eventi di quel tema. Clic per filtrare.</p></div>
 <div class="card pn half" data-p="termini"><h2>Mappa dei termini</h2><div id="cloud"></div><div class="leg" id="leg"></div><p class="note">Dimensione = frequenza ponderata per numero di fonti; colore = categoria (clic sulla legenda per filtrare).</p></div>
-<div class="card pn" data-p="vic" id="vic"><h2>Cosa sta succedendo</h2><div id="vbanner"></div>
-<div class="two"><div><div class="vh">In corso e in programma</div><div id="vnext"></div></div><div><div class="vh">Concluse di recente</div><div id="vpast"></div></div></div></div>
-<div class="card pn" data-p="cron"><h2>Cronologia degli eventi</h2><div id="tl"></div></div>
+<div class="card pn" data-p="feed">
+<div class="tabs" id="tabs" role="tablist" aria-label="Scegli la vista">
+<button role="tab" id="tab-vic" aria-selected="true" aria-controls="view-vic" onclick="setTab('vic')">Cosa sta succedendo <span class="cnt" id="cnt-vic"></span></button>
+<button role="tab" id="tab-cron" aria-selected="false" aria-controls="view-cron" tabindex="-1" onclick="setTab('cron')">Cronologia <span class="cnt" id="cnt-cron"></span></button></div>
+<div role="tabpanel" id="view-vic" aria-labelledby="tab-vic"><div id="vbanner"></div><div class="chips" id="vstatus"></div><div id="vlist"></div></div>
+<div role="tabpanel" id="view-cron" aria-labelledby="tab-cron" hidden><div id="tlnote"></div><div id="tl"></div></div>
+</div>
 <div class="card rare pn" data-p="low"><h2>Eventi meno coperti</h2><div id="low"></div></div>
 </main></div>
 <footer class="note" style="max-width:1280px;margin:auto;padding:0 20px 24px">Dati aggregati da titoli e link di feed pubblici; gli eventi «auto» sono classificati automaticamente e possono contenere errori. Per i dettagli consulta sempre le fonti collegate. Il sito usa Cloudflare Web Analytics, un servizio di statistiche aggregate sulle visite che non utilizza cookie.</footer>
@@ -119,7 +129,7 @@ function init(){sel=new Set(SRC.map((_,i)=>i));
  const dh=()=>{d1=$("d1").value;d2=$("d2").value;if(d1&&d2&&d1>d2)[d1,d2]=[d2,d1];render()};$("d1").onchange=dh;$("d2").onchange=dh;
  $("city").onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();applyCity()}};$("nat").onchange=e=>{nat=e.target.checked;render()};load(DEMO)}
 function allSrc(v){sel=new Set(v?SRC.map((_,i)=>i):[]);document.querySelectorAll("#srcs input").forEach(c=>c.checked=!!v);render()}
-function resetAll(){th=null;ty=null;term="";defRange();city="";cityLabel="";nat=true;vic="";cat="";$("q").value="";$("city").value="";$("nat").checked=true;allSrc(1)}
+function resetAll(){th=null;ty=null;term="";defRange();city="";cityLabel="";nat=true;vic="";cat="";vst="all";$("q").value="";$("city").value="";$("nat").checked=true;allSrc(1)}
 function setTh(t){th=th===t?null:t;render()}function setTy(t){ty=ty===t?null:t;render()}
 function setTerm(w){term=term===w?"":w;$("q").value=term;render()}
 const cov=e=>e.s.filter(i=>sel.has(i));
@@ -154,21 +164,29 @@ const vk=e=>e.v||e.x,vt=id=>(VIC.find(v=>v.id===id)||{}).t;
 function setVic(id){vic=vic===id?"":id;render()}
 function setCat(c){cat=cat===c?"":c;render()}
 function newsOf(e){const on=new Set([...sel].map(i=>SRC[i][0]));return e.news?e.news.filter(n=>on.has(n.o)):e.c.map(i=>({t:SRC[i][0],o:SRC[i][1],u:SRC[i][2],d:e.d}))}
+let tab="vic",vst="all";try{const s=localStorage.getItem("tab");if(s==="vic"||s==="cron")tab=s}catch(e){}
+function applyTab(focus){["vic","cron"].forEach(k=>{const on=tab===k,b=$("tab-"+k);b.setAttribute("aria-selected",String(on));b.tabIndex=on?0:-1;$("view-"+k).hidden=!on});if(focus)$("tab-"+tab).focus()}
+function setTab(t,focus){tab=t;try{localStorage.setItem("tab",t)}catch(e){}applyTab(focus)}
+function setVst(k){vst=k;render()}
 function renderVic(){
  const t=today(),g={};base(1,0,1).forEach(e=>(g[vk(e)]=g[vk(e)]||[]).push(e));
  const L=Object.entries(g).map(([id,es])=>{const ds=es.map(e=>e.d).sort();return{id,es,t:vt(id)||es[0].x,a:ds[0],z:ds[ds.length-1],nx:ds.find(d=>d>=t)||"",src:new Set(es.flatMap(e=>e.c)).size}});
- const lim=iso(new Date(Date.now()-21*864e5));
- const nxt=L.filter(v=>v.z>=t).sort((x,y)=>x.nx.localeCompare(y.nx)),past=L.filter(v=>v.z<t&&v.z>=lim).sort((x,y)=>y.z.localeCompare(x.z));
+ const stOf=v=>v.a>t?"programma":v.z>=t?"corso":"conclusa",ORD={corso:0,programma:1,conclusa:2};
+ L.forEach(v=>v.st=stOf(v));
+ L.sort((x,y)=>ORD[x.st]-ORD[y.st]||(x.st==="conclusa"?y.z.localeCompare(x.z):(x.nx||x.a).localeCompare(y.nx||y.a)));
+ const NC={all:L.length,corso:0,programma:0,conclusa:0};L.forEach(v=>NC[v.st]++);
+ $("vstatus").innerHTML=[["all","Tutte"],["corso","In corso"],["programma","In programma"],["conclusa","Concluse"]].map(([k,l])=>`<button class="chip ${vst===k?"on":""}" aria-pressed="${vst===k}" onclick="setVst('${k}')">${l} <small>${NC[k]}</small></button>`).join("");
+ $("cnt-vic").textContent=L.length;
  const card=v=>{const st=v.a>t?["In programma",""]:v.z>=t?["In corso","now"]:["Conclusa","past"];
   const act=[...new Set(v.es.flatMap(e=>(e.terms||[]).filter(x=>x[1]==="attori").map(x=>x[0])))].slice(0,4),pl=[...new Set(v.es.flatMap(placesOf))].slice(0,3);
   const [g1,m1]=fmt(v.a),[g2,m2]=fmt(v.z);
   return `<div class="vc ${vic===v.id?"on":""}"><span class="badge ${st[1]}">${st[0]}</span> <b>${v.t}</b><div class="meta"><span>${v.a===v.z?g1+" "+m1:g1+" "+m1+" → "+g2+" "+m2}</span><span>${v.es.length} ${v.es.length===1?"evento":"eventi"} · ${v.src} fonti</span>${act.map(x=>`<span class="tag">${x}</span>`).join("")}${pl.map(x=>`<span class="tag">📍 ${x}</span>`).join("")}</div><div class="tools"><button data-v="${v.id}" onclick="setVic(this.dataset.v)">${vic===v.id?"Rimuovi filtro":"Vedi notizie correlate"}</button></div></div>`};
- $("vnext").innerHTML=acc("vnext",nxt.map(card))||"<p class='note'>Niente in corso o in programma con questi filtri.</p>";
- $("vpast").innerHTML=acc("vpast",past.map(card))||"<p class='note'>Nessuna vicenda conclusa nelle ultime 3 settimane.</p>";
+ const shown=vst==="all"?L:L.filter(v=>v.st===vst),EM={all:"Nessuna vicenda con questi filtri.",corso:"Nessuna vicenda in corso con questi filtri.",programma:"Nessuna vicenda in programma con questi filtri.",conclusa:"Nessuna vicenda conclusa con questi filtri."};
+ $("vlist").innerHTML=acc("vlist",shown.map(card))||`<p class='note'>${EM[vst]}</p>`;
  const es=vic?base(1,0,1).filter(e=>vk(e)===vic):[];
  if(!es.length){$("vbanner").innerHTML="";return}
  const seen=new Set(),ns=[];es.forEach(e=>newsOf(e).forEach(n=>{if(!seen.has(n.u)){seen.add(n.u);ns.push(n)}}));ns.sort((a,b)=>b.d.localeCompare(a.d));
- $("vbanner").innerHTML=`<div class="vb"><b>${vt(vic)||es[0].x}</b><div class="note">Filtro attivo su tutta la pagina (il filtro periodo è sospeso) · ${es.length} eventi · ${ns.length} notizie correlate</div><ul>${ns.map(n=>`<li><a href="${n.u}" target="_blank" rel="noopener">${n.t}</a> <span class="note">· ${n.o}, ${n.d.slice(8,10)}/${n.d.slice(5,7)}</span></li>`).join("")}</ul><div class="tools"><button onclick="setVic('')">Rimuovi filtro</button></div></div>`}
+ $("vbanner").innerHTML=`<div class="vb"><b>${vt(vic)||es[0].x}</b><div class="note">Filtro attivo su tutta la pagina (il filtro periodo è sospeso) · ${es.length} eventi · ${ns.length} notizie correlate</div><ul>${ns.map(n=>`<li><a href="${n.u}" target="_blank" rel="noopener">${n.t}</a> <span class="note">· ${n.o}, ${n.d.slice(8,10)}/${n.d.slice(5,7)}</span></li>`).join("")}</ul><div class="tools"><button onclick="setTab('cron')">Vedi gli eventi in cronologia</button><button onclick="setVic('')">Rimuovi filtro</button></div></div>`}
 const EXP={},LIM=5;
 function acc(id,items){const o=EXP[id],n=items.length;return (o?items:items.slice(0,LIM)).join("")+(n>LIM?`<button class="more" data-a="${id}" aria-expanded="${!!o}" onclick="toggleExp(this.dataset.a)">${o?"Mostra meno ▴":"Mostra altri "+(n-LIM)+" ▾"}</button>`:"")}
 function toggleExp(id){EXP[id]=!EXP[id];render()}
@@ -185,16 +203,18 @@ function renderMap(){const m=new Map();let none=0;
   ml.innerHTML=`<span class="sl">📍 ${esc(cityLabel||city)} · ${k} ${k===1?"evento":"eventi"}<button onclick="setCity('')">✕ Rimuovi</button></span>`+(known?"":`<span class="no">non presente sulla mappa</span>`)}
  else ml.innerHTML=`<span class="no">Nessuna città selezionata: tocca un pallino per sceglierla.</span>`;
  $("mapinfo").textContent=m.size?`${m.size} ${m.size===1?"città coinvolta":"città coinvolte"} con i filtri attuali: un pallino per città, a prescindere dal numero di notizie. Clicca un pallino per filtrare.`+(none?` ${none} ${none===1?"evento non ha":"eventi non hanno"} una città localizzabile e non ${none===1?"compare":"compaiono"} sulla mappa.`:""):"Nessuna città localizzabile con i filtri attuali."}
-const PL={kpis:"Riepilogo",mappa:"Mappa",ragioni:"Ragioni per tema",termini:"Mappa dei termini",vic:"Cosa sta succedendo",city:"La tua città",cron:"Cronologia",low:"Eventi meno coperti"};
+const PL={kpis:"Riepilogo",mappa:"Mappa",ragioni:"Ragioni per tema",termini:"Mappa dei termini",feed:"Cosa sta succedendo / Cronologia",city:"La tua città",low:"Eventi meno coperti"};
 const panels=()=>[...document.querySelectorAll("main > [data-p]")];
 const saveOrder=()=>{try{localStorage.setItem("order",JSON.stringify(panels().map(p=>p.dataset.p)))}catch(e){}};
 function initPanels(){const main=document.querySelector("main");let o=[];try{o=JSON.parse(localStorage.getItem("order")||"[]")}catch(e){}
+ o=o.flatMap(i=>i==="vic"?["feed"]:i==="cron"?[]:[i]);
  const ids=panels().map(p=>p.dataset.p),ord=[...o.filter(i=>ids.includes(i)),...ids.filter(i=>!o.includes(i))];
  ord.forEach(i=>main.appendChild(main.querySelector(`:scope > [data-p="${i}"]`)));
  panels().forEach(p=>p.insertAdjacentHTML("afterbegin",`<div class="pc"><span>⠿ ${PL[p.dataset.p]}</span><span><button data-d="-1">▲ Su</button> <button data-d="1">▼ Giù</button></span></div>`));
  main.addEventListener("click",e=>{const b=e.target.closest(".pc button");if(!b)return;const p=b.closest("[data-p]"),ps=panels(),i=ps.indexOf(p),j=i+Number(b.dataset.d);if(j<0||j>=ps.length)return;j<i?main.insertBefore(p,ps[j]):main.insertBefore(ps[j],p);saveOrder();p.scrollIntoView({block:"nearest",behavior:"smooth"})});
  $("editmode").onchange=e=>{main.classList.toggle("editing",e.target.checked);$("rst").hidden=!e.target.checked};
- $("rst").onclick=()=>{try{localStorage.removeItem("order")}catch(e){}location.reload()}}
+ $("rst").onclick=()=>{try{localStorage.removeItem("order")}catch(e){}location.reload()}
+ $("tabs").onkeydown=e=>{if(e.key==="ArrowRight"||e.key==="ArrowLeft"){e.preventDefault();setTab(tab==="vic"?"cron":"vic",true)}};applyTab()}
 const lw=s=>s.toLowerCase(),og=i=>SRC[i][0].split(" · ")[0],outs=e=>new Set(e.c.map(i=>lw(og(i)))),PANEL0={nazionali:[],locali:[]};let PANEL=PANEL0;
 const HX={},hit=(t,n)=>(HX[n]=HX[n]||new RegExp("(?<![\\p{L}-])"+lw(n).replace(/[.*+?^${}()|[\]\\]/g,"\\$&").replace(/'/g,"['’]")+"(?![\\p{L}-])","u")).test(t);
 function expected(e){const so=new Set([...sel].map(i=>lw(og(i)))),t=lw(e.l+" "+e.r);return new Set([...PANEL.nazionali.map(lw),...PANEL.locali.filter(x=>hit(t,x.r)||hit(t,x.c)).map(x=>lw(x.n))].filter(n=>so.has(n)))}
@@ -226,6 +246,8 @@ function render(){renderDates();renderCity();renderMap();renderVic();
  $("leg").innerHTML=[["temi","Temi"],["attori","Attori"],["vertenze","Vertenze e aziende"]].map(([k,l])=>`<button class="chip ${cat===k?"on":""}" style="border-color:${CATC[k]}" onclick="setCat('${k}')">${l}</button>`).join("");
  $("termnav").innerHTML=ws.slice(0,10).map(([w])=>`<button class="chip ${term===w?"on":""}" onclick="setTerm('${w.replace(/'/g,"")}')">${w}</button>`).join("");
  $("tl").innerHTML=acc("tl",[...v].reverse().map(ev))||"<p class='note'>Nessun evento con questi filtri.</p>";
+ $("cnt-cron").textContent=v.length;
+ $("tlnote").innerHTML=vic?`<div class="vb" style="padding:8px 12px"><span class="note">Filtro vicenda attivo:</span> <b>${vt(vic)||(data.find(e=>vk(e)===vic)||{}).x||""}</b> <button class="chip" onclick="setVic('')">✕ Rimuovi</button></div>`:"";
  const low=[...v].filter(e=>outs(e).size<=1).reverse();
  $("low").innerHTML=acc("low",low.map(ev))||"<p class='note'>Tutti gli eventi in vista hanno almeno due fonti.</p>";
 }
