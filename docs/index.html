@@ -75,6 +75,8 @@ main.editing .pc{display:flex}main.editing .pn{outline:2px dashed var(--bd);outl
 .maplabel .sl button{border:0;background:var(--ac2);color:#fff;border-radius:99px;padding:4px 11px;font:12px system-ui;cursor:pointer}.maplabel .no{color:var(--mu)}
 .dl{font:700 14px system-ui;fill:var(--tx);paint-order:stroke;stroke:var(--sf);stroke-width:4px;stroke-linejoin:round}.halo{fill:none;stroke:var(--ac2);stroke-width:2.5}
 .ib{width:18px;height:18px;border-radius:50%;border:1px solid var(--mu);background:var(--bg);color:var(--mu);font:italic 700 11px Georgia,serif;cursor:pointer;padding:0;margin-left:5px;vertical-align:middle}.ip{font:12px/1.4 system-ui;color:var(--tx);background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:8px;margin-top:6px}
+.defsbox{position:sticky;top:12px;bottom:12px;z-index:5;margin-top:14px;border:1px solid var(--ac2);border-radius:8px;padding:10px 12px;background:var(--bg);max-height:calc(100vh - 24px);overflow:auto;font:12.5px/1.4 system-ui}.defsbox[hidden]{display:none}.defshead{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}.defsbox p{margin:0 0 8px}.defsbk{display:none}
+@media(max-width:820px){.defsbox{position:fixed;left:8px;right:8px;bottom:8px;top:auto;margin:0;max-height:75vh;z-index:50;box-shadow:0 8px 30px rgba(0,0,0,.4);font-size:13.5px}.defsbk:not([hidden]){display:block;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:49}}
 .fbtn{width:100%;background:none;border:0;padding:0;color:var(--tx);text-align:left}.fbtn:focus-visible{outline:2px solid var(--ac2);outline-offset:2px}.fbtn .lbl{display:flex;gap:6px;align-items:center}.fbtn i{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none}
 .mxw{overflow-x:auto;margin:8px 0}.mx{border-collapse:collapse;font:12.5px system-ui;width:100%}.mx th,.mx td{padding:5px 6px;border-bottom:1px solid var(--bd);text-align:center;vertical-align:bottom}.mx th:first-child,.mx td:first-child{text-align:left}.mx th{font-weight:600;color:var(--mu)}.mx td small{color:var(--mu)}
 .lt{padding:7px 0;border-bottom:1px solid var(--bd);font:13.5px/1.35 system-ui}.lt .tag{font-size:11px;margin-right:4px}mark{background:rgba(255,196,0,.35);color:inherit;border-radius:2px;padding:0 1px}.lh{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:8px 0}.lintro{margin:0 0 8px}.lh b{font:600 14px system-ui}
@@ -97,7 +99,9 @@ main.editing .pc{display:flex}main.editing .pn{outline:2px dashed var(--bd);outl
 <h3>Fonti monitorate <span class="note" id="nsrc"></span></h3>
 <div class="tools"><button onclick="allSrc(1)">Tutte</button><button onclick="allSrc(0)">Nessuna</button><button onclick="resetAll()">Reset filtri</button></div>
 <div id="srcs" style="max-height:340px;overflow:auto"></div>
+<div id="defsbox" class="defsbox" role="dialog" aria-label="Come sono definite le etichette" hidden><div class="defshead"><b>Come sono definite le etichette</b><button class="chip" id="defsx" onclick="toggleDefs(false)">✕ Chiudi</button></div><div id="defsbody"></div></div>
 </aside>
+<div id="defsbk" class="defsbk" hidden onclick="toggleDefs(false)"></div>
 <main>
 <div class="card pn" data-p="kpis"><div class="kpis" id="kpis"></div></div>
 <div class="card city pn" data-p="city"><h2>La tua città</h2>
@@ -173,7 +177,7 @@ function renderCity(){
 let vic="",cat="",VIC=[];
 let LAB=[],LABX=[],ltab="term",lf="";const LT=["term","lab","time"],MINT=5;try{const s=localStorage.getItem("ltab");if(LT.includes(s))ltab=s}catch(e){}
 function applyLtab(focus){LT.forEach(k=>{const on=ltab===k,b=$("ltab-"+k);b.setAttribute("aria-selected",String(on));b.tabIndex=on?0:-1;$("lview-"+k).hidden=!on});if(focus)$("ltab-"+ltab).focus()}
-function setLtab(t,focus){ltab=t;try{localStorage.setItem("ltab",t)}catch(e){}applyLtab(focus)}
+function setLtab(t,focus){ltab=t;if(t==="term"&&dopen)toggleDefs(false);try{localStorage.setItem("ltab",t)}catch(e){}applyLtab(focus)}
 function setLf(id){lf=lf===id?"":id;render()}
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])),escRx=s=>s.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
 function compileLab(){LABX=LAB.map(f=>({...f,rx:f.t.map(t=>new RegExp("(?<![\\p{L}])"+t.toLowerCase().replace(/[.+?^${}()|[\]\\*]/g,m=>m==="*"?"\\p{L}*":"\\"+m).replace(/\s+/g,"\\s+").replace(/['’]/g,"['’]")+"(?![\\p{L}])","giu"))}))}
@@ -182,10 +186,14 @@ function tagOf(t){const s=t.toLowerCase().replace(/’/g,"'"),out={};LABX.forEac
 function titlesOf(es){const seen=new Set(),out=[];es.forEach(e=>(e.news?newsOf(e):[]).forEach(n=>{const k=n.u||n.t;if(seen.has(k))return;seen.add(k);out.push({...n,ev:e.d,tg:tagOf(n.t)})}));return out}
 const hl=(t,tg)=>{const h=[...new Set(Object.values(tg).flat())].sort((a,b)=>b.length-a.length);let x=esc(t);if(!h.length)return x;return x.replace(new RegExp(h.map(escRx).join("|"),"giu"),m=>"<mark>"+m+"</mark>")};
 const info=(txt)=>`<button class="ib" aria-label="Come leggere questa vista" aria-expanded="false" onclick="togInfo(this)">i</button><div class="ip" hidden>${txt}</div>`;
-const defs=()=>`<button class="chip" aria-expanded="false" onclick="togInfo(this)">Come sono definite le etichette?</button><div class="ip" hidden><p style="margin:0 0 6px">Ogni etichetta si assegna se il titolo contiene almeno una parola della sua famiglia (esempi sotto). Un titolo può avere più etichette o nessuna; «senza», «nessun…» escludono la parola.</p>${LABX.map(f=>`<p style="margin:0 0 6px"><b style="color:${f.c}">${f.n}</b>: ${esc(f.d)}.<br><span class="note">es. ${f.t.slice(0,6).map(t=>esc(t.replace(/\*$/,"…"))).join(", ")}</span></p>`).join("")}<p class="note" style="margin:0">Dizionario pubblico e modificabile; indica come è scritto il titolo, non se è corretto.</p></div>`;
+let dopen=false;
+const defsHtml=()=>`<p>Ogni etichetta si assegna se il titolo contiene almeno una parola della sua famiglia (esempi sotto). Un titolo può avere più etichette o nessuna; «senza», «nessun…» escludono la parola.</p>${LABX.map(f=>`<p><b style="color:${f.c}">${f.n}</b>: ${esc(f.d)}.<br><span class="note">es. ${f.t.slice(0,6).map(t=>esc(t.replace(/\*$/,"…"))).join(", ")}</span></p>`).join("")}<p class="note">Dizionario pubblico e modificabile; indica come è scritto il titolo, non se è corretto.</p>`;
+const defs=()=>`<button class="chip defbtn" aria-expanded="${dopen}" aria-controls="defsbox" onclick="toggleDefs()">Come sono definite le etichette?</button>`;
+function toggleDefs(v){dopen=v===undefined?!dopen:v;$("defsbox").hidden=!dopen;$("defsbk").hidden=!dopen;document.querySelectorAll(".defbtn").forEach(b=>b.setAttribute("aria-expanded",String(dopen)));if(dopen){$("defsx").focus()}}
 function labHead(ts,sc){const N=ts.length,no=ts.filter(t=>!Object.keys(t.tg).length).length,o=new Set(ts.map(t=>lw(t.o))).size;
  return `<div class="note">${sc} · ${N} ${N===1?"titolo":"titoli"} da ${o} ${o===1?"testata":"testate"}${N?" · "+(N>=MINT?pct(no/N):no)+" senza etichetta":""}</div>`}
 function renderLang(){
+ $("defsbody").innerHTML=defsHtml();
  const es=view(),ts=titlesOf(es),N=ts.length,sc=vic?"Vicenda «"+esc(vt(vic)||"")+"»":"Tutti gli eventi con i filtri attivi";
  const empty=!LABX.length?"<p class='note'>Dizionario delle etichette non ancora presente nei dati: lancia «aggiorna dati» in Actions.</p>":!N?"<p class='note'>Nessun titolo collegato agli eventi con questi filtri. Gli eventi inseriti a mano o con una sola fonte possono non avere titoli.</p>":"";
  const nof=ts.filter(t=>!Object.keys(t.tg).length).length,cnt=f=>ts.filter(t=>t.tg[f.id]).length;
@@ -299,6 +307,7 @@ const THM=["auto","light","dark"],LBL={auto:"Tema: automatico",light:"Tema: chia
 let tm="auto";try{tm=localStorage.getItem("theme")||"auto"}catch(e){}
 function applyTheme(m){const r=document.documentElement;m==="auto"?r.removeAttribute("data-theme"):r.setAttribute("data-theme",m);$("thm").textContent=LBL[m]}
 $("thm").onclick=()=>{tm=THM[(THM.indexOf(tm)+1)%3];try{localStorage.setItem("theme",tm)}catch(e){}applyTheme(tm)};applyTheme(tm);
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&dopen)toggleDefs(false)});
 initPanels();
 fetch('data.json',{cache:'no-store'}).then(r=>r.json()).then(j=>{SRC=j.sources;DEMO=j.events;VIC=j.vicende||[];PANEL=j.panel||PANEL;LAB=j.labels||[];compileLab();UPD=j.updated||"";defRange();$('upd').textContent=' · aggiornato '+new Date(j.updated).toLocaleString('it-IT',{dateStyle:'short',timeStyle:'short'});init()}).catch(()=>{document.querySelector('main').insertAdjacentHTML('afterbegin','<div class="card">Impossibile caricare data.json. Se apri il file in locale, avvia un server: <code>python -m http.server -d docs</code></div>')});
 </script>
