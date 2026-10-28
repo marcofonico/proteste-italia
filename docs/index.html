@@ -2,6 +2,7 @@
 <html lang="it"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Radar proteste e conflitto sociale in Italia</title>
+<meta name="theme-color" content="#fffde9">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -14,25 +15,25 @@
 <meta property="og:image" content="https://marcofonico.github.io/proteste-italia/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Dashboard con i numeri di riepilogo, la mappa delle città coinvolte e le ragioni delle mobilitazioni">
+<meta property="og:image:alt" content="Dashboard con i numeri di riepilogo, i filtri con la mappa delle città e le vicende in corso">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Radar proteste e conflitto sociale in Italia">
 <meta name="twitter:description" content="Scioperi, cortei, occupazioni e proteste in Italia: cronologia, città coinvolte, ragioni e copertura delle fonti.">
 <meta name="twitter:image" content="https://marcofonico.github.io/proteste-italia/og-image.png">
 <meta name="description" content="Scioperi, cortei, occupazioni e manifestazioni in Italia: cronologia, ragioni e copertura delle fonti.">
 <style>
-:root{--bg:#f6f5f1;--sf:#fff;--tx:#1c1b19;--mu:#6b6860;--bd:#e2dfd6;--ac:#b4361f;--ac2:#1f5fb4;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161512;--sf:#201f1b;--tx:#efece4;--mu:#9a968b;--bd:#35332d;--ac:#ff7a5c;--ac2:#6aa5ff;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#161512;--sf:#201f1b;--tx:#efece4;--mu:#9a968b;--bd:#35332d;--ac:#ff7a5c;--ac2:#6aa5ff;color-scheme:dark}
+:root{--bg:#fffde9;--sf:#fffef7;--tx:#261540;--mu:#66577f;--bd:#e3d8f5;--ac:#996def;--ac2:#5a32b5;--ink:#261540;--on:#a9cc3c;--bc:#8a78ad;--onac2:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1030;--sf:#26183f;--tx:#fffde9;--mu:#b6a9d0;--bd:#3d2c61;--ac:#996def;--ac2:#a9cc3c;--ink:#7a5fc0;--on:#a9cc3c;--bc:#8a73c7;--onac2:#261540;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1b1030;--sf:#26183f;--tx:#fffde9;--mu:#b6a9d0;--bd:#3d2c61;--ac:#996def;--ac2:#a9cc3c;--ink:#7a5fc0;--on:#a9cc3c;--bc:#8a73c7;--onac2:#261540;color-scheme:dark}
 *{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 Georgia,'Times New Roman',serif}
 h1,h2,h3,button,input,textarea,.ui{font-family:system-ui,-apple-system,Segoe UI,sans-serif}
 header{padding:18px 20px;border-bottom:1px solid var(--bd)}h1{margin:0;font-size:22px}header p{margin:4px 0 0;color:var(--mu);font-size:13px}
 .wrap{display:grid;grid-template-columns:290px 1fr;gap:16px;padding:16px 20px;max-width:1280px;margin:auto}
-@media(max-width:820px){.wrap{grid-template-columns:1fr;padding:12px}}
+@media(max-width:820px){.wrap{grid-template-columns:minmax(0,1fr);padding:12px}}
 aside,.card{background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:14px}
 aside h3,.card h2{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--mu)}
-main{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;min-width:0;grid-auto-flow:dense}.pn{grid-column:1/-1}.pn.half{grid-column:auto}@media(max-width:820px){main{grid-template-columns:1fr}.pn.half{grid-column:1/-1}}
+main{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;min-width:0;grid-auto-flow:dense}.pn{grid-column:1/-1}.pn.half{grid-column:auto}@media(max-width:820px){main{grid-template-columns:minmax(0,1fr)}.pn.half{grid-column:1/-1}}
 input[type=search]{width:100%;padding:8px 10px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font-size:14px}
 .chips{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 14px}
 .chip{border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:99px;padding:3px 10px;font-size:12px;cursor:pointer}.chip.on{background:var(--ac2);color:#fff;border-color:var(--ac2)}
@@ -94,6 +95,29 @@ aside .cityrow{flex-wrap:nowrap}aside .cityrow input{min-width:0;padding:9px;fon
 .tabs button:focus-visible,.chip:focus-visible{outline:2px solid var(--ac2);outline-offset:2px}
 .cnt{font:600 11px system-ui;background:var(--bg);border:1px solid var(--bd);border-radius:99px;padding:1px 7px;margin-left:4px;color:var(--mu)}
 [role="tabpanel"][hidden]{display:none}
+.fc{color:var(--c)}.tag.fc{border-color:var(--c)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .fc{color:color-mix(in srgb,var(--c) 55%,#fff)}}:root[data-theme="dark"] .fc{color:color-mix(in srgb,var(--c) 55%,#fff)}
+/* Tema risograph: carta crema, inchiostro viola, evidenziatore lime */
+@font-face{font-family:"Poppins";font-weight:700;font-style:normal;font-display:swap;src:url(fonts/poppins-bold.woff) format("woff")}
+h1,h2,.kpi b,.badge{font-family:"Poppins",system-ui,-apple-system,Segoe UI,sans-serif;font-weight:700}
+h1{font-size:24px;letter-spacing:-.01em}
+header{background:var(--bg);color:var(--tx);border-bottom:2px solid var(--ink)}header p{color:var(--mu)}
+h1{--hl:58%;display:inline;background:linear-gradient(transparent var(--hl),var(--on) var(--hl));padding:0 6px;margin-left:-6px;-webkit-box-decoration-break:clone;box-decoration-break:clone;line-height:1.5;color:var(--tx)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) h1{--hl:82%}}:root[data-theme="dark"] h1{--hl:82%}
+.card,aside{border:2px solid var(--ink);border-radius:8px;box-shadow:4px 4px 0 var(--ac)}
+.card h2,aside h3{color:var(--tx)}
+.kpi b{color:var(--ac2);font-size:30px}
+.chip,.tools button,.pc button,input[type=search],.dates input,.more{border-color:var(--bc)}
+.chip.on{background:var(--on);color:#261540;border-color:#261540;font-weight:600}.chip.on:not(.rc):not(.fopen)::before{content:"✓ "}
+.chip.apply,.cityrow button.apply,.fshow{background:var(--ac);color:#261540;border-color:#261540;font-weight:600}
+.date.now{background:var(--ac);color:#261540;border-color:#261540}.date.now i{color:#261540}
+.badge{background:var(--ac2);color:var(--onac2)}.badge.now{background:var(--ac);color:#261540}.badge.past{background:var(--mu);color:var(--bg)}
+.maplabel .sl button{background:var(--ac2);color:var(--onac2)}
+.tabs button[aria-selected="true"]{border-bottom-color:var(--ac)}
+mark{background:var(--on);color:#261540}
+.recap{border-bottom:2px solid var(--ink)}.pn{scroll-margin-top:64px}
+.dot{stroke:var(--sf)}
+.more{border-color:var(--ink)}
 </style>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script></head><body>
 <header style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px"><div><h1>Radar proteste e conflitto sociale in Italia</h1><p>Scioperi, cortei, blocchi, occupazioni: cronologia, ragioni e copertura delle fonti<span id="upd"></span></p></div><div class="hbtn"><label class="chip sw"><input type="checkbox" id="editmode"> Modifica ordine</label><button id="rst" class="chip" hidden>Ripristina ordine</button><button id="thm" class="chip" style="white-space:nowrap" aria-label="Cambia tema"></button></div></header>
@@ -147,7 +171,7 @@ aside .cityrow{flex-wrap:nowrap}aside .cityrow input{min-width:0;padding:9px;fon
 <footer class="note" style="max-width:1280px;margin:auto;padding:0 20px 24px">Dati aggregati da titoli e link di feed pubblici; gli eventi «auto» sono classificati automaticamente e possono contenere errori. Per i dettagli consulta sempre le fonti collegate. Il sito usa Cloudflare Web Analytics, un servizio di statistiche aggregate sulle visite che non utilizza cookie.<br>Contatti e info: <a href="mailto:marcofonico@gmail.com">marcofonico@gmail.com</a></footer>
 <script>
 let SRC=[],DEMO=[];
-const TH={Lavoro:"#1f5fb4","Diritti e libertà":"#b4361f","Scuola e università":"#7a3fb4","Costo della vita":"#8a6d1a","Pace e riarmo":"#1f8a4c",Sfruttamento:"#b41f7a","Cultura e spettacolo":"#1f8a8a","Ambiente e territorio":"#4c8a1f","Migrazioni e accoglienza":"#555"};
+const TH={Lavoro:"#2f6fa3","Diritti e libertà":"#c0436a","Scuola e università":"#6b4bb8","Costo della vita":"#b36a00","Pace e riarmo":"#2e8b6e",Sfruttamento:"#a33d8f","Cultura e spettacolo":"#1d8a99","Ambiente e territorio":"#5f8a1f","Migrazioni e accoglienza":"#6b6b7d"};
 const STOP=new Set("della delle degli dello alla alle agli sulla sulle dopo anni tutti sono nuovo nuova come tra fra per con che non una uno gli dei del dal dai nel nei sui sul più già ancora verso contro tutta italia".split(" "));
 let data=[],sel=new Set(),th=null,ty=null,term="",d1="",d2="",city="",cityLabel="",nat=true;const $=id=>document.getElementById(id),pct=x=>Math.round(x*100)+"%";
 const iso=d=>d.toLocaleDateString("sv-SE"),today=()=>iso(new Date());
@@ -170,7 +194,7 @@ function view(nc){return base(0,nc).filter(e=>(!th||e.h===th)&&(!ty||e.t===ty)&&
 function fmt(d){const[y,m,g]=d.split("-");return[g,["gen","feb","mar","apr","mag","giu","lug","ago","set","ott","nov","dic"][m-1]]}
 function srcLinks(e){return e.c.map(i=>`<a class="tag" href="${SRC[i][2]}" target="_blank" rel="noopener">${i+1}</a>`).join("")}
 function ev(e){const t=today(),k=e.d===t?"now":e.d>t?"fut":"",[g,m]=fmt(e.d);
- return `<div class="ev"><div class="date ${k}">${g}<i>${m}</i></div><div><b>${e.x}</b><div class="meta"><span class="tag">${e.t}</span>${e.auto?'<span class="tag" title="Classificazione automatica: da verificare">auto</span>':""}<span class="tag" style="color:${TH[e.h]}">${e.h}</span>${e.l}, ${e.r} · ${e.a} · ${outs(e).size} ${outs(e).size===1?"fonte":"fonti"}: ${srcLinks(e)}</div><p class="es">${e.o}</p></div></div>`}
+ return `<div class="ev"><div class="date ${k}">${g}<i>${m}</i></div><div><b>${e.x}</b><div class="meta"><span class="tag">${e.t}</span>${e.auto?'<span class="tag" title="Classificazione automatica: da verificare">auto</span>':""}<span class="tag fc" style="--c:${TH[e.h]}">${e.h}</span>${e.l}, ${e.r} · ${e.a} · ${outs(e).size} ${outs(e).size===1?"fonte":"fonti"}: ${srcLinks(e)}</div><p class="es">${e.o}</p></div></div>`}
 const CITIES="Agrigento,Alessandria,Ancona,Aosta,Arezzo,Ascoli Piceno,Asti,Avellino,Bari,Barletta,Belluno,Benevento,Bergamo,Biella,Bologna,Bolzano,Brescia,Brindisi,Cagliari,Caltanissetta,Campobasso,Caserta,Catania,Catanzaro,Chieti,Como,Cosenza,Cremona,Crotone,Cuneo,Enna,Ferrara,Firenze,Foggia,Forlì,Frosinone,Genova,Gorizia,Grosseto,Imperia,Isernia,L'Aquila,La Spezia,Latina,Lecce,Lecco,Livorno,Lodi,Lucca,Macerata,Mantova,Massa,Matera,Messina,Milano,Modena,Monza,Napoli,Novara,Nuoro,Oristano,Padova,Palermo,Parma,Pavia,Perugia,Pesaro,Pescara,Piacenza,Pisa,Pistoia,Pordenone,Potenza,Prato,Ragusa,Ravenna,Reggio Calabria,Reggio Emilia,Rieti,Rimini,Roma,Rovigo,Salerno,Sassari,Savona,Siena,Siracusa,Sondrio,Taranto,Teramo,Terni,Torino,Trapani,Trento,Treviso,Trieste,Udine,Varese,Venezia,Mestre,Verbania,Vercelli,Verona,Vibo Valentia,Vicenza,Viterbo,Alba,Porcia,Carrara".split(",");
 const CRX=CITIES.map(c=>[c,new RegExp("(?<![\\p{L}])"+c.replace(/'/g,"['’]")+"(?![\\p{L}])","iu")]);
 const citiesOf=e=>CRX.filter(([c,r])=>r.test(e.l)).map(([c])=>c);
@@ -203,7 +227,7 @@ function titlesOf(es){const seen=new Set(),out=[];es.forEach(e=>(e.news?newsOf(e
 const hl=(t,tg)=>{const h=[...new Set(Object.values(tg).flat())].sort((a,b)=>b.length-a.length);let x=esc(t);if(!h.length)return x;return x.replace(new RegExp(h.map(escRx).join("|"),"giu"),m=>"<mark>"+m+"</mark>")};
 const info=(txt)=>`<button class="ib" aria-label="Come leggere questa vista" aria-expanded="false" onclick="togInfo(this)">i</button><div class="ip" hidden>${txt}</div>`;
 let dopen=false;
-const defsHtml=()=>`<p>Ogni etichetta si assegna se il titolo contiene almeno una parola della sua famiglia (esempi sotto). Un titolo può avere più etichette o nessuna; «senza», «nessun…» escludono la parola.</p>${LABX.map(f=>`<p><b style="color:${f.c}">${f.n}</b>: ${esc(f.d)}.<br><span class="note">es. ${f.t.slice(0,6).map(t=>esc(t.replace(/\*$/,"…"))).join(", ")}</span></p>`).join("")}<p class="note">Dizionario pubblico e modificabile; indica come è scritto il titolo, non se è corretto.</p>`;
+const defsHtml=()=>`<p>Ogni etichetta si assegna se il titolo contiene almeno una parola della sua famiglia (esempi sotto). Un titolo può avere più etichette o nessuna; «senza», «nessun…» escludono la parola.</p>${LABX.map(f=>`<p><b class="fc" style="--c:${f.c}">${f.n}</b>: ${esc(f.d)}.<br><span class="note">es. ${f.t.slice(0,6).map(t=>esc(t.replace(/\*$/,"…"))).join(", ")}</span></p>`).join("")}<p class="note">Dizionario pubblico e modificabile; indica come è scritto il titolo, non se è corretto.</p>`;
 const defs=()=>`<button class="chip defbtn" aria-expanded="${dopen}" aria-controls="defsbox" onclick="toggleDefs()">Come sono definite le etichette?</button>`;
 let sheet=false,kopen=false,NV=0;
 function syncSide(){const m=sheet||dopen,sd=$("side");sd.classList.toggle("show",m);sd.classList.toggle("defs",dopen);$("fbk").hidden=!m;if(document.body)document.body.style.overflow=m&&innerWidth<=820?"hidden":""}
@@ -222,10 +246,10 @@ function renderLang(){
  const bars=LABX.map(f=>{const n=cnt(f);return `<button class="bar fbtn ${lf===f.id?"on":""}" aria-pressed="${lf===f.id}" title="${esc(f.d)}" onclick="setLf('${f.id}')"><span class="lbl"><i style="background:${f.c}"></i>${f.n}</span><div class="track">${N>=MINT?`<div class="fill" style="width:${n/N*100}%;background:${f.c}"></div>`:""}</div><small>${N>=MINT?pct(n/N)+" · ":""}${n}</small></button>`}).join("");
  let mx="";
  if(vic){const by={};ts.forEach(t=>(by[t.o]=by[t.o]||[]).push(t));const rows=Object.entries(by).sort((a,b)=>b[1].length-a[1].length);
-  mx=`<div class="mxw"><table class="mx"><thead><tr><th>Testata</th>${LABX.map(f=>`<th title="${esc(f.d)}" style="color:${f.c}">${f.n}</th>`).join("")}<th>Titoli</th></tr></thead><tbody>${rows.map(([o,a])=>`<tr><td>${esc(o)}</td>${LABX.map(f=>{const n=a.filter(t=>t.tg[f.id]).length;return `<td>${n?`<b style="color:${f.c}">${n}</b>`:`<span class="note">·</span>`}</td>`}).join("")}<td>${a.length}</td></tr>`).join("")}</tbody></table></div><p class="note">Ogni cella: quanti titoli di quella testata usano l’etichetta.</p>`}
+  mx=`<div class="mxw"><table class="mx"><thead><tr><th>Testata</th>${LABX.map(f=>`<th class="fc" title="${esc(f.d)}" style="--c:${f.c}">${f.n}</th>`).join("")}<th>Titoli</th></tr></thead><tbody>${rows.map(([o,a])=>`<tr><td>${esc(o)}</td>${LABX.map(f=>{const n=a.filter(t=>t.tg[f.id]).length;return `<td>${n?`<b class="fc" style="--c:${f.c}">${n}</b>`:`<span class="note">·</span>`}</td>`}).join("")}<td>${a.length}</td></tr>`).join("")}</tbody></table></div><p class="note">Ogni cella: quanti titoli di quella testata usano l’etichetta.</p>`}
  else mx=`<p class="note">Vista aggregata sul filtro attivo. Scegli una vicenda in «Cosa sta succedendo» per confrontare come ne parlano le singole testate.</p>`;
  const sh=lf?ts.filter(t=>t.tg[lf]):ts,lfn=(LABX.find(f=>f.id===lf)||{}).n;
- const items=[...sh].sort((a,b)=>b.d.localeCompare(a.d)).map(t=>`<div class="lt"><a href="${esc(t.u)}" target="_blank" rel="noopener">${hl(t.t,t.tg)}</a> <span class="note">· ${esc(t.o)}, ${t.d.slice(8,10)}/${t.d.slice(5,7)}</span><div>${LABX.filter(f=>t.tg[f.id]).map(f=>`<span class="tag" style="border-color:${f.c};color:${f.c}">${f.n}</span>`).join("")||"<span class='note'>senza etichetta</span>"}</div></div>`);
+ const items=[...sh].sort((a,b)=>b.d.localeCompare(a.d)).map(t=>`<div class="lt"><a href="${esc(t.u)}" target="_blank" rel="noopener">${hl(t.t,t.tg)}</a> <span class="note">· ${esc(t.o)}, ${t.d.slice(8,10)}/${t.d.slice(5,7)}</span><div>${LABX.filter(f=>t.tg[f.id]).map(f=>`<span class="tag fc" style="--c:${f.c}">${f.n}</span>`).join("")||"<span class='note'>senza etichetta</span>"}</div></div>`);
  $("labbox").innerHTML=lead+labHead(ts,sc)+(N<MINT?`<p class="note">Con pochi titoli (${N}) mostro solo i conteggi, senza percentuali.</p>`:"")+bars+mx+`<div class="lh"><b>${lf?"Titoli con l’etichetta «"+lfn+"»":"Titoli analizzati"}</b>${lf?`<button class="chip" onclick="setLf('${lf}')">✕ Rimuovi</button>`:""}</div>`+(acc("labt",items)||"<p class='note'>Nessun titolo.</p>");
  const PH=[["Prima dell’evento",0],["Giorno dell’evento",1],["Dopo",2]],ph=t=>{const d=t.d.slice(0,10);return d<t.ev?0:d===t.ev?1:2},P=PH.map(([l,k])=>ts.filter(t=>ph(t)===k));
  const cell=(a,n)=>n?`<b>${n}</b>${a.length>=MINT?` <small>${pct(n/a.length)}</small>`:""}`:`<span class="note">·</span>`;
@@ -333,10 +357,10 @@ function render(){renderDates();renderCity();renderMap();renderVic();renderLang(
  const types=[...new Set(data.map(e=>e.t))];$("types").innerHTML=types.map(x=>`<button class="chip ${ty===x?"on":""}" onclick="setTy('${x}')">${x}</button>`).join("");
  const rows=Object.keys(TH).map(h=>{const it=all.filter(e=>e.h===h);return{h,n:it.length,r:new Set(it.flatMap(e=>e.c)).size/n}}).filter(r=>r.n).sort((a,b)=>b.r-a.r);
  $("themes").innerHTML=rows.map(r=>`<div class="bar ${th===r.h?"on":""}" onclick="setTh('${r.h}')"><span class="lbl">${r.h}</span><div class="track"><div class="fill" style="width:${r.r*100}%;background:${TH[r.h]}"></div></div><small>${pct(r.r)} · ${r.n}</small></div>`).join("")||"<p class='note'>Nessun dato.</p>";
- const CATC={temi:"#1f5fb4",attori:"#b4361f",vertenze:"#1f8a4c"},f={},col={};
+ const CATC={temi:"#2f6fa3",attori:"#c0436a",vertenze:"#2e8b6e"},f={},col={};
  all.filter(e=>!th||e.h===th).forEach(e=>(e.terms||e.m.map(x=>[x.toLowerCase(),"temi"])).forEach(([w,c])=>{if(cat&&c!==cat)return;f[w]=(f[w]||0)+e.c.length;col[w]=c}));
  const ws=Object.entries(f).sort((a,b)=>b[1]-a[1]).slice(0,30),mx=ws.length?ws[0][1]:1;
- $("cloud").innerHTML=[...ws].sort((a,b)=>a[0].localeCompare(b[0])).map(([w,c])=>`<span class="${term===w?"on":""}" style="font-size:${12+22*Math.sqrt(c/mx)}px;color:${CATC[col[w]]}" data-w="${w}" onclick="setTerm(this.dataset.w)">${w}</span>`).join("");
+ $("cloud").innerHTML=[...ws].sort((a,b)=>a[0].localeCompare(b[0])).map(([w,c])=>`<span class="fc ${term===w?"on":""}" style="font-size:${12+22*Math.sqrt(c/mx)}px;--c:${CATC[col[w]]}" data-w="${w}" onclick="setTerm(this.dataset.w)">${w}</span>`).join("");
  $("leg").innerHTML=[["temi","Temi"],["attori","Attori"],["vertenze","Vertenze e aziende"]].map(([k,l])=>`<button class="chip ${cat===k?"on":""}" style="border-color:${CATC[k]}" onclick="setCat('${k}')">${l}</button>`).join("");
  $("tl").innerHTML=acc("tl",[...v].reverse().map(ev))||"<p class='note'>Nessun evento con questi filtri.</p>";
  $("cnt-cron").textContent=v.length;
