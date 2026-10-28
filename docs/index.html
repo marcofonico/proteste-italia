@@ -97,8 +97,9 @@ aside .cityrow{flex-wrap:nowrap}aside .cityrow input{min-width:0;padding:9px;fon
 [role="tabpanel"][hidden]{display:none}
 .fc{color:var(--c)}.tag.fc{border-color:var(--c)}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .fc{color:color-mix(in srgb,var(--c) 55%,#fff)}}:root[data-theme="dark"] .fc{color:color-mix(in srgb,var(--c) 55%,#fff)}
+.tabdesc{margin:0 0 10px}.vc{scroll-margin-top:70px}.nw{margin-top:6px;font:13px system-ui}.nw summary{cursor:pointer;font-weight:600;color:var(--ac2)}.nw ul,.vx ul{margin:6px 0;padding-left:18px;font:13px/1.4 system-ui}.vl{margin-top:8px}
 /* Tema risograph: carta crema, inchiostro viola, evidenziatore lime */
-@font-face{font-family:"Poppins";font-weight:700;font-style:normal;font-display:swap;src:url(fonts/poppins-bold.woff) format("woff")}
+@font-face{font-family:"Poppins";font-weight:700;font-style:normal;font-display:swap;src:url(poppins-bold.woff) format("woff")}
 h1,h2,.kpi b,.badge{font-family:"Poppins",system-ui,-apple-system,Segoe UI,sans-serif;font-weight:700}
 h1{font-size:24px;letter-spacing:-.01em}
 header{background:var(--bg);color:var(--tx);border-bottom:2px solid var(--ink)}header p{color:var(--mu)}
@@ -115,7 +116,9 @@ h1{--hl:58%;display:inline;background:linear-gradient(transparent var(--hl),var(
 .maplabel .sl button{background:var(--ac2);color:var(--onac2)}
 .tabs button[aria-selected="true"]{border-bottom-color:var(--ac)}
 mark{background:var(--on);color:#261540}
-.recap{border-bottom:2px solid var(--ink)}.pn{scroll-margin-top:64px}
+.recap{border-bottom:2px solid var(--ink)}
+.vc.on{border:3px solid var(--ac2);background:color-mix(in srgb,var(--on) 16%,var(--sf));box-shadow:5px 5px 0 var(--ac2);padding:8px 10px 10px}
+.vx{margin-top:10px;padding-top:8px;border-top:2px dashed var(--ac2)}.badge.sel{background:var(--ink);color:var(--bg)}.pn{scroll-margin-top:64px}
 .dot{stroke:var(--sf)}
 .more{border-color:var(--ink)}
 </style>
@@ -153,8 +156,8 @@ mark{background:var(--on);color:#261540}
 <div class="tabs" id="tabs" role="tablist" aria-label="Scegli la vista">
 <button role="tab" id="tab-vic" aria-selected="true" aria-controls="view-vic" onclick="setTab('vic')">Cosa sta succedendo <span class="cnt" id="cnt-vic"></span></button>
 <button role="tab" id="tab-cron" aria-selected="false" aria-controls="view-cron" tabindex="-1" onclick="setTab('cron')">Cronologia <span class="cnt" id="cnt-cron"></span></button></div>
-<div role="tabpanel" id="view-vic" aria-labelledby="tab-vic"><div id="vbanner"></div><div class="chips" id="vstatus"></div><div id="vlist"></div></div>
-<div role="tabpanel" id="view-cron" aria-labelledby="tab-cron" hidden><div id="tlnote"></div><div id="tl"></div></div>
+<div role="tabpanel" id="view-vic" aria-labelledby="tab-vic"><p class="note tabdesc"><b>Vicende</b>: raggruppano più eventi collegati, ad esempio un ciclo di scioperi o una serie di cortei. Scegline una per filtrare tutta la pagina.</p><div id="vbanner"></div><div class="chips" id="vstatus"></div><div id="vlist"></div></div>
+<div role="tabpanel" id="view-cron" aria-labelledby="tab-cron" hidden><p class="note tabdesc"><b>Singoli eventi</b>, dal più recente. Ogni evento riunisce le notizie delle fonti che ne parlano: apri «notizie» per leggerle una per una.</p><div id="tlnote"></div><div id="tl"></div></div>
 </div>
 <div class="card pn" data-p="ragioni"><h2>Ragioni (temi) delle mobilitazioni</h2><div id="themes"></div><p class="note">Barra = quota di fonti selezionate che documentano eventi di quel tema. Clic per filtrare.</p></div>
 <div class="card pn" data-p="termini">
@@ -193,8 +196,10 @@ const vbase=()=>base(1,0,1).filter(e=>(!th||e.h===th)&&(!ty||e.t===ty)&&(!term||
 function view(nc){return base(0,nc).filter(e=>(!th||e.h===th)&&(!ty||e.t===ty)&&(!term||hay(e).includes(term))).sort((a,b)=>a.d.localeCompare(b.d))}
 function fmt(d){const[y,m,g]=d.split("-");return[g,["gen","feb","mar","apr","mag","giu","lug","ago","set","ott","nov","dic"][m-1]]}
 function srcLinks(e){return e.c.map(i=>`<a class="tag" href="${SRC[i][2]}" target="_blank" rel="noopener">${i+1}</a>`).join("")}
-function ev(e){const t=today(),k=e.d===t?"now":e.d>t?"fut":"",[g,m]=fmt(e.d);
- return `<div class="ev"><div class="date ${k}">${g}<i>${m}</i></div><div><b>${e.x}</b><div class="meta"><span class="tag">${e.t}</span>${e.auto?'<span class="tag" title="Classificazione automatica: da verificare">auto</span>':""}<span class="tag fc" style="--c:${TH[e.h]}">${e.h}</span>${e.l}, ${e.r} · ${e.a} · ${outs(e).size} ${outs(e).size===1?"fonte":"fonti"}: ${srcLinks(e)}</div><p class="es">${e.o}</p></div></div>`}
+function ev(e){const t=today(),k=e.d===t?"now":e.d>t?"fut":"",[g,m]=fmt(e.d),vn=vt(e.v),nws=e.news?newsOf(e):[];
+ const nw=nws.length?`<details class="nw"><summary>${nws.length} ${nws.length===1?"notizia":"notizie"} su questo evento</summary><ul>${nws.map(n=>`<li><a href="${esc(n.u)}" target="_blank" rel="noopener">${esc(n.t)}</a> <span class="note">· ${esc(n.o)}${n.d?", "+n.d.slice(8,10)+"/"+n.d.slice(5,7):""}</span></li>`).join("")}</ul></details>`:"",
+ vl=vn?`<button class="chip vl" data-v="${esc(e.v)}" onclick="openVic(this.dataset.v)">Vicenda: ${esc(vn)} →</button>`:"";
+ return `<div class="ev"><div class="date ${k}">${g}<i>${m}</i></div><div><b>${e.x}</b><div class="meta"><span class="tag">${e.t}</span>${e.auto?'<span class="tag" title="Classificazione automatica: da verificare">auto</span>':""}<span class="tag fc" style="--c:${TH[e.h]}">${e.h}</span>${e.l}, ${e.r} · ${e.a} · ${outs(e).size} ${outs(e).size===1?"fonte":"fonti"}: ${srcLinks(e)}</div><p class="es">${e.o}</p>${nw}${vl}</div></div>`}
 const CITIES="Agrigento,Alessandria,Ancona,Aosta,Arezzo,Ascoli Piceno,Asti,Avellino,Bari,Barletta,Belluno,Benevento,Bergamo,Biella,Bologna,Bolzano,Brescia,Brindisi,Cagliari,Caltanissetta,Campobasso,Caserta,Catania,Catanzaro,Chieti,Como,Cosenza,Cremona,Crotone,Cuneo,Enna,Ferrara,Firenze,Foggia,Forlì,Frosinone,Genova,Gorizia,Grosseto,Imperia,Isernia,L'Aquila,La Spezia,Latina,Lecce,Lecco,Livorno,Lodi,Lucca,Macerata,Mantova,Massa,Matera,Messina,Milano,Modena,Monza,Napoli,Novara,Nuoro,Oristano,Padova,Palermo,Parma,Pavia,Perugia,Pesaro,Pescara,Piacenza,Pisa,Pistoia,Pordenone,Potenza,Prato,Ragusa,Ravenna,Reggio Calabria,Reggio Emilia,Rieti,Rimini,Roma,Rovigo,Salerno,Sassari,Savona,Siena,Siracusa,Sondrio,Taranto,Teramo,Terni,Torino,Trapani,Trento,Treviso,Trieste,Udine,Varese,Venezia,Mestre,Verbania,Vercelli,Verona,Vibo Valentia,Vicenza,Viterbo,Alba,Porcia,Carrara".split(",");
 const CRX=CITIES.map(c=>[c,new RegExp("(?<![\\p{L}])"+c.replace(/'/g,"['’]")+"(?![\\p{L}])","iu")]);
 const citiesOf=e=>CRX.filter(([c,r])=>r.test(e.l)).map(([c])=>c);
@@ -256,7 +261,9 @@ function renderLang(){
  $("timebox").innerHTML=`<p class="note lintro">Come cambia il linguaggio dei titoli prima, durante e dopo l’evento.${info("<b>Prima</b>: titoli pubblicati prima della data dell’evento; <b>giorno</b>: lo stesso giorno; <b>dopo</b>: nei giorni successivi. Le percentuali compaiono solo con almeno "+MINT+" titoli nella fase.")}</p>${defs()}`+labHead(ts,sc)+(vic?"":`<p class="note">Vista aggregata sul filtro attivo: scegli una vicenda per seguirne l’evoluzione.</p>`)+
  `<div class="mxw"><table class="mx"><thead><tr><th>Famiglia</th>${PH.map(([l],i)=>`<th>${l}<br><small>${P[i].length} ${P[i].length===1?"titolo":"titoli"}</small></th>`).join("")}</tr></thead><tbody>${LABX.map(f=>`<tr><td><span class="fbtn"><span class="lbl"><i style="background:${f.c}"></i>${f.n}</span></span></td>${P.map(a=>`<td>${cell(a,a.filter(t=>t.tg[f.id]).length)}</td>`).join("")}</tr>`).join("")}<tr><td><span class="note">Senza etichetta</span></td>${P.map(a=>`<td>${cell(a,a.filter(t=>!Object.keys(t.tg).length).length)}</td>`).join("")}</tr></tbody></table></div>`}
 const vk=e=>e.v||e.x,vt=id=>(VIC.find(v=>v.id===id)||{}).t;
-function setVic(id){vic=vic===id?"":id;render()}
+function showSel(){const el=document.querySelector("#vlist .vc.on");if(el&&el.scrollIntoView)el.scrollIntoView({block:"nearest",behavior:"smooth"})}
+function setVic(id){vic=vic===id?"":id;EXP.vnews=false;render();if(vic)showSel()}
+function openVic(id){if(vic!==id)EXP.vnews=false;vic=id;setTab("vic");render();showSel()}
 function setCat(c){cat=cat===c?"":c;render()}
 function newsOf(e){const on=new Set([...sel].map(i=>SRC[i][0]));return e.news?e.news.filter(n=>on.has(n.o)):e.c.map(i=>({t:SRC[i][0],o:SRC[i][1],u:SRC[i][2],d:e.d}))}
 let tab="vic",vst="all";try{const s=localStorage.getItem("tab");if(s==="vic"||s==="cron")tab=s}catch(e){}
@@ -273,17 +280,20 @@ function renderVic(){
  const NC={all:L.length,corso:0,programma:0,conclusa:0};L.forEach(v=>NC[v.st]++);
  $("vstatus").innerHTML=[["all","Tutte"],["corso","In corso"],["programma","In programma"],["conclusa","Concluse"]].map(([k,l])=>`<button class="chip ${vst===k?"on":""}" aria-pressed="${vst===k}" onclick="setVst('${k}')">${l} <small>${NC[k]}</small></button>`).join("");
  $("cnt-vic").textContent=L.length;
+const ES=vic?vbase().filter(e=>vk(e)===vic):[],seenN=new Set(),NS=[];
+ ES.forEach(e=>newsOf(e).forEach(n=>{if(!seenN.has(n.u)){seenN.add(n.u);NS.push(n)}}));NS.sort((a,b)=>b.d.localeCompare(a.d));
  const card=v=>{const st=v.a>t?["In programma",""]:v.z>=t?["In corso","now"]:["Conclusa","past"];
   const act=[...new Set(v.es.flatMap(e=>(e.terms||[]).filter(x=>x[1]==="attori").map(x=>x[0])))].slice(0,4),pl=[...new Set(v.es.flatMap(placesOf))].slice(0,3);
   const [g1,m1]=fmt(v.a),[g2,m2]=fmt(v.z);
-  return `<div class="vc ${vic===v.id?"on":""}"><span class="badge ${st[1]}">${st[0]}</span> <b>${v.t}</b><div class="meta"><span>${v.a===v.z?g1+" "+m1:g1+" "+m1+" → "+g2+" "+m2}</span><span>${v.es.length} ${v.es.length===1?"evento":"eventi"} · ${v.src} fonti</span>${act.map(x=>`<span class="tag">${x}</span>`).join("")}${pl.map(x=>`<span class="tag">📍 ${x}</span>`).join("")}</div><div class="tools"><button data-v="${v.id}" onclick="setVic(this.dataset.v)">${vic===v.id?"Rimuovi filtro":"Vedi notizie correlate"}</button></div></div>`};
- const shown=vst==="all"?L:L.filter(v=>v.st===vst),EM={all:"Nessuna vicenda con questi filtri.",corso:"Nessuna vicenda in corso con questi filtri.",programma:"Nessuna vicenda in programma con questi filtri.",conclusa:"Nessuna vicenda conclusa con questi filtri."};
+  const on=vic===v.id;
+  return `<div class="vc ${on?"on":""}">${on?`<span class="badge sel">✓ Selezionata</span> `:""}<span class="badge ${st[1]}">${st[0]}</span> <b>${v.t}</b><div class="meta"><span>${v.a===v.z?g1+" "+m1:g1+" "+m1+" → "+g2+" "+m2}</span><span>${v.es.length} ${v.es.length===1?"evento":"eventi"} · ${v.src} fonti</span>${act.map(x=>`<span class="tag">${x}</span>`).join("")}${pl.map(x=>`<span class="tag">📍 ${x}</span>`).join("")}</div><div class="tools"><button data-v="${v.id}" onclick="setVic(this.dataset.v)">${on?"Rimuovi filtro":"Vedi notizie correlate"}</button></div>${on?`<div class="vx"><div class="note">Filtro attivo su tutta la pagina (il filtro periodo è sospeso) · ${ES.length} ${ES.length===1?"evento":"eventi"} · ${NS.length} notizie correlate</div><ul>${(EXP.vnews?NS:NS.slice(0,NL)).map(n=>`<li><a href="${esc(n.u)}" target="_blank" rel="noopener">${esc(n.t)}</a> <span class="note">· ${esc(n.o)}, ${n.d.slice(8,10)}/${n.d.slice(5,7)}</span></li>`).join("")}</ul>${NS.length>NL?`<button class="more" data-a="vnews" aria-expanded="${!!EXP.vnews}" onclick="toggleExp(this.dataset.a)">${EXP.vnews?"Mostra meno ▴":"Visualizza tutte le "+NS.length+" notizie ▾"}</button>`:""}<div class="tools"><button onclick="setTab('cron')">Vedi gli eventi in cronologia</button></div></div>`:""}</div>`};
+ let shown=vst==="all"?L:L.filter(v=>v.st===vst);
+ if(vic&&!shown.some(v=>v.id===vic)){const sv=L.find(v=>v.id===vic);if(sv)shown=[sv,...shown]}
+ if(vic&&shown.findIndex(v=>v.id===vic)>=LIM)EXP.vlist=true;
+ const EM={all:"Nessuna vicenda con questi filtri.",corso:"Nessuna vicenda in corso con questi filtri.",programma:"Nessuna vicenda in programma con questi filtri.",conclusa:"Nessuna vicenda conclusa con questi filtri."};
  $("vlist").innerHTML=acc("vlist",shown.map(card))||`<p class='note'>${EM[vst]}${(d1||d2)&&!vic?` <button class="chip" onclick="setRange(null,null)">Togli il filtro periodo</button>`:""}</p>`;
- const es=vic?vbase().filter(e=>vk(e)===vic):[];
- if(!es.length){$("vbanner").innerHTML="";return}
- const seen=new Set(),ns=[];es.forEach(e=>newsOf(e).forEach(n=>{if(!seen.has(n.u)){seen.add(n.u);ns.push(n)}}));ns.sort((a,b)=>b.d.localeCompare(a.d));
- $("vbanner").innerHTML=`<div class="vb"><b>${vt(vic)||es[0].x}</b><div class="note">Filtro attivo su tutta la pagina (il filtro periodo è sospeso) · ${es.length} eventi · ${ns.length} notizie correlate</div><ul>${ns.map(n=>`<li><a href="${n.u}" target="_blank" rel="noopener">${n.t}</a> <span class="note">· ${n.o}, ${n.d.slice(8,10)}/${n.d.slice(5,7)}</span></li>`).join("")}</ul><div class="tools"><button onclick="setTab('cron')">Vedi gli eventi in cronologia</button><button onclick="setVic('')">Rimuovi filtro</button></div></div>`}
-const EXP={},LIM=5;
+ $("vbanner").innerHTML=""}
+const EXP={},LIM=5,NL=15;
 function acc(id,items){const o=EXP[id],n=items.length;return (o?items:items.slice(0,LIM)).join("")+(n>LIM?`<button class="more" data-a="${id}" aria-expanded="${!!o}" onclick="toggleExp(this.dataset.a)">${o?"Mostra meno ▴":"Mostra altri "+(n-LIM)+" ▾"}</button>`:"")}
 function toggleExp(id){EXP[id]=!EXP[id];render()}
 const COORD={};"Agrigento 37.31,13.58;Alessandria 44.91,8.61;Ancona 43.62,13.52;Aosta 45.74,7.32;Arezzo 43.46,11.88;Ascoli Piceno 42.85,13.58;Asti 44.90,8.21;Avellino 40.91,14.79;Bari 41.12,16.87;Barletta 41.32,16.28;Belluno 46.14,12.22;Benevento 41.13,14.78;Bergamo 45.70,9.67;Biella 45.57,8.05;Bologna 44.49,11.34;Bolzano 46.50,11.35;Brescia 45.54,10.22;Brindisi 40.63,17.94;Cagliari 39.22,9.12;Caltanissetta 37.49,14.06;Campobasso 41.56,14.66;Caserta 41.07,14.33;Catania 37.50,15.09;Catanzaro 38.91,16.59;Chieti 42.35,14.17;Como 45.81,9.09;Cosenza 39.30,16.25;Cremona 45.13,10.02;Crotone 39.08,17.13;Cuneo 44.38,7.54;Enna 37.57,14.28;Ferrara 44.84,11.62;Firenze 43.77,11.26;Foggia 41.46,15.55;Forlì 44.22,12.04;Frosinone 41.64,13.34;Genova 44.41,8.93;Gorizia 45.94,13.62;Grosseto 42.76,11.11;Imperia 43.89,8.03;Isernia 41.59,14.23;L'Aquila 42.35,13.40;La Spezia 44.10,9.82;Latina 41.47,12.90;Lecce 40.35,18.17;Lecco 45.86,9.40;Livorno 43.55,10.31;Lodi 45.31,9.50;Lucca 43.84,10.50;Macerata 43.30,13.45;Mantova 45.16,10.79;Massa 44.04,10.14;Matera 40.67,16.60;Messina 38.19,15.55;Milano 45.46,9.19;Modena 44.65,10.93;Monza 45.58,9.27;Napoli 40.85,14.27;Novara 45.45,8.62;Nuoro 40.32,9.33;Oristano 39.90,8.59;Padova 45.41,11.88;Palermo 38.12,13.36;Parma 44.80,10.33;Pavia 45.19,9.16;Perugia 43.11,12.39;Pesaro 43.91,12.91;Pescara 42.46,14.21;Piacenza 45.05,9.69;Pisa 43.72,10.40;Pistoia 43.93,10.92;Pordenone 45.96,12.66;Potenza 40.64,15.80;Prato 43.88,11.10;Ragusa 36.93,14.73;Ravenna 44.42,12.20;Reggio Calabria 38.11,15.65;Reggio Emilia 44.70,10.63;Rieti 42.40,12.86;Rimini 44.06,12.57;Roma 41.90,12.50;Rovigo 45.07,11.79;Salerno 40.68,14.77;Sassari 40.73,8.56;Savona 44.31,8.48;Siena 43.32,11.33;Siracusa 37.08,15.29;Sondrio 46.17,9.87;Taranto 40.47,17.24;Teramo 42.66,13.70;Terni 42.56,12.64;Torino 45.07,7.69;Trapani 38.02,12.51;Trento 46.07,11.12;Treviso 45.67,12.24;Trieste 45.65,13.78;Udine 46.06,13.24;Varese 45.82,8.83;Venezia 45.44,12.32;Mestre 45.49,12.24;Verbania 45.92,8.55;Vercelli 45.32,8.42;Verona 45.44,10.99;Vibo Valentia 38.68,16.10;Vicenza 45.55,11.55;Viterbo 42.42,12.11;Alba 44.70,8.04;Porcia 45.96,12.60;Carrara 44.08,10.10;Ferentino 41.69,13.25;Fossano 44.55,7.72;Cerignola 41.26,15.90".split(";").forEach(s=>{const i=s.lastIndexOf(" "),p=s.slice(i+1).split(",");COORD[s.slice(0,i)]=[+p[0],+p[1]]});
