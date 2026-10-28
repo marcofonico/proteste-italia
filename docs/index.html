@@ -22,9 +22,9 @@
 <meta name="twitter:image" content="https://marcofonico.github.io/proteste-italia/og-image.png">
 <meta name="description" content="Scioperi, cortei, occupazioni e manifestazioni in Italia: cronologia, ragioni e copertura delle fonti.">
 <style>
-:root{--bg:#fffde9;--sf:#fffef7;--tx:#261540;--mu:#66577f;--bd:#e3d8f5;--ac:#996def;--ac2:#5a32b5;--ink:#261540;--on:#a9cc3c;--bc:#8a78ad;--onac2:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1030;--sf:#26183f;--tx:#fffde9;--mu:#b6a9d0;--bd:#3d2c61;--ac:#996def;--ac2:#a9cc3c;--ink:#7a5fc0;--on:#a9cc3c;--bc:#8a73c7;--onac2:#261540;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#1b1030;--sf:#26183f;--tx:#fffde9;--mu:#b6a9d0;--bd:#3d2c61;--ac:#996def;--ac2:#a9cc3c;--ink:#7a5fc0;--on:#a9cc3c;--bc:#8a73c7;--onac2:#261540;color-scheme:dark}
+:root{--bg:#fffde9;--sf:#fffef7;--tx:#261540;--mu:#66577f;--bd:#e3d8f5;--ac:#996def;--ac2:#5a32b5;--ink:#261540;--on:#a9cc3c;--bc:#8a78ad;--tr:#e4d9f6;--onac2:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1030;--sf:#26183f;--tx:#fffde9;--mu:#b6a9d0;--bd:#3d2c61;--ac:#996def;--ac2:#a9cc3c;--ink:#7a5fc0;--on:#a9cc3c;--bc:#8a73c7;--tr:#3a2a5c;--onac2:#261540;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1b1030;--sf:#26183f;--tx:#fffde9;--mu:#b6a9d0;--bd:#3d2c61;--ac:#996def;--ac2:#a9cc3c;--ink:#7a5fc0;--on:#a9cc3c;--bc:#8a73c7;--tr:#3a2a5c;--onac2:#261540;color-scheme:dark}
 *{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 Georgia,'Times New Roman',serif}
 h1,h2,h3,button,input,textarea,.ui{font-family:system-ui,-apple-system,Segoe UI,sans-serif}
@@ -41,7 +41,7 @@ input[type=search]{width:100%;padding:8px 10px;border:1px solid var(--bd);border
 .tools{display:flex;gap:6px;margin:6px 0;flex-wrap:wrap}.tools button{font-size:12px;padding:4px 9px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:6px;cursor:pointer}
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}.kpi b{display:block;font:700 26px system-ui}.kpi span{font:12px system-ui;color:var(--mu)}
 .bar{display:grid;grid-template-columns:120px 1fr 70px;gap:8px;align-items:center;margin:6px 0;font:13px system-ui;cursor:pointer}.bar.on .lbl{font-weight:700;color:var(--ac)}
-.track{height:14px;background:var(--bg);border-radius:7px;overflow:hidden}.fill{height:100%;border-radius:7px}.bar small{color:var(--mu);text-align:right}
+.track{height:14px;background:var(--tr);border:1px solid var(--bc);border-radius:7px;overflow:hidden}.fill{height:100%;border-radius:7px;background:var(--c)}.bar small{color:var(--mu);text-align:right}
 #cloud{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;justify-content:center;padding:6px;line-height:1.1}
 #cloud span{cursor:pointer}#cloud span:hover{text-decoration:underline}#cloud span.on{outline:2px solid var(--ac);border-radius:4px}
 .ev{padding:12px 0;border-top:1px solid var(--bd);display:grid;grid-template-columns:64px 1fr;gap:12px}.ev:first-child{border:0}
@@ -86,7 +86,7 @@ aside .cityrow{flex-wrap:nowrap}aside .cityrow input{min-width:0;padding:9px;fon
 @media(max-width:820px){aside{display:none}aside.show{display:block;position:fixed;left:8px;right:8px;bottom:8px;top:auto;max-height:88vh;z-index:60;box-shadow:0 8px 30px rgba(0,0,0,.4)}.fbk:not([hidden]){display:block;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:55}
 .fopen{display:inline-flex;align-items:center;flex:none;white-space:nowrap}.fhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.fshow{display:block;width:100%;background:var(--ac2);color:#fff;border-color:var(--ac2);font-weight:600;margin-top:12px;padding:10px;text-align:center;position:sticky;bottom:0;z-index:2;box-shadow:0 -8px 8px -4px var(--sf)}aside #mapbox svg{max-width:240px}header{flex-direction:column}header h1{font-size:19px}.hbtn{justify-content:flex-start}
 .recap{flex-wrap:nowrap;padding:6px 0 8px}.rchips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.rchips .chip{white-space:nowrap;flex:none}.rcount{font-size:12px;flex:none}.defsbox{font-size:13.5px}}
-.fbtn{width:100%;background:none;border:0;padding:0;color:var(--tx);text-align:left}.fbtn:focus-visible{outline:2px solid var(--ac2);outline-offset:2px}.fbtn .lbl{display:flex;gap:6px;align-items:center}.fbtn i{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none}
+.fbtn{width:100%;background:none;border:0;padding:0;color:var(--tx);text-align:left}.fbtn:focus-visible{outline:2px solid var(--ac2);outline-offset:2px}.fbtn .lbl{display:flex;gap:6px;align-items:center}.fbtn i{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none;background:var(--c)}
 .mxw{overflow-x:auto;margin:8px 0}.mx{border-collapse:collapse;font:12.5px system-ui;width:100%}.mx th,.mx td{padding:5px 6px;border-bottom:1px solid var(--bd);text-align:center;vertical-align:bottom}.mx th:first-child,.mx td:first-child{text-align:left}.mx th{font-weight:600;color:var(--mu)}.mx td small{color:var(--mu)}
 .lt{padding:7px 0;border-bottom:1px solid var(--bd);font:13.5px/1.35 system-ui}.lt .tag{font-size:11px;margin-right:4px}mark{background:rgba(255,196,0,.35);color:inherit;border-radius:2px;padding:0 1px}.lh{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:8px 0}.lintro{margin:0 0 8px}.lh b{font:600 14px system-ui}
 .tabs{display:flex;border-bottom:1px solid var(--bd);margin:0 0 12px}
@@ -98,6 +98,7 @@ aside .cityrow{flex-wrap:nowrap}aside .cityrow input{min-width:0;padding:9px;fon
 .fc{color:var(--c)}.tag.fc{border-color:var(--c)}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .fc{color:color-mix(in srgb,var(--c) 55%,#fff)}}:root[data-theme="dark"] .fc{color:color-mix(in srgb,var(--c) 55%,#fff)}
 .tabdesc{margin:0 0 10px}.vc{scroll-margin-top:70px}.nw{margin-top:6px;font:13px system-ui}.nw summary{cursor:pointer;font-weight:600;color:var(--ac2)}.nw ul,.vx ul{margin:6px 0;padding-left:18px;font:13px/1.4 system-ui}.vl{margin-top:8px}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .fill,:root:not([data-theme="light"]) .fbtn i{background:color-mix(in srgb,var(--c) 68%,#fff)}}:root[data-theme="dark"] .fill,:root[data-theme="dark"] .fbtn i{background:color-mix(in srgb,var(--c) 68%,#fff)}
 /* Tema risograph: carta crema, inchiostro viola, evidenziatore lime */
 @font-face{font-family:"Poppins";font-weight:700;font-style:normal;font-display:swap;src:url(poppins-bold.woff) format("woff")}
 h1,h2,.kpi b,.badge{font-family:"Poppins",system-ui,-apple-system,Segoe UI,sans-serif;font-weight:700}
@@ -174,7 +175,7 @@ mark{background:var(--on);color:#261540}
 <footer class="note" style="max-width:1280px;margin:auto;padding:0 20px 24px">Dati aggregati da titoli e link di feed pubblici; gli eventi «auto» sono classificati automaticamente e possono contenere errori. Per i dettagli consulta sempre le fonti collegate. Il sito usa Cloudflare Web Analytics, un servizio di statistiche aggregate sulle visite che non utilizza cookie.<br>Contatti e info: <a href="mailto:marcofonico@gmail.com">marcofonico@gmail.com</a></footer>
 <script>
 let SRC=[],DEMO=[];
-const TH={Lavoro:"#2f6fa3","Diritti e libertà":"#c0436a","Scuola e università":"#6b4bb8","Costo della vita":"#b36a00","Pace e riarmo":"#2e8b6e",Sfruttamento:"#a33d8f","Cultura e spettacolo":"#1d8a99","Ambiente e territorio":"#5f8a1f","Migrazioni e accoglienza":"#6b6b7d"};
+const TH={Lavoro:"#0e7490","Diritti e libertà":"#c2255c","Scuola e università":"#4338ca","Costo della vita":"#c2410c","Pace e riarmo":"#15803d",Sfruttamento:"#a21caf","Cultura e spettacolo":"#a16207","Ambiente e territorio":"#5f7a0a","Migrazioni e accoglienza":"#5b6478"};
 const STOP=new Set("della delle degli dello alla alle agli sulla sulle dopo anni tutti sono nuovo nuova come tra fra per con che non una uno gli dei del dal dai nel nei sui sul più già ancora verso contro tutta italia".split(" "));
 let data=[],sel=new Set(),th=null,ty=null,term="",d1="",d2="",city="",cityLabel="",nat=true;const $=id=>document.getElementById(id),pct=x=>Math.round(x*100)+"%";
 const iso=d=>d.toLocaleDateString("sv-SE"),today=()=>iso(new Date());
@@ -248,7 +249,7 @@ function renderLang(){
  const nof=ts.filter(t=>!Object.keys(t.tg).length).length,cnt=f=>ts.filter(t=>t.tg[f.id]).length;
  const lead=`<p class="note lintro">Quanti titoli usano parole di ciascuna famiglia. Un titolo può avere più etichette o nessuna.${info("Si analizzano i <b>titoli</b>, non gli articoli, con un dizionario di parole (modificabile). Mostra come viene raccontato un fatto, non se una testata è giusta o sbagliata. Con meno di "+MINT+" titoli si vedono solo i conteggi.")}</p>${defs()}`;
  if(empty){$("labbox").innerHTML=lead+empty;$("timebox").innerHTML=lead+empty;return}
- const bars=LABX.map(f=>{const n=cnt(f);return `<button class="bar fbtn ${lf===f.id?"on":""}" aria-pressed="${lf===f.id}" title="${esc(f.d)}" onclick="setLf('${f.id}')"><span class="lbl"><i style="background:${f.c}"></i>${f.n}</span><div class="track">${N>=MINT?`<div class="fill" style="width:${n/N*100}%;background:${f.c}"></div>`:""}</div><small>${N>=MINT?pct(n/N)+" · ":""}${n}</small></button>`}).join("");
+ const bars=LABX.map(f=>{const n=cnt(f);return `<button class="bar fbtn ${lf===f.id?"on":""}" aria-pressed="${lf===f.id}" title="${esc(f.d)}" onclick="setLf('${f.id}')"><span class="lbl"><i style="--c:${f.c}"></i>${f.n}</span><div class="track">${N>=MINT?`<div class="fill" style="width:${n/N*100}%;--c:${f.c}"></div>`:""}</div><small>${N>=MINT?pct(n/N)+" · ":""}${n}</small></button>`}).join("");
  let mx="";
  if(vic){const by={};ts.forEach(t=>(by[t.o]=by[t.o]||[]).push(t));const rows=Object.entries(by).sort((a,b)=>b[1].length-a[1].length);
   mx=`<div class="mxw"><table class="mx"><thead><tr><th>Testata</th>${LABX.map(f=>`<th class="fc" title="${esc(f.d)}" style="--c:${f.c}">${f.n}</th>`).join("")}<th>Titoli</th></tr></thead><tbody>${rows.map(([o,a])=>`<tr><td>${esc(o)}</td>${LABX.map(f=>{const n=a.filter(t=>t.tg[f.id]).length;return `<td>${n?`<b class="fc" style="--c:${f.c}">${n}</b>`:`<span class="note">·</span>`}</td>`}).join("")}<td>${a.length}</td></tr>`).join("")}</tbody></table></div><p class="note">Ogni cella: quanti titoli di quella testata usano l’etichetta.</p>`}
@@ -259,7 +260,7 @@ function renderLang(){
  const PH=[["Prima dell’evento",0],["Giorno dell’evento",1],["Dopo",2]],ph=t=>{const d=t.d.slice(0,10);return d<t.ev?0:d===t.ev?1:2},P=PH.map(([l,k])=>ts.filter(t=>ph(t)===k));
  const cell=(a,n)=>n?`<b>${n}</b>${a.length>=MINT?` <small>${pct(n/a.length)}</small>`:""}`:`<span class="note">·</span>`;
  $("timebox").innerHTML=`<p class="note lintro">Come cambia il linguaggio dei titoli prima, durante e dopo l’evento.${info("<b>Prima</b>: titoli pubblicati prima della data dell’evento; <b>giorno</b>: lo stesso giorno; <b>dopo</b>: nei giorni successivi. Le percentuali compaiono solo con almeno "+MINT+" titoli nella fase.")}</p>${defs()}`+labHead(ts,sc)+(vic?"":`<p class="note">Vista aggregata sul filtro attivo: scegli una vicenda per seguirne l’evoluzione.</p>`)+
- `<div class="mxw"><table class="mx"><thead><tr><th>Famiglia</th>${PH.map(([l],i)=>`<th>${l}<br><small>${P[i].length} ${P[i].length===1?"titolo":"titoli"}</small></th>`).join("")}</tr></thead><tbody>${LABX.map(f=>`<tr><td><span class="fbtn"><span class="lbl"><i style="background:${f.c}"></i>${f.n}</span></span></td>${P.map(a=>`<td>${cell(a,a.filter(t=>t.tg[f.id]).length)}</td>`).join("")}</tr>`).join("")}<tr><td><span class="note">Senza etichetta</span></td>${P.map(a=>`<td>${cell(a,a.filter(t=>!Object.keys(t.tg).length).length)}</td>`).join("")}</tr></tbody></table></div>`}
+ `<div class="mxw"><table class="mx"><thead><tr><th>Famiglia</th>${PH.map(([l],i)=>`<th>${l}<br><small>${P[i].length} ${P[i].length===1?"titolo":"titoli"}</small></th>`).join("")}</tr></thead><tbody>${LABX.map(f=>`<tr><td><span class="fbtn"><span class="lbl"><i style="--c:${f.c}"></i>${f.n}</span></span></td>${P.map(a=>`<td>${cell(a,a.filter(t=>t.tg[f.id]).length)}</td>`).join("")}</tr>`).join("")}<tr><td><span class="note">Senza etichetta</span></td>${P.map(a=>`<td>${cell(a,a.filter(t=>!Object.keys(t.tg).length).length)}</td>`).join("")}</tr></tbody></table></div>`}
 const vk=e=>e.v||e.x,vt=id=>(VIC.find(v=>v.id===id)||{}).t;
 function showSel(){const el=document.querySelector("#vlist .vc.on");if(el&&el.scrollIntoView)el.scrollIntoView({block:"nearest",behavior:"smooth"})}
 function setVic(id){vic=vic===id?"":id;EXP.vnews=false;render();if(vic)showSel()}
@@ -366,8 +367,8 @@ function render(){renderDates();renderCity();renderMap();renderVic();renderLang(
  $("kpis").innerHTML=`<div class="kpis">${KP.slice(0,3).map(kc).join("")}</div><details class="kmore" ${kopen?"open":""} ontoggle="kopen=this.open"><summary>Altri indicatori</summary><div class="kpis">${KP.slice(3).map(kc).join("")}</div></details>`;
  const types=[...new Set(data.map(e=>e.t))];$("types").innerHTML=types.map(x=>`<button class="chip ${ty===x?"on":""}" onclick="setTy('${x}')">${x}</button>`).join("");
  const rows=Object.keys(TH).map(h=>{const it=all.filter(e=>e.h===h);return{h,n:it.length,r:new Set(it.flatMap(e=>e.c)).size/n}}).filter(r=>r.n).sort((a,b)=>b.r-a.r);
- $("themes").innerHTML=rows.map(r=>`<div class="bar ${th===r.h?"on":""}" onclick="setTh('${r.h}')"><span class="lbl">${r.h}</span><div class="track"><div class="fill" style="width:${r.r*100}%;background:${TH[r.h]}"></div></div><small>${pct(r.r)} · ${r.n}</small></div>`).join("")||"<p class='note'>Nessun dato.</p>";
- const CATC={temi:"#2f6fa3",attori:"#c0436a",vertenze:"#2e8b6e"},f={},col={};
+ $("themes").innerHTML=rows.map(r=>`<div class="bar ${th===r.h?"on":""}" onclick="setTh('${r.h}')"><span class="lbl">${r.h}</span><div class="track"><div class="fill" style="width:${r.r*100}%;--c:${TH[r.h]}"></div></div><small>${pct(r.r)} · ${r.n}</small></div>`).join("")||"<p class='note'>Nessun dato.</p>";
+ const CATC={temi:"#0e7490",attori:"#c2255c",vertenze:"#4338ca"},f={},col={};
  all.filter(e=>!th||e.h===th).forEach(e=>(e.terms||e.m.map(x=>[x.toLowerCase(),"temi"])).forEach(([w,c])=>{if(cat&&c!==cat)return;f[w]=(f[w]||0)+e.c.length;col[w]=c}));
  const ws=Object.entries(f).sort((a,b)=>b[1]-a[1]).slice(0,30),mx=ws.length?ws[0][1]:1;
  $("cloud").innerHTML=[...ws].sort((a,b)=>a[0].localeCompare(b[0])).map(([w,c])=>`<span class="fc ${term===w?"on":""}" style="font-size:${12+22*Math.sqrt(c/mx)}px;--c:${CATC[col[w]]}" data-w="${w}" onclick="setTerm(this.dataset.w)">${w}</span>`).join("");
