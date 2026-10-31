@@ -316,6 +316,12 @@ def main():
     OUT.write_text(json.dumps({"updated": dt.datetime.now().isoformat(timespec="minutes"),
                                "sources": sources, "panel": panel, "labels": G.get("etichette", []), "vicende": vicende, "events": events}, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"scritto {OUT}: {len(events)} eventi, {len(sources)} fonti")
+    # dossier: approfondimenti su eventi di forte impatto (dossiers.json); un errore qui non blocca i dati
+    try:
+        import dossier
+        dossier.run(items, events, TODAY, G, region_of, _norm)
+    except Exception as e:
+        print("ERRORE dossier:", e, file=sys.stderr)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "sciopero-2026-10-30",
+    "titolo": "Sciopero nazionale del 30 ottobre 2026",
+    "descrizione": "Titoli e, dove recuperabili, testi delle testate monitorate su uno sciopero articolato su più livelli. Le cifre e le parole dei titoli si aggiornano a ogni raccolta.",
+    "giorno": "2026-10-30",
+    "da": "2026-10-26",
+    "a": "2026-11-09",
+    "stato": "in corso",
+    "rx": "sciopero (generale|nazionale)|(generale|nazionale).{0,40}sciopero|sciopero del 30|30 ottobre.{0,60}sciopero|sciopero.{0,60}30 ottobre"
+  }
+]

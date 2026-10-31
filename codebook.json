@@ -1,0 +1,32 @@
+{
+  "_nota": "Codebook dei dossier (analisi dei testi). Regole a dizionario: ogni risultato mostra la frase che lo giustifica. Radici con * = parola aperta (scontr* = scontro, scontri...). Cambia 'versione' dopo ogni modifica: i testi vengono rianalizzati. Le famiglie base (Scontro, Tensione, Partecipazione, Rivendicazione, Ordine pubblico, Disagio) sono quelle di glossary.json, qui estese con parole tipiche dei testi lunghi.",
+  "versione": "0.1",
+  "estensioni": {
+    "rivendicazione": ["richieste", "piattaforma", "motivazioni", "manovra", "legge di bilancio", "pension*", "sanità", "welfare", "per ottenere", "contro la riforma", "contro il decreto"],
+    "ordine": ["digos", "vigilanza", "percorso del corteo", "presidiat*", "blindat*", "controlli", "forze di polizia", "reparti mobili", "celere"],
+    "disagio": ["fasce di garanzia", "servizi minimi", "servizi essenziali", "garantit*", "utenti", "passegger*", "pendolar*", "treni", "voli", "metro", "autobus", "trasporti", "scuole chiuse", "ripercussioni", "rischio paralisi", "viaggiator*"],
+    "partecipazione": ["hanno aderito", "ha aderito", "aderent*", "sfilat*", "in corteo", "in piazza", "in strada", "manifestanti", "partecipanti"]
+  },
+  "famiglie_testo": [
+    {"id": "regolazione", "n": "Regolazione e legittimità", "d": "Il conflitto è raccontato attraverso le regole: precettazione, servizi minimi, legittimità dello sciopero", "c": "#8a5a00",
+     "t": ["precettazion*", "precettat*", "commissione di garanzia", "legge 146", "illegittim*", "legittim*", "violazione della legge", "sciopero selvaggio", "diritto di sciopero", "costituzion*", "servizi pubblici essenziali", "franchigia", "rarefazione"]},
+    {"id": "economia", "n": "Costo economico", "d": "L'azione è raccontata attraverso i suoi costi o le sue ricadute economiche", "c": "#475569",
+     "t": ["perdite", "danni economici", "costo dello sciopero", "milioni di euro", "miliardi", "produzione", "pil", "economia", "fatturato", "impatto economico", "mancati incassi"]}
+  ],
+  "verbi_dire": ["ha detto", "hanno detto", "dice", "dicono", "ha dichiarato", "hanno dichiarato", "dichiara", "dichiarano", "ha spiegato", "spiega", "spiegano", "ha affermato", "afferma", "affermano", "ha sottolineato", "sottolinea", "ha aggiunto", "aggiunge", "ha denunciato", "denuncia", "denunciano", "ha commentato", "commenta", "ha precisato", "precisa", "ha annunciato", "annuncia", "ha ribadito", "ribadisce", "ribadiscono", "ha sostenuto", "sostiene", "ha scritto", "scrive", "ha attaccato", "attacca", "ha criticato", "critica", "ha replicato", "replica", "ha risposto", "risponde", "ha osservato", "osserva", "ha evidenziato", "evidenzia", "ha assicurato", "assicura", "ha avvertito", "avverte", "ha rilevato", "rileva", "ha rimarcato", "rimarca", "fa sapere", "ha fatto sapere", "fanno sapere", "ha concluso", "conclude", "ha chiarito", "chiarisce", "ha rivendicato", "rivendica", "ha puntualizzato", "puntualizza", "ha insistito", "insiste", "ha auspicato", "auspica", "ha promesso", "promette", "ha minacciato", "minaccia", "ha invitato", "invita"],
+  "voci": [
+    {"id": "sindacati", "n": "Sindacati e lavoratori", "d": "Sindacati, delegati, lavoratori, organizzatori", "t": ["cgil", "cisl", "uil", "usb", "cub", "cobas", "si cobas", "fiom", "fim", "uilm", "flc", "sindacat*", "sindacalist*", "landini", "rsu", "delegat*", "lavorator*", "operai", "organizzator*", "promotor*", "segretari* general*"]},
+    {"id": "governo", "n": "Governo e ministeri", "d": "Governo, ministri, ministeri", "t": ["governo", "ministr*", "palazzo chigi", "meloni", "salvini", "piantedosi", "calderone", "viminale", "mit", "premier", "sottosegretari*", "esecutivo", "ministero"]},
+    {"id": "forze_ordine", "n": "Questura e forze dell'ordine", "d": "Questura, prefettura, polizia, carabinieri", "t": ["questur*", "questore", "prefett*", "polizia", "carabinier*", "forze dell'ordine", "digos"]},
+    {"id": "imprese", "n": "Imprese e gestori dei servizi", "d": "Aziende, associazioni di impresa, gestori di trasporti e servizi", "t": ["confindustria", "confcommercio", "azienda", "aziend*", "datori di lavoro", "imprenditor*", "trenitalia", "italo", "trenord", "atm", "atac", "gestor*", "amministratore delegato", "vertici aziendali"]},
+    {"id": "politica", "n": "Politica e amministrazioni locali", "d": "Partiti non di governo, sindaci, assessori, regioni", "t": ["schlein", "pd", "m5s", "movimento 5 stelle", "opposizione", "conte", "sindaco", "sindaca", "assessor*", "consigliere", "fratoianni", "bonelli", "avs", "presidente della regione", "governatore"]},
+    {"id": "esperti", "n": "Esperti e studiosi", "d": "Analisti, giuristi, economisti, accademici", "t": ["esperto", "esperta", "espert*", "analista", "sociolog*", "giurist*", "costituzionalist*", "economista", "ricercator*", "professor*", "docente universitari*"]},
+    {"id": "cittadini", "n": "Cittadini e utenti", "d": "Pendolari, passeggeri, utenti, genitori, commercianti", "t": ["pendolar*", "passegger*", "utenti", "cittadini", "genitori", "commercianti", "viaggiator*"]}
+  ],
+  "attribuzione_cifre": {
+    "organizzatori": ["organizzator*", "sindacat*", "cgil", "usb", "cub", "cobas", "fiom", "promotor*", "comitato"],
+    "questura": ["questur*", "polizia", "forze dell'ordine", "prefettur*", "digos", "carabinier*"],
+    "ministero": ["minister*", "governo", "funzione pubblica", "viminale"],
+    "azienda": ["aziend*", "gestor*", "trenitalia", "datori"]
+  }
+}
