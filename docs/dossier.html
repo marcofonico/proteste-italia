@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dossier · Radar proteste</title>
+<meta name="theme-color" content="#fffde9">
+<meta name="description" content="Approfondimenti sugli eventi di maggior impatto: come ne parlano i titoli e, dove recuperabili, i testi delle testate.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://proteste.marcofonico.com/dossier.html">
+<style>
+
+:root{--bg:#fffde9;--sf:#fffef7;--tx:#261540;--mu:#66577f;--bd:#e3d8f5;--ac:#996def;--ac2:#5a32b5;--ink:#261540;--on:#a9cc3c;--bc:#8a78ad;--tr:#e4d9f6;--onac2:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1030;--sf:#26183f;--tx:#fffde9;--mu:#b6a9d0;--bd:#3d2c61;--ac:#996def;--ac2:#a9cc3c;--ink:#7a5fc0;--on:#a9cc3c;--bc:#8a73c7;--tr:#3a2a5c;--onac2:#261540;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1b1030;--sf:#26183f;--tx:#fffde9;--mu:#b6a9d0;--bd:#3d2c61;--ac:#996def;--ac2:#a9cc3c;--ink:#7a5fc0;--on:#a9cc3c;--bc:#8a73c7;--tr:#3a2a5c;--onac2:#261540;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 Georgia,'Times New Roman',serif}
+h1,h2,h3,button,input,textarea,.ui{font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+header{padding:18px 20px;border-bottom:1px solid var(--bd)}h1{margin:0;font-size:22px}header p{margin:4px 0 0;color:var(--mu);font-size:13px}
+.wrap{display:grid;grid-template-columns:290px 1fr;gap:16px;padding:16px 20px;max-width:1280px;margin:auto}
+@media(max-width:820px){.wrap{grid-template-columns:minmax(0,1fr);padding:12px}}
+aside,.card{background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:14px}
+aside h3,.card h2{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--mu)}
+main{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;min-width:0;grid-auto-flow:dense}.pn{grid-column:1/-1}.pn.half{grid-column:auto}@media(max-width:820px){main{grid-template-columns:minmax(0,1fr)}.pn.half{grid-column:1/-1}}
+input[type=search]{width:100%;padding:8px 10px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 14px}
+.chip{border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:99px;padding:3px 10px;font-size:12px;cursor:pointer}.chip.on{background:var(--ac2);color:#fff;border-color:var(--ac2)}
+.src{display:flex;align-items:center;gap:7px;padding:3px 0;font:13px system-ui}.src a{color:var(--tx)}.src small{color:var(--mu);margin-left:auto}
+.tools{display:flex;gap:6px;margin:6px 0;flex-wrap:wrap}.tools button{font-size:12px;padding:4px 9px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:6px;cursor:pointer}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}.kpi b{display:block;font:700 26px system-ui}.kpi span{font:12px system-ui;color:var(--mu)}
+.bar{display:grid;grid-template-columns:120px 1fr 70px;gap:8px;align-items:center;margin:6px 0;font:13px system-ui;cursor:pointer}.bar.on .lbl{font-weight:700;color:var(--ac)}
+.track{height:14px;background:var(--tr);border:1px solid var(--bc);border-radius:7px;overflow:hidden}.fill{height:100%;border-radius:7px;background:var(--c)}.bar small{color:var(--mu);text-align:right}
+#cloud{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;justify-content:center;padding:6px;line-height:1.1}
+#cloud span{cursor:pointer}#cloud span:hover{text-decoration:underline}#cloud span.on{outline:2px solid var(--ac);border-radius:4px}
+.ev{padding:12px 0;border-top:1px solid var(--bd);display:grid;grid-template-columns:64px 1fr;gap:12px}.ev:first-child{border:0}
+.date{font:700 13px system-ui;text-align:center;border:1px solid var(--bd);border-radius:8px;padding:6px 2px;height:fit-content}.date i{display:block;font:normal 11px system-ui;color:var(--mu);margin-top:2px}
+.date.fut{border-color:var(--ac2);color:var(--ac2)}.date.now{background:var(--ac);color:#fff;border-color:var(--ac)}.date.now i{color:#fff}
+.ev b{font-weight:600}.meta{font:12px system-ui;color:var(--mu);margin-top:4px;display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.tag{background:var(--bg);border:1px solid var(--bd);border-radius:4px;padding:0 6px}.ev p{margin:4px 0 0;font-size:14px}.ev .es{color:var(--mu)}
+.rare{border-left:4px solid var(--ac);padding-left:12px}.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:820px){.two{grid-template-columns:1fr}}
+textarea{width:100%;min-height:150px;background:var(--bg);color:var(--tx);border:1px solid var(--bd);border-radius:8px;padding:8px;font:12px monospace}
+.note{font:12px system-ui;color:var(--mu)}a{color:var(--ac2)}
+
+.dates{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 14px}.dates label{font:12px system-ui;color:var(--mu);display:grid;gap:3px}
+.dates input{padding:6px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font-size:13px;min-width:0}
+
+.city{border:2px solid var(--ac)}.city h2{color:var(--ac);font-size:15px}
+.cityrow{display:flex;gap:8px;flex-wrap:wrap}.cityrow input{flex:1;min-width:200px;padding:12px;font-size:16px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx)}
+.cityrow button{padding:0 14px;font-size:13px}.cityrow button.apply{background:var(--ac);color:#fff;border-color:var(--ac);font-weight:600;font-size:15px;padding:0 22px}.city .chips{margin:10px 0 6px}.city label{display:flex;gap:6px;align-items:center;margin-top:4px}
+
+.vc{border:1px solid var(--bd);border-radius:8px;padding:10px;margin:8px 0}.vc.on{border-color:var(--ac2);box-shadow:0 0 0 2px var(--ac2)}.vc b{font-weight:600}
+.vh{font:600 12px system-ui;color:var(--mu);margin:4px 0;text-transform:uppercase;letter-spacing:.05em}
+.badge{font:11px system-ui;border-radius:4px;padding:1px 6px;color:#fff;background:var(--ac2)}.badge.now{background:var(--ac)}.badge.past{background:var(--mu)}
+.vb{border:2px solid var(--ac2);border-radius:8px;padding:10px 12px;margin-bottom:10px}.vb ul{margin:6px 0;padding-left:18px;font:13px system-ui}.leg{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+
+#mapbox svg{display:block;margin:0 auto;max-width:380px;width:100%;height:auto}.land{fill:var(--bg);stroke:var(--mu);stroke-width:1.2;stroke-linejoin:round}
+.dot{fill:var(--ac);stroke:#fff;stroke-width:1.5;cursor:pointer}.dot:hover{fill:var(--ac2)}.dot.sel{stroke:var(--ac2);stroke-width:3}
+.more{width:100%;margin-top:8px;padding:8px;border:1px dashed var(--bd);background:var(--bg);color:var(--tx);border-radius:8px;cursor:pointer;font:13px system-ui}
+.pc{display:none;justify-content:space-between;align-items:center;margin:0 0 10px;padding:6px 8px;border:1px dashed var(--ac2);border-radius:8px;font:600 12px system-ui;color:var(--ac2)}
+main.editing .pc{display:flex}main.editing .pn{outline:2px dashed var(--bd);outline-offset:3px}.pc button{font:12px system-ui;padding:3px 9px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:6px;cursor:pointer}
+.hbtn{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}.sw{display:flex;gap:6px;align-items:center}
+.maplabel{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0 0 8px;font:14px system-ui;min-height:36px}
+.maplabel .sl{display:inline-flex;align-items:center;gap:8px;padding:5px 6px 5px 12px;border:2px solid var(--ac2);border-radius:99px;background:var(--bg);font-weight:600}
+.maplabel .sl button{border:0;background:var(--ac2);color:#fff;border-radius:99px;padding:4px 11px;font:12px system-ui;cursor:pointer}.maplabel .no{color:var(--mu)}
+.dl{font:700 14px system-ui;fill:var(--tx);paint-order:stroke;stroke:var(--sf);stroke-width:4px;stroke-linejoin:round}.halo{fill:none;stroke:var(--ac2);stroke-width:2.5}
+.ib{width:18px;height:18px;border-radius:50%;border:1px solid var(--mu);background:var(--bg);color:var(--mu);font:italic 700 11px Georgia,serif;cursor:pointer;padding:0;margin-left:5px;vertical-align:middle}.ip{font:12px/1.4 system-ui;color:var(--tx);background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:8px;margin-top:6px}
+.defsbox{font:12.5px/1.4 system-ui}.defshead{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}.defsbox p{margin:0 0 8px}
+aside{position:sticky;top:12px;align-self:start;max-height:calc(100vh - 24px);overflow:auto}.col{min-width:0}
+aside .cityrow{flex-wrap:nowrap}aside .cityrow input{min-width:0;padding:9px;font-size:15px}aside .cityrow button.apply{padding:0 14px;font-size:14px}aside #q{margin-bottom:10px}aside .chips{margin:10px 0}aside .tabs button{padding:8px 2px;font-size:13px}
+.recap{position:sticky;top:0;z-index:30;background:var(--bg);padding:8px 0 10px;margin:0 0 6px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;border-bottom:1px solid var(--bd)}
+.rchips{display:flex;gap:5px;flex-wrap:wrap;flex:1;min-width:0;align-items:center}.rcount{font:600 13px system-ui;margin-left:auto;white-space:nowrap}
+.fopen,.fhead,.fshow{display:none}#defsbox{display:none}aside.defs #defsbox{display:block}aside.defs #filt{display:none}.fbk{display:none}
+.kmore{margin-top:10px}.kmore summary{cursor:pointer;font:600 12px system-ui;color:var(--mu);margin:0 0 8px}
+@media(max-width:820px){aside{display:none}aside.show{display:block;position:fixed;left:8px;right:8px;bottom:8px;top:auto;max-height:88vh;z-index:60;box-shadow:0 8px 30px rgba(0,0,0,.4)}.fbk:not([hidden]){display:block;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:55}
+.fopen{display:inline-flex;align-items:center;flex:none;white-space:nowrap}.fhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.fshow{display:block;width:100%;background:var(--ac2);color:#fff;border-color:var(--ac2);font-weight:600;margin-top:12px;padding:10px;text-align:center;position:sticky;bottom:0;z-index:2;box-shadow:0 -8px 8px -4px var(--sf)}aside #mapbox svg{max-width:240px}header{flex-direction:column}header h1{font-size:19px}.hbtn{justify-content:flex-start}
+.recap{flex-wrap:nowrap;padding:6px 0 8px}.rchips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.rchips .chip{white-space:nowrap;flex:none}.rcount{font-size:12px;flex:none}.defsbox{font-size:13.5px}}
+.fbtn{width:100%;background:none;border:0;padding:0;color:var(--tx);text-align:left}.fbtn:focus-visible{outline:2px solid var(--ac2);outline-offset:2px}.fbtn .lbl{display:flex;gap:6px;align-items:center}.fbtn i{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none;background:var(--c)}
+.mxw{overflow-x:auto;margin:8px 0}.mx{border-collapse:collapse;font:12.5px system-ui;width:100%}.mx th,.mx td{padding:5px 6px;border-bottom:1px solid var(--bd);text-align:center;vertical-align:bottom}.mx th:first-child,.mx td:first-child{text-align:left}.mx th{font-weight:600;color:var(--mu)}.mx td small{color:var(--mu)}
+.lt{padding:7px 0;border-bottom:1px solid var(--bd);font:13.5px/1.35 system-ui}.lt .tag{font-size:11px;margin-right:4px}mark{background:rgba(255,196,0,.35);color:inherit;border-radius:2px;padding:0 1px}.lh{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:8px 0}.lintro{margin:0 0 8px}.lh b{font:600 14px system-ui}
+.tabs{display:flex;border-bottom:1px solid var(--bd);margin:0 0 12px}
+.tabs button{flex:1;padding:11px 8px;border:0;border-bottom:3px solid transparent;margin-bottom:-1px;background:none;color:var(--mu);font:600 14px system-ui;cursor:pointer}
+.tabs button[aria-selected="true"]{color:var(--tx);border-bottom-color:var(--ac2)}
+.tabs button:focus-visible,.chip:focus-visible{outline:2px solid var(--ac2);outline-offset:2px}
+.cnt{font:600 11px system-ui;background:var(--bg);border:1px solid var(--bd);border-radius:99px;padding:1px 7px;margin-left:4px;color:var(--mu)}
+[role="tabpanel"][hidden]{display:none}
+.fc{color:var(--c)}.tag.fc{border-color:var(--c)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .fc{color:color-mix(in srgb,var(--c) 55%,#fff)}}:root[data-theme="dark"] .fc{color:color-mix(in srgb,var(--c) 55%,#fff)}
+.tabdesc{margin:0 0 10px}.vc{scroll-margin-top:70px}.nw{margin-top:6px;font:13px system-ui}.nw summary{cursor:pointer;font-weight:600;color:var(--ac2)}.nw ul,.vx ul{margin:6px 0;padding-left:18px;font:13px/1.4 system-ui}.vl{margin-top:8px}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .fill,:root:not([data-theme="light"]) .fbtn i{background:color-mix(in srgb,var(--c) 68%,#fff)}}:root[data-theme="dark"] .fill,:root[data-theme="dark"] .fbtn i{background:color-mix(in srgb,var(--c) 68%,#fff)}
+/* Tema risograph: carta crema, inchiostro viola, evidenziatore lime */
+@font-face{font-family:"Poppins";font-weight:700;font-style:normal;font-display:swap;src:url(poppins-bold.woff) format("woff")}
+h1,h2,.kpi b,.badge{font-family:"Poppins",system-ui,-apple-system,Segoe UI,sans-serif;font-weight:700}
+h1{font-size:24px;letter-spacing:-.01em}
+header{background:var(--bg);color:var(--tx);border-bottom:2px solid var(--ink)}header p{color:var(--mu)}
+h1{--hl:58%;display:inline;background:linear-gradient(transparent var(--hl),var(--on) var(--hl));padding:0 6px;margin-left:-6px;-webkit-box-decoration-break:clone;box-decoration-break:clone;line-height:1.5;color:var(--tx)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) h1{--hl:82%}}:root[data-theme="dark"] h1{--hl:82%}
+.card,aside{border:2px solid var(--ink);border-radius:8px;box-shadow:4px 4px 0 var(--ac)}
+.card h2,aside h3{color:var(--tx)}
+.kpi b{color:var(--ac2);font-size:30px}
+.chip,.tools button,.pc button,input[type=search],.dates input,.more{border-color:var(--bc)}
+.chip.on{background:var(--on);color:#261540;border-color:#261540;font-weight:600}.chip.on:not(.rc):not(.fopen)::before{content:"✓ "}
+.chip.apply,.cityrow button.apply,.fshow{background:var(--ac);color:#261540;border-color:#261540;font-weight:600}
+.date.now{background:var(--ac);color:#261540;border-color:#261540}.date.now i{color:#261540}
+.badge{background:var(--ac2);color:var(--onac2)}.badge.now{background:var(--ac);color:#261540}.badge.past{background:var(--mu);color:var(--bg)}
+.maplabel .sl button{background:var(--ac2);color:var(--onac2)}
+.tabs button[aria-selected="true"]{border-bottom-color:var(--ac)}
+mark{background:var(--on);color:#261540}
+.recap{border-bottom:2px solid var(--ink)}
+.vc.on{border:3px solid var(--ac2);background:color-mix(in srgb,var(--on) 16%,var(--sf));box-shadow:5px 5px 0 var(--ac2);padding:8px 10px 10px}
+.vx{margin-top:10px;padding-top:8px;border-top:2px dashed var(--ac2)}.badge.sel{background:var(--ink);color:var(--bg)}.pn{scroll-margin-top:64px}
+.dot{stroke:var(--sf)}
+.more{border-color:var(--ink)}
+
+/* Dossier */
+.page{max-width:1000px;margin:auto;padding:16px 20px;display:grid;gap:16px;min-width:0}
+header a.back{font:600 13px system-ui;color:var(--ac2)}
+.intro{border:2px solid var(--ac2);border-radius:8px;padding:10px 12px;margin:0 0 12px;font:13.5px/1.45 system-ui;background:color-mix(in srgb,var(--on) 14%,var(--sf))}
+.intro b{font-weight:700}
+.sec{scroll-margin-top:64px}
+.sec h2{font-size:16px}
+.sub{font:600 13px system-ui;margin:16px 0 6px;color:var(--tx)}
+.st{display:inline-block;font:600 11px system-ui;border-radius:4px;padding:1px 7px;margin-left:6px;vertical-align:middle;border:1px solid var(--bc);color:var(--mu);background:var(--bg)}
+.st.ok{background:var(--on);color:#261540;border-color:#261540}
+.fbar{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end}
+.fbar label{font:12px system-ui;color:var(--mu);display:grid;gap:3px}
+select{padding:8px;border:1px solid var(--bc);border-radius:8px;background:var(--bg);color:var(--tx);font:14px system-ui;max-width:100%}
+details.fd{border:1px solid var(--bc);border-radius:8px;padding:6px 10px;background:var(--bg)}details.fd summary{cursor:pointer;font:600 13px system-ui}
+.hatch .fill{background-image:repeating-linear-gradient(45deg,transparent 0 4px,rgba(255,255,255,.55) 4px 7px)}
+.evp{border:2px dashed var(--ac2);border-radius:8px;padding:8px 10px;margin:10px 0}
+.evp .lt{border-bottom:1px solid var(--bd)}.evp .lt:last-child{border:0}
+.evp q{display:block;font:italic 13px/1.4 Georgia,serif;color:var(--mu);margin:3px 0 0;quotes:"«" "»"}
+.cf{font:600 10.5px system-ui;border:1px solid var(--bc);border-radius:99px;padding:0 6px;margin-left:4px;color:var(--mu)}
+.mx button.cell{background:none;border:0;padding:2px 6px;cursor:pointer;color:var(--tx);font:inherit}.mx button.cell:hover{outline:1px solid var(--ac2);border-radius:4px}
+.wait{border:2px dashed var(--bc);border-radius:8px;padding:12px;font:13.5px/1.45 system-ui;color:var(--mu)}
+.sticky{position:sticky;top:0;z-index:30;background:var(--bg);padding:8px 0;border-bottom:2px solid var(--ink)}
+.list a.dl2{display:block;padding:10px 0;border-bottom:1px solid var(--bd);font:15px system-ui}
+.big{font:700 26px "Poppins",system-ui}
+.page>*{min-width:0}.bar{grid-template-columns:150px 1fr 74px}.lt q{display:block;font:italic 13px/1.4 Georgia,serif;color:var(--mu);margin:3px 0 0;quotes:"«" "»"}
+.card.fd{padding:12px 14px}.card.fd>summary,#metodo>summary{cursor:pointer;font:600 14px system-ui;list-style:revert}
+.sticky{display:flex;gap:8px;align-items:center}.sticky .rchips{flex:1}
+.tabs.scroll{overflow-x:auto;scrollbar-width:none}.tabs.scroll button{flex:none;padding:11px 14px;white-space:nowrap}
+.dg{margin:8px 0}.dleg{display:flex;flex-wrap:wrap;gap:4px 12px;font:12px system-ui;color:var(--mu);margin-bottom:6px}.dleg i{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--c);margin-right:4px}
+.dr{display:grid;grid-template-columns:minmax(92px,1.5fr) repeat(var(--n),minmax(0,1fr)) 30px;align-items:center;border-top:1px solid var(--bd);font:13px system-ui}
+.dn{padding:4px 6px 4px 0;overflow-wrap:anywhere}.dt{text-align:right;color:var(--mu);font-size:12px}
+.dcell{display:grid;place-items:center;height:36px;background:none;border:0;padding:0;cursor:pointer;color:var(--tx)}.dcell i{display:block;border-radius:50%;background:var(--c)}.dcell i.z{width:3px;height:3px;background:var(--bd)}.dcell.on{outline:2px solid var(--ac2);border-radius:6px}span.dcell{cursor:default}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .dcell i:not(.z),:root:not([data-theme="light"]) .dleg i{background:color-mix(in srgb,var(--c) 68%,#fff)}}:root[data-theme="dark"] .dcell i:not(.z),:root[data-theme="dark"] .dleg i{background:color-mix(in srgb,var(--c) 68%,#fff)}
+.sp{display:grid;grid-template-columns:minmax(96px,1fr) auto;gap:4px 10px;align-items:center;padding:6px 0;border-top:1px solid var(--bd);font:13px system-ui}.sp small{grid-column:1/-1;color:var(--mu)}
+.rg{display:grid;grid-template-columns:minmax(100px,1.2fr) 2fr;gap:6px 10px;align-items:center;margin:8px 0;font:13px system-ui}.rg .tr2{position:relative;height:14px;background:var(--tr);border:1px solid var(--bc);border-radius:7px}.rg .tr2 b{position:absolute;top:0;bottom:0;border-radius:7px;background:var(--ac2);min-width:6px}.rg small{grid-column:1/-1;color:var(--mu);margin-top:-4px}
+@media(max-width:820px){#stato .kpis{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}#stato .kpi b{font-size:22px}#stato .kpi span{font-size:11px}.page{padding:12px}.bar{grid-template-columns:112px 1fr 66px}.sticky{padding:6px 0}.sticky .rchips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.sticky .rchips .chip{white-space:nowrap;flex:none}.rcount{font-size:12px}}
+</style>
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script></head><body>
+<header style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px"><div><a class="back" href="./">← Radar proteste</a><br><h1 id="h1">Dossier</h1><p id="hsub">Approfondimenti sugli eventi di maggior impatto</p></div><div class="hbtn"><button id="thm" class="chip" style="white-space:nowrap" aria-label="Cambia tema"></button></div></header>
+<div class="page" id="page"><p class="note">Caricamento…</p></div>
+<footer class="note" style="max-width:1000px;margin:auto;padding:0 20px 24px">I dossier analizzano titoli e, dove la pagina è liberamente leggibile e il sito lo consente, i testi delle testate. Non si conservano né si ripubblicano gli articoli: restano gli esiti dell’analisi, brevi estratti e il link alla fonte. Le analisi sono automatiche e vanno lette con i limiti indicati nella scheda «Metodo». Il sito usa Cloudflare Web Analytics, che non utilizza cookie.<br>Contatti e info: <a href="mailto:marcofonico@gmail.com">marcofonico@gmail.com</a></footer>
+<script>
+const $=id=>document.getElementById(id),pct=x=>Math.round(x*100)+"%",MINT=5,LIM=5,NL=15;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])),escRx=s=>s.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+const qs=new URLSearchParams(location.search),PREV=qs.get("anteprima")==="1",DID=qs.get("d")||"";
+const CATC={temi:"#0e7490",attori:"#c2255c",vertenze:"#4338ca"};
+const VC=["#0e7490","#c2255c","#4338ca","#c2410c","#4d7c0f","#a21caf","#8a5a00"];
+let D=null,VAL=null,LABX=[],ART=[],OUTS=[],sel=new Set(),city="",nat=true,term="",lf="",lo="",ltab="term",ttab="rac",EXP={},COMMON=new Set(),EV=null;
+try{const s=localStorage.getItem("dltab");if(["term","lab","time"].includes(s))ltab=s;const u=localStorage.getItem("dttab");if(["rac","voci","cifre","scarto"].includes(u))ttab=u}catch(e){}
+function theme(){const r=document.documentElement,cur=r.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");return cur}
+function paintThm(){$("thm").textContent=theme()==="dark"?"☀ Chiaro":"☾ Scuro"}
+$("thm").onclick=()=>{const n=theme()==="dark"?"light":"dark";document.documentElement.setAttribute("data-theme",n);try{localStorage.setItem("theme",n)}catch(e){}paintThm()};paintThm();
+const getJ=async u=>{try{const r=await fetch(u,{cache:"no-store"});if(!r.ok)return null;return await r.json()}catch(e){return null}};
+async function main(){
+ if(!DID){const ix=await getJ("dossier/indice.json")||[];
+  $("page").innerHTML=`<div class="card"><h2>Dossier</h2><p class="note">Approfondimenti sugli eventi di maggior impatto: come ne parlano i titoli e, dove recuperabili, i testi delle testate.</p><div class="list">${ix.map(d=>`<a class="dl2" href="?d=${encodeURIComponent(d.id)}"><b>${esc(d.titolo)}</b> <span class="note">· ${esc(d.stato)} · ${d.giorno.slice(8)}/${d.giorno.slice(5,7)}/${d.giorno.slice(0,4)}</span></a>`).join("")||"<p class='note'>Nessun dossier ancora attivo.</p>"}</div></div>`;return}
+ D=await getJ("dossier/"+encodeURIComponent(DID)+".json");
+ if(!D){$("page").innerHTML=`<div class="card"><h2>Dossier non ancora disponibile</h2><p class="note">I dati compaiono dopo la prima raccolta automatica (ogni 3 ore). <a href="dossier.html">Vedi i dossier</a>.</p></div>`;return}
+ VAL=await getJ("dossier/"+encodeURIComponent(DID)+"-validazione.json");
+ document.title=D.titolo+" · Dossier · Radar proteste";$("h1").textContent=D.titolo;$("hsub").textContent=D.descrizione||"Dossier";
+ LABX=D.etichette.map(f=>({...f,rx:f.t.map(t=>new RegExp("(?<![\\p{L}])"+t.toLowerCase().replace(/[.+?^${}()|[\]\\*]/g,m=>m==="*"?"\\p{L}*":"\\"+m).replace(/\s+/g,"\\s+").replace(/['’]/g,"['’]")+"(?![\\p{L}])","giu"))}));
+ ART=D.articoli.map(a=>({...a,tg:tagOf(a.t)}));
+ OUTS=[...new Set(ART.map(a=>a.o))].sort((a,b)=>a.localeCompare(b));sel=new Set(OUTS);
+ const df={};ART.forEach(a=>(a.terms||[]).forEach(t=>df[t]=(df[t]||0)+1));
+ if(ART.length>=10)Object.entries(df).forEach(([t,n])=>{if(n/ART.length>.7)COMMON.add(t)});
+ skeleton();render();
+}
+const NEG=/(?:senza|nessun\p{L}*|niente|evitat\p{L}*|scongiurat\p{L}*)\s+(?:\p{L}+\s+){0,2}$/u;
+function tagOf(t){const s=t.toLowerCase().replace(/’/g,"'"),out={};LABX.forEach(f=>{const hits=[];f.rx.forEach(r=>{r.lastIndex=0;let m;while((m=r.exec(s))){if(m[0]==="")r.lastIndex++;else if(!NEG.test(s.slice(Math.max(0,m.index-32),m.index)))hits.push(m[0])}});if(hits.length)out[f.id]=[...new Set(hits)]});return out}
+const hl=(t,tg)=>{const h=[...new Set(Object.values(tg).flat())].sort((a,b)=>b.length-a.length);let x=esc(t);if(!h.length)return x;return x.replace(new RegExp(h.map(escRx).join("|"),"giu"),m=>"<mark>"+m+"</mark>")};
+const info=txt=>`<button class="ib" aria-label="Come leggere questa vista" aria-expanded="false" onclick="togInfo(this)">i</button><div class="ip" hidden>${txt}</div>`;
+function togInfo(b){const p=b.nextElementSibling;p.hidden=!p.hidden;b.setAttribute("aria-expanded",String(!p.hidden))}
+const cityOk=a=>!city||a.l===city||(nat&&a.l==="Italia");
+const arts=()=>ART.filter(a=>sel.has(a.o)&&cityOk(a));
+const kfmt=k=>k==null?"n/d":k.toFixed(2).replace(".",",");
+const vs=key=>{if(!VAL||!VAL.v||!VAL.v[key])return"none";const x=VAL.v[key];return x.k!=null&&x.k>=VAL.soglia?"ok":"low"};
+const vis=key=>PREV||vs(key)==="ok";
+function badge(key){const x=VAL&&VAL.v&&VAL.v[key],s=vs(key);if(s==="ok")return`<span class="st ok" title="Accordo con il controllo manuale su ${x.n} testi">validato · ${x.m==="precisione"?"precisione":"κ"} ${kfmt(x.k)}</span>`;
+ if(s==="low")return`<span class="st" title="Accordo insufficiente: non pubblicato">anteprima · accordo basso (${kfmt(x.k)})</span>`;return`<span class="st">anteprima · non validato</span>`}
+const dstr=d=>d.slice(8,10)+"/"+d.slice(5,7);
+function skeleton(){
+ $("page").innerHTML=`
+<div class="card sec" id="stato"></div>
+<details class="card fd" id="filt"><summary>Filtri <span class="note">città e fonti</span></summary>
+<div class="fbar" style="margin-top:10px"><label>Città<select id="fcity" aria-label="Filtra per città"></select></label>
+<label class="note" style="display:flex;gap:5px;align-items:center;padding-bottom:9px"><input type="checkbox" id="fnat" checked> includi articoli nazionali</label></div>
+<div class="note" style="margin:10px 0 4px">Fonti <span id="nsrc"></span> <button class="chip" data-act="srcall">Tutte</button></div>
+<div id="srcs" style="max-height:240px;overflow:auto"></div></details>
+<div class="sticky" id="recap" role="region" aria-label="Filtri attivi"><div class="rchips" id="rchips"></div><span class="rcount" id="rcount"></span></div>
+<div class="card sec" id="titoli"></div>
+<div class="card sec" id="testi"></div>
+<details class="card sec" id="metodo"></details>`;
+ const cnt={};ART.forEach(a=>cnt[a.l]=(cnt[a.l]||0)+1);
+ $("fcity").innerHTML=`<option value="">Tutte</option>`+Object.entries(cnt).filter(([l])=>l!=="Italia").sort((a,b)=>a[0].localeCompare(b[0])).map(([l,n])=>`<option value="${esc(l)}">${esc(l)} (${n})</option>`).join("");
+ $("fcity").onchange=e=>{city=e.target.value;render()};$("fnat").onchange=e=>{nat=e.target.checked;render()};
+ const cs={};ART.forEach(a=>cs[a.o]=(cs[a.o]||0)+1);
+ $("srcs").innerHTML=OUTS.map((o,i)=>`<label class="src"><input type="checkbox" checked data-i="${i}"><span>${esc(o)}</span><small>${cs[o]}</small></label>`).join("");
+ $("srcs").onchange=e=>{if(e.target.dataset.i==null)return;const o=OUTS[+e.target.dataset.i];e.target.checked?sel.add(o):sel.delete(o);render()};
+ $("page").addEventListener("click",ev=>{const b=ev.target.closest("[data-act]");if(!b)return;const a=b.dataset;
+  if(a.act==="term"){term=term===a.w?"":a.w}
+  else if(a.act==="lf"){lf=lf===a.f&&!lo?"":a.f;lo=""}
+  else if(a.act==="cell"){if(lo===a.o&&lf===a.f){lo="";lf=""}else{lo=a.o;lf=a.f}}
+  else if(a.act==="ev"){EV=EV&&EV.b===a.b&&EV.k===a.k&&(EV.o||"")===(a.o||"")?null:{b:a.b,k:a.k,o:a.o||""};}
+  else if(a.act==="exp"){EXP[a.id]=!EXP[a.id]}
+  else if(a.act==="ltab"){ltab=a.t;try{localStorage.setItem("dltab",ltab)}catch(e){}}
+  else if(a.act==="ttab"){ttab=a.t;EV=null;try{localStorage.setItem("dttab",ttab)}catch(e){}}
+  else if(a.act==="srcall"){allSrc(1);return}
+  else if(a.act==="clr"){term="";lf="";lo="";city="";nat=true;$("fcity").value="";$("fnat").checked=true;allSrc(1);return}
+  render()});
+}
+function allSrc(v){sel=new Set(v?OUTS:[]);document.querySelectorAll("#srcs input").forEach(c=>c.checked=!!v);render()}
+function acc(id,items,lim=NL){const o=EXP[id],n=items.length;return(o?items:items.slice(0,lim)).join("")+(n>lim?`<button class="more" data-act="exp" data-id="${id}" aria-expanded="${!!o}">${o?"Mostra meno ▴":"Mostra altri "+(n-lim)+" ▾"}</button>`:"")}
+function render(){
+ const A=arts(),T=A.filter(a=>a.tx&&a.tx.ok),regs=new Set(A.map(a=>a.r).filter(r=>r!=="Nazionale")),outs=new Set(A.map(a=>a.o));
+ $("nsrc").textContent=`(${sel.size}/${OUTS.length})`;
+ const chips=[];if(city)chips.push("Città: "+esc(city));if(sel.size<OUTS.length)chips.push("Fonti: "+sel.size);if(term)chips.push("Termine: "+esc(term));if(lf){const f=LABX.find(x=>x.id===lf);chips.push("Etichetta: "+esc(f?f.n:lf))}if(lo)chips.push("Testata: "+esc(lo));
+ $("rchips").innerHTML=chips.map(c=>`<span class="chip on rc">${c}</span>`).join("")+(chips.length?`<button class="chip" data-act="clr">✕ Azzera</button>`:"");
+ $("rcount").textContent=`${A.length} titoli · ${T.length} testi`;
+ $("stato").innerHTML=`<div class="kpis"><div class="kpi"><b>${A.length}</b><span>titoli</span></div><div class="kpi"><b>${outs.size}</b><span>testate</span></div><div class="kpi"><b>${regs.size}</b><span>regioni</span></div><div class="kpi"><b>${T.length}</b><span>testi analizzati</span></div></div><p class="note" style="margin:10px 0 0"><span class="badge ${D.stato==="chiuso"?"past":"now"}">${esc(D.stato)}</span> Evento del ${D.giorno.slice(8)}/${D.giorno.slice(5,7)} · aggiornato ${esc(D.aggiornato.replace("T"," "))}</p>`;
+ renderTitles(A);renderTexts(A,T);renderMethod();
+}
+function dotgrid(cols,rows,cell,id){
+ const all=rows.flatMap(([o,a])=>cols.map(c=>cell(o,a,c).n)),mx=Math.max(1,...all),show=EXP[id]?rows:rows.slice(0,8);
+ return `<div class="dg" style="--n:${cols.length}"><div class="dleg">${cols.map(c=>`<span><i style="--c:${c.c}"></i>${esc(c.n)}</span>`).join("")}</div>${show.map(([o,a])=>`<div class="dr"><span class="dn">${esc(o)}</span>${cols.map(c=>{const x=cell(o,a,c),sz=(8+18*Math.sqrt(x.n/mx)).toFixed(1);return x.n?`<button class="dcell ${x.on?"on":""}" ${x.attrs} aria-label="${esc(o)}, ${esc(c.n)}: ${x.n}" title="${esc(c.n)}: ${x.n}"><i style="--c:${c.c};width:${sz}px;height:${sz}px"></i></button>`:`<span class="dcell"><i class="z"></i></span>`}).join("")}<span class="dt">${a.length}</span></div>`).join("")}</div>${rows.length>8?`<button class="more" data-act="exp" data-id="${id}" aria-expanded="${!!EXP[id]}">${EXP[id]?"Mostra meno ▴":"Mostra tutte le "+rows.length+" testate ▾"}</button>`:""}<p class="note">Grandezza del cerchio = numero di titoli o testi; il numero a destra è il totale della testata. Tocca un cerchio per leggere gli articoli.</p>`}
+function spark(vals,c){const w=150,h=26,n=vals.length,pv=vals.filter(v=>v!=null),mx=Math.max(...pv,0.0001),pts=vals.map((v,i)=>v==null?null:[n===1?w/2:4+i*(w-8)/(n-1),h-3-(h-8)*v/mx]).filter(Boolean);
+ return `<svg viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-label="Andamento giorno per giorno"><polyline points="${pts.map(p=>p.join(",")).join(" ")}" fill="none" stroke="${c}" stroke-width="2"/>${pts.map(p=>`<circle cx="${p[0]}" cy="${p[1]}" r="2.5" fill="${c}"/>`).join("")}</svg>`}
+function renderTitles(A){
+ const N=A.length,tabs=[["term","Termini"],["lab","Etichette"],["time","Nel tempo"]];
+ let body="";
+ if(!N)body=`<p class="note">Nessun titolo con questi filtri.</p>`;
+ else if(ltab==="term"){const c={};A.forEach(a=>(a.terms||[]).forEach(t=>{if(!COMMON.has(t))c[t]=(c[t]||0)+1}));
+  const ws=Object.entries(c).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).slice(0,40),mx=ws.length?ws[0][1]:1;
+  body=ws.length?`<div id="cloud">${[...ws].sort((a,b)=>a[0].localeCompare(b[0])).map(([w,n])=>`<span class="fc ${term===w?"on":""}" tabindex="0" role="button" style="font-size:${12+20*Math.sqrt(n/mx)}px;--c:${CATC[D.termini[w]]||CATC.temi}" data-act="term" data-w="${esc(w)}" title="${n} titoli">${esc(w)}</span>`).join("")}</div><p class="note">Dimensione = quanti titoli usano il termine; tocca un termine per vedere quei titoli.${COMMON.size?` Nascosti i termini presenti in oltre il 70% dei titoli (${[...COMMON].slice(0,3).map(esc).join(", ")}…).`:""}</p>`:`<p class="note">Troppi pochi titoli per una mappa dei termini.</p>`}
+ else if(ltab==="lab"){
+  const cnt=f=>A.filter(a=>a.tg[f.id]).length,nof=A.filter(a=>!Object.keys(a.tg).length).length,by={};A.forEach(a=>(by[a.o]=by[a.o]||[]).push(a));
+  const rows=Object.entries(by).sort((a,b)=>b[1].length-a[1].length||a[0].localeCompare(b[0]));
+  const bars=LABX.map(f=>{const n=cnt(f);return`<button class="bar fbtn ${lf===f.id&&!lo?"on":""}" aria-pressed="${lf===f.id&&!lo}" title="${esc(f.d)}" data-act="lf" data-f="${f.id}"><span class="lbl"><i style="--c:${f.c}"></i>${esc(f.n)}</span><div class="track">${N>=MINT?`<div class="fill" style="width:${n/N*100}%;--c:${f.c}"></div>`:""}</div><small>${N>=MINT?pct(n/N)+" · ":""}${n}</small></button>`}).join("");
+  body=`<p class="note lintro">Quanti titoli usano parole di ciascuna famiglia (anche più di una, o nessuna: ${N>=MINT?pct(nof/N):nof} senza etichetta).${info("Stesso dizionario della home. Mostra come viene raccontato un fatto, non se una testata è giusta o sbagliata. Con meno di "+MINT+" titoli si vedono solo i conteggi.")}</p>${bars}
+  <div class="sub">Testata per testata</div>${dotgrid(LABX,rows,(o,a,f)=>({n:a.filter(t=>t.tg[f.id]).length,attrs:`data-act="cell" data-o="${esc(o)}" data-f="${f.id}"`,on:lo===o&&lf===f.id}),"dgt")}`}
+ else{
+  const PH=[["Prima",0],["Giorno",1],["Dopo",2]],P=PH.map(([l,k])=>A.filter(a=>a.f===k)),cell=(a,n)=>n?`<b>${n}</b>${a.length>=MINT?` <small>${pct(n/a.length)}</small>`:""}`:`<span class="note">·</span>`;
+  const days=[...new Set(A.map(a=>a.d))].sort(),Dd=days.map(d=>A.filter(a=>a.d===d)),okd=Dd.filter(x=>x.length>=MINT).length;
+  body=`<p class="note lintro">Come cambia il linguaggio dei titoli prima, durante e dopo l’evento.${info("<b>Prima</b>: titoli pubblicati prima del giorno dell’evento; <b>giorno</b>: lo stesso giorno; <b>dopo</b>: nei giorni successivi. Percentuali solo con almeno "+MINT+" titoli nella fase.")}</p>
+  <div class="mxw"><table class="mx"><thead><tr><th>Famiglia</th>${PH.map(([l],i)=>`<th>${l}<br><small>${P[i].length} tit.</small></th>`).join("")}</tr></thead><tbody>${LABX.map(f=>`<tr><td><span class="fbtn"><span class="lbl"><i style="--c:${f.c}"></i>${esc(f.n)}</span></span></td>${P.map(a=>`<td>${cell(a,a.filter(t=>t.tg[f.id]).length)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>
+  <details class="fd" style="margin-top:10px"><summary>Andamento giorno per giorno</summary>${okd>=2?LABX.map(f=>{const v=Dd.map(x=>x.length>=MINT?x.filter(t=>t.tg[f.id]).length/x.length:null),pk=Math.max(...v.filter(z=>z!=null)),i=v.indexOf(pk);return`<div class="sp"><span class="lbl fbtn"><span class="lbl"><i style="--c:${f.c}"></i>${esc(f.n)}</span></span>${spark(v,f.c)}<small>${pk>0?"picco il "+dstr(days[i])+" ("+pct(pk)+" dei titoli del giorno)":"mai presente nei giorni con almeno "+MINT+" titoli"}</small></div>`}).join(""):`<p class="note">Servono almeno due giorni con ${MINT} titoli per mostrare l’andamento.</p>`}</details>`}
+ let sh=A;if(term)sh=sh.filter(a=>(a.terms||[]).includes(term)||a.t.toLowerCase().includes(term));if(lf)sh=sh.filter(a=>a.tg[lf]);if(lo)sh=sh.filter(a=>a.o===lo);
+ const lfn=(LABX.find(f=>f.id===lf)||{}).n,head=(term||lf||lo)?`Titoli${term?" con «"+esc(term)+"»":""}${lf?" · «"+esc(lfn)+"»":""}${lo?" · "+esc(lo):""}`:"Tutti i titoli";
+ const items=[...sh].sort((a,b)=>b.d.localeCompare(a.d)||a.o.localeCompare(b.o)).map(a=>`<div class="lt"><a href="${esc(a.u)}" target="_blank" rel="noopener">${hl(a.t,a.tg)}</a> <span class="note">· ${esc(a.o)}, ${dstr(a.d)}${a.l!=="Italia"?" · "+esc(a.l):""}</span><div>${LABX.filter(f=>a.tg[f.id]).map(f=>`<span class="tag fc" style="--c:${f.c}">${esc(f.n)}</span>`).join("")||"<span class='note'>senza etichetta</span>"}</div></div>`);
+ $("titoli").innerHTML=`<h2>Titoli</h2><div class="intro"><b>Qui si analizzano i titoli, non gli articoli:</b> ${N} ${N===1?"titolo":"titoli"} di ${new Set(A.map(a=>a.o)).size} testate.</div>
+ <div class="tabs" role="tablist" aria-label="Linguaggio dei titoli">${tabs.map(([k,l])=>`<button role="tab" aria-selected="${ltab===k}" data-act="ltab" data-t="${k}">${l}</button>`).join("")}</div>${body}
+ <div class="lh"><b>${head}</b> <span class="cnt">${sh.length}</span></div>${acc("tl",items,10)||"<p class='note'>Nessun titolo.</p>"}`;
+}
+function evList(b,k,o,T){
+ let L=[];
+ if(b==="cornici")L=T.filter(a=>a.tx.cornici&&a.tx.cornici[k]&&(!o||a.o===o)).map(a=>[a,a.tx.cornici[k].ev,a.tx.cornici[k].conf]);
+ else if(b==="dom")L=T.filter(a=>a.tx.dom===k&&(!o||a.o===o)).map(a=>[a,a.tx.cornici[k]?a.tx.cornici[k].ev:[],a.tx.cornici[k]?a.tx.cornici[k].conf:""]);
+ else if(b==="voci")L=T.filter(a=>(!o||a.o===o)&&a.tx.voci.some(v=>v.c===k)).map(a=>{const v=a.tx.voci.find(v=>v.c===k);return[a,v.ev,v.conf]});
+ else if(b==="scarto")L=T.filter(a=>a.tx.scarto.includes(k)&&(!o||a.o===o)).map(a=>[a,[],""]);
+ return `<div class="evp">${L.map(([a,ev,c])=>`<div class="lt"><a href="${esc(a.u)}" target="_blank" rel="noopener">${esc(a.t)}</a> <span class="note">· ${esc(a.o)}, ${dstr(a.d)}</span>${c?`<span class="cf">confidenza ${c}</span>`:""}${(ev||[]).map(e=>`<q>${esc(e)}</q>`).join("")}${b==="scarto"?`<q>Il titolo usa parole di questa famiglia; nel testo non ne trovo di rilevanti.</q>`:""}</div>`).join("")||"<p class='note'>Nessun testo.</p>"}</div>`}
+const evAt=(b,T)=>EV&&EV.b===b?evList(EV.b,EV.k,EV.o,T):"";
+const wait=`<div class="wait"><b>In validazione.</b> Questi numeri verranno pubblicati dopo un controllo manuale su un campione di testi, per sapere quanto l’analisi automatica è affidabile. Come funziona è spiegato nella scheda «Metodo».</div>`;
+function renderTexts(A,T){
+ const N=A.length,NT=T.length,reasons={};A.filter(a=>!(a.tx&&a.tx.ok)).forEach(a=>{const m=a.tx?a.tx.motivo:"non ancora provato";reasons[m]=(reasons[m]||0)+1});
+ const per={};A.forEach(a=>{const p=per[a.o]=per[a.o]||[0,0];p[0]++;p[1]+=a.tx&&a.tx.ok?1:0});
+ let h=`<h2>Testi integrali</h2><div class="intro"><b>Testi analizzati: ${NT} su ${N} titoli${N?" ("+pct(NT/N)+")":""}.</b> Solo pagine liberamente leggibili: il campione <b>non rappresenta tutta la copertura</b>.</div>
+ <details class="fd"><summary>Quali testate e perché mancano alcuni testi</summary>${Object.entries(per).sort((a,b)=>b[1][0]-a[1][0]||a[0].localeCompare(b[0])).map(([o,p])=>`<div class="bar" style="grid-template-columns:130px 1fr 52px;cursor:default"><span>${esc(o)}</span><div class="track"><div class="fill" style="width:${p[0]?p[1]/p[0]*100:0}%;--c:#4338ca"></div></div><small>${p[1]}/${p[0]}</small></div>`).join("")}${Object.keys(reasons).length?`<p class="note">Non recuperati: ${Object.entries(reasons).map(([m,n])=>esc(m)+" ("+n+")").join(" · ")}.</p>`:""}</details>`;
+ if(NT<MINT){$("testi").innerHTML=h+`<p class="note" style="margin-top:12px">Con meno di ${MINT} testi non mostro analisi: i numeri sarebbero rumore.</p>`;return}
+ const avail={rac:D.cornici_testo.some(f=>vis("cornici:"+f.id))||vis("dom"),voci:D.voci_cat.some(v=>vis("voci:"+v.id)),cifre:vis("cifre"),scarto:vis("scarto")};
+ const TTS=[["rac","Racconto"],["voci","Chi parla"],["cifre","Cifre"],["scarto","Titolo/testo"]].filter(([k])=>avail[k]);
+ if(!TTS.length){$("testi").innerHTML=h+`<div style="margin-top:12px">${wait}</div>`;return}
+ const cur=avail[ttab]?ttab:TTS[0][0],p=n=>pct(n/NT);let out="";
+ if(cur==="rac"){
+  const fr=D.cornici_testo.filter(f=>vis("cornici:"+f.id));
+  if(fr.length)out+=`<p class="note lintro">Quota dei testi che usano parole di ciascuna famiglia (la famiglia è presente se compare in almeno due frasi o nelle prime righe).${info("Otto famiglie: le sei dei titoli più «Regolazione e legittimità» e «Costo economico». Ogni risultato mostra le frasi che lo giustificano e un livello di confidenza.")}</p>
+  ${fr.map(f=>{const n=T.filter(a=>a.tx.cornici[f.id]).length,s=vs("cornici:"+f.id);return`<button class="bar fbtn ${s!=="ok"?"hatch":""} ${EV&&EV.b==="cornici"&&EV.k===f.id?"on":""}" data-act="ev" data-b="cornici" data-k="${f.id}" title="${esc(f.d)}"><span class="lbl"><i style="--c:${f.c}"></i>${esc(f.n)}</span><div class="track"><div class="fill" style="width:${n/NT*100}%;--c:${f.c}"></div></div><small>${p(n)} · ${n}</small></button>`}).join("")}${PREV?`<p class="note">Le barre tratteggiate non sono validate: anteprima.</p>`:""}${evAt("cornici",T)}`;
+  if(vis("dom")){const c={};T.forEach(a=>{if(a.tx.dom)c[a.tx.dom]=(c[a.tx.dom]||0)+1});
+   out+=`<div class="sub">Cornice prevalente ${PREV?badge("dom"):""}</div><div class="chips">${D.cornici_testo.filter(f=>c[f.id]).sort((x,y)=>c[y.id]-c[x.id]).map(f=>`<button class="chip ${EV&&EV.b==="dom"&&EV.k===f.id?"on":""}" data-act="ev" data-b="dom" data-k="${f.id}">${esc(f.n)} <small>${c[f.id]}</small></button>`).join("")}</div>${evAt("dom",T)}`}
+ }else if(cur==="voci"){
+  const vc=D.voci_cat.filter(v=>vis("voci:"+v.id)).map((v,i)=>({...v,c:VC[D.voci_cat.indexOf(v)%7]})),by={};T.forEach(a=>(by[a.o]=by[a.o]||[]).push(a));const rows=Object.entries(by).sort((a,b)=>b[1].length-a[1].length||a[0].localeCompare(b[0]));
+  out+=`<p class="note lintro">In quanti testi parla ciascuna categoria (citata con virgolette o con «ha detto», «secondo…»). Misura chi ha voce nell’articolo, non chi ha ragione.</p>
+  ${vc.map(v=>{const n=T.filter(a=>a.tx.voci.some(x=>x.c===v.id)).length,s=vs("voci:"+v.id);return`<button class="bar fbtn ${s!=="ok"?"hatch":""} ${EV&&EV.b==="voci"&&EV.k===v.id&&!EV.o?"on":""}" data-act="ev" data-b="voci" data-k="${v.id}" title="${esc(v.d)}"><span class="lbl"><i style="--c:${v.c}"></i>${esc(v.n)}</span><div class="track"><div class="fill" style="width:${n/NT*100}%;--c:${v.c}"></div></div><small>${p(n)} · ${n}</small></button>`}).join("")}
+  <div class="sub">Testata per testata</div>${dotgrid(vc,rows,(o,a,v)=>({n:a.filter(t=>t.tx.voci.some(x=>x.c===v.id)).length,attrs:`data-act="ev" data-b="voci" data-k="${v.id}" data-o="${esc(o)}"`,on:!!(EV&&EV.b==="voci"&&EV.k===v.id&&EV.o===o)}),"dgv")}${evAt("voci",T)}`;
+ }else if(cur==="cifre"){
+  const F=[];T.forEach(a=>(a.tx.cifre||[]).forEach(c=>F.push({...c,a2:a})));F.sort((x,y)=>y.v-x.v);const g={};F.forEach(c=>(g[c.a]=g[c.a]||[]).push(c.v));
+  const AN={organizzatori:"Organizzatori e sindacati",questura:"Questura e forze dell’ordine",ministero:"Governo e ministeri",azienda:"Aziende e gestori","non attribuita":"Fonte non indicata"},MX=Math.max(1,...F.map(c=>c.v));
+  out+=`<p class="note lintro">Numeri di partecipanti riportati nei testi e chi li fornisce: stime diverse sullo stesso evento mostrano chi dice cosa. Non sono una conta ufficiale.${info("Ogni barra va dalla cifra più bassa a quella più alta citata da quella fonte.")}</p>
+  ${F.length?Object.entries(g).map(([k,v])=>{const mn=Math.min(...v),mxv=Math.max(...v);return`<div class="rg"><span>${esc(AN[k]||k)}</span><div class="tr2"><b style="left:${mn/MX*100}%;width:${Math.max((mxv-mn)/MX*100,1.5)}%"></b></div><small>${mn===mxv?mn.toLocaleString("it-IT"):mn.toLocaleString("it-IT")+" – "+mxv.toLocaleString("it-IT")} · ${v.length} ${v.length===1?"citazione":"citazioni"}</small></div>`}).join("")+`<div class="sub">Dove compaiono</div>`+acc("cif",F.map(c=>`<div class="lt"><b>${c.v.toLocaleString("it-IT")}</b> ${esc(c.u)} · <span class="note">${esc(AN[c.a]||c.a)}</span><span class="cf">confidenza ${c.conf}</span><br><a href="${esc(c.a2.u)}" target="_blank" rel="noopener">${esc(c.a2.t)}</a> <span class="note">· ${esc(c.a2.o)}</span><q>${esc(c.ev)}</q></div>`),3):`<p class="note">Nessuna cifra di partecipazione rilevata.</p>`}`;
+ }else{
+  const rows=LABX.map(f=>{const w=T.filter(a=>a.tx.tt.includes(f.id)),g=w.filter(a=>a.tx.scarto.includes(f.id));return[f,w.length,g.length]}).filter(r=>r[1]);
+  out+=`<p class="note lintro">Titoli che usano parole di una famiglia (es. Scontro) che nel testo non compaiono in modo rilevante. Non dice che il titolo sia sbagliato: dice che sposta l’attenzione.</p>
+  ${rows.length?rows.map(([f,w,g])=>`<button class="bar fbtn ${vs("scarto")!=="ok"?"hatch":""} ${EV&&EV.b==="scarto"&&EV.k===f.id?"on":""}" data-act="ev" data-b="scarto" data-k="${f.id}"><span class="lbl"><i style="--c:${f.c}"></i>${esc(f.n)}</span><div class="track"><div class="fill" style="width:${w?g/w*100:0}%;--c:${f.c}"></div></div><small>${g} su ${w}</small></button>`).join(""):`<p class="note">Nessun titolo con etichette tra i testi analizzati.</p>`}${evAt("scarto",T)}`}
+ $("testi").innerHTML=h+`<div class="tabs scroll" role="tablist" aria-label="Analisi dei testi" style="margin-top:12px">${TTS.map(([k,l])=>`<button role="tab" aria-selected="${cur===k}" data-act="ttab" data-t="${k}">${l}</button>`).join("")}</div>${out}`;
+}
+function renderMethod(){
+ const rows=VAL&&VAL.v?Object.entries(VAL.v):[],nm=k=>{const [b,id]=k.split(":");const f=(D.cornici_testo.find(x=>x.id===id)||D.voci_cat.find(x=>x.id===id)||{}).n;return({cornici:"Cornice",voci:"Voce",dom:"Cornice prevalente",cifre:"Cifre di partecipazione",scarto:"Titolo e testo"}[b]||b)+(f?": "+f:"")};
+ $("metodo").innerHTML=`<summary>Metodo e limiti</summary>
+ <p class="note"><b>Titoli.</b> Dizionario di parole pubblico (le sei famiglie della home). «senza», «nessun…» escludono la parola.</p>
+ <p class="note"><b>Testi.</b> Solo pagine liberamente leggibili e consentite dal sito; non si aggirano paywall o divieti. Analisi a regole: famiglie di parole, chi parla, cifre. Si conservano solo esiti, brevi estratti e link. <a href="dossier/codebook.json">Codebook</a>, versione ${esc(D.versione_codebook)}.</p>
+ <p class="note"><b>Validazione.</b> Ogni indicatore è confrontato con la lettura manuale di un campione di testi (κ di Cohen) e pubblicato solo se κ ≥ ${VAL?String(VAL.soglia).replace(".",","):"0,6"}. ${VAL?`Campione: ${VAL.n} testi.`:"Non è ancora stata fatta."}</p>
+ ${rows.length?rows.map(([k,x])=>`<div class="bar" style="grid-template-columns:150px 1fr 90px;cursor:default"><span>${esc(nm(k))}</span><div class="track ${vs(k)==="ok"?"":"hatch"}"><div class="fill" style="width:${Math.max(0,(x.k||0))*100}%;--c:${vs(k)==="ok"?"#4d7c0f":"#8a78ad"}"></div></div><small>${x.m==="precisione"?"prec. ":"κ "}${kfmt(x.k)}</small></div>`).join("")+`<p class="note">Barra = accordo (0–1); verde = pubblicato, grigio = solo anteprima.</p>`:""}
+ <p class="note"><b>Limiti.</b> La copertura mediatica non coincide con ciò che accade. Il campione dei testi è sbilanciato verso le testate aperte. Le regole non capiscono ironia o sottintesi. «Chi parla» misura chi ha voce, non chi ha ragione. Nessuna classifica delle testate: i dati descrivono come si racconta un fatto.</p>
+ <p class="note">${PREV?"Anteprima: i dati non validati non sono pubblici. ":""}<a href="${location.pathname}?d=${encodeURIComponent(DID)}${PREV?"":"&anteprima=1"}">${PREV?"Esci dall’anteprima":"Anteprima dei dati non validati"}</a></p>`;
+}
+main();
+</script>
+</body></html>

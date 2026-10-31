@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Gestione dossier · Radar proteste</title>
+<meta name="theme-color" content="#fffde9">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+
+:root{--bg:#fffde9;--sf:#fffef7;--tx:#261540;--mu:#66577f;--bd:#e3d8f5;--ac:#996def;--ac2:#5a32b5;--ink:#261540;--on:#a9cc3c;--bc:#8a78ad;--tr:#e4d9f6;--onac2:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1030;--sf:#26183f;--tx:#fffde9;--mu:#b6a9d0;--bd:#3d2c61;--ac:#996def;--ac2:#a9cc3c;--ink:#7a5fc0;--on:#a9cc3c;--bc:#8a73c7;--tr:#3a2a5c;--onac2:#261540;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1b1030;--sf:#26183f;--tx:#fffde9;--mu:#b6a9d0;--bd:#3d2c61;--ac:#996def;--ac2:#a9cc3c;--ink:#7a5fc0;--on:#a9cc3c;--bc:#8a73c7;--tr:#3a2a5c;--onac2:#261540;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 Georgia,'Times New Roman',serif}
+h1,h2,h3,button,input,textarea,.ui{font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+header{padding:18px 20px;border-bottom:1px solid var(--bd)}h1{margin:0;font-size:22px}header p{margin:4px 0 0;color:var(--mu);font-size:13px}
+.wrap{display:grid;grid-template-columns:290px 1fr;gap:16px;padding:16px 20px;max-width:1280px;margin:auto}
+@media(max-width:820px){.wrap{grid-template-columns:minmax(0,1fr);padding:12px}}
+aside,.card{background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:14px}
+aside h3,.card h2{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--mu)}
+main{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;min-width:0;grid-auto-flow:dense}.pn{grid-column:1/-1}.pn.half{grid-column:auto}@media(max-width:820px){main{grid-template-columns:minmax(0,1fr)}.pn.half{grid-column:1/-1}}
+input[type=search]{width:100%;padding:8px 10px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 14px}
+.chip{border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:99px;padding:3px 10px;font-size:12px;cursor:pointer}.chip.on{background:var(--ac2);color:#fff;border-color:var(--ac2)}
+.src{display:flex;align-items:center;gap:7px;padding:3px 0;font:13px system-ui}.src a{color:var(--tx)}.src small{color:var(--mu);margin-left:auto}
+.tools{display:flex;gap:6px;margin:6px 0;flex-wrap:wrap}.tools button{font-size:12px;padding:4px 9px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:6px;cursor:pointer}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}.kpi b{display:block;font:700 26px system-ui}.kpi span{font:12px system-ui;color:var(--mu)}
+.bar{display:grid;grid-template-columns:120px 1fr 70px;gap:8px;align-items:center;margin:6px 0;font:13px system-ui;cursor:pointer}.bar.on .lbl{font-weight:700;color:var(--ac)}
+.track{height:14px;background:var(--tr);border:1px solid var(--bc);border-radius:7px;overflow:hidden}.fill{height:100%;border-radius:7px;background:var(--c)}.bar small{color:var(--mu);text-align:right}
+#cloud{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;justify-content:center;padding:6px;line-height:1.1}
+#cloud span{cursor:pointer}#cloud span:hover{text-decoration:underline}#cloud span.on{outline:2px solid var(--ac);border-radius:4px}
+.ev{padding:12px 0;border-top:1px solid var(--bd);display:grid;grid-template-columns:64px 1fr;gap:12px}.ev:first-child{border:0}
+.date{font:700 13px system-ui;text-align:center;border:1px solid var(--bd);border-radius:8px;padding:6px 2px;height:fit-content}.date i{display:block;font:normal 11px system-ui;color:var(--mu);margin-top:2px}
+.date.fut{border-color:var(--ac2);color:var(--ac2)}.date.now{background:var(--ac);color:#fff;border-color:var(--ac)}.date.now i{color:#fff}
+.ev b{font-weight:600}.meta{font:12px system-ui;color:var(--mu);margin-top:4px;display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.tag{background:var(--bg);border:1px solid var(--bd);border-radius:4px;padding:0 6px}.ev p{margin:4px 0 0;font-size:14px}.ev .es{color:var(--mu)}
+.rare{border-left:4px solid var(--ac);padding-left:12px}.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:820px){.two{grid-template-columns:1fr}}
+textarea{width:100%;min-height:150px;background:var(--bg);color:var(--tx);border:1px solid var(--bd);border-radius:8px;padding:8px;font:12px monospace}
+.note{font:12px system-ui;color:var(--mu)}a{color:var(--ac2)}
+
+.dates{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 14px}.dates label{font:12px system-ui;color:var(--mu);display:grid;gap:3px}
+.dates input{padding:6px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font-size:13px;min-width:0}
+
+.city{border:2px solid var(--ac)}.city h2{color:var(--ac);font-size:15px}
+.cityrow{display:flex;gap:8px;flex-wrap:wrap}.cityrow input{flex:1;min-width:200px;padding:12px;font-size:16px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx)}
+.cityrow button{padding:0 14px;font-size:13px}.cityrow button.apply{background:var(--ac);color:#fff;border-color:var(--ac);font-weight:600;font-size:15px;padding:0 22px}.city .chips{margin:10px 0 6px}.city label{display:flex;gap:6px;align-items:center;margin-top:4px}
+
+.vc{border:1px solid var(--bd);border-radius:8px;padding:10px;margin:8px 0}.vc.on{border-color:var(--ac2);box-shadow:0 0 0 2px var(--ac2)}.vc b{font-weight:600}
+.vh{font:600 12px system-ui;color:var(--mu);margin:4px 0;text-transform:uppercase;letter-spacing:.05em}
+.badge{font:11px system-ui;border-radius:4px;padding:1px 6px;color:#fff;background:var(--ac2)}.badge.now{background:var(--ac)}.badge.past{background:var(--mu)}
+.vb{border:2px solid var(--ac2);border-radius:8px;padding:10px 12px;margin-bottom:10px}.vb ul{margin:6px 0;padding-left:18px;font:13px system-ui}.leg{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+
+#mapbox svg{display:block;margin:0 auto;max-width:380px;width:100%;height:auto}.land{fill:var(--bg);stroke:var(--mu);stroke-width:1.2;stroke-linejoin:round}
+.dot{fill:var(--ac);stroke:#fff;stroke-width:1.5;cursor:pointer}.dot:hover{fill:var(--ac2)}.dot.sel{stroke:var(--ac2);stroke-width:3}
+.more{width:100%;margin-top:8px;padding:8px;border:1px dashed var(--bd);background:var(--bg);color:var(--tx);border-radius:8px;cursor:pointer;font:13px system-ui}
+.pc{display:none;justify-content:space-between;align-items:center;margin:0 0 10px;padding:6px 8px;border:1px dashed var(--ac2);border-radius:8px;font:600 12px system-ui;color:var(--ac2)}
+main.editing .pc{display:flex}main.editing .pn{outline:2px dashed var(--bd);outline-offset:3px}.pc button{font:12px system-ui;padding:3px 9px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:6px;cursor:pointer}
+.hbtn{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}.sw{display:flex;gap:6px;align-items:center}
+.maplabel{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0 0 8px;font:14px system-ui;min-height:36px}
+.maplabel .sl{display:inline-flex;align-items:center;gap:8px;padding:5px 6px 5px 12px;border:2px solid var(--ac2);border-radius:99px;background:var(--bg);font-weight:600}
+.maplabel .sl button{border:0;background:var(--ac2);color:#fff;border-radius:99px;padding:4px 11px;font:12px system-ui;cursor:pointer}.maplabel .no{color:var(--mu)}
+.dl{font:700 14px system-ui;fill:var(--tx);paint-order:stroke;stroke:var(--sf);stroke-width:4px;stroke-linejoin:round}.halo{fill:none;stroke:var(--ac2);stroke-width:2.5}
+.ib{width:18px;height:18px;border-radius:50%;border:1px solid var(--mu);background:var(--bg);color:var(--mu);font:italic 700 11px Georgia,serif;cursor:pointer;padding:0;margin-left:5px;vertical-align:middle}.ip{font:12px/1.4 system-ui;color:var(--tx);background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:8px;margin-top:6px}
+.defsbox{font:12.5px/1.4 system-ui}.defshead{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}.defsbox p{margin:0 0 8px}
+aside{position:sticky;top:12px;align-self:start;max-height:calc(100vh - 24px);overflow:auto}.col{min-width:0}
+aside .cityrow{flex-wrap:nowrap}aside .cityrow input{min-width:0;padding:9px;font-size:15px}aside .cityrow button.apply{padding:0 14px;font-size:14px}aside #q{margin-bottom:10px}aside .chips{margin:10px 0}aside .tabs button{padding:8px 2px;font-size:13px}
+.recap{position:sticky;top:0;z-index:30;background:var(--bg);padding:8px 0 10px;margin:0 0 6px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;border-bottom:1px solid var(--bd)}
+.rchips{display:flex;gap:5px;flex-wrap:wrap;flex:1;min-width:0;align-items:center}.rcount{font:600 13px system-ui;margin-left:auto;white-space:nowrap}
+.fopen,.fhead,.fshow{display:none}#defsbox{display:none}aside.defs #defsbox{display:block}aside.defs #filt{display:none}.fbk{display:none}
+.kmore{margin-top:10px}.kmore summary{cursor:pointer;font:600 12px system-ui;color:var(--mu);margin:0 0 8px}
+@media(max-width:820px){aside{display:none}aside.show{display:block;position:fixed;left:8px;right:8px;bottom:8px;top:auto;max-height:88vh;z-index:60;box-shadow:0 8px 30px rgba(0,0,0,.4)}.fbk:not([hidden]){display:block;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:55}
+.fopen{display:inline-flex;align-items:center;flex:none;white-space:nowrap}.fhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.fshow{display:block;width:100%;background:var(--ac2);color:#fff;border-color:var(--ac2);font-weight:600;margin-top:12px;padding:10px;text-align:center;position:sticky;bottom:0;z-index:2;box-shadow:0 -8px 8px -4px var(--sf)}aside #mapbox svg{max-width:240px}header{flex-direction:column}header h1{font-size:19px}.hbtn{justify-content:flex-start}
+.recap{flex-wrap:nowrap;padding:6px 0 8px}.rchips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.rchips .chip{white-space:nowrap;flex:none}.rcount{font-size:12px;flex:none}.defsbox{font-size:13.5px}}
+.fbtn{width:100%;background:none;border:0;padding:0;color:var(--tx);text-align:left}.fbtn:focus-visible{outline:2px solid var(--ac2);outline-offset:2px}.fbtn .lbl{display:flex;gap:6px;align-items:center}.fbtn i{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none;background:var(--c)}
+.mxw{overflow-x:auto;margin:8px 0}.mx{border-collapse:collapse;font:12.5px system-ui;width:100%}.mx th,.mx td{padding:5px 6px;border-bottom:1px solid var(--bd);text-align:center;vertical-align:bottom}.mx th:first-child,.mx td:first-child{text-align:left}.mx th{font-weight:600;color:var(--mu)}.mx td small{color:var(--mu)}
+.lt{padding:7px 0;border-bottom:1px solid var(--bd);font:13.5px/1.35 system-ui}.lt .tag{font-size:11px;margin-right:4px}mark{background:rgba(255,196,0,.35);color:inherit;border-radius:2px;padding:0 1px}.lh{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:8px 0}.lintro{margin:0 0 8px}.lh b{font:600 14px system-ui}
+.tabs{display:flex;border-bottom:1px solid var(--bd);margin:0 0 12px}
+.tabs button{flex:1;padding:11px 8px;border:0;border-bottom:3px solid transparent;margin-bottom:-1px;background:none;color:var(--mu);font:600 14px system-ui;cursor:pointer}
+.tabs button[aria-selected="true"]{color:var(--tx);border-bottom-color:var(--ac2)}
+.tabs button:focus-visible,.chip:focus-visible{outline:2px solid var(--ac2);outline-offset:2px}
+.cnt{font:600 11px system-ui;background:var(--bg);border:1px solid var(--bd);border-radius:99px;padding:1px 7px;margin-left:4px;color:var(--mu)}
+[role="tabpanel"][hidden]{display:none}
+.fc{color:var(--c)}.tag.fc{border-color:var(--c)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .fc{color:color-mix(in srgb,var(--c) 55%,#fff)}}:root[data-theme="dark"] .fc{color:color-mix(in srgb,var(--c) 55%,#fff)}
+.tabdesc{margin:0 0 10px}.vc{scroll-margin-top:70px}.nw{margin-top:6px;font:13px system-ui}.nw summary{cursor:pointer;font-weight:600;color:var(--ac2)}.nw ul,.vx ul{margin:6px 0;padding-left:18px;font:13px/1.4 system-ui}.vl{margin-top:8px}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .fill,:root:not([data-theme="light"]) .fbtn i{background:color-mix(in srgb,var(--c) 68%,#fff)}}:root[data-theme="dark"] .fill,:root[data-theme="dark"] .fbtn i{background:color-mix(in srgb,var(--c) 68%,#fff)}
+/* Tema risograph: carta crema, inchiostro viola, evidenziatore lime */
+@font-face{font-family:"Poppins";font-weight:700;font-style:normal;font-display:swap;src:url(poppins-bold.woff) format("woff")}
+h1,h2,.kpi b,.badge{font-family:"Poppins",system-ui,-apple-system,Segoe UI,sans-serif;font-weight:700}
+h1{font-size:24px;letter-spacing:-.01em}
+header{background:var(--bg);color:var(--tx);border-bottom:2px solid var(--ink)}header p{color:var(--mu)}
+h1{--hl:58%;display:inline;background:linear-gradient(transparent var(--hl),var(--on) var(--hl));padding:0 6px;margin-left:-6px;-webkit-box-decoration-break:clone;box-decoration-break:clone;line-height:1.5;color:var(--tx)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) h1{--hl:82%}}:root[data-theme="dark"] h1{--hl:82%}
+.card,aside{border:2px solid var(--ink);border-radius:8px;box-shadow:4px 4px 0 var(--ac)}
+.card h2,aside h3{color:var(--tx)}
+.kpi b{color:var(--ac2);font-size:30px}
+.chip,.tools button,.pc button,input[type=search],.dates input,.more{border-color:var(--bc)}
+.chip.on{background:var(--on);color:#261540;border-color:#261540;font-weight:600}.chip.on:not(.rc):not(.fopen)::before{content:"✓ "}
+.chip.apply,.cityrow button.apply,.fshow{background:var(--ac);color:#261540;border-color:#261540;font-weight:600}
+.date.now{background:var(--ac);color:#261540;border-color:#261540}.date.now i{color:#261540}
+.badge{background:var(--ac2);color:var(--onac2)}.badge.now{background:var(--ac);color:#261540}.badge.past{background:var(--mu);color:var(--bg)}
+.maplabel .sl button{background:var(--ac2);color:var(--onac2)}
+.tabs button[aria-selected="true"]{border-bottom-color:var(--ac)}
+mark{background:var(--on);color:#261540}
+.recap{border-bottom:2px solid var(--ink)}
+.vc.on{border:3px solid var(--ac2);background:color-mix(in srgb,var(--on) 16%,var(--sf));box-shadow:5px 5px 0 var(--ac2);padding:8px 10px 10px}
+.vx{margin-top:10px;padding-top:8px;border-top:2px dashed var(--ac2)}.badge.sel{background:var(--ink);color:var(--bg)}.pn{scroll-margin-top:64px}
+.dot{stroke:var(--sf)}
+.more{border-color:var(--ink)}
+
+.page{max-width:900px;margin:auto;padding:16px 20px;display:grid;gap:16px;min-width:0}.page>*{min-width:0}
+header a.back{font:600 13px system-ui;color:var(--ac2)}
+select,input[type=text],input[type=number],input[type=date]{padding:8px;border:1px solid var(--bc);border-radius:8px;background:var(--bg);color:var(--tx);font:14px system-ui;max-width:100%}
+label.f{display:grid;gap:3px;font:12px system-ui;color:var(--mu)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;margin:8px 0}
+.btn{padding:8px 14px;border:2px solid var(--ink);border-radius:8px;background:var(--ac);color:#261540;font:600 13px system-ui;cursor:pointer}.btn.sec{background:var(--bg);color:var(--tx);border-color:var(--bc)}
+.btn:disabled{opacity:.5;cursor:default}
+.item{border:1px solid var(--bd);border-radius:8px;padding:10px;margin:8px 0}
+pre{background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:8px;font:12px/1.4 monospace;overflow:auto;white-space:pre-wrap}
+.grid2{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:4px 12px}
+.grid2 label{display:flex;gap:6px;align-items:flex-start;font:13px system-ui;padding:2px 0}
+fieldset{border:1px solid var(--bd);border-radius:8px;margin:10px 0;padding:8px 10px}legend{font:600 13px system-ui;padding:0 6px}
+.ok{color:#2f6b00;font-weight:600}.no{color:#a3124a;font-weight:600}
+.diff td.bad{background:color-mix(in srgb,#c2255c 16%,transparent)}
+.prog{height:8px;background:var(--tr);border:1px solid var(--bc);border-radius:99px;overflow:hidden}.prog i{display:block;height:100%;background:var(--ac2)}
+q{display:block;font:italic 13px/1.4 Georgia,serif;color:var(--mu);margin:3px 0 0;quotes:"«" "»"}
+.hide{display:none}
+</style>
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script></head><body>
+<header><a class="back" href="./">← Radar proteste</a><br><h1>Gestione dossier</h1><p>Scelta dei dossier e validazione manuale. Pagina di lavoro, non indicizzata: non contiene dati riservati.</p></header>
+<div class="page">
+<div class="card"><div class="tabs" role="tablist"><button role="tab" id="t-dos" aria-selected="true" onclick="tab('dos')">Dossier</button><button role="tab" id="t-val" aria-selected="false" onclick="tab('val')">Validazione manuale</button></div>
+<div id="v-dos"></div><div id="v-val" class="hide"></div></div>
+</div>
+<script>
+const $=id=>document.getElementById(id),esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const REPO="marcofonico/proteste-italia",SOGLIA=0.6;
+const getJ=async u=>{try{const r=await fetch(u,{cache:"no-store"});return r.ok?await r.json():null}catch(e){return null}};
+function tab(t){["dos","val"].forEach(k=>{$("t-"+k).setAttribute("aria-selected",String(k===t));$("v-"+k).classList.toggle("hide",k!==t)});if(t==="val")READY.then(initVal)}
+const slug=s=>s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,50);
+const copy=async(txt,btn)=>{try{await navigator.clipboard.writeText(txt);btn.textContent="Copiato ✓"}catch(e){prompt("Copia:",txt)}};
+let IX=[],SG=[],DATA=null;
+async function initDos(){
+ IX=await getJ("dossier/indice.json")||[];const sg=await getJ("suggerimenti.json");SG=sg?sg.suggerimenti:[];DATA=await getJ("data.json");
+ $("v-dos").innerHTML=`
+ <h2>Dossier attivi</h2>${IX.map(d=>`<div class="item"><b>${esc(d.titolo)}</b> <span class="note">· ${esc(d.stato)} · ${d.giorno}</span><div class="row" style="margin:6px 0 0"><a class="btn sec" href="dossier.html?d=${encodeURIComponent(d.id)}">Pagina pubblica</a><a class="btn sec" href="dossier.html?d=${encodeURIComponent(d.id)}&anteprima=1">Anteprima non validata</a><button class="btn sec" onclick="goVal('${esc(d.id)}')">Valida</button></div></div>`).join("")||"<p class='note'>Nessun dossier definito.</p>"}
+ <p class="note">Per aggiungere, modificare o chiudere un dossier si modifica il file <code>dossiers.json</code> nel repository (<a href="https://github.com/${REPO}/edit/main/dossiers.json" target="_blank" rel="noopener">apri in modifica su GitHub</a>): incolla una scheda nell’elenco, oppure cambia <code>"stato"</code> in <code>"chiuso"</code> per fermare la raccolta.</p>
+ <h2 style="margin-top:20px">Suggerimenti automatici</h2><p class="note">Eventi molto coperti negli ultimi 5 giorni e non ancora in un dossier (almeno 5 testate o 8 titoli). Decidi tu.</p>
+ ${SG.map((s,i)=>`<div class="item"><b>${esc(s.titolo)}</b><div class="note">${s.titoli} titoli · ${s.testate} testate · ${s.regioni} regioni</div><ul class="note">${s.esempi.map(e=>`<li>${esc(e)}</li>`).join("")}</ul><button class="btn sec" onclick="copy(JSON.stringify(SG[${i}].proposta,null,2),this)">Copia scheda per dossiers.json</button></div>`).join("")||"<p class='note'>Nessun suggerimento al momento.</p>"}
+ <h2 style="margin-top:20px">Prova una regola</h2><p class="note">Scrivi una espressione (es. <code>sciopero (generale|nazionale)</code>) e controlla quali titoli già raccolti catturerebbe.</p>
+ <div class="row"><label class="f">Titolo<input type="text" id="n-t" placeholder="Sciopero nazionale del…"></label><label class="f">Giorno dell’evento<input type="date" id="n-g"></label><label class="f">Dal<input type="date" id="n-da"></label><label class="f">Al<input type="date" id="n-a"></label></div>
+ <div class="row"><label class="f" style="flex:1;min-width:240px">Regola (espressione regolare)<input type="text" id="n-rx" placeholder="sciopero (generale|nazionale)"></label><button class="btn" onclick="tryRule()">Prova</button></div>
+ <div id="n-out"></div>`;
+}
+function tryRule(){
+ let rx;try{rx=new RegExp($("n-rx").value,"i")}catch(e){$("n-out").innerHTML=`<p class="no">Espressione non valida: ${esc(e.message)}</p>`;return}
+ const da=$("n-da").value||"0000",a=$("n-a").value||"9999",seen=new Set(),hit=[];
+ (DATA?DATA.events:[]).forEach(e=>(e.news||[]).forEach(n=>{const k=n.u||n.t;if(seen.has(k))return;seen.add(k);if(n.d>=da&&n.d<=a&&rx.test(n.t))hit.push(n)}));
+ const stanza={id:slug($("n-t").value||"nuovo-dossier"),titolo:$("n-t").value,descrizione:"",giorno:$("n-g").value,da:$("n-da").value,a:$("n-a").value,stato:"in corso",rx:$("n-rx").value};
+ $("n-out").innerHTML=`<p><b>${hit.length}</b> titoli già raccolti corrispondono${DATA?"":" (data.json non disponibile)"}.</p><ul class="note">${hit.slice(0,8).map(n=>`<li>${esc(n.t)} <i>· ${esc(n.o)}</i></li>`).join("")}</ul><pre id="n-js">${esc(JSON.stringify(stanza,null,2))}</pre><button class="btn sec" onclick="copy($('n-js').textContent,this)">Copia scheda</button> <span class="note">Incollala in <code>dossiers.json</code> (separata da una virgola dalle altre).</span>`}
+function goVal(id){tab("val");$("vd").value=id;loadVal()}
+// ---------------- validazione ----------------
+let VD=null,ST=null,CUR=0,inited=false;
+const hashS=s=>{let h=2166136261;for(const c of s){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0};
+const key=()=>"valid|"+VD.id+"|"+ST.coder;
+function save(){try{localStorage.setItem(key(),JSON.stringify(ST))}catch(e){}}
+async function initVal(){
+ if(inited)return;inited=true;
+ $("v-val").innerHTML=`<h2>Validazione manuale</h2>
+ <p class="note">Leggi un campione di articoli senza vedere cosa ha trovato l’automatismo, poi confronta. Il programma calcola l’accordo (κ di Cohen) per ogni indicatore: solo quelli con κ ≥ ${String(SOGLIA).replace(".",",")} diventano pubblici. Servono circa 3-4 minuti per articolo: per cominciare bastano 30-40 testi, meglio 60.</p>
+ <div class="row"><label class="f">Dossier<select id="vd">${IX.map(d=>`<option value="${esc(d.id)}">${esc(d.titolo)}</option>`).join("")}</select></label><label class="f">Il tuo nome<input type="text" id="vc" value="${esc((()=>{try{return localStorage.getItem("coder")||""}catch(e){return""}})())}" placeholder="es. marco"></label><label class="f">Dimensione campione<input type="number" id="vn" value="60" min="20" max="150" style="width:90px"></label><button class="btn" onclick="loadVal()">Avvia o riprendi</button></div>
+ <div class="row"><label class="f">Riprendi da file<input type="file" id="vf" accept=".json" onchange="importFile(this)"></label></div>
+ <div id="vbody"></div>`;
+ if(!IX.length)$("vbody").innerHTML="<p class='note'>Nessun dossier disponibile.</p>";
+}
+async function loadVal(){
+ const id=$("vd").value,coder=$("vc").value.trim()||"anonimo";try{localStorage.setItem("coder",$("vc").value.trim())}catch(e){}
+ VD=await getJ("dossier/"+encodeURIComponent(id)+".json");if(!VD){$("vbody").innerHTML="<p class='no'>Dossier non disponibile.</p>";return}
+ let s=null;try{s=JSON.parse(localStorage.getItem("valid|"+id+"|"+coder)||"null")}catch(e){}
+ if(!s){const ok=VD.articoli.filter(a=>a.tx&&a.tx.ok),by={};ok.sort((a,b)=>hashS(a.id)-hashS(b.id)).forEach(a=>(by[a.o]=by[a.o]||[]).push(a));
+  const lists=Object.values(by),n=+$("vn").value||60,samp=[];for(let i=0;samp.length<n&&lists.some(l=>l[i]);i++)lists.forEach(l=>{if(l[i]&&samp.length<n)samp.push(l[i].id)});
+  s={id,coder,camp:samp,c:{}}}
+ ST=s;CUR=Math.max(0,ST.camp.findIndex(i=>!(ST.c[i]&&ST.c[i].done)));save();showVal()}
+function importFile(inp){const f=inp.files[0];if(!f)return;const r=new FileReader();r.onload=async()=>{try{const o=JSON.parse(r.result);if(!o.camp||!o.id)throw 0;
+  const coder=$("vc").value.trim()||"anonimo";VD=await getJ("dossier/"+encodeURIComponent(o.id)+".json");if(!VD)throw 1;
+  $("vd").value=o.id;ST={id:o.id,coder:o.coder===coder||!o.c?coder:coder,camp:o.camp,c:o.coder===coder?o.c:{}};
+  if(o.coder!==coder){ST.altro=o}CUR=Math.max(0,ST.camp.findIndex(i=>!(ST.c[i]&&ST.c[i].done)));save();showVal()}catch(e){alert("File non valido o dossier non disponibile.")}};r.readAsText(f)}
+const AR=id=>VD.articoli.find(a=>a.id===id);
+const done=()=>ST.camp.filter(i=>ST.c[i]&&ST.c[i].done).length;
+function showVal(){
+ const n=ST.camp.length,d=done(),id=ST.camp[CUR],a=AR(id);
+ if(!a){$("vbody").innerHTML="<p class='note'>Campione vuoto: servono testi analizzati.</p>";return}
+ const c=ST.c[id]=ST.c[id]||{cor:[],dom:"",voc:[],cif:"",fig:{}},lock=!!c.done;
+ const chk=(grp,val,lab,on)=>`<label><input type="checkbox" ${on?"checked":""} ${lock?"disabled":""} onchange="setC('${grp}','${val}',this.checked)"> ${esc(lab)}</label>`;
+ let h=`<div class="note" style="margin-top:12px">Codificati ${d} di ${n} · articolo ${CUR+1}</div><div class="prog"><i style="width:${d/n*100}%"></i></div>
+ <div class="item"><b>${esc(a.t)}</b><div class="note">${esc(a.o)} · ${a.d} · <a href="${esc(a.u)}" target="_blank" rel="noopener">Apri l’articolo ↗</a></div></div>
+ <p class="note">Leggi il testo completo (non solo il titolo) e rispondi. I campi si bloccano quando premi «Confronta».</p>
+ <fieldset><legend>1. Quali di questi modi di raccontare sono presenti in modo rilevante nel testo?</legend><div class="grid2">${VD.cornici_testo.map(f=>chk("cor",f.id,f.n+" — "+f.d,c.cor.includes(f.id))).join("")}</div></fieldset>
+ <fieldset><legend>2. Quale prevale?</legend><div class="grid2"><label><input type="radio" name="dom" ${c.dom===""&&c.domset?"checked":""} ${lock?"disabled":""} onchange="setDom('')"> Nessuno in particolare</label>${VD.cornici_testo.map(f=>`<label><input type="radio" name="dom" ${c.dom===f.id?"checked":""} ${lock?"disabled":""} onchange="setDom('${f.id}')"> ${esc(f.n)}</label>`).join("")}</div></fieldset>
+ <fieldset><legend>3. Chi viene citato (virgolette o «ha detto», «secondo…»)?</legend><div class="grid2">${VD.voci_cat.map(v=>chk("voc",v.id,v.n,c.voc.includes(v.id))).join("")}</div></fieldset>
+ <fieldset><legend>4. Il testo riporta cifre di partecipazione (persone in piazza, adesione)?</legend><div class="grid2"><label><input type="radio" name="cif" ${c.cif==="si"?"checked":""} ${lock?"disabled":""} onchange="setCif('si')"> Sì</label><label><input type="radio" name="cif" ${c.cif==="no"?"checked":""} ${lock?"disabled":""} onchange="setCif('no')"> No</label></div></fieldset>`;
+ if(!lock)h+=`<div class="row"><button class="btn" onclick="compare()">Confronta con l’automatico</button><button class="btn sec" onclick="nav(-1)" ${CUR?"":"disabled"}>← Precedente</button><button class="btn sec" onclick="nav(1)" ${CUR<n-1?"":"disabled"}>Salta →</button></div>`;
+ else h+=comparePanel(a,c)+`<div class="row"><button class="btn" onclick="nav(1)" ${CUR<n-1?"":"disabled"}>Avanti →</button><button class="btn sec" onclick="nav(-1)" ${CUR?"":"disabled"}>← Precedente</button></div>`;
+ h+=`<hr style="border:0;border-top:2px solid var(--bd);margin:18px 0"><div class="row"><button class="btn" onclick="results()" ${d<10?"disabled":""}>Calcola l’accordo (${d} codificati)</button><button class="btn sec" onclick="dl('codifiche-'+ST.id+'-'+ST.coder+'.json',ST)">Scarica le mie codifiche</button></div><div id="res"></div>`;
+ $("vbody").innerHTML=h;
+}
+function setC(g,v,on){const c=ST.c[ST.camp[CUR]];c[g]=c[g]||[];if(on&&!c[g].includes(v))c[g].push(v);if(!on)c[g]=c[g].filter(x=>x!==v);save()}
+function setDom(v){const c=ST.c[ST.camp[CUR]];c.dom=v;c.domset=1;save()}
+function setCif(v){ST.c[ST.camp[CUR]].cif=v;save()}
+function nav(k){CUR=Math.min(ST.camp.length-1,Math.max(0,CUR+k));showVal()}
+function compare(){const c=ST.c[ST.camp[CUR]];if(!c.cif||!c.domset){alert("Rispondi almeno alle domande 2 e 4 prima di confrontare.");return}c.done=1;save();showVal()}
+function comparePanel(a,c){
+ const tx=a.tx,rows=[];
+ VD.cornici_testo.forEach(f=>{const h=c.cor.includes(f.id),m=!!tx.cornici[f.id];rows.push([f.n,h?"sì":"no",m?"sì ("+tx.cornici[f.id].conf+")":"no",h===m])});
+ rows.push(["Prevalente",(VD.cornici_testo.find(f=>f.id===c.dom)||{n:"nessuno"}).n,(VD.cornici_testo.find(f=>f.id===tx.dom)||{n:"nessuno"}).n,c.dom===(tx.dom||"")]);
+ VD.voci_cat.forEach(v=>{const h=c.voc.includes(v.id),m=tx.voci.some(x=>x.c===v.id);rows.push(["Voce: "+v.n,h?"sì":"no",m?"sì":"no",h===m])});
+ const figs=(tx.cifre||[]).map((f,i)=>`<div class="item"><b>${f.v.toLocaleString("it-IT")}</b> ${esc(f.u)} · fonte: ${esc(f.a)}<q>${esc(f.ev)}</q><label style="font:13px system-ui"><input type="radio" name="fg${i}" ${c.fig[i]===true?"checked":""} onchange="setFig(${i},true)"> corretta</label> <label style="font:13px system-ui"><input type="radio" name="fg${i}" ${c.fig[i]===false?"checked":""} onchange="setFig(${i},false)"> sbagliata (numero o fonte)</label></div>`).join("");
+ return `<h3 class="sub" style="font:600 14px system-ui;margin:14px 0 6px">Confronto con l’automatico</h3><div class="mxw"><table class="mx diff"><thead><tr><th>Voce</th><th>Tu</th><th>Automatico</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${esc(r[0])}</td><td class="${r[3]?"":"bad"}">${esc(r[1])}</td><td class="${r[3]?"":"bad"}">${esc(r[2])}</td></tr>`).join("")}</tbody></table></div>
+ <p class="note">Cifre di partecipazione rilevate dall’automatico: ${(tx.cifre||[]).length?"controllale (conta la precisione).":"nessuna."}${(tx.adesione||[]).length?` Adesione: ${tx.adesione.map(x=>x.p+"%").join(", ")}.`:""}</p>${figs}`}
+function setFig(i,v){ST.c[ST.camp[CUR]].fig[i]=v;save()}
+// ----- accordo -----
+function kappa(x,y){const n=x.length;if(!n)return{k:null,acc:null};const cls=[...new Set([...x,...y])];let po=0;x.forEach((v,i)=>{if(v===y[i])po++});po/=n;let pe=0;cls.forEach(c=>{pe+=(x.filter(v=>v===c).length/n)*(y.filter(v=>v===c).length/n)});return{k:pe>=1?null:(po-pe)/(1-pe),acc:po}}
+const baseF=()=>VD.etichette.map(f=>f.id);
+const H={ // valore umano e automatico per indicatore
+ cornici:(f,a,c)=>c.cor.includes(f),voci:(f,a,c)=>c.voc.includes(f),dom:(f,a,c)=>c.dom||""};
+const A={cornici:(f,a)=>!!a.tx.cornici[f],voci:(f,a)=>a.tx.voci.some(x=>x.c===f),dom:(f,a)=>a.tx.dom||""};
+function compute(codesA,codesB,ids){ // codesB null => confronto con l'automatico
+ const out={},get=(c,i)=>c[i],keys=[];
+ VD.cornici_testo.forEach(f=>keys.push(["cornici",f.id]));VD.voci_cat.forEach(v=>keys.push(["voci",v.id]));keys.push(["dom",""]);
+ keys.forEach(([b,f])=>{const x=[],y=[];ids.forEach(i=>{const a=AR(i);x.push(H[b](f,a,codesA[i]));y.push(codesB?H[b](f,a,codesB[i]):A[b](f,a))});
+  const r=kappa(x,y),pos=x.filter(v=>v===true).length;out[b==="dom"?"dom":b+":"+f]={k:r.k,m:"kappa",n:ids.length,acc:r.acc,pos:b==="dom"?undefined:pos}});
+ // scarto: coppie articolo × famiglia con etichetta nel titolo
+ const sx=[],sy=[];ids.forEach(i=>{const a=AR(i);baseF().forEach(f=>{if(a.tx.tt.includes(f)){sx.push(a.tx.tt.includes(f)&&!codesA[i].cor.includes(f));sy.push(codesB?(a.tx.tt.includes(f)&&!codesB[i].cor.includes(f)):a.tx.scarto.includes(f))}})});
+ const rs=kappa(sx,sy);out.scarto={k:rs.k,m:"kappa",n:ids.length,acc:rs.acc,pos:sx.filter(Boolean).length};
+ if(!codesB){let fa=0,fc=0,yes=0,hit=0;ids.forEach(i=>{const a=AR(i),c=codesA[i],fs=a.tx.cifre||[];fs.forEach((f,j)=>{if(c.fig[j]!==undefined){fa++;if(c.fig[j])fc++}});if(c.cif==="si"){yes++;if(fs.length)hit++}});
+  out.cifre={k:fa?fc/fa:null,m:"precisione",n:ids.length,acc:fa?fc/fa:null,pos:fa,richiamo:yes?hit/yes:null}}
+ return out}
+const nm=k=>{const [b,id]=k.split(":");const f=(VD.cornici_testo.find(x=>x.id===id)||VD.voci_cat.find(x=>x.id===id)||{}).n;return({cornici:"Cornice",voci:"Voce",dom:"Cornice prevalente",cifre:"Cifre di partecipazione",scarto:"Titolo e testo"}[b]||b)+(f?": "+f:"")};
+const f2=x=>x==null?"n/d":x.toFixed(2).replace(".",",");
+function results(){
+ const ids=ST.camp.filter(i=>ST.c[i]&&ST.c[i].done),v=compute(ST.c,null,ids);
+ const out={id:ST.id,versione_codebook:VD.versione_codebook,soglia:SOGLIA,n:ids.length,creato:new Date().toISOString().slice(0,10),codificatori:[ST.coder],campione:ids,v:Object.fromEntries(Object.entries(v).map(([k,x])=>[k,{k:x.k==null?null:+x.k.toFixed(3),m:x.m,n:x.n,acc:x.acc==null?null:+x.acc.toFixed(3),pos:x.pos,...(x.richiamo!==undefined?{richiamo:x.richiamo==null?null:+x.richiamo.toFixed(3)}:{})}]))};
+ window.OUT=out;
+ let h=`<h3 class="sub" style="font:600 14px system-ui;margin:14px 0 6px">Accordo con l’automatico su ${ids.length} testi</h3><div class="mxw"><table class="mx"><thead><tr><th>Indicatore</th><th>Accordo (κ o precisione)</th><th>Concordanza grezza</th><th>Casi positivi</th><th>Esito</th></tr></thead><tbody>${Object.entries(v).map(([k,x])=>{const ok=x.k!=null&&x.k>=SOGLIA;return`<tr><td>${esc(nm(k))}</td><td>${f2(x.k)}</td><td>${x.acc==null?"n/d":Math.round(x.acc*100)+"%"}</td><td>${x.pos==null?"":x.pos}</td><td class="${ok?"ok":"no"}">${ok?"pubblicabile":x.k==null?"non valutabile":"sotto soglia"}</td></tr>`}).join("")}</tbody></table></div>
+ <p class="note">Un indicatore «non valutabile» ha poca varietà nel campione (esempio: una famiglia che non compare mai): serve un campione più ampio. Con pochi casi positivi il κ è instabile: leggi anche la colonna «casi positivi». ${v.cifre&&v.cifre.richiamo!=null?`Cifre: l’automatico ne ha trovata almeno una nel ${Math.round(v.cifre.richiamo*100)}% dei testi in cui tu ne hai viste.`:""}</p>
+ <div class="row"><button class="btn" onclick="dl('${ST.id}-validazione.json',window.OUT)">Scarica validazione-${esc(ST.id)}.json</button></div>
+ <p class="note"><b>Per pubblicare:</b> carica il file scaricato (ha già il nome giusto, <code>${esc(ST.id)}-validazione.json</code>) nella cartella <code>docs/dossier</code> del repository, sovrascrivendo quello eventualmente presente. La pagina pubblica mostrerà solo gli indicatori sopra soglia.</p>
+ <h3 class="sub" style="font:600 14px system-ui;margin:14px 0 6px">Confronto con un secondo codificatore (facoltativo)</h3><p class="note">Se un’altra persona ha letto gli stessi articoli (campione importato dal tuo file), carica le sue codifiche per misurare quanto due persone si accordano tra loro: è il limite massimo ragionevole per l’automatico.</p><input type="file" accept=".json" onchange="cmpFile(this)"><div id="cmp"></div>`;
+ $("res").innerHTML=h}
+function cmpFile(inp){const f=inp.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const o=JSON.parse(r.result),ids=ST.camp.filter(i=>ST.c[i]&&ST.c[i].done&&o.c[i]&&o.c[i].done);
+  if(ids.length<10){$("cmp").innerHTML=`<p class="no">Articoli in comune codificati da entrambi: ${ids.length}. Ne servono almeno 10.</p>`;return}
+  const v=compute(ST.c,o.c,ids);$("cmp").innerHTML=`<p class="note">${ids.length} articoli in comune, ${esc(ST.coder)} contro ${esc(o.coder||"altro")}.</p><div class="mxw"><table class="mx"><thead><tr><th>Indicatore</th><th>κ tra le due persone</th></tr></thead><tbody>${Object.entries(v).filter(([k])=>k!=="cifre").map(([k,x])=>`<tr><td>${esc(nm(k))}</td><td>${f2(x.k)}</td></tr>`).join("")}</tbody></table></div>`}catch(e){$("cmp").innerHTML="<p class='no'>File non valido.</p>"}};r.readAsText(f)}
+function dl(name,obj){const b=new Blob([JSON.stringify(obj,null,1)],{type:"application/json"}),u=URL.createObjectURL(b),a=document.createElement("a");a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}
+const READY=initDos();
+</script></body></html>
