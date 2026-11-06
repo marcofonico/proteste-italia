@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T13:29",
+ "updated": "2026-11-06T16:14",
  "sources": [
   [
    "CGIL · calendario scioperi 12–18 ott",
@@ -8482,6 +8482,10 @@
    "t": "Studenti universitari tentano di contestare ministra Bernini a Torino"
   },
   {
+   "id": "e-2026-11-06-protesta-studenti-a-firenze-i-carabinieri-ci-hann",
+   "t": "Protesta studenti a Firenze: 'I carabinieri ci hanno puntato pistole in faccia'"
+  },
+  {
    "id": "e-2026-11-06-domani-a-torino-un-nuovo-corteo-contro-carovita-e",
    "t": "Domani a Torino un nuovo corteo contro carovita e riarmo"
   },
@@ -8490,8 +8494,8 @@
    "t": "Bankitalia, imprese segnalano accelerazione vendite e occupazione nel 2026"
   },
   {
-   "id": "e-2026-11-06-un-altra-giornata-di-allarmi-bomba-voli-bloccati-",
-   "t": "Un’altra giornata di allarmi bomba: voli bloccati, evacuate a Dublino le sedi di tv e giornali"
+   "id": "e-2026-11-06-nuovi-allarmi-bomba-voli-bloccati-evacuati-tv-e-g",
+   "t": "Nuovi allarmi bomba: voli bloccati, evacuati tv e giornali. La rivendicazione: “È solo l’inizio”"
   },
   {
    "id": "e-2026-11-06-proteste-in-piazza-la-procura-non-ricorre-contro-",
@@ -8560,10 +8564,6 @@
   {
    "id": "e-2026-11-06-fanfani-camaiti-studenti-e-preside-a-confronto-do",
    "t": "Fanfani-Camaiti. Studenti e preside a confronto dopo lo sciopero"
-  },
-  {
-   "id": "e-2026-11-06-bus-troppo-affollati-la-protesta-degli-studenti-n",
-   "t": "Bus troppo affollati, la protesta degli studenti: “Non bastano le corse”"
   },
   {
    "id": "e-2026-11-06-sarte-in-fuga-dal-corteo-storico-ventisei-volonta",
@@ -18734,10 +18734,6 @@
     }
    ],
    "terms": [
-    [
-     "bastano",
-     "temi"
-    ],
     [
      "salvini",
      "temi"
@@ -92244,30 +92240,7 @@
     4,
     5,
     6,
-    7,
-    34,
-    36,
-    226
-   ],
-   "news": [
-    {
-     "t": "Sciopero generale, sit-in al Colosseo: «Tre giorni in tenda contro il carovita» VIDEO",
-     "o": "Il Gazzettino",
-     "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMEVwbDdjeEFDbGdOSEtuSERjWlBHTDE3QnVYODJseGluVU1jR1NENmljdjR0ZTlmR081dVZoQzRuMXpWTUZuWkliVUFqTURObjFBQTRycEExdUJGZjdLT19laHJOVnI1VC1yOEViMGFGdEFPUVhJbUlZaXFCNG5pcm5IUzljbzYxUDZpZWx4bU9ZRWdCMWp3aXdLZlJwc2xWWlI0QUtaTkxhTmJj0gGjAUFVX3lxTE94SkxTNzZKUEJQZU5wWWhjZTV5RUJVdzB6ekhRaWhXOFNpVXhWS05RaFY2aGJ1WlF0YnplYUxXNnlvOUYwRzJXNWxjUG5nYjVPTjB4RC1KU2VsbG9NeEZkd1RIRFhhNk0wbGlrcWN5bEUxMWFId3phZ3JpMkRRUUh6ZHNzdmlxOG5yN2l2TTdwV3VWbG1tM1RMa1N6MWZQdjBYN1k?oc=5",
-     "d": "2026-10-30"
-    },
-    {
-     "t": "Imperia, sciopero generale e corteo. Scajola contestato: “Basta con una città solo per turisti”",
-     "o": "Il Secolo XIX",
-     "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxObmU4RTBERThJY25kVmpsdGpKMXAxaWVsLWp4VzN5SmlXTEVyUEZIUk5KZW42LWZCT1dxcEt0ZFlqdXFjZTdYeDQ3cm1rYVoyRWNMU29GU0xKTTAtd2k4OTlncmdRR0xTVTJyZVdMTEplRzBqMXVVWHU1MUFCLXVFMU1MckY1ME4wTlhGWU12emhVMjZJNWt3clBNZnpGUHRGWHFSMA?oc=5",
-     "d": "2026-10-30"
-    },
-    {
-     "t": "Sciopero generale, Truzzi (Assoutenti): \"Le famiglie spendono il 30% in più per gli alimentari rispetto a un anno fa\"",
-     "o": "Primocanale",
-     "u": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOOS1ycktyUlFNeFBlck8wNVFfN3pKV3BHcmRveXltcVRLbHdPOHFMREJabzFEQUpQY0lvWmEzRXZwTDJRYWRMVnBHZzQ3UkhUVURpWDlYSFotaGpKS29pYTZ4Yk5acFpaZ0FYRHZ4RmZLZ1laVXYxNU9YOWJFd0VZQTFhUENWemFDdko0Ynl5QWVKSjhiUk9OZExXS0RyN3ZtYXA4LVg2bGZBYjc2eFNfNTM5aTlZZVlKMWhPbTk4N3RFWmJoOVBQdWluOVlvN0MwQ25US0JaQ2JUdDAwNEU2WDJvUGxxTDVvQXNPbEYwcHhnYTZ5cUlZNTVEZ0c0d9IBgwJBVV95cUxORUxEanA4dDN1OUkxTHdPR2JXeVRvVFh2THhKd1o0WE11bDM0TXdZNmtqSFROa1N4N2dNSGRZVFFLMWNLY1dpNmZCOVlIbGdPSUVPR3g3Q0pycjRSRzItQy13SWpLc0doNERFUzByTm93d3QxSmdhVkZ1c1NFZmR4dk04Ty11T3JOUUgyNExuVEt6VVFRY2tGWGdEN0hibzRFdXc1UGR5d0doMi1lMGFyY01aS3hnQUNsazd3dUlva055WHBrbjdPWml5TElQTVFGa3ZpM1BHNlZCcDZwQ19oZnNJTzlfUFBCdHpYMWt4cC1RLW9vM0x2TDdSYkxPeTZFX213?oc=5",
-     "d": "2026-10-30"
-    }
+    7
    ],
    "terms": [
     [
@@ -105803,8 +105776,8 @@
    ],
    "o": "Lavoro, Manageritalia: \"In Friuli Venezia Giulia occupazione giovanile sopra media nazionale\"    Adnkronos",
    "s": [
-    51,
-    45
+    45,
+    51
    ],
    "auto": true,
    "news": [
@@ -112606,10 +112579,10 @@
    "o": "Cirio: \"Disponibili da domani\"",
    "s": [
     22,
-    45,
     29,
-    53,
-    32
+    32,
+    45,
+    53
    ],
    "auto": true,
    "news": [
@@ -112948,8 +112921,8 @@
    "o": "Meccanica Cainelli, sciopero e presidio tra Volano e Rovereto: «Ora risposte concrete»    L'Adige",
    "s": [
     31,
-    156,
-    32
+    32,
+    156
    ],
    "auto": true,
    "news": [
@@ -113088,12 +113061,12 @@
    ],
    "o": "Israele, il corteo contro l'integrazione dei partiti arabi nel governo    Il Gazzettino",
    "s": [
-    34,
+    11,
     14,
-    61,
+    34,
     49,
     58,
-    11
+    61
    ],
    "auto": true,
    "news": [
@@ -113265,9 +113238,9 @@
    ],
    "o": "“Inaccettabile morire per costruire navi di lusso a 5 euro l'ora”, il presidio per i 2 operai Fincantieri morti    Il Resto del Carlino",
    "s": [
+    37,
     40,
-    42,
-    37
+    42
    ],
    "auto": true,
    "news": [
@@ -113393,6 +113366,10 @@
     ],
     [
      "perquisizioni tappeto",
+     "temi"
+    ],
+    [
+     "pistole",
      "temi"
     ],
     [
@@ -113689,12 +113666,12 @@
    ],
    "o": "Giani in costume da Halloween ad Albiano Magra: La manifestazione più bella della Toscana    AGI",
    "s": [
-    50,
+    11,
     14,
-    61,
     49,
+    50,
     58,
-    11
+    61
    ],
    "auto": true,
    "news": [
@@ -114163,8 +114140,8 @@
    ],
    "o": "In Germania le proteste della Gen Z contro il carovita sono degenerate in scontri tra polizia e manifestanti a Francoforte, Amburgo e Colonia    L'Espresso",
    "s": [
-    57,
-    17
+    17,
+    57
    ],
    "auto": true,
    "news": [
@@ -116481,8 +116458,8 @@
    ],
    "o": "Manifestazione, domenica la nona edizione. La Straquasar stavolta si fa in tre: gara podistica, passeggiata della solidarietà e Quasar walking    La Nazione",
    "s": [
-    38,
-    11
+    11,
+    38
    ],
    "auto": true,
    "news": [
@@ -116768,8 +116745,8 @@
    ],
    "o": "Studenti in piazza a Roma, il corteo in centro con bandiere palestinesi e striscioni    Il Mattino",
    "s": [
-    44,
-    38
+    38,
+    44
    ],
    "auto": true,
    "news": [
@@ -117151,8 +117128,8 @@
    ],
    "o": "Eicma, Zoppas (Ice): \"Con questa manifestazione portiamo in Italia circa 12mila tra buyer e clienti\"    Adnkronos",
    "s": [
-    51,
-    45
+    45,
+    51
    ],
    "auto": true,
    "news": [
@@ -117194,9 +117171,9 @@
    ],
    "o": "Mattarella \"Nella Costituzione l'etica del militare italiano, presidio di pace\"    La Gazzetta del Mezzogiorno",
    "s": [
+    11,
     14,
-    45,
-    11
+    45
    ],
    "auto": true,
    "news": [
@@ -117368,9 +117345,9 @@
    ],
    "o": "Ecomondo, Ermeti: \"Una manifestazione anticipatrice dei tempi\"    Adnkronos",
    "s": [
-    51,
+    11,
     45,
-    11
+    51
    ],
    "auto": true,
    "news": [
@@ -118405,10 +118382,6 @@
     [
      "successo",
      "temi"
-    ],
-    [
-     "troppo",
-     "temi"
     ]
    ],
    "v": "e-2026-11-03-fiorella-mannoia-e-le-proteste-dei-giovani-succes"
@@ -119089,6 +119062,10 @@
      "temi"
     ],
     [
+     "evacuati",
+     "temi"
+    ],
+    [
      "halloween",
      "temi"
     ],
@@ -119191,15 +119168,15 @@
    ],
    "o": "\"Voto di protesta e bocciatura di Trump\", così la stampa Usa vede la 'vittoria storica Dem' alle midterm    Adnkronos",
    "s": [
-    51,
-    34,
-    44,
-    41,
-    14,
-    49,
-    58,
+    9,
     11,
-    9
+    14,
+    34,
+    41,
+    44,
+    49,
+    51,
+    58
    ],
    "auto": true,
    "news": [
@@ -122064,12 +122041,12 @@
    ],
    "o": "Marsiglia, sindacati in corteo contro le politiche economiche del governo    L'Adige",
    "s": [
-    33,
-    14,
-    49,
-    45,
     11,
-    32
+    14,
+    32,
+    33,
+    45,
+    49
    ],
    "auto": true,
    "news": [
@@ -122532,10 +122509,10 @@
    ],
    "o": "La Francia torna in piazza: 600 mila manifestanti. Le immagini    Agenzia Dire",
    "s": [
-    51,
-    52,
+    41,
     44,
-    41
+    51,
+    52
    ],
    "auto": true,
    "news": [
@@ -122848,8 +122825,8 @@
    ],
    "o": "Lavoro, nel Lazio solo il 68,9% dei giovani adulti è occupato ma il terziario è tra i più dinamici d’Italia    Adnkronos",
    "s": [
-    51,
-    45
+    45,
+    51
    ],
    "auto": true,
    "news": [
@@ -123123,8 +123100,8 @@
    ],
    "o": "Nuove proteste a Parigi, polizia antisommossa a Marsiglia    Sky TG24",
    "s": [
-    53,
-    9
+    9,
+    53
    ],
    "auto": true,
    "news": [
@@ -124473,11 +124450,11 @@
   },
   {
    "d": "2026-11-06",
-   "t": "Blocco",
+   "t": "Occupazione",
    "h": "Scuola e università",
    "r": "Piemonte",
    "l": "Torino",
-   "a": "da verificare",
+   "a": "studenti",
    "x": "Studenti universitari tentano di contestare ministra Bernini a Torino",
    "m": [
     "student",
@@ -124485,7 +124462,8 @@
    ],
    "o": "Bloccati dalle forze dell'ordine, spintoni davanti al Museo Egizio",
    "s": [
-    22
+    22,
+    23
    ],
    "auto": true,
    "news": [
@@ -124493,6 +124471,12 @@
      "t": "Studenti universitari tentano di contestare ministra Bernini a Torino",
      "o": "ANSA · Cronaca",
      "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/06/studenti-universitari-tentano-di-contestare-ministra-bernini-a-torino_3ad78974-f8bf-4138-ba5d-c65b57567d45.html",
+     "d": "2026-11-06"
+    },
+    {
+     "t": "Bernini incontra a Torino gli studenti contrari all'occupazione Campus",
+     "o": "ANSA · Politica",
+     "u": "https://www.ansa.it/sito/notizie/politica/2026/11/06/bernini-incontra-a-torino-gli-studenti-contrari-alloccupazione-campus_7072e9b0-f7f7-42f9-939b-166d7db8720f.html",
      "d": "2026-11-06"
     }
    ],
@@ -124526,6 +124510,50 @@
   },
   {
    "d": "2026-11-06",
+   "t": "Manifestazione",
+   "h": "Scuola e università",
+   "r": "Toscana",
+   "l": "Firenze",
+   "a": "studenti",
+   "x": "Protesta studenti a Firenze: 'I carabinieri ci hanno puntato pistole in faccia'",
+   "m": [
+    "student"
+   ],
+   "o": "Il presidio in un istituto agrario. I carabinieri erano intervenuti di notte per allarme antifurto",
+   "s": [
+    22
+   ],
+   "auto": true,
+   "news": [
+    {
+     "t": "Protesta studenti a Firenze: 'I carabinieri ci hanno puntato pistole in faccia'",
+     "o": "ANSA · Cronaca",
+     "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/06/protesta-studenti-a-firenze-i-carabinieri-ci-hanno-puntato-pistole-in-faccia_be13fa73-98c0-4a90-8496-8435e32fad83.html",
+     "d": "2026-11-06"
+    }
+   ],
+   "terms": [
+    [
+     "carabinieri",
+     "temi"
+    ],
+    [
+     "pistole",
+     "temi"
+    ],
+    [
+     "student",
+     "temi"
+    ],
+    [
+     "studenti",
+     "attori"
+    ]
+   ],
+   "v": "e-2026-11-06-protesta-studenti-a-firenze-i-carabinieri-ci-hann"
+  },
+  {
+   "d": "2026-11-06",
    "t": "Occupazione",
    "h": "Costo della vita",
    "r": "Piemonte",
@@ -124537,12 +124565,7 @@
    ],
    "o": "Da piazza Castello, annunciate nuove mobilitazioni e occupazioni",
    "s": [
-    22,
-    37,
-    29,
-    71,
-    53,
-    32
+    22
    ],
    "auto": true,
    "news": [
@@ -124551,36 +124574,6 @@
      "o": "ANSA · Cronaca",
      "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/06/domani-a-torino-un-nuovo-corteo-contro-carovita-e-riarmo_8b9afb17-2a80-4e08-b368-c17215f653c2.html",
      "d": "2026-11-06"
-    },
-    {
-     "t": "“Stop al carovita, no al riarmo”: nuovo corteo sabato 7, ritrovo in piazza Castello alle 15",
-     "o": "La Stampa",
-     "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbG1sakhRZzhMVVd5MTlYVjdzcXZUQ2RCX3JYVDNWNjFDa2xrU1VRNnlCSHFwNGVwSV9YS2tqd0VzM016anZOMGI1b0NaU1lTQnJ0R1hwXzY1LUpSSENTZUswdzNURkE3UzdBYXRycURrU2VYM0VYLTU1bVdGZktQQzJFQ2tpRTJnTVVOeHpUcHdkdG05TVhxNWZnbXhkejRrSUZMbnpvWXNScW1U0gGsAUFVX3lxTE9sbWxqSFFnOExVV3kxOVhWN3NxdlRDZEJfclhUM1Y2MUNrbGtTVVE2eUJIcXA0ZXBJX1hLa2p3RXMzTXpqdk4wYjVvQ1pTWVNCcnRHWHBfNjUtSlJIQ1NlSzB3M1RGQTdTN0FhdHJxRGtTZVgzRVgtNTVtV0ZmS1BDMkVDa2lFMmdNVU54elRwd2R0bTlNWHE1ZmdteGR6NGtJRkxuem9Zc1JxbVQ?oc=5",
-     "d": "2026-11-06"
-    },
-    {
-     "t": "Domani a Torino un nuovo corteo contro carovita e riarmo",
-     "o": "l'Adige",
-     "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxNRy1nOFlQcV8yUFNva01SZ3NWSFdmUTlDaEEyTEktODFMX09Xcmlxa2ZMRWFHLVJtSExHclRLbVlydkNTWlF4MlhybWRfS1dBWjRoQVA3cUF3WXgta3lVYWQ1cEpQUHZlOUpZemx0Y2VZN3BMNXBuYXNfcjVnRFBYRk8yaHpwb3dJRENnb2JpMmVuM1lrM2RmbnlMWVNhdw?oc=5",
-     "d": "2026-11-06"
-    },
-    {
-     "t": "Sabato 7 torna ‘Bologna in Piazza’. Corteo bocciato dalla questura. Il sindaco Lepore: “Non si usi la violenza”",
-     "o": "Il Resto del Carlino",
-     "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPcXBMSEk2X2pHQkJTZ2Ytbm85cnEydzAzbDZRcmJKck1JTU9JMkVyTnBiLXdiSmRTNXFLekU2YkxNWnZSRjFENEpOVmdTNVBGYXMwTWx1SnJSWFVSc2pGNEh5VFNONlFDVDBUeThKVDB0d3RHbDlkbEtnb081RFdXeGx6SXFhcnRVc0NEWFdaOXBCcUFC?oc=5",
-     "d": "2026-11-06"
-    },
-    {
-     "t": "Sabato nuovo corteo a Torino. Da piazza Castello a piazza Crispi, il percorso",
-     "o": "Rai News",
-     "u": "https://news.google.com/rss/articles/CBMihAJBVV95cUxObFlIbVpaT0NaS1R1VXdoN3pUT1J4dHliX2xrbWMtSnd2ZDY5Yi1JTHJZU2dvUS1IRXhCTnRROUpUWmdRM3JxT3BaVmlHb0dmMTFuR29wMXBPaE9uNEwyOW1kRUdLWkJoRnBmeEpvbGtvdy1WY1FGc2RHel9zTlFJa2xSSDJ3Mm9VeE55R1hIYThpanJiUDhGclcwTDJjTzQ2OGRERllya2JXdFJhS1FiWnViVUVYTUo2LW92cDU2TElBY2VqT1llb0dxNnRWb1hoWEpPWUZHeG5pcUNFWUFMc1FzN3RFVHd4dW8zOGtVTmNxSDMwS2RlZ1R3VFJLTWtRWGF4WtIBhAJBVV95cUxObFlIbVpaT0NaS1R1VXdoN3pUT1J4dHliX2xrbWMtSnd2ZDY5Yi1JTHJZU2dvUS1IRXhCTnRROUpUWmdRM3JxT3BaVmlHb0dmMTFuR29wMXBPaE9uNEwyOW1kRUdLWkJoRnBmeEpvbGtvdy1WY1FGc2RHel9zTlFJa2xSSDJ3Mm9VeE55R1hIYThpanJiUDhGclcwTDJjTzQ2OGRERllya2JXdFJhS1FiWnViVUVYTUo2LW92cDU2TElBY2VqT1llb0dxNnRWb1hoWEpPWUZHeG5pcUNFWUFMc1FzN3RFVHd4dW8zOGtVTmNxSDMwS2RlZ1R3VFJLTWtRWGF4Wg?oc=5",
-     "d": "2026-11-06"
-    },
-    {
-     "t": "Cremona: sabato 7 novembre manifestazione “Adèss Baasta” contro carovita e riarmo",
-     "o": "Radio Onda d'Urto",
-     "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSE94MmkwRU1sZlRTTkwybWc0SmJqbU1wTUhJSkZBYkE2YzdfSExqSkR2OElSQ3gzMUp6V0VNTE11YXBhbGo2bFp0Mm5CWDh1R0p5Rmo4djJYajBDYU9acVBBaUEybzZlS1kxeGU5X2xZMlBxQ3lkQmREbGZrdHJ1bGpCdF9rb3VXNTV3SDJhYWNmaUtiR3o3SXZoU2xRZFBBRlMwZ1NnU3UyWVV2Z0l3RE1PTU1saHFNVXFMaQ?oc=5",
-     "d": "2026-11-04"
     }
    ],
    "terms": [
@@ -124604,13 +124597,7 @@
    ],
    "o": "Nei primi nove mesi",
    "s": [
-    11,
-    24,
-    31,
-    34,
-    41,
-    45,
-    51
+    24
    ],
    "auto": true,
    "news": [
@@ -124618,48 +124605,6 @@
      "t": "Bankitalia, imprese segnalano accelerazione vendite e occupazione nel 2026",
      "o": "ANSA · Economia",
      "u": "https://www.ansa.it/sito/notizie/economia/2026/11/06/bankitalia-imprese-segnalano-accelerazione-vendite-e-occupazione-nel-2026_55a82b7c-316f-4268-b7ef-ac9d123462d6.html",
-     "d": "2026-11-06"
-    },
-    {
-     "t": "Bankitalia, imprese segnalano accelerazione vendite e occupazione nel 2026",
-     "o": "Il Giorno",
-     "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNT0JLMDZ0TFhmb1Nla1RLcG9Vd1dKVjNPRWplc0VpbWFMbVozWldyUnZhMDVscXh4Vk9qMzlmck9GamJUNjlMd2J4ajJoTlBYWG56ZUVYVm5SOEYzRGh5WkNKUHlCVmRhUkJSMDEwVmlIUHNyd2hkN1NqcWg4bEF3VXc2NU1JS1dqRHVGY2ZneEdUckk5cF9nclJtRGxyVW1NcTQ1eA?oc=5",
-     "d": "2026-11-06"
-    },
-    {
-     "t": "Bankitalia, imprese segnalano accelerazione vendite e occupazione nel 2026",
-     "o": "Quotidiano.net",
-     "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSGxDQzlRRHNndFZiRjU1RHZ5Uk9aRkRUa1pSVW1DRE5DbWZLdG91ODZ6LVItdm4wZzZMbU1MbXItZGtpSmdlQVJ1Q3ZvLVBkTnlEU0FHbEM2VUR4T0hzNThVRE04VG5HeWdKOFJ5bTJ1RG04cW03M2ltbEZEOUU0VkNtd1Jqdmh4SmVGNGlRclNQZ2lYWE5yZWhUNHVDM0RVNjRDRldBSVE?oc=5",
-     "d": "2026-11-06"
-    },
-    {
-     "t": "Imprese, Bankitalia vede positivo su vendite e occupazione con il Pil al palo. Ma per Crif il credito rallenta",
-     "o": "Quotidiano.net",
-     "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQd19xbWtRZTZ0N24yT3FMZjFQMk5vS2Fsczc0RThoU291ZW4xaDNVZGRzUXNSRVlRcllsZzlLVUc0UkJlbWkxcmdGYWNsYlN3WG1sbzJ6OFVoR0R5WmJOT0hPRkRETXNOLTZXQ01BUUlpeTlyR29EN2NJYUJUMVJqRzdpNFhPSTNtclRieERLSVdTTHRObThKaENoU3ExSGxqWGFvTFh6T2hycHRuQTRTdHZnWlhhbW4wWG82eFJESnRIS1VoeXhCaHRfeDFWUXNS?oc=5",
-     "d": "2026-11-06"
-    },
-    {
-     "t": "Lavori più rischiesti nel 2026 e lauree con maggiore occupazione: boom IA e sanità, ma cresce anche il settore umanistico",
-     "o": "Il Gazzettino",
-     "u": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOdGxfQlhRRnpXNjNyRm5OTllGanEwekVhbnRRQk9nbnk5a0UyNDFqeFRYU0NONGlNN3Baamc2czVweUZoMnZuaFMzdlh0VWN5N3E1UTR5SFZ0V1RlcDF0OUhTOTFTUndtaTU1U3Iza1lvV3R3UW1fMFJEcHRBUl9VZGI5dlBVVzF5TkRwS1l6VjMtSmhJdXBZS2VwZ3NfZll1WXlaT3doWFlGTDM5U0g2bmZCdHhkRGtiMHJR?oc=5",
-     "d": "2026-11-06"
-    },
-    {
-     "t": "Lavori più rischiesti nel 2026 e lauree con maggiore occupazione: boom IA e sanità, ma cresce anche il settore umanistico",
-     "o": "Il Messaggero",
-     "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOU29OSHpkTVloQVBRcE9nSVJkcjBkaUVhUjFMRzJHNG40SEFseFUzQWdjVDlCVjRJMjROdWNFakUyYWtUcTFoWDN5YjFaY3Z4b1pHWXVtRXdMWVQ0cURDd0h6SmpKUG9zaWM1NE5FRGtBLU9iOTVpZ1BPYmtXeW1Qc3U3SWpkMUpyakNDcjRJRDlLelE0YUl2ek1JRHNlcTdTOUFHeXU4UlNoWXRPVmh2c0lFcGwwdmhR0gG-AUFVX3lxTE1GOUZYeExyVllWSGxqZi1jaHdnaXNKZDJTeGRoUGFpZkw2TmY3NGdtT1pOTUxVMEx3NTNTek4wcExJbm9MOEpCd0wyN0tnQjVGMm5JdG54RFRBNWxMLWs4emhmSkFwWnkwOThiOEVCR1RpQU1NNmFtU2d2UWtTUVN2T1hWRVNld3RwcEJkeV9yMWhYT0pOYUN4SFp4UThFbmtZUzMwRnlnT080TUZBUlN5Zm5HWm9zYW1XbXBvWHc?oc=5",
-     "d": "2026-11-06"
-    },
-    {
-     "t": "Lavoro, Manageritalia Liguria: in Regione occupazione giovanile al 73,1%, ora la sfida è far crescere il valore delle imprese",
-     "o": "La Gazzetta del Mezzogiorno",
-     "u": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPN2F1Y21NdHB1OHZBMVZlQXg2YjBNcXdnSHBNUThfMTJJd2U3eTh3ajdXbnJOdURsd3JNOVlsaHZFYVE5MFRYdDk0RDZjZ1Z4bUFTeE9wRzRHVXZiOGlrMVRJcWkwb0hqNEp5WGJnblBVTXlVeWNUVUVxTXAzbHR2SXh2OHdMN0JrMmZuc3ZueVpodnZfQ25CZ3ppdEpzTnd2TDV2REJGTWE2dktoZXFxMExOaFp0cnZrcXptb0tkNDBTVHpPMWFCREEwWE5jTk1RdUFHWXNIczl1ZnZiRlo1cHVTekV3V0U2RTlNVi12VldPNWwzUTA5S1h6UUpYdVJQQUJXcnB4S1ZmZ25RaVFDbXBxOG4zWWPSAZYCQVVfeXFMTVJjcUxYVHdSMTh3N3g3OHU1eFJfOGdKOWxnZng0UzhSMzVzRWw1RHhrV3JaTUJLcTh1aFJEUV8wdmZfM1Z1UjI5MUJMdk5IMHhla1FLQ0htazZTc2lRS1JVcWNxYmc1VjVLRTcwdlhwSmtJRms4RjBRYmMyZFByM0s2VkVJRjZ4Q3ZBb0ZmOGZ0Q0s1RF9qaTA3Y0RPZklHcUNFOG9QN3VZMXFzRHNnVklJVWtuOE4xZHBpeGdCN05mNG5KQkRrakdjWmswVWxxejF0TldJb2kwb1dGTk01NE1wS1RWb3M1eUFnX25Ea0hLZ2lqVzJUeko5cWZDeFRRb2Y4MllZUXA2Y1AwRnl0Y1cwdk0tU1E?oc=5",
-     "d": "2026-11-06"
-    },
-    {
-     "t": "Lavoro, Manageritalia Liguria: in Regione occupazione giovanile al 73,1%, ora la sfida è far crescere il valore delle imprese",
-     "o": "Adnkronos",
-     "u": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOTVNleTVQRldkdGNEUEphSFhGOFBCYmQ1QXE5c1FpeHZELUlKQ2Y3VGZRcGVpMzEwckRFem43aGZJTi1QNGU1RE02RnA1aGpQaU9DZTBYYmRVMU50ZUJ2SnF0UGlhQmRHWHlVM0c2OV9haXpiUV9sS1RkU2otQXlralpremwtRktFelpwMDZwR2F4Zl9ncDdUV1VRZXE1bkluWFNlZHdJd1dvNkoyZG5vNVEydFBmZHVQLW1XTFNYVUsxQVpOZC1VRXQzWDB6ZUVKSEhGNFNBOEJjYktXUHBfOEVKMEd6R2w4TUFvdVBSd1FyLXp0dFlVM0c5ek1FSXlfTk5KLURXZGo?oc=5",
      "d": "2026-11-06"
     }
    ],
@@ -124682,7 +124627,7 @@
    "r": "Veneto",
    "l": "Venezia",
    "a": "da verificare",
-   "x": "Un’altra giornata di allarmi bomba: voli bloccati, evacuate a Dublino le sedi di tv e giornali",
+   "x": "Nuovi allarmi bomba: voli bloccati, evacuati tv e giornali. La rivendicazione: “È solo l’inizio”",
    "m": [
     "armi"
    ],
@@ -124693,7 +124638,7 @@
    "auto": true,
    "news": [
     {
-     "t": "Un’altra giornata di allarmi bomba: voli bloccati, evacuate a Dublino le sedi di tv e giornali",
+     "t": "Nuovi allarmi bomba: voli bloccati, evacuati tv e giornali. La rivendicazione: “È solo l’inizio”",
      "o": "la Repubblica · Homepage",
      "u": "https://www.repubblica.it/cronaca/2026/11/06/diretta/alllarmi_bomba_ryanair_roma_lisbona-425703663/",
      "d": "2026-11-06"
@@ -124717,11 +124662,15 @@
      "temi"
     ],
     [
+     "evacuati",
+     "temi"
+    ],
+    [
      "giornali",
      "temi"
     ],
     [
-     "un'altra",
+     "solo",
      "temi"
     ],
     [
@@ -124729,7 +124678,7 @@
      "temi"
     ]
    ],
-   "v": "e-2026-11-06-un-altra-giornata-di-allarmi-bomba-voli-bloccati-"
+   "v": "e-2026-11-06-nuovi-allarmi-bomba-voli-bloccati-evacuati-tv-e-g"
   },
   {
    "d": "2026-11-06",
@@ -125523,50 +125472,6 @@
     ]
    ],
    "v": "e-2026-11-06-fanfani-camaiti-studenti-e-preside-a-confronto-do"
-  },
-  {
-   "d": "2026-11-06",
-   "t": "Manifestazione",
-   "h": "Scuola e università",
-   "r": "Toscana",
-   "l": "Firenze",
-   "a": "studenti",
-   "x": "Bus troppo affollati, la protesta degli studenti: “Non bastano le corse”",
-   "m": [
-    "student"
-   ],
-   "o": "Bus troppo affollati, la protesta degli studenti: “Non bastano le corse”    La Nazione",
-   "s": [
-    38
-   ],
-   "auto": true,
-   "news": [
-    {
-     "t": "Bus troppo affollati, la protesta degli studenti: “Non bastano le corse”",
-     "o": "La Nazione",
-     "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPOFhyTVVydTNIUWV5R09Pa1p1ZzRXV2tYWnJCOWczdjI4aWdjRGtreU9tQnJaRGVuQ2xORjVCNUJsNVEyXzZzbk9qeW1YVTBLZ3EwWTd0OHpBYUxOcjZ6eHNvdEx4RjJpSmtTR2ZyLUZPQnNPc0VPaHI4RG9FdG1HZDloYUEtaW1abFRVVDdGNFl4T2hvcEpUTlR6Vlg4OS1UYk9zWm5aaU1aNzlXTWo2YWtmdlVWOTg?oc=5",
-     "d": "2026-11-06"
-    }
-   ],
-   "terms": [
-    [
-     "bastano",
-     "temi"
-    ],
-    [
-     "student",
-     "temi"
-    ],
-    [
-     "studenti",
-     "attori"
-    ],
-    [
-     "troppo",
-     "temi"
-    ]
-   ],
-   "v": "e-2026-11-06-bus-troppo-affollati-la-protesta-degli-studenti-n"
   },
   {
    "d": "2026-11-06",
@@ -126962,11 +126867,7 @@
    ],
    "o": "Cisl, Uil, Snals e Anief contro i tagli. Sciopero Cgil già fissato per il 20",
    "s": [
-    22,
-    45,
-    53,
-    9,
-    32
+    22
    ],
    "auto": true,
    "news": [
@@ -126974,30 +126875,6 @@
      "t": "Sindacati della scuola lanciano la mobilitazione, sit in l'11 novembre",
      "o": "ANSA · Cronaca",
      "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/05/sindacati-della-scuola-lanciano-la-mobilitazione-sit-in-l11-novembre_370b1964-d14b-4d62-9559-8919b1a1e695.html",
-     "d": "2026-11-05"
-    },
-    {
-     "t": "Sindacati della scuola lanciano la mobilitazione, sit in l'11 novembre",
-     "o": "l'Adige",
-     "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZE5jQU1WQ05sSjhxOEFPS2kxcmU2cm9ydlFhREtXQmFZLXRIZS1ENzh2WFFVSVgtOTdKS1hKVnNxS1J1eDUwVk9zVVVfRVlaSVAzZU9Fai1fZGdLY3lseXg1bmJhTW1ZdmI0ZkdvSWZoOWlXSDN6WlF4TVFYSGNQcU5ESGdBRzZZRmlwV0c4VG5Qd3pUczhxdjQwelZPUmltbmc3cjQzOGtDR0hNZkE?oc=5",
-     "d": "2026-11-05"
-    },
-    {
-     "t": "Sindacati della scuola lanciano la mobilitazione, sit in l'11 novembre",
-     "o": "La Gazzetta del Mezzogiorno",
-     "u": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPaUp0VXo2QTF5bTktWlVicXJZdUxidFlWNjl2T0lqQVg1U0dTbXNycWxNZ19ETW5FRkg5emxXZmJsNEhXTi0yUndmdVJNLVJGVWptdUJLVmk5UTVqV0pGdXFiMUwzeUN4cmZ1RjAycDVmWXdiSFpzR253dGk1VERyc3RveGhnREswZlgyaW44Ql9oTDRtUlRpTC1zUzIzaklJd1g3RWdmcllienVuQzhhVnE3VXVtWUFXLXVvaHl6WkZiZHJsWU1GRXlqN21IcWxaR3ZNLdIB0wFBVV95cUxQMXMzaExjMVhQMkxueEExU2M1OHdVUk9HRlVTNUhPbDBnQXVIMTZLcHE1R1k4R2V5Q3oxUDV2WkQ0U2k4Vl9QSk52NDI0dURCS3k5RGVGS0JaZUFEUWt3WXFrMzlPa1hTTjF4R0lzVHNWS3dRZVhzVGJhblNQSjJOTURjeW5MZUptTjdTZUZMYlJ5MVcwdjBJZERjVjZPbEhqbndIbDJ2bWFBMHpRTWpKajF6RTRJWlRNajRGdWIzUzZjZ2RySGxvS1hRblhvaTh0OVZz?oc=5",
-     "d": "2026-11-05"
-    },
-    {
-     "t": "I sindacati della scuola lanciano la mobilitazione: sit in l'11 novembre",
-     "o": "Rai News",
-     "u": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNMTZUbEltSC1rUjg0b2pkZ0RZM2dsZ2trVnB5UUpuTndJOHJtMlN5RUNXMWFzQkNoNUFHeERqZ1JPN3p4MXp5TGFlYWZEZGR3SzEwTER5cnEzRGdPNEJhWEZKS2pkLTFpN0lfb0MzYnZQMEZSQXVudXkyQ1VBUDJtME84QlJkcUYya2VmUFJlLUtXcWVCSEZQSExpZVNrMHVDMWl5UWRONk9jYWdzM3E5Q2RlX1pRNzJxcjVzR05iMzFtV3I5Y3ItVzNvSlVsSlpkZmlMSjctdVdRaGxGNmNlQVNyVjlDZ2RU0gHuAUFVX3lxTFBaMFAxRWtUTnVXTzRlaGo3NDRZakpNVExIOXlSOXVzcUhjUnpsLW1WdHc2WUtrMDgzNDVoSG05VEluTjdCdHJEMTJVMnpUb3BOa2N6VURuRkZfcEJqMHZOUU1MSkpjbGV5LXNDMWt3VXd2Y2ZMdExIdDlFSjR5ZzZvSnFPVWtqeUtPOHlqR3BrRGFzMGkxOGNhZzQyNE8zVmlXT0tFQ0pMV0tPcGJUUmltLXd6cURENmVJdWRwb3NpR0lwSExrUV9KbWc1VWNQaGFZMWlOR0VScUdmZzNtOTZBSHdHWjdKRlNERFJ0Ymc?oc=5",
-     "d": "2026-11-05"
-    },
-    {
-     "t": "Tagli alla scuola, sit-in di protesta dei sindacati l'11 novembre",
-     "o": "Sky TG24",
-     "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRW0zMkVxVXNuS05mWDEwN0hvV3g2WjJnc0JmYlMweUxqbGppOE5GbUFhX2FGZHlhMVNGYjhISVNjSThMY0dyLWc5N19SUXZNbzFFb20wbjJyZzY0UU5Lc0JVUVJjMzdIREJnbHBxSDRZUGJ3bXh1WUp2VUZ5TDk2SVlqUlktUQ?oc=5",
      "d": "2026-11-05"
     }
    ],
@@ -127268,203 +127145,7 @@
    ],
    "o": "Annunciato dal palco di piazza del Popolo il 17 ottobre.",
    "s": [
-    3,
-    32,
-    53,
-    78,
-    94,
-    96,
-    132,
-    137,
-    140,
-    198,
-    199,
-    221,
-    247,
-    248,
-    296,
-    341,
-    348,
-    405,
-    501,
-    576,
-    577,
-    580,
-    583,
-    602,
-    603,
-    622,
-    627
-   ],
-   "news": [
-    {
-     "t": "Sciopero generale Cgil il 20 novembre, a Trento corteo in centro: «Il futuro è adesso»",
-     "o": "l'Adige",
-     "u": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPdHpzby15MHN6T0pfLUxqQXl2Q0k2aEdUTHZWVjhja3pjZy1Fcm5BT0pQV0VJdUNyWGo1YmdjRWhsZlN1NWs5SDROT2hwSnN5OVdBeE8xSXp4cjU0Rnp1VHpNa1UwY2I5Y29TUHozWmZXQlNodkgxc0ZsMVh2Rk1RelJoTVNld2F5R2ZfbWJQZW1EWG9MMkItOHNlOXpzQ3RjMlZDX1poUGZPTGU3ZnUyeFQwYXMyVGFVeUNCQkRfWUFuS0dEY0c3dW9R?oc=5",
-     "d": "2026-11-04"
-    },
-    {
-     "t": "Sciopero 20 novembre, a Trento il corteo regionale contro il carovita",
-     "o": "Rai News",
-     "u": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQdDVDT3hnR3pGenhTUmtCRU5FUVNPMEd2QlFXQ243Y1JCUm9qNWhyenFaYWc0M3lJSGE5VlJtNVdzOThnNms3UFR4Z2R1Z2NDQkduSWF2M3pwUVNXS3pnT2otdnh3cVo5cXowcng0VTlDQm1TbWZkTy1uSkpjOHdwZzlLU3Q2VVhQVUVlTmlHY3dnekVzakVHVUV5ZTEyNWplQWg5SEx3dDA3anRtRzNHVFIxLVcxdjRNS1QxTGl2T3BSRXVDZ0pzYm5UOTQzS1B5eUHSAdIBQVVfeXFMUHQ1Q094Z0d6Rnp4U1JrQkVORVFTTzBHdkJRV0NuN2NSQlJvajVocnpxWmFnNDN5SUhhOVZSbTVXczk4ZzZrN1BUeGdkdWdjQ0JHbklhdjN6cFFTV0t6Z09qLXZ4d3FaOXF6MHJ4NFU5Q0JtU21mZE8tbkpKYzh3cGc5S1N0NlVYUFVFZU5pR2N3Z3pFc2pFR1VFeWUxMjVqZUFoOUhMd3QwN2p0bUczR1RSMS1XMXY0TUtUMUxpdk9wUkV1Q2dKc2JuVDk0M0tQeXlB?oc=5",
-     "d": "2026-11-04"
-    },
-    {
-     "t": "\"Il 20 novembre sciopero generale contro il carovita\"",
-     "o": "Rai News",
-     "u": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQQm4wUDlwMV9PU3lCSmZmYXQzaTNwSFJ5TmRvRXJ2NTdXQTJweVdqdzk0N1NVMnIzMldYMlZmaGc0bGhZVGh6MUY2T3hNdThLbEMxRHJGNWh0XzlaeDB3NVVHUEZiWEVUZ3pEZTZwbWpvMnFPQzRUWUlkbXRLNmNNTjlQRDgzbkJneUNlQnd6cGJFeTk2UUVWMlNjNTFvamhhX3Bva3BmQnZKOGQyeW5yYnN0WUFfQ1VKbXNDTWNZVHhCYXJYUUVGb0ZwWkFxSllCRFVNVllEM05TUnVnX3Z0a3FGT0djZ9IB6wFBVV95cUxOdTdhQTh0aEx0andXNmc5bkI5WUhZTmVRQUdkc3hoV2FLWndCYnM1SElCdXh1YmhBd3gybDdsOUhpWWxMOW90RXZnUzNQNkFkdkVqeG9CSmNqajI5UWVUaDM2b0d0Zkp5M2MwdzZ0Q21VOXpZd21NLUx1eEJHakktQkllWm1XaGtVbHY0bG9ZTGdaU3JINFI0ZVJRRFBsbFFqVHZCZy04ei15MjhyaHFrZ0FlRlNRM3FyemIxYXRNaHEtRGdDajdqSkNVU3RSRnlvSWViTFppM1V3Sjd1aHh5LWNuS2Raa0Z3UEhv?oc=5",
-     "d": "2026-11-03"
-    },
-    {
-     "t": "Sciopero generale CGIL 20 novembre 2026",
-     "o": "CGIL Roma Lazio",
-     "u": "https://news.google.com/rss/articles/CBMiekFVX3lxTE94T0kzQlg2ME1QRDJLNEdWSDdoWTVkaDBjUFNVNElaZThtVXQwaDlwZEVEZDBPd3p5SG5tWm1PWE5iMGoyRnc4cWZrM1N4ZkxBMi1mLWVacDRTVDFmWFR4Y2pqcmc0YXJ2U2kxSklqSUZlSVU2U1BRZjBR?oc=5",
-     "d": "2026-11-02"
-    },
-    {
-     "t": "Sciopero generale, Landini: il 20 novembre si salderanno le rivendicazioni del lavoro con quelle delle nuove generazioni",
-     "o": "CGIL",
-     "u": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPODJkT3d0Mko2ZnFDdm9MYXY1WW15NFdtcVkyOEczQ2NlMEFCX2pCYnh3MktpYmo5NEk2dFYwUVZ3OWFxdVUxNVA2RlhEdkFHdUpuZWNtQlVodDV3cUw3akVXZ2tpSGh6ZHpRWjRSbklmaXJOTFloWjFab3YtamE4RV9VZDh6NmZ6ZlBpWEJZNE8xVkd5Vl9TbXAwTmRweDZFUXlOR29wakY0NUpScmxkWEVLeXpUSVZGb1RHVDhQakpLYWZDSV9ucDJvMWZrTzJSd2pKalBOZHRMNGd0eXhIM1pCdExsSUlUaEF3WG05eTFUcnZ0cFVmTzA3aFJEclh6Y2YycmNoUC1KS0NnUlludDNoZUkza1NzeWc?oc=5",
-     "d": "2026-11-04"
-    },
-    {
-     "t": "Sciopero generale 20 novembre: perché la CGIL scende in piazza",
-     "o": "CGIL Lombardia",
-     "u": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5qSjFFZnU3dDVMSm4ySE5wdG8tc2o0VHc4VHpiM1lvZUlscDg4REpXb001MjFIOXctb2tLYkZNMGRmQ0RSQmtrN0I5Q3FBTUR5VmtsMnlnNlYxWi1QbnV5ZU04bW9yYno3SW5TZVh5UjJPMTA?oc=5",
-     "d": "2026-11-02"
-    },
-    {
-     "t": "Scuola, università, ricerca, AFAM e formazione professionale aderiscono allo sciopero generale del 20 novembre",
-     "o": "FLC CGIL Roma e Lazio",
-     "u": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVGRWdm85TFliX0VZOThBSFJOWFkyTWlNbk50aTB0ZFE1YmxUSzNWbjdmOGo2OGpHb3NOc19xenJTYUFLNVhPVmpmcWZYU3pWVnhPUGRUY0M0bF8yWkI2b2NodlVyamdpc3NFZ19FdENxTzFhZm5aTXg3dVZEemcwZ0Y4cXZyd1VqMXM2d2ZHYkhtN0tXM0JnbW5jb0lzOExpQXhTbEk5MVZRRExqLUVwTVAxeVozSVNuMUF2MThydXlvUjJ1enR5WC1FMEtMb3JtRk9ORlp3aw?oc=5",
-     "d": "2026-11-02"
-    },
-    {
-     "t": "Istruzione e Ricerca, FLC CGIL: 20 novembre sciopero generale contro precarietà e salari da fame",
-     "o": "FLC CGIL NAPOLI",
-     "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPY2pMaDdKMUdzUGdXYVpQbUtzWjhUWXBuaXdTVjlpRDIzN3ZodzR5bmlIVVJrLU1CVGREektPREk4WEw3X0lmNUZzUDRNejFxREJYb1RzZlpKcVhURlgyZkl5SGRhLXNUcXBLbWdsZmxVRVRIbTJNWnExNGVYV1pxbi1wczA5ajdXY3lfbEJZYnpYLThEenNaeU10X1l6ZWRLUXVzSENrOXVRV3Ezb21Cc2ZLRmFiaXc3WE00QVVzN3M2QQ?oc=5",
-     "d": "2026-11-05"
-    },
-    {
-     "t": "Tagli alla scuola in Toscana, 20 novembre sciopero generale (video)",
-     "o": "CGIL Toscana",
-     "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQWxMZ1M1eF9MbzNqTDVLNm1uLXhaVjA1OFNSSnpSRXpaZG9QbVM0Ni05bjdBdm5XMXYxd0V5Y0QwUXZfRllnc0NRZ3Q2T0YtYUtwZ3dDVlJmY2RDanExRU44LXFUa1RnVWt5SURYX3hvYW85UEptSzhyWHJJT0VVVk56Y1N1eUxvbEJjWnJMQjRYVWJnNE95SC1fTUVRbXJ3?oc=5",
-     "d": "2026-11-05"
-    },
-    {
-     "t": "\"Il 20 novembre sciopero generale contro il carovita\"",
-     "o": "RaiNews",
-     "u": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQQm4wUDlwMV9PU3lCSmZmYXQzaTNwSFJ5TmRvRXJ2NTdXQTJweVdqdzk0N1NVMnIzMldYMlZmaGc0bGhZVGh6MUY2T3hNdThLbEMxRHJGNWh0XzlaeDB3NVVHUEZiWEVUZ3pEZTZwbWpvMnFPQzRUWUlkbXRLNmNNTjlQRDgzbkJneUNlQnd6cGJFeTk2UUVWMlNjNTFvamhhX3Bva3BmQnZKOGQyeW5yYnN0WUFfQ1VKbXNDTWNZVHhCYXJYUUVGb0ZwWkFxSllCRFVNVllEM05TUnVnX3Z0a3FGT0djZ9IB6wFBVV95cUxOdTdhQTh0aEx0andXNmc5bkI5WUhZTmVRQUdkc3hoV2FLWndCYnM1SElCdXh1YmhBd3gybDdsOUhpWWxMOW90RXZnUzNQNkFkdkVqeG9CSmNqajI5UWVUaDM2b0d0Zkp5M2MwdzZ0Q21VOXpZd21NLUx1eEJHakktQkllWm1XaGtVbHY0bG9ZTGdaU3JINFI0ZVJRRFBsbFFqVHZCZy04ei15MjhyaHFrZ0FlRlNRM3FyemIxYXRNaHEtRGdDajdqSkNVU3RSRnlvSWViTFppM1V3Sjd1aHh5LWNuS2Raa0Z3UEhv?oc=5",
-     "d": "2026-11-03"
-    },
-    {
-     "t": "Sciopero generale 20 novembre 2026: tutte le piazze e i cortei in Emilia-Romagna",
-     "o": "FP CGIL Emilia-Romagna",
-     "u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSkNpWE1pV0ktYmdWeVN1ekgyUGxucHhDOGtCRmNvQ29xNnZ4RjQ2cmkzV0lFNnlRQTdBbTZ2eFZJRzIzSmVCR1hMdTRvQm1jRjNqWFR3NXRXald4SmZnendhZmJ4c3hYektVMzdCN1hTemhwUnh3YVZkREY5dGpaOXJEak81S1ZsMFE4NFpR?oc=5",
-     "d": "2026-11-06"
-    },
-    {
-     "t": "Sciopero generale proclamato dalla Cgil venerdì 20 novembre",
-     "o": "Vita Trentina",
-     "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaEhfaFQtNzdnVkxQdjVwa3czN0V5ZWhKMDdzWXVEbzUwbE5ld1hIdGxGMTkyMG5SZUlaVVBfdEQ3TWhwQkRVLUY5eGtjX3l0VVdzOWw4THZWU2dUQVJsUEI2V285YkRwa3dUSGZjcGJQZzhYSHpKcWo1SnpOTkZIcVpvSXdoRV9vZ0xvVWhLb3hZaERlZ2d3WWYtcWZkY293?oc=5",
-     "d": "2026-11-04"
-    },
-    {
-     "t": "Sciopero scuola 20 novembre, nuova agitazione annunciata: i motivi",
-     "o": "Virgilio Sapere",
-     "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSXZGUnVXaXByMEhJRGxlY2VlWlByd1Z1ZGtfeXY5YmdqX0N6Q2h4MjJtWVRuejAwOGkta1RhMmQwQXNpbWRRTHRrSHB1S000TVowZWRxR09kQ2d3MXhkcGFOWlVpS2tFVDNScHZnZ1UxcVdxZFdMbFJtdmpBSlJEeHpYdDloMjhxVzJSUFBaSVFPSUY2ZFdyNmtZd1djMDJfaWlZNQ?oc=5",
-     "d": "2026-11-05"
-    },
-    {
-     "t": "Monza si ferma per lo sciopero generale del 20 novembre: il corteo da piazza Citterio all'Arengario",
-     "o": "MonzaToday",
-     "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOc3JXNFdxQmJSY1pRd2VDdGIwVUZFNkRnSnJHY0xFS0QxdWd1Qm16aTdSUlBPM2t5Tlg4bjdMTGc1ZzV1emZWMll1WkdDbXpWUDkzS3NkcXdQSjAyTW5aNHRFOE5ONU4yeXI3S215dDR1MGNPaF9laDVnX3FxRzg2RXU1SDRPNlI3NWJhamJoQmpNNGZ0?oc=5",
-     "d": "2026-11-05"
-    },
-    {
-     "t": "Scuola: Flc e Cgil Cremona aderiscono allo sciopero generale del 20 novembre",
-     "o": "Cremonaoggi",
-     "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWnZtT1JFTk9KS0JnQ1RiMXprR1d3em5oLXhfOUxyckhNOFEyZVFtUEN1dWZNcmJDUjFrVTdLcF93RUdtZTZlY2wxbHVhZnpjeC0xbl9xdzdsRnJuVDFXOERIMEo5X3dHcG13ekh1VjRsN2Zyc3RsX3NNWHFwYWtSNlJtVDhaa1lsZl8weUItWkZXRGVYS0dnU1A2U3o3eWFvVkNhaXdQYU53dUR5UlpMQjR6MDE?oc=5",
-     "d": "2026-11-04"
-    },
-    {
-     "t": "Sciopero generale 20 novembre 2026, chi si ferma: treni, scuola, sanità e fasce di garanzia",
-     "o": "QuiFinanza",
-     "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPREgwMnVOZnhOdjVULXFtYUUwU1dJT0JkUzdBZnRjX2RhV0ZUc0dzXzNJMUNZR0FRblZibFVMM2gxUW1BRHY4dGZtcDZQLUJNVWNIX3pJeTVoSjRwYmJYU0wwU3VzMjRmcjd0T1ZGYzUzZV9rY3E0ZkVlY0M3Rm9yYVZOU1lIS2JWbjNlREhIVWtaa1ItY3BrbGU3R2t5S1HSAaQBQVVfeXFMTnkySWhXUlpLeFpzOVZHa19CbTVrZVA5N1VidmcwNW5UX3JLZGNXY2EyWll0TFJEcWhCZmU2eUtFdDlMV2J3bWsxVWdDZkpPbjNXZTVkcnRPdzQ2MG1TZ3E1dTdLMkR6OHpzTjZUV21rM2FBOTNxS2hMeExnY05TRkJMLVo2OVJrN2hTZklrdkJnNU01NzRoSTBXbGlJeFRfVldQVkY?oc=5",
-     "d": "2026-11-03"
-    },
-    {
-     "t": "Sciopero generale del 20 novembre, CGIL Elba organizza un pullman per partecipare al corteo a Livorno",
-     "o": "Elbareport",
-     "u": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNQjdYdVkxMkF3YW5xVEMzTFhjQXFHOXloSzdtUE4wNndGYnRrOVRyOUxUZ053OWNsNzBzNndKNWlfeVZMVTNqd0d5VzRuTHNxOVkwQ0FjRUtyRVJNeW9pc05vTktJOFdTaTB2S2txNC1VWWpia0R4M05VcDBVYXJ0amNwcjN5amptdV9oZm03a1pqQTN0TkxBWlgyNFRKdWRSYXBSYTVqcG80S3JaS2ZoZG5pUVRBb3l5cWl2djd2SnZLcHFWSnRkaDBGdk5RV3ZmckFBcnB6Sk54SDVUOW9UREE5UmJmVVpBaWtpYTBTV2Q?oc=5",
-     "d": "2026-11-05"
-    },
-    {
-     "t": "Scuola e legge di bilancio, la Cgil: \"Tagli agli organici e fondi alle private\". Sciopero generale il 20 novembre",
-     "o": "CesenaToday",
-     "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQX2VSeDROZUU2aGxSNnFEaFZyZUt2cFhWTV9Fc3NESUJkdzcxZ011RDNXUFM3dk82cGFBbklqQzZCSFdEWE1RT0dtVDZJRW5JMGlZeWxsaWtfZlp6ZHI2LWJLSUtHRjNFcFJoTnpWUHRqa2RneUNRenVaNjRMRk1sZkFkWHVCX2JzOEZsWHlOZTEwNXM1?oc=5",
-     "d": "2026-11-02"
-    },
-    {
-     "t": "Scuola e ricerca, sciopero generale il 20 novembre",
-     "o": "Voce della Scuola",
-     "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNQUdSNDFHRFh3YXMxaU9jMDkzTk12NGU3dWpXR2NGd0R2YUswcHdUNTNJbGxVMlBSZFkwR3ZfckNOMGZmZW9YN19HdDFMRjlmNUlNNHQxZE5INzhQTWJoVVNkb09JdFhVZmVNdGxqOXBQdGRLNFU4QkxtSWFLTGNnQkRWT1RfUUk?oc=5",
-     "d": "2026-11-05"
-    },
-    {
-     "t": "SCIOPERO GENERALE DEL 20 NOVEMBRE, IL CORTEO REGIONALE SARA’ A TRENTO",
-     "o": "Radio NBC Rete Regione",
-     "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPakVfc1BPd0xob0NyMFYyS2dUMGd3M0RWcDdBcWo0N2tUZi1WcUFVOE0tcmRsZzNPbGV0OGxuUjhHUHJaMUlNbDR3Ni1qQnlhS1FDRWdqd043SXBGMzJ3Wm1QYUN2QWx2eEExYTJETWFLU3lDaS1JMGZtVV9zLXR1OXdPWV9VbUpJbF9mWFhwV0NYdw?oc=5",
-     "d": "2026-11-05"
-    },
-    {
-     "t": "Sciopero generale della Cgil il 20 novembre: manifestazione a Morbegno",
-     "o": "valtellinanotizie.com",
-     "u": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUmhmUW9DNldPd2dPdTFFeE01dFdGS1NzRnZ6a0Z3S05EQXBtZ0xvQlREUThyN1hXLXNzaTh6SHMxbUlmcldwV2FQOGNZeHkteGpQV01MODl5d2FkdGMzaXNaN2FjU24yWExUXzQzRUlWeXhFX3VkRTNrejhMVW5Id2xCRF95ZHFSYzlyY1g0elp5Y3RYbXFZakZQZXhNNzQ0TTRib3BKcm0xSDc5UnplRkt0NlA3VUZmZUFZ?oc=5",
-     "d": "2026-11-05"
-    },
-    {
-     "t": "I COBAS indicono un nuovo Sciopero generale il 20 novembre, Giornata internazionale di lotta degli studenti",
-     "o": "Tecnica della Scuola",
-     "u": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPdXkyV2k1SDJ6cjdzNkFETzJORjdQdnhQaVdxOXdxUkdSNXo3N3RITVBQeUdDTjF5UGw3U1ZDY0FLR0NNM0ZPd19PWXZhV2lRMWNPYmxSazUtSC1uMUdJekU0QUZseU9pTldTaVFYcEttOGNpOXlZRU9vMXNLT29tTDlRa0V0c3FlS2dPTnhWaVY0NTMtNTBCZGRqLTNhZ2Fvd0Z4c18yYUtjZXpuWEd1REJpM2xMaWNONzkzNWpZM2Rfd0dvX0ZXM0hXV0pfMTVjdk5hcGc0aw?oc=5",
-     "d": "2026-11-06"
-    },
-    {
-     "t": "Sciopero generale Cgil il 20 novembre, a Trento corteo in centro: «Il futuro è adesso»",
-     "o": "L'Adige",
-     "u": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPdHpzby15MHN6T0pfLUxqQXl2Q0k2aEdUTHZWVjhja3pjZy1Fcm5BT0pQV0VJdUNyWGo1YmdjRWhsZlN1NWs5SDROT2hwSnN5OVdBeE8xSXp4cjU0Rnp1VHpNa1UwY2I5Y29TUHozWmZXQlNodkgxc0ZsMVh2Rk1RelJoTVNld2F5R2ZfbWJQZW1EWG9MMkItOHNlOXpzQ3RjMlZDX1poUGZPTGU3ZnUyeFQwYXMyVGFVeUNCQkRfWUFuS0dEY0c3dW9R?oc=5",
-     "d": "2026-11-04"
-    },
-    {
-     "t": "Trentino, sciopero generale Cgil il 20 novembre: corteo in centro contro le politiche del Governo",
-     "o": "La Piazza Web",
-     "u": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQV1BSZXBYLWZaQzNvRGxnWU9MaHVzOFltejVRa2RsbHhHSEJEb0o5cDV2TUZPTkZOMldzdmZMaTYtc2VxZ2dPb0JuRmp1VHNMY0tjVm5BSlVldUliSlN0YW9sZDJhTlQzUXZfYnFQTVBaVXdqbEtYbTVTeHFOTXQta2dPTG1ERUFmVkdhbWY5eWRibmk0NDNvU2plNlhoSVNteDB3ZmlYdzNXekdTQmdwRm5PdUVBNWotSG1vTGtDc2c4MlFRSTJMa3BZbzRNRWhIRWkzMGNKWnB2NDFmaTlsRFRCRQ?oc=5",
-     "d": "2026-11-04"
-    },
-    {
-     "t": "Sciopero scuola, la FLC Cgil in piazza il 20 novembre: \"Non è più tollerabile lavorare con salari erosi dall'inflazione, organici tagliati, condizioni di precarietà\"",
-     "o": "Orizzonte Scuola Notizie",
-     "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPUDctTkRVVG42Sm9uQVdfckVFQzNaUnc2WXViak44WTV5aV82WmJCZ3dQeXN3UklVLXF6SjYyT1VrYXNwaTNDQjRLbGJDS0I0ejZtOHlGdjhqaVlod1l2SEVtRFI3OTZIcXNSdUpTb3ZSQTVBUU5PcFhfWXRQN3ZLTURlZ3lfb1VzS0dJeFBOckdkUkdVU2h4UTd4aTB1QzBwMGptREVMSkFJNldu?oc=5",
-     "d": "2026-11-05"
-    },
-    {
-     "t": "Venerdì 20 novembre sarà sciopero generale contro carovita e tagli al welfare: a Parma manifestazione dalle 9.30",
-     "o": "ParmaToday",
-     "u": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQnpvNkpyNWtkNHFUWk1KUGhIOXB2MkxqTFdLR1FKb1B6akp5ekRNN0lfZzlfdlByZU8yXzgybk9FSDVUZjZSbk8zMVl4cDJ2Y2hDUTdGRl9wRjBuXzd4bTZ4bFdLOTQ3aGg4R1hiZklQSHVQdVJlYU1uYXdUdmlKTlE2NUFSajIxRldV?oc=5",
-     "d": "2026-11-04"
-    },
-    {
-     "t": "Sciopero generale 20 novembre 2026: chi si ferma e fasce di garanzia",
-     "o": "Scuolainforma",
-     "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRkdRaFYtZFRNVFhxUFBpQ3NKSVdFUjhLWjJMWGxfMFBzZzFFamp5TnE3aHJreE54a1Y1OTl0dVJDbThtUEg2N3EwVWRGbW05VkViUGxSZVQ2UGtBMmMxTkFBQWV4VmhFUmR2d2tVMk54THg5SW80Y3d1MEdKcHdRbjA3RVlmQjl5a2hiek0yaGRBbWdLdXQ3Ty1keWxtSVg3?oc=5",
-     "d": "2026-11-06"
-    },
-    {
-     "t": "Studenti e lavoratori insieme in piazza il 20 novembre: corteo fino alla prefettura contro caro vita e salari bassi",
-     "o": "AgrigentoNotizie",
-     "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNcXVvYXRzNnRyd0w5cElVWXRtNTdpSDR0bzVGWEhHQ19GQ09wN1NHa3ZBS01rNXJ1MmFhRVNFeERiUWRZTmZ6LWt0MFJ0Ml8tM1lQWkEtQUtCcjJUWURrc3pHLUpVRlV2VGdpaEY1M3hLbUhlLVlXdXlwVGNldFhaYkdILVFrU1NLa1VoODZMbW5lZw?oc=5",
-     "d": "2026-11-02"
-    }
+    3
    ],
    "terms": [
     [
@@ -127725,15 +127406,15 @@
    ],
    "o": "Manifestazione nazionale Usb a Roma per il 12 dicembre: \"Governo Meloni dimissioni\"    Agenzia Dire",
    "s": [
-    52,
-    328,
-    41,
-    14,
-    45,
-    11,
-    71,
     9,
-    32
+    11,
+    14,
+    32,
+    41,
+    45,
+    52,
+    71,
+    328
    ],
    "auto": true,
    "news": [
