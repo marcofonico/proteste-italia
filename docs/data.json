@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T19:20",
+ "updated": "2026-11-18T22:10",
  "sources": [
   [
    "CGIL · calendario scioperi 12–18 ott",
@@ -4170,6 +4170,21 @@
    "Logisticamente",
    "Online",
    "https://news.google.com/rss/articles/CBMingFBVV95cUxQQ3VzSlctZko3TzRSbUhrX0Z5cG9oVXViNXRvaDVjTmRCYzFMVFd0U05LdmtJLTZXNERVUlFQckNCYk9EQVR6ZmcwT3ZvWEJOYThseDd2Vk01bTd6NV9hNDBhSzZNTVR4U2pKSjJUUTNoVk1WaEwtcEVlWWRRQmRUYXJGNF9IY21YQ0NrVkF2TW9Yek9MMjJMS0UtYVBCdw?oc=5"
+  ],
+  [
+   "Comune di Signa",
+   "Online",
+   "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNQnBqSzMwR0JnVkdVUzlhZi02OXVRMVdXeTdaRDQ2QVpOZnRGRjRVdjh0aDhROTZfbEpCTE15UmdwX0l6UXBvWXVUMnJWaDczZU5na3ZQNHNmbGJVRGNNS01TVmc5S1dsc0t2bUM2NjhheDJ6MUtMVmc4VFZrc056dzZOV2wzLVhE?oc=5"
+  ],
+  [
+   "Radio Sintony",
+   "Online",
+   "https://news.google.com/rss/articles/CBMivgFBVV95cUxObUl2eXpWN0JjVUNua0JGZmdYR0VTZGpETWlFS0NxanhMWEVraGtyajVRY09RMjVkWk9fLUIxZ0RsNXYySXFmbHkydmlsYUcyNXVPcHNXUUJzcVJJRWV5R2xvb2V0Q3owc1c2Z054YzZhc3JEMHA5cnMwYUE5RGJvc2lxckZmY3RqQnVZMm5aMUZZekVzY2VJM3RnQnhuSHkwbHRSY05KUm9seFZqOVNFMHBJUGVPdUJMR1ptbjhR?oc=5"
+  ],
+  [
+   "ViterboToday",
+   "Online",
+   "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdm1PXzF2alV6R0xmcVdFZ2lrZTZyNmhpVndTTlVhc1VzRkxMMmhvYnFJX1VULXQxZVo2alotSVBXUVJBNXRxYnB6Y3BubFA3amZxTTlMZkJ3Sk9CTUJLYVNjdklDV1pja3hzWVgtZnI5cjZOWkJBMWpqWWJpcWFMc2VDRml2TUZrX29fRGFRYzd5ZGg5UkNfRg?oc=5"
   ]
  ],
  "panel": {
@@ -10842,12 +10857,12 @@
    "t": "Corato, si blocca la strada provinciale 231: camionisti e agricoltori in protesta contro il caro carburanti"
   },
   {
-   "id": "e-2026-11-11-a-catanzaro-protesta-contro-gli-esuberi-nelle-tel",
-   "t": "A Catanzaro protesta contro gli esuberi nelle telecomunicazioni"
+   "id": "e-2026-11-11-caro-affitti-proteste-e-tensione-a-madrid-e-barce",
+   "t": "Caro-affitti, proteste e tensione a Madrid e Barcellona"
   },
   {
-   "id": "e-2026-11-11-scontri-a-barcellona-e-anche-a-madrid-dopo-la-man",
-   "t": "Scontri a Barcellona e anche a Madrid dopo la manifestazione"
+   "id": "e-2026-11-11-a-catanzaro-protesta-contro-gli-esuberi-nelle-tel",
+   "t": "A Catanzaro protesta contro gli esuberi nelle telecomunicazioni"
   },
   {
    "id": "e-2026-11-11-roma-antagonisti-a-botteghe-oscure-occupato-il-pa",
@@ -11050,6 +11065,10 @@
    "t": "Trasporti, venerdì 13 novembre sciopero a Milano e Venezia"
   },
   {
+   "id": "e-2026-11-12-corteo-roma-lancio-di-bottiglie-e-tensioni-sul-lu",
+   "t": "Corteo Roma, lancio di bottiglie e tensioni sul Lungotevere Testaccio: la polizia interviene con gli idranti"
+  },
+  {
    "id": "e-2026-11-12-porto-vertice-sindacati-lsct-nessun-dietrofront-s",
    "t": "Porto, vertice sindacati-Lsct: “Nessun dietrofront, è sciopero”"
   },
@@ -11098,6 +11117,10 @@
    "t": "Il Cile entra in recessione, prosegue lo sciopero dei camionisti"
   },
   {
+   "id": "e-2026-11-12-sciopero-arnas-brotzu-nursing-up-carenze-infermie",
+   "t": "Sciopero Arnas Brotzu, Nursing Up: \"Carenze infermieri e oss insostenibili\""
+  },
+  {
    "id": "e-2026-11-12-voli-bloccati-negli-usa-perch-non-previsto-un-ris",
    "t": "Voli bloccati negli Usa, perché non è previsto un risarcimento"
   },
@@ -11108,10 +11131,6 @@
   {
    "id": "e-2026-11-12-ilaria-salis-la-nuova-sparata-sull-occupazione-fa",
    "t": "Ilaria Salis, la nuova sparata: \"Sull'occupazione falsi miti\", ecco di quali case vuole appropriarsi"
-  },
-  {
-   "id": "e-2026-11-12-sciopero-il-tassista-in-corteo-a-roma-il-tempo",
-   "t": "Sciopero, il tassista in corteo a Roma - Il Tempo"
   },
   {
    "id": "e-2026-11-12-ricerca-schlein-al-presidio-dei-precari-a-monteci",
@@ -11138,16 +11157,16 @@
    "t": "Mobilitazione CONFSAL INPS: intervista al coordinatore Francesco Viola (12.11.2026)"
   },
   {
+   "id": "e-2026-11-12-possibile-interruzione-dei-servizi-di-igiene-urba",
+   "t": "Possibile interruzione dei servizi di igiene urbana per sciopero generale"
+  },
+  {
    "id": "e-2026-11-12-la-faida-della-fenice-la-prima-salta-per-sciopero",
    "t": "La faida della Fenice: la prima salta per sciopero. Ma stavolta i veneziani scaricano l’orchestra"
   },
   {
    "id": "e-2026-11-12-scioperi-mezzi-pubblici-novembre-2026-stop-a-napo",
    "t": "Scioperi mezzi pubblici novembre 2026, stop a Napoli e non solo: date e orari"
-  },
-  {
-   "id": "e-2026-11-12-sciopero-arnas-brotzu-nursing-up-carenze-infermie",
-   "t": "Sciopero Arnas Brotzu, Nursing Up: \"Carenze infermieri e oss insostenibili\""
   },
   {
    "id": "e-2026-11-12-moschea-dopo-il-blitz-bloccato-dalla-polizia-loca",
@@ -11172,10 +11191,6 @@
   {
    "id": "e-2026-11-12-roma-il-giorno-dopo-al-liceo-minaccia-ridicola-ma",
    "t": "Roma, il giorno dopo al liceo: \"Minaccia ridicola, ma un po' di preoccupazione c'è\""
-  },
-  {
-   "id": "e-2026-11-12-sciopero-generale-possibili-disagi-per-i-servizi-",
-   "t": "Sciopero generale, possibili disagi per i servizi Vus"
   },
   {
    "id": "e-2026-11-12-caro-affitti-proteste-e-tensione-a-madrid-e-barce",
@@ -11278,28 +11293,28 @@
    "t": "Carovita e lavoratori in ginocchio. La protesta alla Bosch di Vezzano"
   },
   {
-   "id": "e-2026-11-13-tirrenica-la-maremma-porta-la-protesta-davanti-al",
-   "t": "Tirrenica, la Maremma porta la protesta davanti al Parlamento: \"L'Aurelia è un cimitero a cielo aperto\""
-  },
-  {
    "id": "e-2026-11-13-pelle-ombre-sull-occupazione-torna-la-cassa-integ",
    "t": "Pelle, ombre sull’occupazione: \"Torna la cassa integrazione\""
   },
   {
-   "id": "e-2026-11-13-occupato-il-polo-san-rossore-mancano-spazi-per-lo",
-   "t": "Occupato il polo San Rossore: \"Mancano spazi per lo studio\""
+   "id": "e-2026-11-13-tirrenica-la-maremma-porta-la-protesta-davanti-al",
+   "t": "Tirrenica, la Maremma porta la protesta davanti al Parlamento: \"L'Aurelia è un cimitero a cielo aperto\""
   },
   {
    "id": "e-2026-11-13-corridoio-tirrenico-in-attesa-della-strada-ci-si-",
    "t": "Corridoio Tirrenico, in attesa della strada ci si muove a piedi. Oggi picchetto a Roma"
   },
   {
-   "id": "e-2026-11-13-la-difesa-della-consultazione-e-l-attacco-al-cort",
-   "t": "La difesa della consultazione. E l’attacco al corteo di protesta"
+   "id": "e-2026-11-13-occupato-il-polo-san-rossore-mancano-spazi-per-lo",
+   "t": "Occupato il polo San Rossore: \"Mancano spazi per lo studio\""
   },
   {
    "id": "e-2026-11-13-giuste-le-proteste-degli-studenti-la-mozione-del-",
    "t": "\"Giuste le proteste degli studenti\" . La mozione del Senato accademico"
+  },
+  {
+   "id": "e-2026-11-13-la-difesa-della-consultazione-e-l-attacco-al-cort",
+   "t": "La difesa della consultazione. E l’attacco al corteo di protesta"
   },
   {
    "id": "e-2026-11-13-outlook-bloccato-cosa-succede-un-attacco-hacker-q",
@@ -11310,16 +11325,16 @@
    "t": "Israele under 19 in campo martedì a Fermo, le iniziative di protesta degli attivisti per Gaza"
   },
   {
-   "id": "e-2026-11-13-scuole-a-caserta-altre-proteste-negli-istituti-pe",
-   "t": "Scuole a Caserta, altre proteste negli istituti per carenza aule e orari: sciopero al Manzoni"
-  },
-  {
    "id": "e-2026-11-13-trasporto-pubblico-a-bari-i-lavoratori-amtab-in-s",
    "t": "Trasporto pubblico, a Bari i lavoratori Amtab in sciopero per 24 ore: domani corse a rischio"
   },
   {
    "id": "e-2026-11-13-bankitalia-in-puglia-nei-primi-6-mesi-del-2026-il",
    "t": "Bankitalia, in Puglia nei primi 6 mesi del 2026 il Pil cresce dell'1%. E l'occupazione segna il +0,6%"
+  },
+  {
+   "id": "e-2026-11-13-sugar-tax-assobibe-spada-di-damocle-su-imprese-bl",
+   "t": "Sugar tax, Assobibe “Spada di Damocle su imprese, bloccato 1 mld di investimenti”"
   },
   {
    "id": "e-2026-11-13-l-autunno-caldo-della-cgil-calabria-pronte-due-mo",
@@ -11386,16 +11401,16 @@
    "t": "Protesta degli agricoltori, blocco sulla superstrada Ionio-Tirreno: lunghe code fino a Polistena"
   },
   {
+   "id": "e-2026-11-13-scuole-a-caserta-altre-proteste-negli-istituti-pe",
+   "t": "Scuole a Caserta, altre proteste negli istituti per carenza aule e orari: sciopero al Manzoni"
+  },
+  {
    "id": "e-2026-11-13-sciopero-atm-oggi-venerd-13-novembre-dopo-le-18-c",
    "t": "Sciopero Atm oggi venerdì 13 novembre: dopo le 18 chiudono M1, M2 e M3"
   },
   {
    "id": "e-2026-11-13-minghetti-domani-fine-occupazione-fdi-ci-usa-solo",
    "t": "Minghetti, domani fine occupazione: \"FdI ci usa solo per propaganda\""
-  },
-  {
-   "id": "e-2026-11-13-sugar-tax-assobibe-spada-di-damocle-su-imprese-bl",
-   "t": "Sugar tax, Assobibe “Spada di Damocle su imprese, bloccato 1 mld di investimenti”"
   },
   {
    "id": "e-2026-11-13-venezia-dopo-lo-sciopero-della-prima-al-teatro-la",
@@ -11494,12 +11509,12 @@
    "t": "Il presidio dei pro Pal durante Eima: “Fuori l'israeliana Netafim dalla Fiera di Bologna”"
   },
   {
-   "id": "e-2026-11-14-minghetti-c-chi-dice-no-occupazione-sbagliata-",
-   "t": "Minghetti, c’è chi dice no: \"Occupazione sbagliata\""
-  },
-  {
    "id": "e-2026-11-14-lotta-contro-il-carovita-dipendenti-di-montip-in-",
    "t": "Lotta contro il carovita. Dipendenti di Montipò in presidio a Sant’Ilario"
+  },
+  {
+   "id": "e-2026-11-14-minghetti-c-chi-dice-no-occupazione-sbagliata-",
+   "t": "Minghetti, c’è chi dice no: \"Occupazione sbagliata\""
   },
   {
    "id": "e-2026-11-14-comunit-montane-la-protesta-degli-esclusi",
@@ -11538,16 +11553,12 @@
    "t": "FOTO | Ancora proteste in Francia: 106 mila persone in piazza, 121 fermi. Incidenti a Lione, aggredita anche una troupe televisiva"
   },
   {
-   "id": "e-2026-11-14-il-corteo-dentro-il-supermercato-contro-il-carovi",
-   "t": "Il corteo dentro il supermercato contro il carovita"
-  },
-  {
-   "id": "e-2026-11-14-caro-vita-e-diritto-alla-casa-nuovo-corteo-nel-ce",
-   "t": "Caro vita e diritto alla casa, nuovo corteo nel centro storico di Napoli"
-  },
-  {
    "id": "e-2026-11-14-parma-blindata-per-i-due-cortei-antagonisti-20mil",
    "t": "Parma blindata per i due cortei antagonisti: 20mila antifascisti, 1500 pro Remigrazione"
+  },
+  {
+   "id": "e-2026-11-14-il-corteo-dentro-il-supermercato-contro-il-carovi",
+   "t": "Il corteo dentro il supermercato contro il carovita"
   },
   {
    "id": "e-2026-11-14-nuova-manifestazione-contro-il-carovita",
@@ -11604,6 +11615,10 @@
   {
    "id": "e-2026-11-14-spoleto-caos-parcheggi-in-stazione-via-70-posti-a",
    "t": "Spoleto, caos parcheggi in stazione: via 70 posti auto, scoppia la protesta. Raccolte 700 firme"
+  },
+  {
+   "id": "e-2026-11-14-caro-vita-e-diritto-alla-casa-nuovo-corteo-nel-ce",
+   "t": "Caro vita e diritto alla casa, nuovo corteo nel centro storico di Napoli"
   },
   {
    "id": "e-2026-11-14-sciopero-trasporti-alta-adesione-a-napoli-chiuse-",
@@ -12134,8 +12149,8 @@
    "t": "Pre e post scuola sono troppo cari. La protesta diventa raccolta firme"
   },
   {
-   "id": "e-2026-11-17-l-onda-delle-occupazioni-in-9-scuole-di-milano-ed",
-   "t": "L’onda delle occupazioni in 9 scuole di Milano: “Edifici sicuri, più prof e stop al carovita. Ora il ministro ci deve ascoltare”"
+   "id": "e-2026-11-17-proseguono-le-occupazioni-delle-scuole-a-milano-l",
+   "t": "Proseguono le occupazioni delle scuole a Milano. La preside del Bottoni: “questi ragazzi vanno ascoltati, ponti non muri.”"
   },
   {
    "id": "e-2026-11-17-francia-di-nuovo-in-piazza-sciopero-e-manifestazi",
@@ -12162,16 +12177,16 @@
    "t": "I licei Dini e Russoli occupati nella notte: \"Un atto necessario\""
   },
   {
-   "id": "e-2026-11-17-la-protesta-degli-educatori-i-nostri-diritti-dime",
-   "t": "La protesta degli educatori: \"I nostri diritti dimenticati\""
+   "id": "e-2026-11-17-donne-insieme-valdelsa-dieci-anni-di-attivit-un-p",
+   "t": "Donne Insieme Valdelsa. Dieci anni di attività. Un presidio che salva le vite"
   },
   {
    "id": "e-2026-11-17-dalla-protesta-all-azione-rilancio-strategico-del",
    "t": "Dalla protesta all’azione. Rilancio strategico della città. Il piano di Confcommercio"
   },
   {
-   "id": "e-2026-11-17-donne-insieme-valdelsa-dieci-anni-di-attivit-un-p",
-   "t": "Donne Insieme Valdelsa. Dieci anni di attività. Un presidio che salva le vite"
+   "id": "e-2026-11-17-la-protesta-degli-educatori-i-nostri-diritti-dime",
+   "t": "La protesta degli educatori: \"I nostri diritti dimenticati\""
   },
   {
    "id": "e-2026-11-17-scatta-la-mobilitazione-pacifica-galilei-pieralli",
@@ -12402,6 +12417,10 @@
    "t": "Ac Boilers, Ansaldo Energia acquisirà sito di Gioia del Colle entro gennaio"
   },
   {
+   "id": "e-2026-11-18-il-sindaco-di-genzano-attacca-fanpage-su-lobby-ne",
+   "t": "Il sindaco di Genzano attacca Fanpage su Lobby Nera e Gioventù Meloniana: “Inchieste montate per gettare fango”"
+  },
+  {
    "id": "e-2026-11-18-biella-proteste-contro-i-tagli-sociali-ecco-dove-",
    "t": "Biella, proteste contro i tagli sociali: ecco dove passerà il corteo di sindacati e studenti"
   },
@@ -12514,6 +12533,10 @@
    "t": "Acampora (Assonautica): \"Space&Blue vale 45 miliardi, 168mila occupati e 35.900 imprese\""
   },
   {
+   "id": "e-2026-11-18-troppa-gente-a-dobbiaco-il-corteo-dei-krampus-si-",
+   "t": "Troppa gente, a Dobbiaco il corteo dei krampus si sposta al Grand Hotel"
+  },
+  {
    "id": "e-2026-11-18-pieve-del-grappa-al-pastificio-rigo-adesso-sciope",
    "t": "Pieve del Grappa, al Pastificio Rigo adesso è sciopero a oltranza per salvare 33 posti"
   },
@@ -12534,6 +12557,10 @@
    "t": "*** Bnl: slide Piano, entro il 2030 taglia filiali e riduce occupazione"
   },
   {
+   "id": "e-2026-11-18-praga-in-piazza-per-la-tv-pubblica-un-cartoon-sim",
+   "t": "Praga in piazza per la tv pubblica. Un cartoon simbolo della protesta"
+  },
+  {
    "id": "e-2026-11-18-alla-sanit-servono-fondi-protesta-in-sette-citt-",
    "t": "Alla sanità servono fondi. Protesta in sette città"
   },
@@ -12548,6 +12575,14 @@
   {
    "id": "e-2026-11-18-presidio-per-chiudere-il-cpr-di-torino",
    "t": "Presidio per chiudere il CPR di Torino"
+  },
+  {
+   "id": "e-2026-11-18-francia-l-impatto-shock-dei-gas-lacrimogeni-sulla",
+   "t": "Francia. L’impatto shock dei gas lacrimogeni sulla salute delle manifestanti"
+  },
+  {
+   "id": "e-2026-11-18-reindustrializzazione-a-luogosano-pico-rileva-l-e",
+   "t": "Reindustrializzazione a Luogosano, Pico rileva l'ex ArcelorMittal: investimenti e occupazione in crescita"
   },
   {
    "id": "e-2026-11-18-tennis-cosa-succede-nel-doppio-e-perch-i-giocator",
@@ -12602,8 +12637,8 @@
    "t": "Scioperi, in arrivo un altro weekend di disagi: tutti i settori coinvolti il 20 e 21 novembre"
   },
   {
-   "id": "e-2026-11-21-sciopero-treni-italo-treni-garantiti-il-20-e-21-n",
-   "t": "Sciopero treni Italo, treni garantiti il 20 e 21 novembre 2026"
+   "id": "e-2026-11-21-sciopero-20-21-novembre-2026-roma-atac-cotral-e-t",
+   "t": "Sciopero 20-21 novembre 2026 Roma, Atac, Cotral e treni"
   },
   {
    "id": "e-2026-11-22-il-calendario-degli-scioperi-della-settimana-dal-",
@@ -12634,8 +12669,8 @@
    "t": "Autisti, si riaccende la protesta: dal 2 dicembre blocco degli straordinari, due scioperi nazionali il 7 e il 18"
   },
   {
-   "id": "e-2026-12-04-galliera-cresce-la-protesta-dei-lavoratori-confer",
-   "t": "Galliera, cresce la protesta dei lavoratori: confermato lo sciopero del 4 dicembre"
+   "id": "e-2026-12-04-usb-trasporti-rilancia-la-battaglia-decisiva-cont",
+   "t": "USB trasporti rilancia la battaglia decisiva contro la legge anti sciopero; il comparto torna a scioperare il 4 dicembre. Ore 11:00 presidio davanti al Ministero dei Trasporti"
   },
   {
    "id": "e-2026-12-05-ddl-bilancio-sanita-federazione-medici-e-odontoia",
@@ -12684,6 +12719,10 @@
   {
    "id": "e-2027-04-25-spari-al-corteo-del-25-aprile-condannato-a-quattr",
    "t": "Spari al corteo del 25 aprile, condannato a quattro mesi"
+  },
+  {
+   "id": "e-2027-08-09-depuratore-del-garda-il-presidio-9-agosto-rilanci",
+   "t": "Depuratore del Garda: il Presidio 9 Agosto rilancia “progetto da ripensare. Incontro pubblico a Lonato giovedì 19 novembre"
   },
   {
    "id": "e-2027-09-11-traffico-aereo-bloccato-negli-stati-uniti-circost",
@@ -27162,6 +27201,10 @@
      "temi"
     ],
     [
+     "simbolo",
+     "temi"
+    ],
+    [
      "social",
      "temi"
     ]
@@ -28304,10 +28347,6 @@
    "terms": [
     [
      "istituti",
-     "temi"
-    ],
-    [
-     "l'onda",
      "temi"
     ],
     [
@@ -30083,6 +30122,10 @@
     ],
     [
      "bisogna",
+     "temi"
+    ],
+    [
+     "comparto",
      "temi"
     ],
     [
@@ -44078,6 +44121,10 @@
     ],
     [
      "proteste ragazzi",
+     "temi"
+    ],
+    [
+     "troppa",
      "temi"
     ]
    ],
@@ -79989,10 +80036,6 @@
    ],
    "terms": [
     [
-     "interviene",
-     "temi"
-    ],
-    [
      "leonardo",
      "temi"
     ],
@@ -80001,7 +80044,7 @@
      "temi"
     ],
     [
-     "polizia",
+     "polizia interviene",
      "temi"
     ],
     [
@@ -104110,6 +104153,10 @@
    ],
    "terms": [
     [
+     "agosto",
+     "temi"
+    ],
+    [
      "disoccupazione",
      "temi"
     ],
@@ -104403,7 +104450,7 @@
      "temi"
     ],
     [
-     "ministero",
+     "ministero trasporti",
      "temi"
     ],
     [
@@ -104417,10 +104464,6 @@
     [
      "studenti",
      "attori"
-    ],
-    [
-     "trasporti",
-     "temi"
     ]
    ],
    "v": "e-2026-10-30-roma-contestazione-contro-salvini-davanti-al-mini"
@@ -113387,6 +113430,10 @@
      "temi"
     ],
     [
+     "proseguono",
+     "temi"
+    ],
+    [
      "proteste",
      "temi"
     ],
@@ -122193,10 +122240,6 @@
     ],
     [
      "sfida",
-     "temi"
-    ],
-    [
-     "sicuri",
      "temi"
     ],
     [
@@ -132715,6 +132758,10 @@
      "temi"
     ],
     [
+     "italo",
+     "temi"
+    ],
+    [
      "responsabilità",
      "temi"
     ],
@@ -132727,7 +132774,7 @@
      "temi"
     ],
     [
-     "treni italo",
+     "treni",
      "temi"
     ]
    ],
@@ -145247,10 +145294,6 @@
    ],
    "terms": [
     [
-     "ascoltati",
-     "temi"
-    ],
-    [
      "invece",
      "temi"
     ],
@@ -145267,7 +145310,7 @@
      "attori"
     ],
     [
-     "vanno",
+     "vanno ascoltati",
      "temi"
     ]
    ],
@@ -147130,10 +147173,6 @@
      "temi"
     ],
     [
-     "garantiti",
-     "temi"
-    ],
-    [
      "italo",
      "temi"
     ],
@@ -147238,112 +147277,93 @@
   },
   {
    "d": "2026-11-11",
-   "t": "Sciopero",
-   "h": "Scuola e università",
-   "r": "Lombardia",
-   "l": "Milano",
-   "a": "da verificare",
-   "x": "Manovra, si cercano nuovi fondi per la sanità e saltano misure su scuola. Ma la Cgil conferma lo sciopero generale",
+   "t": "Blocco",
+   "h": "Ambiente e territorio",
+   "r": "Puglia",
+   "l": "Bari",
+   "a": "agricoltori",
+   "x": "Corato, si blocca la strada provinciale 231: camionisti e agricoltori in protesta contro il caro carburanti",
    "m": [
-    "scuola"
+    "agricol"
    ],
-   "o": "Manovra, si cercano nuovi fondi per la sanità e saltano misure su scuola. Ma la Cgil conferma lo sciopero generale    Adnkronos",
+   "o": "Corato, si blocca la strada provinciale 231: camionisti e agricoltori in protesta contro il caro carburanti    La Gazzetta del Mezzogiorno",
    "s": [
-    9,
-    10,
-    11,
-    12,
-    14,
-    32,
-    34,
-    37,
-    41,
-    44,
-    45,
-    49,
-    51,
-    53,
-    54,
-    55,
-    58,
-    62,
-    63,
-    65,
-    66,
-    70,
-    71,
-    76,
-    94,
-    143,
-    165,
-    175,
-    233,
-    239,
-    264,
-    733,
-    747,
-    748
+    45
    ],
    "auto": true,
    "news": [
     {
-     "t": "Scontri a Barcellona dopo il corteo per la casa, vetrine in frantumi",
-     "o": "l'Adige",
-     "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOemVRdjRrc0V2enk5S2IzNFF4LWNuYUtjZ3hVdFM3YUs0M01MUm5FWTI0LWlZYWxnR2lqTnMyVlZmemlBZGY0dHR1ankzQVJJcl9rTU5reGRWeGFkZTY4bWZZX1gzZDNkV1Btb09Wak55VC1sdUdxLWRUNzZFZ3lJS1pvdmU2bkJpYUlFdl9QVENMLUVEczEwSEU0SlUyRUV2N1ozUFc2T1V6MFpf?oc=5",
-     "d": "2026-11-11"
-    },
-    {
-     "t": "Scontri a Barcellona dopo il corteo per la casa, vetrine in frantumi",
-     "o": "Il Resto del Carlino",
-     "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQOWRGN2JWTzI2LVF4Y1RCY2tDMUdmN3IwT193OVJrMlRoQWRsbThka1ZuZTVoOXc1ZTJxX3Q0aUZTZkFDLWFpODFyR01kdzNmc1lGUUg3cnZyRXVwd21rUmwtLVU1ZklTZnMxTmtjbjhZT2EwaFZsclNfQ2g3RnRoenNiWWVDZ3M?oc=5",
-     "d": "2026-11-11"
-    },
-    {
-     "t": "Scontri a Barcellona dopo il corteo per la casa, vetrine in frantumi",
+     "t": "Corato, si blocca la strada provinciale 231: camionisti e agricoltori in protesta contro il caro carburanti",
      "o": "La Gazzetta del Mezzogiorno",
-     "u": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNMnZrb2QzcHBEQmVYRlM4bWtVdmxCRklZbWthMHRNSEJtbkZHdXYyN0NLeWtTYXlBamloY0NKUE15QWFOX1hEMjAzM1paa1hla2ZXNE9jSm1iMWFoNGRCc1FtSlJDZUxrVzhXWFlRMHlaUnAyLU83dFdhTXBXVG00SDI5YWt1NWRHTHNEVlliSVppVFNmUThvUVZVT0FWZkNxQUhHdjFGcjBBaWF5SnNRY21uaF9ldXdJQ0tKWjUxUk9YeEFoengyYjhwbkVLb21OOFHSAdABQVVfeXFMTXpzbEF0cEl6RW9NaXhzdldrODdNRnRzV0taeDgwUjZaZldzQkVBQ2FWcjBwYS1FTEhCTGJvNzhobHdkOGNrbFJEVkJKYkd1ZDZzWmxGWmgyN1ZOV3RONDhLNGlreE5Ed3NteG10R2p0UzczWXdLNlM3OU11N3l0UGxoc2VUdl85VG1jNFkxS1FGdnZYdmtRVGVsTVdIcGFSQUNkWDlkS3hlcnR0UTRFT09EbzQyV0FyOEYxdE8tQmlMVE1FelpPQmJ0cnZhX3pGZg?oc=5",
+     "u": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOdUFselgySFZTSGNSX0JCRnZoUGkwXzlQMkdZcXFpREFRQXN5MUpFZy1peEVZYldHSm5IWVNhZVIyY0pTV2huRzNiUUlDT1h2QmxLaEc0Q212YmRDMHNrWk42bXItbno5WGlXMXFuTnNKbEJFUmdqOEZOSVdXM0sxTUZuTmlpbS1waUN2SG5QTnZEY2pEekV4bTM4dGIyaHFWQUpTQU85QldXMDJqQ2Rnd0pBazRrWlI3eUV1dVlRNFRRejRNOW9MV0o5M3JpVXJvMVVScEVYLWNXZnpqU05KcjRxVGw1SnZYbnIwSUNNenJQWHhPZ1Q4R0JpWmhvVkFKS0xR?oc=5",
      "d": "2026-11-11"
-    },
-    {
-     "t": "Scontri a Barcellona dopo il corteo per la casa: giovani incappucciati rompono vetrine e incendiano cassonetti",
-     "o": "Tgcom24",
-     "u": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNT3lnUXlsOXd0ZTRYQXQ4cXBoV3V1NldyVk5CajdxTFRhWERKR3IxemhOdkhRTklMZVZ4SmNEanRFdnozdzVoa3lQbWxqNnBYVlZScGg5aHdsUlRfUzdqeDZEWXdXMTh1NFpEeFBNWm42a1JKbFVpdW9pVnFfSjJqU0s4UHBnRy1GbzZtUzd6eFc5MTVzQzBmbEt1T2JYYnQ4dWVPMFFEMGtGS0d1OG1NRmpteURIaHRUSVVYLTdkUWQ5V1B4dUVndDdhQi16aGJUZUhYQXZaSVN1cHBTTlRtNFZGbnhLU21JT01oMUFpTGJMN2prbEhEcEdXNEdpT3BoRWc?oc=5",
-     "d": "2026-11-11"
-    },
+    }
+   ],
+   "terms": [
+    [
+     "agricol",
+     "temi"
+    ],
+    [
+     "autotrasportatori agricoltori",
+     "temi"
+    ],
+    [
+     "blocca",
+     "temi"
+    ],
+    [
+     "caro carburanti",
+     "temi"
+    ],
+    [
+     "corato",
+     "temi"
+    ],
+    [
+     "provinciale",
+     "temi"
+    ],
+    [
+     "strada",
+     "temi"
+    ]
+   ],
+   "v": "e-2026-11-11-corato-si-blocca-la-strada-provinciale-231-camion"
+  },
+  {
+   "d": "2026-11-11",
+   "t": "Sciopero",
+   "h": "Costo della vita",
+   "r": "Nazionale",
+   "l": "Barcellona",
+   "a": "da verificare",
+   "x": "Caro-affitti, proteste e tensione a Madrid e Barcellona",
+   "m": [
+    "affitt"
+   ],
+   "o": "Caro-affitti, proteste e tensione a Madrid e Barcellona    Sky TG24",
+   "s": [
+    12,
+    34,
+    44,
+    41,
+    14,
+    63,
+    49,
+    45,
+    58,
+    11,
+    71,
+    9,
+    32
+   ],
+   "auto": true,
+   "news": [
     {
      "t": "Video. Barcellona, scontri e incendi dopo il corteo pacifico dello sciopero generale",
      "o": "Euronews",
      "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOeW1fQjFaQnhOMXNLbzl3N3J3U3A5STAtaHNleFNNWVlvSF85R0o4eml3dUx2Mm9GaTNKWExfcmtxZmxBckluN1lGSlluUWV0bzhHMnZmTkNJa2l0cDRMQTBBMHg3YmUyOFFkUk10LUdIUHhyazRTdUQzUmdZY2w1NDU5cU9lc3VXb1k0VzhET3hvV2UwaVd4ZUpRNWFUb3RIcm4wZVZVUGtKdndYUlJMTGR4YjJHUWhM?oc=5",
-     "d": "2026-11-11"
-    },
-    {
-     "t": "Scontri a Barcellona dopo il corteo per la casa, vetrine in frantumi",
-     "o": "Quotidiano.net",
-     "u": "https://news.google.com/rss/articles/CBMif0FVX3lxTE90cGpQMTZsUDJ1cjhsQUZPYnNVZHRZSlpaRHRyWFNtcEo4d0taNXZVdTd6NDdwYUx5VlVXUzdGcUZXMjlLaGdmanVIQVdiYXl1RlluV0Z3MDR1dTV1WDZYTVJxWndnR1B1TFhTbnJKM2JjZW11OHRla0oxdnVOX2c?oc=5",
-     "d": "2026-11-11"
-    },
-    {
-     "t": "Sciopero generale in Spagna: più di centomila in piazza a Madrid, scontri e vetrine in frantumi a Barcellona",
-     "o": "Quotidiano.net",
-     "u": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPSEsydHJlNE5EbUl5YnUxVGVlc1p5UjM1RFRKMnVpYk9VNUVqb0VJMDM3T0pjZGNYdERwR3lMWGFNZzNoWDhBSHdIemJEQV9wLVY5S042WDVnYnlUMkNwNXhyNlhCNjl1TDhPdG52RkVWeU40X2UyWmhsVHdZV0pWajQzam9oLXFacWVhY1JwNVdNNTBMU01xVUQzb2VXbUhkUnhNeEVRT0lZUkJkRjhoLU9sbW9kUWFGbXVMc3FaWVVYVERtMkQzQlRyNVdTbE9Ob1VtVHJXeF9mODJyZEpEc2E3TQ?oc=5",
-     "d": "2026-11-11"
-    },
-    {
-     "t": "Spagna, lo sciopero generale fa il pieno. Oltre le aspettative",
-     "o": "il manifesto",
-     "u": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNd3lVRHdBMllINXBpZmJyMUhIN1MyR2ZpaFRpREc2Z0RZRjVZNmRLY0dGQkFKbHZaVUZ1X1FRLWJ1QWlnS2wzbGh3SUpneF90dlFiZmp5MFM0bV9IcF9UVmJZcU4ycVVsRWVOT0lXZ2Q5QUZ4cF9rbG1nTTdkZEFvbDl5T2tWWktKZmxz?oc=5",
-     "d": "2026-11-11"
-    },
-    {
-     "t": "11 novembre: sciopero generale in Spagna per i diritti dei cittadini",
-     "o": "Pressenza",
-     "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOM1BEUWNhZDNNb0h3SFR5M3ZNaEdDanNCNGpoOGFUbkZlbnR6Z1hUckRMaWh0bGNjaWFQdjVqZlNzZWI3VTRIZkIzN3hGOGxoVnJDUjVGckd6VVJKYWladmZMSW94Sm1RWmRkcG04M1lfRGNuUGdtQTgtenFpWmlkTDhQRjZwaUxJODJRN18xTTctSDRucV9tR2w0T2lkMWMtMFVsTUhTU0I?oc=5",
-     "d": "2026-11-12"
-    },
-    {
-     "t": "Spagna: primo sciopero generale dopo 14 anni. Centomila in piazza a Madrid, guerriglia urbana a Barcellona - Il video",
-     "o": "Open",
-     "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOR3ZGa1NYRU53a3BvVjVoLWN5OVktU1lnMTRoZ015Uzd4MllxZVNybXE0REtvY0pXdmJBOWZKUmRld1lIU0RwM3FES1NpNTg0M2ptMVNKWlZSamJabDNOZHdtMmVobXZ6SWs3SDFtendCcUJWYlNvQno1STl0UHBhaWFVVjQyV3RtcldrclpUX2lybDRIdDY4?oc=5",
      "d": "2026-11-11"
     },
     {
@@ -147407,12 +147427,6 @@
      "d": "2026-11-12"
     },
     {
-     "t": "Spagna, migliaia in piazza per il primo sciopero generale in 14 anni: cariche della polizia",
-     "o": "Euronews",
-     "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTHlPczNvY1Ayc1pYY1FPeUdjcm1NdGRqLWNDdDZ3SnZLRnViV3Y2VE43RVR6dXNPVW54eFFDOUdEZDdITEhvdmNGYXVMbERxT29UaW1MOEpnaXF0ZjhwVTV4dEU5NlBzLVc1cFRYUnZ6eXUzVlE3OXJWU2Q5WE9pSUgzdVJnVzFuRDlJVGhWM3p5OHFRNVJ0WVI1d1JQNmxvRjFpUWF4QXZEZ1NRY3M5S3hlU1pSSmpRSnpmdC1KSUFjUQ?oc=5",
-     "d": "2026-11-12"
-    },
-    {
      "t": "Video. Spagna, migliaia in piazza per il primo sciopero generale in 14 anni",
      "o": "Euronews",
      "u": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPZkVmRGQ5eTVUbXU1ZDdVVndlcXVqZmQwMTM5SVF6cmw5WmVtWENuSjY3MGdObEsxQVJBcUp3VnR6TWtuNGplT2NWSVB4MURJVVh0elZfbkJMSW1QZ1lSZEZpaDlzMmVQcFdhSFhqM3BVb2FKQzZhWDJqZnFFNHh5bkNHMHR2VWt5LXh2ZXFFQ2xYWDdfY0ptb0UxOGpSS2wxaTVjTXExcW9zYXRlek9BX2FLZkRrZ3JUdjFocXoxUVhJVVNTUXU3d3ZB?oc=5",
@@ -147461,20 +147475,91 @@
      "d": "2026-11-12"
     },
     {
-     "t": "Possibile interruzione dei servizi di igiene urbana per sciopero generale",
-     "o": "Comune di Brugherio",
-     "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUnU0V0FNeTlkVkJrVWpZS0F3dnJwSVB6RUxqUmJ3Y1NqaW1uMVlBSEZqUUgtTG5FcC1tYTc5YXZaU05tTW9VUjhkb041QzJvaXdvaXhzTlR2akd2WEp3M0NMR0JJSmNreDR0dXZRclBlM2ZKazRadG9lYmduZjZBeEtpNFlMcHBQeWQzSi03WWpHUm9XNFBONWJ1bVg1QnhLQVhqcEFpYjBUdGFPbE5uVWxYbVRJWmM?oc=5",
-     "d": "2026-11-12"
+     "t": "Barcellona, tensione al corteo dello sciopero: scontri e arresti",
+     "o": "Il Sole 24 Ore",
+     "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcUlzR0FLODNWVGhaa01KZWozZjJtQkVoM3NaT05JMzZxdTgxZHpESnlJbHhzVVBLRXVJV3NNQ2Njd2o3eG9lbm82QzgzdkxLZFAtTWdzZFFzR1MtNFZmaVpocm1mbVRpUGdjRzZiLWFpbTNOa1B0LWhJLUdybGNnTEdQQW00QjluSTF6YTRnSUdTOE02WFFNNVZNbWdwRVotT1piN1hNclVJalE?oc=5",
+     "d": "2026-11-13"
     },
     {
-     "t": "Spagna: dallo sfratto di Maricarmen allo sciopero generale",
-     "o": "Amnesty International Italia",
-     "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVlIxQ2J5Ni11R2xLZFUzSmxRQnVQNTZRNmc3aGUxcnU1UWNlSXJmbms5eVdfbmJtSmx4ZEYySnV1Z2xmdlllSUFxRkVJTlZKV0FDdURIOTlBUjFqVVF5U3N1clNlaHZ4VVhfSE5pT2FQajlub0lEaHFnNjh3Wnh4YXRVM2kybnhs?oc=5",
+     "t": "Spagna: al via la campagna elettorale. Destra in vantaggio nei sondaggi, ma la grande partecipazione allo sciopero generale mostra un Paese pronto a contrastarla",
+     "o": "Radio Onda d'Urto",
+     "u": "https://news.google.com/rss/articles/CBMipwJBVV95cUxON1BDWVdjbmFkcEZ1ZXNnMXNRNTlMVlVTUHVzR1E2bURmTDFIWmNmQkVyV2JQZWdaYnJ5OWQyS3QxTnBnTS0tdTRuYVBqSFRNNGN6dDNEcTVLNjR0Z0c4ZjlxVXkxNG9nQkdRY0xvTXBZYXdDeHk4RGg0ZmoyZUhkdVY1V1hvSjg0MU9MMHBaVW14RlMzZ25BUXVXeGFEYm05M1l2T0N6U3lNLTJQSWE5V1BNMVprYTYxR01mVGRSV0RJYkdjX1J0RGEwTWFldjk3elJxMDZRcFB5SlFpQy1LQWhtWXplazJnVWU3OWwxWThZYzdIM0d0VUNWSFhqTzIzWmowZXZodHNCWHh2NF8zQ0F2SXk4V2RkYVdSdEZjS254OVZiM0E0?oc=5",
+     "d": "2026-11-13"
+    }
+   ],
+   "terms": [
+    [
+     "affitt",
+     "temi"
+    ],
+    [
+     "caro-affitti proteste",
+     "temi"
+    ],
+    [
+     "madrid barcellona",
+     "temi"
+    ],
+    [
+     "proteste tensione",
+     "temi"
+    ],
+    [
+     "tensione madrid",
+     "temi"
+    ]
+   ],
+   "v": "e-2026-11-11-caro-affitti-proteste-e-tensione-a-madrid-e-barce"
+  },
+  {
+   "d": "2026-11-11",
+   "t": "Sciopero",
+   "h": "Scuola e università",
+   "r": "Lombardia",
+   "l": "Milano",
+   "a": "da verificare",
+   "x": "Manovra, si cercano nuovi fondi per la sanità e saltano misure su scuola. Ma la Cgil conferma lo sciopero generale",
+   "m": [
+    "scuola"
+   ],
+   "o": "Manovra, si cercano nuovi fondi per la sanità e saltano misure su scuola. Ma la Cgil conferma lo sciopero generale    Adnkronos",
+   "s": [
+    76,
+    51,
+    12,
+    14,
+    45,
+    165,
+    55,
+    175,
+    65,
+    94,
+    11,
+    70,
+    264,
+    9,
+    66,
+    233,
+    62,
+    239
+   ],
+   "auto": true,
+   "news": [
+    {
+     "t": "Spagna, lo sciopero generale fa il pieno. Oltre le aspettative",
+     "o": "il manifesto",
+     "u": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNd3lVRHdBMllINXBpZmJyMUhIN1MyR2ZpaFRpREc2Z0RZRjVZNmRLY0dGQkFKbHZaVUZ1X1FRLWJ1QWlnS2wzbGh3SUpneF90dlFiZmp5MFM0bV9IcF9UVmJZcU4ycVVsRWVOT0lXZ2Q5QUZ4cF9rbG1nTTdkZEFvbDl5T2tWWktKZmxz?oc=5",
+     "d": "2026-11-11"
+    },
+    {
+     "t": "11 novembre: sciopero generale in Spagna per i diritti dei cittadini",
+     "o": "Pressenza",
+     "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOM1BEUWNhZDNNb0h3SFR5M3ZNaEdDanNCNGpoOGFUbkZlbnR6Z1hUckRMaWh0bGNjaWFQdjVqZlNzZWI3VTRIZkIzN3hGOGxoVnJDUjVGckd6VVJKYWladmZMSW94Sm1RWmRkcG04M1lfRGNuUGdtQTgtenFpWmlkTDhQRjZwaUxJODJRN18xTTctSDRucV9tR2w0T2lkMWMtMFVsTUhTU0I?oc=5",
      "d": "2026-11-12"
     },
     {
      "t": "Spagna, migliaia in piazza per il primo sciopero generale in 14 anni: cariche della polizia",
-     "o": "Euronews.com",
+     "o": "Euronews",
      "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTHlPczNvY1Ayc1pYY1FPeUdjcm1NdGRqLWNDdDZ3SnZLRnViV3Y2VE43RVR6dXNPVW54eFFDOUdEZDdITEhvdmNGYXVMbERxT29UaW1MOEpnaXF0ZjhwVTV4dEU5NlBzLVc1cFRYUnZ6eXUzVlE3OXJWU2Q5WE9pSUgzdVJnVzFuRDlJVGhWM3p5OHFRNVJ0WVI1d1JQNmxvRjFpUWF4QXZEZ1NRY3M5S3hlU1pSSmpRSnpmdC1KSUFjUQ?oc=5",
      "d": "2026-11-12"
     },
@@ -147509,12 +147594,6 @@
      "d": "2026-11-13"
     },
     {
-     "t": "Barcellona, tensione al corteo dello sciopero: scontri e arresti",
-     "o": "Il Sole 24 Ore",
-     "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcUlzR0FLODNWVGhaa01KZWozZjJtQkVoM3NaT05JMzZxdTgxZHpESnlJbHhzVVBLRXVJV3NNQ2Njd2o3eG9lbm82QzgzdkxLZFAtTWdzZFFzR1MtNFZmaVpocm1mbVRpUGdjRzZiLWFpbTNOa1B0LWhJLUdybGNnTEdQQW00QjluSTF6YTRnSUdTOE02WFFNNVZNbWdwRVotT1piN1hNclVJalE?oc=5",
-     "d": "2026-11-13"
-    },
-    {
      "t": "Manovra, la svolta dopo le proteste: “Ritirati i tagli alla scuola”",
      "o": "Quotidiano.net",
      "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNY2I3V2ctbUUtM3ZWckxZRThIS28wbmZZVmlySGlKUTBMRnVyd0RhMnFLa2d0UVRST2E3bUx3Q1dCNTltTlliSUxhYmpXY3NVSThZekVFVjhWVHVKQ0xCM2E0UWs0SnpESmRYcUt6YW4xSHNWWnpZNlpkVHZZZ0xrRV9yOVNBUTAxUXo5OXdOamkyUkl6UEw1TWthU0hoMWF6WW5kYWlrbmVpZ3ZO?oc=5",
@@ -147539,12 +147618,6 @@
      "d": "2026-11-13"
     },
     {
-     "t": "Spagna: al via la campagna elettorale. Destra in vantaggio nei sondaggi, ma la grande partecipazione allo sciopero generale mostra un Paese pronto a contrastarla",
-     "o": "Radio Onda d'Urto",
-     "u": "https://news.google.com/rss/articles/CBMipwJBVV95cUxON1BDWVdjbmFkcEZ1ZXNnMXNRNTlMVlVTUHVzR1E2bURmTDFIWmNmQkVyV2JQZWdaYnJ5OWQyS3QxTnBnTS0tdTRuYVBqSFRNNGN6dDNEcTVLNjR0Z0c4ZjlxVXkxNG9nQkdRY0xvTXBZYXdDeHk4RGg0ZmoyZUhkdVY1V1hvSjg0MU9MMHBaVW14RlMzZ25BUXVXeGFEYm05M1l2T0N6U3lNLTJQSWE5V1BNMVprYTYxR01mVGRSV0RJYkdjX1J0RGEwTWFldjk3elJxMDZRcFB5SlFpQy1LQWhtWXplazJnVWU3OWwxWThZYzdIM0d0VUNWSFhqTzIzWmowZXZodHNCWHh2NF8zQ0F2SXk4V2RkYVdSdEZjS254OVZiM0E0?oc=5",
-     "d": "2026-11-13"
-    },
-    {
      "t": "Sito Istituzionale | Venerdì 20 sciopero generale nazionale, TPL a rischio",
      "o": "Roma Capitale",
      "u": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1ETXNxQWF2eE14Z2ZPczhjNzlaTktTcldsRGlUR0VBdW9hTEEwR2ZmTldtb1NVc2pBWGFZbHd3eVZuVzc5WS1TS1pLaXZmaFZ2Y0gweDVsNUd3Y1Z4aUZ3UnhLUzNJb0pFTFpkN0ZVOXBjM05Oc0E?oc=5",
@@ -147560,12 +147633,6 @@
      "t": "Sciopero trasporti, a Milano le linee della metropolitana sono in funzione",
      "o": "ANSA",
      "u": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOd284bTRyRExhdU15TDF2TVRKSHdWc19NcDA3aEhna1ZPZXhCOXQtZGdBTFMtYy0zbUVPS1V6RjQzZmh5NW96cFRsT1VrVExta3lrYzBDYy1PSVFVSV9xWnVUV2d5N213NlBmZ2xWYm9ySkVySGwwSWd0VDhieV9oM2xpRmFkUnFraHlpWDV0akZjMkx1dDlDdElRUTY5dkhjN192MmNlM0tHQjVZaDFPY25aVDVKOFlaV1NVS0pLZGZWa2U2bVNrY3U3Q2lVTTA2QUN2Wjc0WDJHbzFRSVpvdEx5ZXliNW1GZXRoQTloZlZWb01pVk5v0gH8AUFVX3lxTE9rT3lGTVA5b09xSjh0Q1Y1bGFXOVBUYWNUZFB0R19NdnRULS11R2FpbXA3UU5aZ3hVZFpNX3ZXQ3RPMnd3bm9QM2JHVWpmMVVZdWk4aC1ZZ1pRX3I2MHVJbXJnZVFWRzJOOFFZOFRHLUcxcnNZUFhzbmxkM2RGR0pZMWJsTHR6dTB2WF9ETnZsX1M2NFllY3dQZlY2cldfWE1SSjJFNlQ5Ny1QU2JRM3F1cmh0eG1JbEJjOTVKUmRYdnZVc0ZudlA3MVdMYm1lT3JoaGNwam9BZDRqdjZDOFVzYi1SZWhmVU9XQjVaZXlGb0FzNllGWldpUlFWMw?oc=5",
-     "d": "2026-11-13"
-    },
-    {
-     "t": "Sciopero trasporti: dalle 18 metrò M1, M2 e M3 chiuse a Milano",
-     "o": "ANSA",
-     "u": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNam5DT0xuY1pPQkJCaXVhNHROYi1tZmhyaU5YOTJmbGhVa3YyaktPdVJEd0Nyc25TaTZVbERva3lPVC1pVXZ0ZzhxUFB5RXQ0SEZrcm1YeU5QdnNJUFEzTzI1V291emlId1RzZnhPRFZHVUJoWm9Udy1uNUh4aE1kQXBkTDRjWWpQN0dvcWE3Z2hqTTlyODVLcGxSV1dqZFVkUnB1NlpvR2dfSWdLOWlRRUFNVlIwRW9UZ0Uxa2ZoeFBERG9CbUNRZnhidkZqZlBjZ0w4V2xQYTR2SS01X3ZBWkpmeWxLd9IB6wFBVV95cUxQM05hejlXb2tuOGIyUUZCaHR6SXByRjc3MkEzeWVFR2U0Nk5mcktaTUo4ZzRTV0ozSGc2VFFTOGVHcUFfVkFRZ3RTNW1XRzFyNXA2WTFLOE42b3ZwZUlZUjZXLUNyRS1DUEUxYnV1ZWJtbjh3OVNDSVJJLV9TMEE3b1NGa1lEcUJfTncwRExwVjRITnJKWVl2VjhLX09KVjdRUHhEZFFzZ2I2ZGFLQmM0ckx6VlRCU25TWGVvekEyZ3NaVEUwV3V2OWhPbTl3ZkFGNTh2aFRONy1LTDRsM21EcVcxTEtuX2JNZzNr?oc=5",
      "d": "2026-11-13"
     },
     {
@@ -147597,36 +147664,6 @@
      "o": "QuiFinanza",
      "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPb3o3bEFVc2Y2M25OQ0U4QWh2a3FvYUdHWldBaEdtVjNMNDZYYmRIamJUYmJDdklmUzQtaGl3bEJqcVRKNW0yMm5jNjhIcldnR1NlR1hidFlrRzlLa1d2RnNqemhMWk02TWV6VHNnNnJhaEdtMUc2dlctNWdRVmpQT2NtWTZCYm1BX2laOHZaNDJ3bnEzNlJRUUVNejRBT1VCSE1J0gGoAUFVX3lxTE1NVmllcDlfamlGNi1TT19BTWpXTExwWDJ3MUFFX1pwbmRhOWwtWURNcWZ0U0JNNVdDbUFEazVud1lzbGc4dlNFOFBRZGp2MWRyV0d1SF9NWG1tdVR3bDhQVDh1cVVMSkN6MXF3Z0tLblVJS0pscFdfdXNfOE90YmsxSHFMaXpGek1Nbnc1TnYtNmptMGhoX0tZNFVfdWdWa1RXOEdHNHhOdA?oc=5",
      "d": "2026-11-13"
-    },
-    {
-     "t": "Spagna, primo sciopero generale dopo 14 anni: migliaia in piazza tra proteste e scontri",
-     "o": "Rai News",
-     "u": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPQjJOeXk5bkVaREMxc2lGZmNraGVoblNpN1h1dGdfb01hNVBjQUtsOUI0U2tUdzJfbXlUZUp0R0luSkQyQk91TW1KbzREbTMzLUNRMEtGR0FDdUNJVEMxcjNHLUxicTlaTVBPVHlpLTJJOXloRDhEendJd3oxenZ3c0ZHV0JSYmx3M19SVXJyVVhCcUlBN0Jfd3ltR2lfemNIUGV1ZlpWZEs0b0wtZGNrTERUTms0WWNhVUZoMWF4cUxac1B1Nm14R3NwMFhMWTJKUWdQS1Q4UzhVWEIyNFgzZGJYbldWaVNoYVEwanVvbFRxR0lEWGk2Tlh3ONIBgAJBVV95cUxQaTY0SDBWRXA0UDJUdEh2RlVkdXBtd1MzbHV3WmIwaVU0ZFAzYmZDdjZjVHJYSnJtVUVuM2J6d0wxV0pqMTRJUmdiU0RNM2ZjZFprM1BwZm5ZLUZJSVpzbHBHbDdBeUhUN3pnUzFmRjdVYzlpOXloVW1VenJTQVQ3d18zak5RSEc0UEJIZFFBVk1aclBfM1lRMXR0MFlNZHZJRUFqMTkzVWVMLTRTcDc1ejhORGNMbmNBQTdYYldIZUtuZTQ4Y2laal9vbHdWVDI0TDVBVTlSbDlVbEVueHdYM0QzMXI4YkJISmVCdVB3Nm9USTIxX2tCR3ZMdHlfSFJt?oc=5",
-     "d": "2026-11-11"
-    },
-    {
-     "t": "Spagna, scontri e cariche della polizia al termine dello sciopero generale: i video da Barcellona",
-     "o": "La7",
-     "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTHVDOGVWQzJzVXhYNzlmUFNQQVR2c2lTVkhuQldaLUhkeUV3UDZpc1JBdzFnRlpCVXBOWXprdUtOUHlrYnJaRDE5UGtXclVPYy1rSUpaSklPYURfX0ZIMUNPcWNDVXgtQTZnMW80MlJ2Y3RQcHFaajlpWjREYjRkbUVmaThBZUFQZTZYYlNKLU5Ia2pEbldQNUJVS2NKek93TlBqMGZ1WXZSY0p50gGyAUFVX3lxTE9WQ2pSei1EWXhDaXI5RDU1NkZJRjFsN19QRUo3OTJWbGtodGw2WWN6OWN6X2ZrZElDWmU2V2NvRlJZSlRLRVlmZW9iNlFLRjVWWGhVdG5zUjV1bk1US2FZZ0dXX2ZPNzNNUmYzUGRLLXlybkJMLUhfX3M4LUFKSElRVTFVN3BCUGlzMDRiR3RtUVF4YXJLWGxaWHp5Zng4RTFvWVljRldHZGxhMDVyYUllNWc?oc=5",
-     "d": "2026-11-11"
-    },
-    {
-     "t": "Sciopero generale in Spagna, 4 milioni in piazza contro il caro affitti",
-     "o": "Il Sole 24 Ore",
-     "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTHdMV2hpVy1KT3J5ZU5JNnZVU0pVUXNRZUZnZFQxcGpDSzZDVTlNbUp0X0l2T3FtN0pMX25OQzYySDVwaTFLWFo3NWIzZGlHdmJxU0c4NTluLUU1Qzc0SVJ5LWduYlp0Nk5QTS1tRXh1MVotcXQwY1hMRUlZa3RWeUcxVDhJdWFIdXFadDR4S2htckFFTzV2WURjOHpEM0lkQ3lzWA?oc=5",
-     "d": "2026-11-11"
-    },
-    {
-     "t": "Spagna, almeno 42 arresti durante lo sciopero generale",
-     "o": "Il Sole 24 Ore",
-     "u": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBEb1RpaGR4VElpX0hhOExjRE9JU09xUU5sbXJqQWNlYmlZUkhXMDV5M3V4OVowMkJLWFBBOWtDZWFrVzM0VXpQZ2sxdWZpVTVXc1ZlUHV4d0R5a1l6WGRTSmtKRUxRYWF5dE9pbWN2RXNOREk?oc=5",
-     "d": "2026-11-11"
-    },
-    {
-     "t": "Sciopero generale a 18 giorni dal voto: 40 arresti e 21 feriti",
-     "o": "blue News",
-     "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVWVwdzI2SzdYRmgxVWxFeTRUNkhwNXVmcTlzYmdYMmtGNS1pYTI5eGNoaDM1ZGJXWWVUOFlRa3o2Sy1PSWdzdDRkdHdUcDNUQ3g2ODZrSFV6NFo4c29PaUExVklMM0MwankzSzQ5RktIeUY2bnp5NWRpSGI3RXc5TElEX1I5OGNVaDZrVDRwUUtDaFZRWFhGMUlXLVN0UkZKVllGTUxZSGdfQ2FLYUo5ZzF2S2Q?oc=5",
-     "d": "2026-11-11"
     }
    ],
    "terms": [
@@ -147656,62 +147693,6 @@
     ]
    ],
    "v": "cgil-via-maestra"
-  },
-  {
-   "d": "2026-11-11",
-   "t": "Blocco",
-   "h": "Ambiente e territorio",
-   "r": "Puglia",
-   "l": "Bari",
-   "a": "agricoltori",
-   "x": "Corato, si blocca la strada provinciale 231: camionisti e agricoltori in protesta contro il caro carburanti",
-   "m": [
-    "agricol"
-   ],
-   "o": "Corato, si blocca la strada provinciale 231: camionisti e agricoltori in protesta contro il caro carburanti    La Gazzetta del Mezzogiorno",
-   "s": [
-    45
-   ],
-   "auto": true,
-   "news": [
-    {
-     "t": "Corato, si blocca la strada provinciale 231: camionisti e agricoltori in protesta contro il caro carburanti",
-     "o": "La Gazzetta del Mezzogiorno",
-     "u": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOdUFselgySFZTSGNSX0JCRnZoUGkwXzlQMkdZcXFpREFRQXN5MUpFZy1peEVZYldHSm5IWVNhZVIyY0pTV2huRzNiUUlDT1h2QmxLaEc0Q212YmRDMHNrWk42bXItbno5WGlXMXFuTnNKbEJFUmdqOEZOSVdXM0sxTUZuTmlpbS1waUN2SG5QTnZEY2pEekV4bTM4dGIyaHFWQUpTQU85QldXMDJqQ2Rnd0pBazRrWlI3eUV1dVlRNFRRejRNOW9MV0o5M3JpVXJvMVVScEVYLWNXZnpqU05KcjRxVGw1SnZYbnIwSUNNenJQWHhPZ1Q4R0JpWmhvVkFKS0xR?oc=5",
-     "d": "2026-11-11"
-    }
-   ],
-   "terms": [
-    [
-     "agricol",
-     "temi"
-    ],
-    [
-     "autotrasportatori agricoltori",
-     "temi"
-    ],
-    [
-     "blocca",
-     "temi"
-    ],
-    [
-     "caro carburanti",
-     "temi"
-    ],
-    [
-     "corato",
-     "temi"
-    ],
-    [
-     "provinciale",
-     "temi"
-    ],
-    [
-     "strada",
-     "temi"
-    ]
-   ],
-   "v": "e-2026-11-11-corato-si-blocca-la-strada-provinciale-231-camion"
   },
   {
    "d": "2026-11-11",
@@ -147751,42 +147732,6 @@
   },
   {
    "d": "2026-11-11",
-   "t": "Manifestazione",
-   "h": "Diritti e libertà",
-   "r": "Nazionale",
-   "l": "Barcellona",
-   "a": "da verificare",
-   "x": "Scontri a Barcellona e anche a Madrid dopo la manifestazione",
-   "m": [
-    "da verificare"
-   ],
-   "o": "Scontri a Barcellona e anche a Madrid dopo la manifestazione    Avvenire",
-   "s": [
-    56
-   ],
-   "auto": true,
-   "news": [
-    {
-     "t": "Scontri a Barcellona e anche a Madrid dopo la manifestazione",
-     "o": "Avvenire",
-     "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQzRZdGtTdlQ3bjFoc25Zd3VrM3JhakJENmxrYXI1U0JoTmQzUnpzUHBMREt5VUswTzVzQmYzNndqNGlyM2ZNdjhPNW1VbUdhOWt2Zy1raFdGemxuekdyLUpJVVNxZHkxOERBenlpb0RRSUxyRlpJZVRVLWltNEd6WXRNZXdPeTVNcThnRVcwOFNVTUlzOEE?oc=5",
-     "d": "2026-11-11"
-    }
-   ],
-   "terms": [
-    [
-     "madrid",
-     "temi"
-    ],
-    [
-     "scontri",
-     "temi"
-    ]
-   ],
-   "v": "e-2026-11-11-scontri-a-barcellona-e-anche-a-madrid-dopo-la-man"
-  },
-  {
-   "d": "2026-11-11",
    "t": "Occupazione",
    "h": "Diritti e libertà",
    "r": "Lazio",
@@ -147798,8 +147743,8 @@
    ],
    "o": "Roma, antagonisti a Botteghe Oscure: occupato il palazzo degli Angelucci    Il Tempo",
    "s": [
-    61,
-    58
+    58,
+    61
    ],
    "auto": true,
    "news": [
@@ -148953,6 +148898,10 @@
     ],
     [
      "comunità",
+     "temi"
+    ],
+    [
+     "gente",
      "temi"
     ],
     [
@@ -150303,6 +150252,57 @@
   },
   {
    "d": "2026-11-12",
+   "t": "Corteo",
+   "h": "Diritti e libertà",
+   "r": "Lazio",
+   "l": "Roma",
+   "a": "da verificare",
+   "x": "Corteo Roma, lancio di bottiglie e tensioni sul Lungotevere Testaccio: la polizia interviene con gli idranti",
+   "m": [
+    "da verificare"
+   ],
+   "o": "Corteo Roma, lancio di bottiglie e tensioni sul Lungotevere Testaccio: la polizia interviene con gli idranti    Il Gazzettino",
+   "s": [
+    34,
+    61
+   ],
+   "auto": true,
+   "news": [
+    {
+     "t": "Corteo Roma, lancio di bottiglie e tensioni sul Lungotevere Testaccio: la polizia interviene con gli idranti",
+     "o": "Il Gazzettino",
+     "u": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNMlpXSFYxbThsREhiUHlRSnhQdGxEWXBEZUtSUkcxS21jWnNXWGhPa09uTzhWUjY5YnRxMDgxOVNlaW5jQTNfSklaUi1tZjJFV2RpSzh6TUpWRm5CQkI3MDd0Y2x6a0ZVUUY2eWxwV0xkUjc4OEZVNjJMOE9rNEdnQ1JZZURMaUczSWtaazhWVGZyZGRNUWZIYjlLV1ZscW1hZXM0Tl9KN0doUDE5cGtGam5iRTMyLU05SURQcUlLWWVxVnctbUFtdy1HbHBhSlZBWnlwOG8zYldUWWtENG9za1JOWU1ja2E0amRqeg?oc=5",
+     "d": "2026-11-12"
+    },
+    {
+     "t": "Sciopero, il tassista in corteo a Roma - Il Tempo",
+     "o": "Il Tempo",
+     "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUjlnOFVoZlk3cklmZXZJTFRxZzZMd2xic2RsQXN4MTM0VUNVTGdHbWZid0swamt1N1RVLTA1bHRhU3dRUDY0OTBiZXJWbkR1enZ5cUMzYjF3Zl92bTRqd3VOMk1NbXF5RzFyMzJ2NDN6dHV5aGpaZWhmRlhwS1d3NFYyUnNfenB5U0ZUTFl1b1dyVWNKMkg2eU5LZnN1Sk5NY3NoUm5CRQ?oc=5",
+     "d": "2026-11-12"
+    }
+   ],
+   "terms": [
+    [
+     "idranti",
+     "temi"
+    ],
+    [
+     "polizia interviene",
+     "temi"
+    ],
+    [
+     "tensioni",
+     "temi"
+    ],
+    [
+     "testaccio",
+     "temi"
+    ]
+   ],
+   "v": "e-2026-11-12-corteo-roma-lancio-di-bottiglie-e-tensioni-sul-lu"
+  },
+  {
+   "d": "2026-11-12",
    "t": "Sciopero",
    "h": "Lavoro",
    "r": "Liguria",
@@ -150872,6 +150872,46 @@
   },
   {
    "d": "2026-11-12",
+   "t": "Sciopero",
+   "h": "Diritti e libertà",
+   "r": "Nazionale",
+   "l": "Italia",
+   "a": "da verificare",
+   "x": "Sciopero Arnas Brotzu, Nursing Up: \"Carenze infermieri e oss insostenibili\"",
+   "m": [
+    "da verificare"
+   ],
+   "o": "Sciopero Arnas Brotzu, Nursing Up: \"Carenze infermieri e oss insostenibili\"    RaiNews",
+   "s": [
+    53
+   ],
+   "auto": true,
+   "news": [
+    {
+     "t": "Sciopero Arnas Brotzu, Nursing Up: \"Carenze infermieri e oss insostenibili\"",
+     "o": "Rai News",
+     "u": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxONXY0VVBvZkpQZVZyRm53WF9qVTBJRFpZQUstejhjTmN4STVobmxrSFc2a1JfR3doYzFaQjQ1LXlBdnE1VTA5d2ZtV2tOcUt6ZHBWMjJXX25ZR1RmTWdUWHNtbnhtNng1UHZUU3Q0cEctTmtRTm5kaG10amVZclNOMnhUZWVhR3ZFMXdkc1NWUFZmNTRRNGhmMEc4OUtiUnFWTjh1d3RoOTduUGJEUnFxNnI2NURJTl9ycVQwbktuNzB2NVBoQ0pLYmFUS1FoR2ZPbWJLbV91ajlHTVc2cnVWWl82TnlVOUdCRjBlcm1zNlgzTDhQNTl2dm11ejRoUDjSAf8BQVVfeXFMTjV2NFVQb2ZKUGVWckZud1hfalUwSURaWUFLLXo4Y05jeEk1aG5sa0hXNmtSX0d3aGMxWkI0NS15QXZxNVUwOXdmbVdrTnFLemRwVjIyV19uWUdUZk1nVFhzbW54bTZ4NVB2VFN0NHBHLU5rUU5uZGhtdGplWXJTTjJ4VGVlYUd2RTF3ZHNTVlBWZjU0UTRoZjBHODlLYlJxVk44dXd0aDk3blBiRFJxcTZyNjVESU5fcnFUMG5LbjcwdjVQaENKS2JhVEtRaEdmT21iS21fdWo5R01XNnJ1VlpfNk55VTlHQkYwZXJtczZYM0w4UDU5dnZtdXo0aFA4?oc=5",
+     "d": "2026-11-12"
+    }
+   ],
+   "terms": [
+    [
+     "brotzu",
+     "temi"
+    ],
+    [
+     "infermieri",
+     "temi"
+    ],
+    [
+     "insostenibili",
+     "temi"
+    ]
+   ],
+   "v": "e-2026-11-12-sciopero-arnas-brotzu-nursing-up-carenze-infermie"
+  },
+  {
+   "d": "2026-11-12",
    "t": "Blocco",
    "h": "Diritti e libertà",
    "r": "Nazionale",
@@ -150954,7 +150994,7 @@
     {
      "t": "Voli bloccati negli Usa, perché non è previsto un risarcimento",
      "o": "AGI",
-     "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxONFpiY3IxY0xXTkpZeXJQSldpTDdCaEpLZUE2UVFwY29LUVZJN3lIdkowMG9UUVFqckZVYnpHT1p0UU1SWWRpNkcxOUdmMXZYQng4MzdQTkdOWUhqM0FxSDJhM2JCOXlxWHlDYk5UX0pXc0plVDlxNHB1Z0NuVnIwMC10b0tpRjY1djcxRy1tVWx2VkFmQk9VVThvMGRBZ9IBngFBVV95cUxONFpiY3IxY0xXTkpZeXJQSldpTDdCaEpLZUE2UVFwY29LUVZJN3lIdkowMG9UUVFqckZVYnpHT1p0UU1SWWRpNkcxOUdmMXZYQng4MzdQTkdOWUhqM0FxSDJhM2JCOXlxWHlDYk5UX0pXc0plVDlxNHB1Z0NuVnIwMC10b0tpRjY1djcxRy1tVWx2VkFmQk9VVThvMGRBZw?oc=5",
+     "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVW9xREtRQzBOcHAybmlteU5lMm82VTNjMWZwTEJHWGJJY0lFbWlkUnl6dWp4eUNFZ2dQV3JuR3pZWWlJNkdRSjc1LVE3ZDk4NFMtczFZSkhDbEV6S00tYWxSeUdrSWJyVGNBa3FLa0RUMzg3eWZSMEFnZEVsMkMtQ3BuQVlOTVdqYkYwa3NjamcxazJMTlBGTdIBngFBVV95cUxONFpiY3IxY0xXTkpZeXJQSldpTDdCaEpLZUE2UVFwY29LUVZJN3lIdkowMG9UUVFqckZVYnpHT1p0UU1SWWRpNkcxOUdmMXZYQng4MzdQTkdOWUhqM0FxSDJhM2JCOXlxWHlDYk5UX0pXc0plVDlxNHB1Z0NuVnIwMC10b0tpRjY1djcxRy1tVWx2VkFmQk9VVThvMGRBZw?oc=5",
      "d": "2026-11-14"
     },
     {
@@ -151121,38 +151161,6 @@
     ]
    ],
    "v": "e-2026-11-12-ilaria-salis-la-nuova-sparata-sull-occupazione-fa"
-  },
-  {
-   "d": "2026-11-12",
-   "t": "Sciopero",
-   "h": "Diritti e libertà",
-   "r": "Lazio",
-   "l": "Roma",
-   "a": "da verificare",
-   "x": "Sciopero, il tassista in corteo a Roma - Il Tempo",
-   "m": [
-    "da verificare"
-   ],
-   "o": "Sciopero, il tassista in corteo a Roma - Il Tempo    Il Tempo",
-   "s": [
-    61
-   ],
-   "auto": true,
-   "news": [
-    {
-     "t": "Sciopero, il tassista in corteo a Roma - Il Tempo",
-     "o": "Il Tempo",
-     "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUjlnOFVoZlk3cklmZXZJTFRxZzZMd2xic2RsQXN4MTM0VUNVTGdHbWZid0swamt1N1RVLTA1bHRhU3dRUDY0OTBiZXJWbkR1enZ5cUMzYjF3Zl92bTRqd3VOMk1NbXF5RzFyMzJ2NDN6dHV5aGpaZWhmRlhwS1d3NFYyUnNfenB5U0ZUTFl1b1dyVWNKMkg2eU5LZnN1Sk5NY3NoUm5CRQ?oc=5",
-     "d": "2026-11-12"
-    }
-   ],
-   "terms": [
-    [
-     "tempo",
-     "temi"
-    ]
-   ],
-   "v": "e-2026-11-12-sciopero-il-tassista-in-corteo-a-roma-il-tempo"
   },
   {
    "d": "2026-11-12",
@@ -151437,6 +151445,46 @@
   {
    "d": "2026-11-12",
    "t": "Sciopero",
+   "h": "Diritti e libertà",
+   "r": "Nazionale",
+   "l": "Italia",
+   "a": "da verificare",
+   "x": "Possibile interruzione dei servizi di igiene urbana per sciopero generale",
+   "m": [
+    "da verificare"
+   ],
+   "o": "Possibile interruzione dei servizi di igiene urbana per sciopero generale    Comune di Brugherio",
+   "s": [
+    748
+   ],
+   "auto": true,
+   "news": [
+    {
+     "t": "Possibile interruzione dei servizi di igiene urbana per sciopero generale",
+     "o": "Comune di Brugherio",
+     "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUnU0V0FNeTlkVkJrVWpZS0F3dnJwSVB6RUxqUmJ3Y1NqaW1uMVlBSEZqUUgtTG5FcC1tYTc5YXZaU05tTW9VUjhkb041QzJvaXdvaXhzTlR2akd2WEp3M0NMR0JJSmNreDR0dXZRclBlM2ZKazRadG9lYmduZjZBeEtpNFlMcHBQeWQzSi03WWpHUm9XNFBONWJ1bVg1QnhLQVhqcEFpYjBUdGFPbE5uVWxYbVRJWmM?oc=5",
+     "d": "2026-11-12"
+    }
+   ],
+   "terms": [
+    [
+     "possibile",
+     "temi"
+    ],
+    [
+     "sciopero generale",
+     "temi"
+    ],
+    [
+     "servizi",
+     "temi"
+    ]
+   ],
+   "v": "e-2026-11-12-possibile-interruzione-dei-servizi-di-igiene-urba"
+  },
+  {
+   "d": "2026-11-12",
+   "t": "Sciopero",
    "h": "Lavoro",
    "r": "Veneto",
    "l": "Venezia",
@@ -151560,46 +151608,6 @@
     ]
    ],
    "v": "e-2026-11-12-scioperi-mezzi-pubblici-novembre-2026-stop-a-napo"
-  },
-  {
-   "d": "2026-11-12",
-   "t": "Sciopero",
-   "h": "Diritti e libertà",
-   "r": "Nazionale",
-   "l": "Italia",
-   "a": "da verificare",
-   "x": "Sciopero Arnas Brotzu, Nursing Up: \"Carenze infermieri e oss insostenibili\"",
-   "m": [
-    "da verificare"
-   ],
-   "o": "Sciopero Arnas Brotzu, Nursing Up: \"Carenze infermieri e oss insostenibili\"    RaiNews",
-   "s": [
-    53
-   ],
-   "auto": true,
-   "news": [
-    {
-     "t": "Sciopero Arnas Brotzu, Nursing Up: \"Carenze infermieri e oss insostenibili\"",
-     "o": "Rai News",
-     "u": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxONXY0VVBvZkpQZVZyRm53WF9qVTBJRFpZQUstejhjTmN4STVobmxrSFc2a1JfR3doYzFaQjQ1LXlBdnE1VTA5d2ZtV2tOcUt6ZHBWMjJXX25ZR1RmTWdUWHNtbnhtNng1UHZUU3Q0cEctTmtRTm5kaG10amVZclNOMnhUZWVhR3ZFMXdkc1NWUFZmNTRRNGhmMEc4OUtiUnFWTjh1d3RoOTduUGJEUnFxNnI2NURJTl9ycVQwbktuNzB2NVBoQ0pLYmFUS1FoR2ZPbWJLbV91ajlHTVc2cnVWWl82TnlVOUdCRjBlcm1zNlgzTDhQNTl2dm11ejRoUDjSAf8BQVVfeXFMTjV2NFVQb2ZKUGVWckZud1hfalUwSURaWUFLLXo4Y05jeEk1aG5sa0hXNmtSX0d3aGMxWkI0NS15QXZxNVUwOXdmbVdrTnFLemRwVjIyV19uWUdUZk1nVFhzbW54bTZ4NVB2VFN0NHBHLU5rUU5uZGhtdGplWXJTTjJ4VGVlYUd2RTF3ZHNTVlBWZjU0UTRoZjBHODlLYlJxVk44dXd0aDk3blBiRFJxcTZyNjVESU5fcnFUMG5LbjcwdjVQaENKS2JhVEtRaEdmT21iS21fdWo5R01XNnJ1VlpfNk55VTlHQkYwZXJtczZYM0w4UDU5dnZtdXo0aFA4?oc=5",
-     "d": "2026-11-12"
-    }
-   ],
-   "terms": [
-    [
-     "brotzu",
-     "temi"
-    ],
-    [
-     "infermieri",
-     "temi"
-    ],
-    [
-     "insostenibili",
-     "temi"
-    ]
-   ],
-   "v": "e-2026-11-12-sciopero-arnas-brotzu-nursing-up-carenze-infermie"
   },
   {
    "d": "2026-11-12",
@@ -151879,53 +151887,6 @@
   },
   {
    "d": "2026-11-12",
-   "t": "Sciopero",
-   "h": "Diritti e libertà",
-   "r": "Nazionale",
-   "l": "Italia",
-   "a": "da verificare",
-   "x": "Sciopero generale, possibili disagi per i servizi Vus",
-   "m": [
-    "da verificare"
-   ],
-   "o": "Sciopero generale, possibili disagi per i servizi Vus    RguNotizie",
-   "s": [
-    748,
-    773
-   ],
-   "auto": true,
-   "news": [
-    {
-     "t": "Possibile interruzione dei servizi di igiene urbana per sciopero generale",
-     "o": "Comune di Brugherio",
-     "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUnU0V0FNeTlkVkJrVWpZS0F3dnJwSVB6RUxqUmJ3Y1NqaW1uMVlBSEZqUUgtTG5FcC1tYTc5YXZaU05tTW9VUjhkb041QzJvaXdvaXhzTlR2akd2WEp3M0NMR0JJSmNreDR0dXZRclBlM2ZKazRadG9lYmduZjZBeEtpNFlMcHBQeWQzSi03WWpHUm9XNFBONWJ1bVg1QnhLQVhqcEFpYjBUdGFPbE5uVWxYbVRJWmM?oc=5",
-     "d": "2026-11-12"
-    },
-    {
-     "t": "Sciopero generale, possibili disagi per i servizi Vus",
-     "o": "RguNotizie",
-     "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPc3FZOXluWV92VEFUZUNFQ2psbUlMWW1GeHltM1A3aHhlZm1oeHhRUGJmWFllNTN6VXFGMjBaRWJnVXBpTE5MMWNab01mWTJDNGVlVTR1WXRJaDhRWEdYemFDLVI1TzhJc3EyMS1rV1VadzlkWTIxejVkQzF3NDZ2RG1pbmc0OGFVcDhhTVNhT2Y1alJF?oc=5",
-     "d": "2026-11-14"
-    }
-   ],
-   "terms": [
-    [
-     "possibili disagi",
-     "temi"
-    ],
-    [
-     "sciopero generale",
-     "temi"
-    ],
-    [
-     "servizi",
-     "temi"
-    ]
-   ],
-   "v": "e-2026-11-12-sciopero-generale-possibili-disagi-per-i-servizi-"
-  },
-  {
-   "d": "2026-11-12",
    "t": "Corteo",
    "h": "Costo della vita",
    "r": "Nazionale",
@@ -151989,15 +151950,19 @@
      "temi"
     ],
     [
-     "barcellona",
+     "caro-affitti proteste",
      "temi"
     ],
     [
-     "proteste",
+     "madrid barcellona",
      "temi"
     ],
     [
-     "tensione",
+     "proteste tensione",
+     "temi"
+    ],
+    [
+     "tensione madrid",
      "temi"
     ]
    ],
@@ -152379,6 +152344,10 @@
    "terms": [
     [
      "bloccato",
+     "temi"
+    ],
+    [
+     "fanpage",
      "temi"
     ],
     [
@@ -153090,6 +153059,46 @@
   },
   {
    "d": "2026-11-13",
+   "t": "Occupazione",
+   "h": "Lavoro",
+   "r": "Toscana",
+   "l": "Firenze",
+   "a": "da verificare",
+   "x": "Pelle, ombre sull’occupazione: \"Torna la cassa integrazione\"",
+   "m": [
+    "cassa integrazione"
+   ],
+   "o": "Pelle, ombre sull’occupazione: \"Torna la cassa integrazione\"    La Nazione",
+   "s": [
+    38
+   ],
+   "auto": true,
+   "news": [
+    {
+     "t": "Pelle, ombre sull’occupazione: \"Torna la cassa integrazione\"",
+     "o": "La Nazione",
+     "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPTmctNzgxbkRuZFgxb3JkSndsYzJSQTVXbUZPTHJud1Z1V3BLWkNBTUFXb2VDRG1aN2JiaW9zTHdiYVh1V0RYUGNJWFA3X3RVRm0zWGh1QlJUVWJRSUxxY3QtYzRCcXZBNFl6TktkV2g5dnlUZWt5UExzc1k0ZFpuRmxmZ19tSl9xMVY4dF80Nmo1QQ?oc=5",
+     "d": "2026-11-13"
+    }
+   ],
+   "terms": [
+    [
+     "cassa integrazione",
+     "temi"
+    ],
+    [
+     "sull'occupazione",
+     "temi"
+    ],
+    [
+     "torna",
+     "temi"
+    ]
+   ],
+   "v": "e-2026-11-13-pelle-ombre-sull-occupazione-torna-la-cassa-integ"
+  },
+  {
+   "d": "2026-11-13",
    "t": "Manifestazione",
    "h": "Diritti e libertà",
    "r": "Toscana",
@@ -153131,86 +153140,6 @@
     ]
    ],
    "v": "e-2026-11-13-tirrenica-la-maremma-porta-la-protesta-davanti-al"
-  },
-  {
-   "d": "2026-11-13",
-   "t": "Occupazione",
-   "h": "Lavoro",
-   "r": "Toscana",
-   "l": "Firenze",
-   "a": "da verificare",
-   "x": "Pelle, ombre sull’occupazione: \"Torna la cassa integrazione\"",
-   "m": [
-    "cassa integrazione"
-   ],
-   "o": "Pelle, ombre sull’occupazione: \"Torna la cassa integrazione\"    La Nazione",
-   "s": [
-    38
-   ],
-   "auto": true,
-   "news": [
-    {
-     "t": "Pelle, ombre sull’occupazione: \"Torna la cassa integrazione\"",
-     "o": "La Nazione",
-     "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPTmctNzgxbkRuZFgxb3JkSndsYzJSQTVXbUZPTHJud1Z1V3BLWkNBTUFXb2VDRG1aN2JiaW9zTHdiYVh1V0RYUGNJWFA3X3RVRm0zWGh1QlJUVWJRSUxxY3QtYzRCcXZBNFl6TktkV2g5dnlUZWt5UExzc1k0ZFpuRmxmZ19tSl9xMVY4dF80Nmo1QQ?oc=5",
-     "d": "2026-11-13"
-    }
-   ],
-   "terms": [
-    [
-     "cassa integrazione",
-     "temi"
-    ],
-    [
-     "sull'occupazione",
-     "temi"
-    ],
-    [
-     "torna",
-     "temi"
-    ]
-   ],
-   "v": "e-2026-11-13-pelle-ombre-sull-occupazione-torna-la-cassa-integ"
-  },
-  {
-   "d": "2026-11-13",
-   "t": "Occupazione",
-   "h": "Diritti e libertà",
-   "r": "Toscana",
-   "l": "Firenze",
-   "a": "da verificare",
-   "x": "Occupato il polo San Rossore: \"Mancano spazi per lo studio\"",
-   "m": [
-    "da verificare"
-   ],
-   "o": "Occupato il polo San Rossore: \"Mancano spazi per lo studio\"    La Nazione",
-   "s": [
-    38
-   ],
-   "auto": true,
-   "news": [
-    {
-     "t": "Occupato il polo San Rossore: \"Mancano spazi per lo studio\"",
-     "o": "La Nazione",
-     "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNV1I5NnU1SVRVNEpjaVpGeU8zSGU4a1M3SUlRVUJvYzBfWjc0blJiVVdzaUlxTkJCUG1rZWkxSVBnajJZeTBud1JubmVSOVlVeFlKWjZvTHJHZExpemFYMFl2SVA3Z0swMTJzcFp0cUxSWXRoWDdnSnpiaXJmUUNuYg?oc=5",
-     "d": "2026-11-13"
-    }
-   ],
-   "terms": [
-    [
-     "mancano",
-     "temi"
-    ],
-    [
-     "polo",
-     "temi"
-    ],
-    [
-     "studio",
-     "temi"
-    ]
-   ],
-   "v": "e-2026-11-13-occupato-il-polo-san-rossore-mancano-spazi-per-lo"
   },
   {
    "d": "2026-11-13",
@@ -153264,39 +153193,43 @@
   },
   {
    "d": "2026-11-13",
-   "t": "Corteo",
+   "t": "Occupazione",
    "h": "Diritti e libertà",
    "r": "Toscana",
    "l": "Firenze",
    "a": "da verificare",
-   "x": "La difesa della consultazione. E l’attacco al corteo di protesta",
+   "x": "Occupato il polo San Rossore: \"Mancano spazi per lo studio\"",
    "m": [
     "da verificare"
    ],
-   "o": "La difesa della consultazione. E l’attacco al corteo di protesta    La Nazione",
+   "o": "Occupato il polo San Rossore: \"Mancano spazi per lo studio\"    La Nazione",
    "s": [
     38
    ],
    "auto": true,
    "news": [
     {
-     "t": "La difesa della consultazione. E l’attacco al corteo di protesta",
+     "t": "Occupato il polo San Rossore: \"Mancano spazi per lo studio\"",
      "o": "La Nazione",
-     "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaWVPQ2w5UVlaTFR3aHFiQjlLY0RzWE8wWWFYRXBSdHo1a255YXZIQUpWdDJhN1daRWwxekRpVnlyWlpUM2E2MDZFTUFjcDlobElRbGg0Q3ZaU2xsVWRJeE1tRnJBQ0M1aGl3S3RVTklJWU5WQnppcHkzSGhVdEFqVWRnTm5hTHZK?oc=5",
+     "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNV1I5NnU1SVRVNEpjaVpGeU8zSGU4a1M3SUlRVUJvYzBfWjc0blJiVVdzaUlxTkJCUG1rZWkxSVBnajJZeTBud1JubmVSOVlVeFlKWjZvTHJHZExpemFYMFl2SVA3Z0swMTJzcFp0cUxSWXRoWDdnSnpiaXJmUUNuYg?oc=5",
      "d": "2026-11-13"
     }
    ],
    "terms": [
     [
-     "difesa",
+     "mancano",
      "temi"
     ],
     [
-     "l'attacco",
+     "polo",
+     "temi"
+    ],
+    [
+     "studio",
      "temi"
     ]
    ],
-   "v": "e-2026-11-13-la-difesa-della-consultazione-e-l-attacco-al-cort"
+   "v": "e-2026-11-13-occupato-il-polo-san-rossore-mancano-spazi-per-lo"
   },
   {
    "d": "2026-11-13",
@@ -153349,6 +153282,42 @@
     ]
    ],
    "v": "e-2026-11-13-giuste-le-proteste-degli-studenti-la-mozione-del-"
+  },
+  {
+   "d": "2026-11-13",
+   "t": "Corteo",
+   "h": "Diritti e libertà",
+   "r": "Toscana",
+   "l": "Firenze",
+   "a": "da verificare",
+   "x": "La difesa della consultazione. E l’attacco al corteo di protesta",
+   "m": [
+    "da verificare"
+   ],
+   "o": "La difesa della consultazione. E l’attacco al corteo di protesta    La Nazione",
+   "s": [
+    38
+   ],
+   "auto": true,
+   "news": [
+    {
+     "t": "La difesa della consultazione. E l’attacco al corteo di protesta",
+     "o": "La Nazione",
+     "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaWVPQ2w5UVlaTFR3aHFiQjlLY0RzWE8wWWFYRXBSdHo1a255YXZIQUpWdDJhN1daRWwxekRpVnlyWlpUM2E2MDZFTUFjcDlobElRbGg0Q3ZaU2xsVWRJeE1tRnJBQ0M1aGl3S3RVTklJWU5WQnppcHkzSGhVdEFqVWRnTm5hTHZK?oc=5",
+     "d": "2026-11-13"
+    }
+   ],
+   "terms": [
+    [
+     "difesa",
+     "temi"
+    ],
+    [
+     "l'attacco",
+     "temi"
+    ]
+   ],
+   "v": "e-2026-11-13-la-difesa-della-consultazione-e-l-attacco-al-cort"
   },
   {
    "d": "2026-11-13",
@@ -153476,58 +153445,6 @@
     ]
    ],
    "v": "e-2026-11-13-israele-under-19-in-campo-marted-a-fermo-le-inizi"
-  },
-  {
-   "d": "2026-11-13",
-   "t": "Sciopero",
-   "h": "Diritti e libertà",
-   "r": "Campania",
-   "l": "Caserta",
-   "a": "da verificare",
-   "x": "Scuole a Caserta, altre proteste negli istituti per carenza aule e orari: sciopero al Manzoni",
-   "m": [
-    "da verificare"
-   ],
-   "o": "Scuole a Caserta, altre proteste negli istituti per carenza aule e orari: sciopero al Manzoni    Il Mattino",
-   "s": [
-    44
-   ],
-   "auto": true,
-   "news": [
-    {
-     "t": "Scuole a Caserta, altre proteste negli istituti per carenza aule e orari: sciopero al Manzoni",
-     "o": "Il Mattino",
-     "u": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOT1AwaW54OTJheWlCeFY0eHFkakhFb1AyNk94clhndkhzcEVOX3Y2eGNBWVg4c1ZLaXpGZm5rRFVUN005X3htZTBzdjh4ZWQyM2YyblRmZU9PcHVSWkNjMXdscXpiY3ZZS1VTQXVWeC11RHpLRHZ1SkxYQWl5QXFvOXhmUkZXbXItSmFlQ2dPMm5wVGNPRlYyX3dVSUpqcFJFRHZHN2NPRTV5TWxHU2pSWW1KbzhmNVNJVWZsLU1JS0pNYnJZZUNmZWU1X2ZfUjJxM0JzVEYtenlnUlJmUkE5dUM3SXrSAeoBQVVfeXFMTkFjTU1xaHFDX2lFWjFyYm55MTZfeThkWGpzQlRHQ2Z2b0paV3NQdlNlMUx5dEdPTUpNXzJsR1hTX0pzUFUwM05vb0JONUhpaWlvRm5GSm9PZVROSnUxZU0xREd0a0l0eFRpMDl1OUFkWHZtdTBSQXNvbFpnQmk5S1VKTkF6Z041N2pwUWlDSWxaRUNWY1JseEdGaVloS3pBY0lHSExfTGh0bksxSkRxaGw4b1pSeUdmT0dqdktNS1o4cnpPcEw0VVlXTi1NMU94MjhRemY0NVkxZWNlS1MzcUpZWWlpekcwcU9R?oc=5",
-     "d": "2026-11-13"
-    }
-   ],
-   "terms": [
-    [
-     "aule orari",
-     "temi"
-    ],
-    [
-     "carenza aule",
-     "temi"
-    ],
-    [
-     "istituti carenza",
-     "temi"
-    ],
-    [
-     "manzoni",
-     "temi"
-    ],
-    [
-     "proteste",
-     "temi"
-    ],
-    [
-     "scuole caserta",
-     "temi"
-    ]
-   ],
-   "v": "e-2026-11-13-scuole-a-caserta-altre-proteste-negli-istituti-pe"
   },
   {
    "d": "2026-11-13",
@@ -153733,6 +153650,46 @@
     ]
    ],
    "v": "italia-in-piazza"
+  },
+  {
+   "d": "2026-11-13",
+   "t": "Blocco",
+   "h": "Diritti e libertà",
+   "r": "Puglia",
+   "l": "Bari",
+   "a": "da verificare",
+   "x": "Sugar tax, Assobibe “Spada di Damocle su imprese, bloccato 1 mld di investimenti”",
+   "m": [
+    "da verificare"
+   ],
+   "o": "Sugar tax, Assobibe “Spada di Damocle su imprese, bloccato 1 mld di investimenti”    La Gazzetta del Mezzogiorno",
+   "s": [
+    45
+   ],
+   "auto": true,
+   "news": [
+    {
+     "t": "Sugar tax, Assobibe “Spada di Damocle su imprese, bloccato 1 mld di investimenti”",
+     "o": "La Gazzetta del Mezzogiorno",
+     "u": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPVXNFcXJjQngxMkJkSTN3VENFMlFOd1F1V1ZzbGU2RXhVekl5ZFFSbWlqdTUtYTFpVDhMaTlLU1FDX0hvcW5IUC1VSmJzRXg2WkFuNnE4czNHU2laTkthVEcwNER1dkxYbDkyUzlOR09Ybk5PQmExV3ZlV2dGUlE5WmQzV25ia1VBWG1iTjdlMXhWRTZNSmJZU0tNXzBLem9HLXJ0eEJjaXNKRm1vaTVBcVN1MmRxbmhWeU4wWHR0Tkhob1VVckNBeXQ4OXd0bVZPVllIMVdRdzNpMmFEQ1pz0gHeAUFVX3lxTE5jR1YxSlgwa2JUS1Z0OGg3Vk9xU3RUcmJqRHR2WlVRemRyeFBZdnJldU1DbllTTDNLbzBUc3dValV1bGdYelNJMnRIbG00a1hpQkg5b1NHNTduY3FQVlNvdzVaXy1HNXVVNVRpT1hNZG5ySm1aanlEVHJHS05HRWs5MkdMbktVdDJvZzVTZTY3MGRfTDRpT0JNdEN2eWVWMWZWQ2N2aTdlbUt1MC1rQTBJeFhvV3FDblkzclYyelhLVzFWdWFPZVNZa1RTazRLZjRIbHlZWW5YZnV2X3cyUQ?oc=5",
+     "d": "2026-11-13"
+    }
+   ],
+   "terms": [
+    [
+     "bloccato",
+     "temi"
+    ],
+    [
+     "imprese",
+     "temi"
+    ],
+    [
+     "investimenti",
+     "temi"
+    ]
+   ],
+   "v": "e-2026-11-13-sugar-tax-assobibe-spada-di-damocle-su-imprese-bl"
   },
   {
    "d": "2026-11-13",
@@ -154560,6 +154517,58 @@
    "d": "2026-11-13",
    "t": "Sciopero",
    "h": "Diritti e libertà",
+   "r": "Campania",
+   "l": "Caserta",
+   "a": "da verificare",
+   "x": "Scuole a Caserta, altre proteste negli istituti per carenza aule e orari: sciopero al Manzoni",
+   "m": [
+    "da verificare"
+   ],
+   "o": "Scuole a Caserta, altre proteste negli istituti per carenza aule e orari: sciopero al Manzoni    Il Mattino",
+   "s": [
+    44
+   ],
+   "auto": true,
+   "news": [
+    {
+     "t": "Scuole a Caserta, altre proteste negli istituti per carenza aule e orari: sciopero al Manzoni",
+     "o": "Il Mattino",
+     "u": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOT1AwaW54OTJheWlCeFY0eHFkakhFb1AyNk94clhndkhzcEVOX3Y2eGNBWVg4c1ZLaXpGZm5rRFVUN005X3htZTBzdjh4ZWQyM2YyblRmZU9PcHVSWkNjMXdscXpiY3ZZS1VTQXVWeC11RHpLRHZ1SkxYQWl5QXFvOXhmUkZXbXItSmFlQ2dPMm5wVGNPRlYyX3dVSUpqcFJFRHZHN2NPRTV5TWxHU2pSWW1KbzhmNVNJVWZsLU1JS0pNYnJZZUNmZWU1X2ZfUjJxM0JzVEYtenlnUlJmUkE5dUM3SXrSAeoBQVVfeXFMTkFjTU1xaHFDX2lFWjFyYm55MTZfeThkWGpzQlRHQ2Z2b0paV3NQdlNlMUx5dEdPTUpNXzJsR1hTX0pzUFUwM05vb0JONUhpaWlvRm5GSm9PZVROSnUxZU0xREd0a0l0eFRpMDl1OUFkWHZtdTBSQXNvbFpnQmk5S1VKTkF6Z041N2pwUWlDSWxaRUNWY1JseEdGaVloS3pBY0lHSExfTGh0bksxSkRxaGw4b1pSeUdmT0dqdktNS1o4cnpPcEw0VVlXTi1NMU94MjhRemY0NVkxZWNlS1MzcUpZWWlpekcwcU9R?oc=5",
+     "d": "2026-11-13"
+    }
+   ],
+   "terms": [
+    [
+     "aule orari",
+     "temi"
+    ],
+    [
+     "carenza aule",
+     "temi"
+    ],
+    [
+     "istituti carenza",
+     "temi"
+    ],
+    [
+     "manzoni",
+     "temi"
+    ],
+    [
+     "proteste",
+     "temi"
+    ],
+    [
+     "scuole caserta",
+     "temi"
+    ]
+   ],
+   "v": "e-2026-11-13-scuole-a-caserta-altre-proteste-negli-istituti-pe"
+  },
+  {
+   "d": "2026-11-13",
+   "t": "Sciopero",
+   "h": "Diritti e libertà",
    "r": "Lombardia",
    "l": "Milano",
    "a": "da verificare",
@@ -154635,46 +154644,6 @@
     ]
    ],
    "v": "e-2026-11-13-minghetti-domani-fine-occupazione-fdi-ci-usa-solo"
-  },
-  {
-   "d": "2026-11-13",
-   "t": "Blocco",
-   "h": "Diritti e libertà",
-   "r": "Puglia",
-   "l": "Bari",
-   "a": "da verificare",
-   "x": "Sugar tax, Assobibe “Spada di Damocle su imprese, bloccato 1 mld di investimenti”",
-   "m": [
-    "da verificare"
-   ],
-   "o": "Sugar tax, Assobibe “Spada di Damocle su imprese, bloccato 1 mld di investimenti”    La Gazzetta del Mezzogiorno",
-   "s": [
-    45
-   ],
-   "auto": true,
-   "news": [
-    {
-     "t": "Sugar tax, Assobibe “Spada di Damocle su imprese, bloccato 1 mld di investimenti”",
-     "o": "La Gazzetta del Mezzogiorno",
-     "u": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPVXNFcXJjQngxMkJkSTN3VENFMlFOd1F1V1ZzbGU2RXhVekl5ZFFSbWlqdTUtYTFpVDhMaTlLU1FDX0hvcW5IUC1VSmJzRXg2WkFuNnE4czNHU2laTkthVEcwNER1dkxYbDkyUzlOR09Ybk5PQmExV3ZlV2dGUlE5WmQzV25ia1VBWG1iTjdlMXhWRTZNSmJZU0tNXzBLem9HLXJ0eEJjaXNKRm1vaTVBcVN1MmRxbmhWeU4wWHR0Tkhob1VVckNBeXQ4OXd0bVZPVllIMVdRdzNpMmFEQ1pz0gHeAUFVX3lxTE5jR1YxSlgwa2JUS1Z0OGg3Vk9xU3RUcmJqRHR2WlVRemRyeFBZdnJldU1DbllTTDNLbzBUc3dValV1bGdYelNJMnRIbG00a1hpQkg5b1NHNTduY3FQVlNvdzVaXy1HNXVVNVRpT1hNZG5ySm1aanlEVHJHS05HRWs5MkdMbktVdDJvZzVTZTY3MGRfTDRpT0JNdEN2eWVWMWZWQ2N2aTdlbUt1MC1rQTBJeFhvV3FDblkzclYyelhLVzFWdWFPZVNZa1RTazRLZjRIbHlZWW5YZnV2X3cyUQ?oc=5",
-     "d": "2026-11-13"
-    }
-   ],
-   "terms": [
-    [
-     "bloccato",
-     "temi"
-    ],
-    [
-     "imprese",
-     "temi"
-    ],
-    [
-     "investimenti",
-     "temi"
-    ]
-   ],
-   "v": "e-2026-11-13-sugar-tax-assobibe-spada-di-damocle-su-imprese-bl"
   },
   {
    "d": "2026-11-13",
@@ -155844,6 +155813,7 @@
     9,
     32,
     38,
+    44,
     45,
     53,
     55,
@@ -155879,6 +155849,12 @@
      "t": "Perquisizioni in tredici città per le manifestazioni di ottobre. C’è anche un giovane di Firenze",
      "o": "La Nazione",
      "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNQ0NZVlJxWXJNQnBnRDBUZmpySEo0NlFJM2RhRkpGcVBFaWR4ZUtjN0cwcGx4amlUZm5sRTduVkdnelJ1QUVxeEJya0JEMXNESkhUb1JJZW4tTkNFaHFONUhBOHkwUENma2JSWVBCcjZPWWo5VnBjR016Z2RjRGR5d2lrakpJR0k4WUx5OXV3RTRSbFM5ZWFTanZZR1I5eWQyRTJTY3lPSkg3NC1Z?oc=5",
+     "d": "2026-11-14"
+    },
+    {
+     "t": "Cortei: 50 perquisizioni della Digos nei confronti di giovani",
+     "o": "Il Mattino",
+     "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSjYwT0pubVFVYlJQQVJHOTlKbUQ5R21tTGRZM2ZQanl5X0NhdVBHWVBsSkw5aTdtWnZjU1pxbXpPU25VeVY2YXpySFFhc1JneXV2Qk9qQUx6ZFhVLVhMdXZSbTZ1Uk0xTUdGbGJnV1J3SmVXZ1VpVXUtWEcwTVZ1TGdPZVpQa1ZrZG9ZS2VUWVJycWVsVnozWDhFMV9UUTlHWUNTMFZxSkhFckJXaFd2ZUZBemJzQdIBrAFBVV95cUxQYVdPMmp1cEI0aFBXelpOVU1CaUNDdnRDbEphRFF5Vjl5RVMwM3BDNWdVZ0dxcFJxZkVaUGp3RjdqRUkwYXNBcjJndDB1ODJTUGdybVdsNmJOMXBxZGpSLTVMaTVxWHFjTldrcnRQTHNRb2s2aU9VZXc2OEdLNzVQN0NUMnZ6LVdhMDZKMm81bE4yVVJXTmlzZHJLdzlSeWZtMFVwN1RMZXpzSjVz?oc=5",
      "d": "2026-11-14"
     },
     {
@@ -156076,42 +156052,6 @@
   },
   {
    "d": "2026-11-14",
-   "t": "Occupazione",
-   "h": "Diritti e libertà",
-   "r": "Emilia-Romagna",
-   "l": "Bologna",
-   "a": "da verificare",
-   "x": "Minghetti, c’è chi dice no: \"Occupazione sbagliata\"",
-   "m": [
-    "da verificare"
-   ],
-   "o": "Minghetti, c’è chi dice no: \"Occupazione sbagliata\"    Il Resto del Carlino",
-   "s": [
-    37
-   ],
-   "auto": true,
-   "news": [
-    {
-     "t": "Minghetti, c’è chi dice no: \"Occupazione sbagliata\"",
-     "o": "Il Resto del Carlino",
-     "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQcGREVGNoT2ZUUTBCcnJlQ09BR285TlZIMUxBNWhnNVI0bVhjZHRTZ3pMZXpLMy1sS3Utb2xEaW5LNTU1cEk5WkJyQ095bGI2T211MFZBNUJrYndMUzRPcy1rOGw2dG4tWGlyenpUWTlkcDhCeTlwX0JpOTJNU2NGbFVuNU9aNEQ5YkE?oc=5",
-     "d": "2026-11-14"
-    }
-   ],
-   "terms": [
-    [
-     "dice",
-     "temi"
-    ],
-    [
-     "minghetti",
-     "temi"
-    ]
-   ],
-   "v": "e-2026-11-14-minghetti-c-chi-dice-no-occupazione-sbagliata-"
-  },
-  {
-   "d": "2026-11-14",
    "t": "Manifestazione",
    "h": "Costo della vita",
    "r": "Emilia-Romagna",
@@ -156149,6 +156089,42 @@
     ]
    ],
    "v": "e-2026-11-14-lotta-contro-il-carovita-dipendenti-di-montip-in-"
+  },
+  {
+   "d": "2026-11-14",
+   "t": "Occupazione",
+   "h": "Diritti e libertà",
+   "r": "Emilia-Romagna",
+   "l": "Bologna",
+   "a": "da verificare",
+   "x": "Minghetti, c’è chi dice no: \"Occupazione sbagliata\"",
+   "m": [
+    "da verificare"
+   ],
+   "o": "Minghetti, c’è chi dice no: \"Occupazione sbagliata\"    Il Resto del Carlino",
+   "s": [
+    37
+   ],
+   "auto": true,
+   "news": [
+    {
+     "t": "Minghetti, c’è chi dice no: \"Occupazione sbagliata\"",
+     "o": "Il Resto del Carlino",
+     "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQcGREVGNoT2ZUUTBCcnJlQ09BR285TlZIMUxBNWhnNVI0bVhjZHRTZ3pMZXpLMy1sS3Utb2xEaW5LNTU1cEk5WkJyQ095bGI2T211MFZBNUJrYndMUzRPcy1rOGw2dG4tWGlyenpUWTlkcDhCeTlwX0JpOTJNU2NGbFVuNU9aNEQ5YkE?oc=5",
+     "d": "2026-11-14"
+    }
+   ],
+   "terms": [
+    [
+     "dice",
+     "temi"
+    ],
+    [
+     "minghetti",
+     "temi"
+    ]
+   ],
+   "v": "e-2026-11-14-minghetti-c-chi-dice-no-occupazione-sbagliata-"
   },
   {
    "d": "2026-11-14",
@@ -156659,90 +156635,6 @@
   {
    "d": "2026-11-14",
    "t": "Corteo",
-   "h": "Costo della vita",
-   "r": "Nazionale",
-   "l": "Italia",
-   "a": "da verificare",
-   "x": "Il corteo dentro il supermercato contro il carovita",
-   "m": [
-    "carovita"
-   ],
-   "o": "Il corteo dentro il supermercato contro il carovita    RaiNews",
-   "s": [
-    53
-   ],
-   "auto": true,
-   "news": [
-    {
-     "t": "Il corteo dentro il supermercato contro il carovita",
-     "o": "Rai News",
-     "u": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQbHpuUFROZ1BHWDZmVzc5dTRBU0lMWTdnTlc1dTNsSGViZHRMaDR6VUNhajM5dDBsWnFpWHRhS0RQNWNxaU1kbjdiR081cGdFNGNQNVA4TFJFbEFDWkhmSy1RQ2tYMS1aZ2FNcEt4MURPeURsSlpqbDNWTmc4Zm41MWpsU19WbWtBdHhDeUNvQVlNME1LQ3ptM1RLSHNfalZNdUpTTkxMa0R3eDBGWTRzRk5NTVdrQWNMdXdqX1Mwc1I2QS1SUnkxNks0aldzUElEdEZaTm5OVmZwcEpuLV9lN9IB4AFBVV95cUxQbHpuUFROZ1BHWDZmVzc5dTRBU0lMWTdnTlc1dTNsSGViZHRMaDR6VUNhajM5dDBsWnFpWHRhS0RQNWNxaU1kbjdiR081cGdFNGNQNVA4TFJFbEFDWkhmSy1RQ2tYMS1aZ2FNcEt4MURPeURsSlpqbDNWTmc4Zm41MWpsU19WbWtBdHhDeUNvQVlNME1LQ3ptM1RLSHNfalZNdUpTTkxMa0R3eDBGWTRzRk5NTVdrQWNMdXdqX1Mwc1I2QS1SUnkxNks0aldzUElEdEZaTm5OVmZwcEpuLV9lNw?oc=5",
-     "d": "2026-11-14"
-    }
-   ],
-   "terms": [
-    [
-     "carovita",
-     "temi"
-    ],
-    [
-     "dentro",
-     "temi"
-    ],
-    [
-     "supermercato",
-     "temi"
-    ]
-   ],
-   "v": "e-2026-11-14-il-corteo-dentro-il-supermercato-contro-il-carovi"
-  },
-  {
-   "d": "2026-11-14",
-   "t": "Corteo",
-   "h": "Costo della vita",
-   "r": "Campania",
-   "l": "Napoli",
-   "a": "da verificare",
-   "x": "Caro vita e diritto alla casa, nuovo corteo nel centro storico di Napoli",
-   "m": [
-    "caro vita"
-   ],
-   "o": "Caro vita e diritto alla casa, nuovo corteo nel centro storico di Napoli    RaiNews",
-   "s": [
-    53
-   ],
-   "auto": true,
-   "news": [
-    {
-     "t": "Caro vita e diritto alla casa, nuovo corteo nel centro storico di Napoli",
-     "o": "Rai News",
-     "u": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNMndsMThqaWowcXVkMEozSXFEbTdDblNxS2kwZmRIWjR3R3p6RHE3N1FpRkZTNEoxUGxBeHJ0Ylc3TEUxRXFfNmFiRnNkdmVhWExsX0hwcmNwOTY1VjhVRGhZZjhYZkZ2ckpGSnJmWkRXLThqYW5MVXV2U0huZVdHdUFMN0c0ZlN5VlhHT1hodjZ1NWhnOTMtYnQtTU9ScmJtQThIUTFYNHV5Mm0ycDRVRGZHMW0xME5BRVpDdFRYUmctQ3M3dVp2SkltQWFyM2tfTGR3dW92TjF4NFB2d0NPbGhWdjR0Vi1BSm1TWVhQc2w4MkJ6WXZycGdIY9IB-wFBVV95cUxNMndsMThqaWowcXVkMEozSXFEbTdDblNxS2kwZmRIWjR3R3p6RHE3N1FpRkZTNEoxUGxBeHJ0Ylc3TEUxRXFfNmFiRnNkdmVhWExsX0hwcmNwOTY1VjhVRGhZZjhYZkZ2ckpGSnJmWkRXLThqYW5MVXV2U0huZVdHdUFMN0c0ZlN5VlhHT1hodjZ1NWhnOTMtYnQtTU9ScmJtQThIUTFYNHV5Mm0ycDRVRGZHMW0xME5BRVpDdFRYUmctQ3M3dVp2SkltQWFyM2tfTGR3dW92TjF4NFB2d0NPbGhWdjR0Vi1BSm1TWVhQc2w4MkJ6WXZycGdIYw?oc=5",
-     "d": "2026-11-14"
-    }
-   ],
-   "terms": [
-    [
-     "caro vita",
-     "temi"
-    ],
-    [
-     "casa",
-     "temi"
-    ],
-    [
-     "centro storico",
-     "temi"
-    ],
-    [
-     "diritto",
-     "temi"
-    ]
-   ],
-   "v": "e-2026-11-14-caro-vita-e-diritto-alla-casa-nuovo-corteo-nel-ce"
-  },
-  {
-   "d": "2026-11-14",
-   "t": "Corteo",
    "h": "Diritti e libertà",
    "r": "Emilia-Romagna",
    "l": "Parma",
@@ -156801,6 +156693,46 @@
     ]
    ],
    "v": "e-2026-11-14-parma-blindata-per-i-due-cortei-antagonisti-20mil"
+  },
+  {
+   "d": "2026-11-14",
+   "t": "Corteo",
+   "h": "Costo della vita",
+   "r": "Nazionale",
+   "l": "Italia",
+   "a": "da verificare",
+   "x": "Il corteo dentro il supermercato contro il carovita",
+   "m": [
+    "carovita"
+   ],
+   "o": "Il corteo dentro il supermercato contro il carovita    RaiNews",
+   "s": [
+    53
+   ],
+   "auto": true,
+   "news": [
+    {
+     "t": "Il corteo dentro il supermercato contro il carovita",
+     "o": "Rai News",
+     "u": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOMi13SFNqRWc4VXRTRWM0OHhzbWtMSUh1RWN1Z3d3NHZUZmlDRnEwb2JfYlRzMkl5MGhLNWFyNm9tcDBTdkhYdnFGTjZVaTdfdkxnV0ZHZC1wbXBXekhwekhBYmFqTTloY0M5MkhwajZ3ZTBjRGpXQ0VjMkM2a0JjaUU4Y19MRkR0d1hyQ2ZiVi1Ia3JsSHJiSXNYSUVFUENoREZ0eHY4SmtaRXAyT3UyeWtHWG9kSzE2OUhKT18xcDR4MlVRNWZuX213VER2UDUtQ0ltYUpIUEpObknSAeABQVVfeXFMUGx6blBUTmdQR1g2Zlc3OXU0QVNJTFk3Z05XNXUzbEhlYmR0TGg0elVDYWozOXQwbFpxaVh0YUtEUDVjcWlNZG43YkdPNXBnRTRjUDVQOExSRWxBQ1pIZkstUUNrWDEtWmdhTXBLeDFET3lEbEpaamwzVk5nOGZuNTFqbFNfVm1rQXR4Q3lDb0FZTTBNS0N6bTNUS0hzX2pWTXVKU05MTGtEd3gwRlk0c0ZOTU1Xa0FjTHV3al9TMHNSNkEtUlJ5MTZLNGpXc1BJRHRGWk5uTlZmcHBKbi1fZTc?oc=5",
+     "d": "2026-11-14"
+    }
+   ],
+   "terms": [
+    [
+     "carovita",
+     "temi"
+    ],
+    [
+     "dentro",
+     "temi"
+    ],
+    [
+     "supermercato",
+     "temi"
+    ]
+   ],
+   "v": "e-2026-11-14-il-corteo-dentro-il-supermercato-contro-il-carovi"
   },
   {
    "d": "2026-11-14",
@@ -157395,6 +157327,50 @@
     ]
    ],
    "v": "e-2026-11-14-spoleto-caos-parcheggi-in-stazione-via-70-posti-a"
+  },
+  {
+   "d": "2026-11-14",
+   "t": "Corteo",
+   "h": "Costo della vita",
+   "r": "Campania",
+   "l": "Napoli",
+   "a": "da verificare",
+   "x": "Caro vita e diritto alla casa, nuovo corteo nel centro storico di Napoli",
+   "m": [
+    "caro vita"
+   ],
+   "o": "Caro vita e diritto alla casa, nuovo corteo nel centro storico di Napoli    RaiNews",
+   "s": [
+    53
+   ],
+   "auto": true,
+   "news": [
+    {
+     "t": "Caro vita e diritto alla casa, nuovo corteo nel centro storico di Napoli",
+     "o": "Rai News",
+     "u": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNMndsMThqaWowcXVkMEozSXFEbTdDblNxS2kwZmRIWjR3R3p6RHE3N1FpRkZTNEoxUGxBeHJ0Ylc3TEUxRXFfNmFiRnNkdmVhWExsX0hwcmNwOTY1VjhVRGhZZjhYZkZ2ckpGSnJmWkRXLThqYW5MVXV2U0huZVdHdUFMN0c0ZlN5VlhHT1hodjZ1NWhnOTMtYnQtTU9ScmJtQThIUTFYNHV5Mm0ycDRVRGZHMW0xME5BRVpDdFRYUmctQ3M3dVp2SkltQWFyM2tfTGR3dW92TjF4NFB2d0NPbGhWdjR0Vi1BSm1TWVhQc2w4MkJ6WXZycGdIY9IB-wFBVV95cUxNMndsMThqaWowcXVkMEozSXFEbTdDblNxS2kwZmRIWjR3R3p6RHE3N1FpRkZTNEoxUGxBeHJ0Ylc3TEUxRXFfNmFiRnNkdmVhWExsX0hwcmNwOTY1VjhVRGhZZjhYZkZ2ckpGSnJmWkRXLThqYW5MVXV2U0huZVdHdUFMN0c0ZlN5VlhHT1hodjZ1NWhnOTMtYnQtTU9ScmJtQThIUTFYNHV5Mm0ycDRVRGZHMW0xME5BRVpDdFRYUmctQ3M3dVp2SkltQWFyM2tfTGR3dW92TjF4NFB2d0NPbGhWdjR0Vi1BSm1TWVhQc2w4MkJ6WXZycGdIYw?oc=5",
+     "d": "2026-11-14"
+    }
+   ],
+   "terms": [
+    [
+     "caro vita",
+     "temi"
+    ],
+    [
+     "casa",
+     "temi"
+    ],
+    [
+     "centro storico",
+     "temi"
+    ],
+    [
+     "diritto",
+     "temi"
+    ]
+   ],
+   "v": "e-2026-11-14-caro-vita-e-diritto-alla-casa-nuovo-corteo-nel-ce"
   },
   {
    "d": "2026-11-14",
@@ -160461,7 +160437,8 @@
    ],
    "o": "Protesta Tir, Meloni “Non tolleriamo intimidazioni, i blocchi vanno rimossi”    Il Tempo",
    "s": [
-    61
+    61,
+    425
    ],
    "auto": true,
    "news": [
@@ -160469,6 +160446,12 @@
      "t": "Protesta Tir, Meloni “Non tolleriamo intimidazioni, i blocchi vanno rimossi”",
      "o": "Il Tempo",
      "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPV2ZibXZ3WmEzLUpVYUFtVG5fVGRzWGR3TW9kUmpMQjZRRUFnejhRMm5KbVFzVUEyOUdiWjhvNExvcUdTWnVBMlhnRHB2SE5CdGFrVC16eGpSNUVxY0hERGFJOTNabzRqc1JCZmIzenNxUk43bGRmd2RuUDBwemtEekQzU0d3bkhHcE5uYm94dGJjVGpVRmpRajNYMDYwSHdLQUFaM3BvWi1yTG5VTzJkcw?oc=5",
+     "d": "2026-11-15"
+    },
+    {
+     "t": "Ex Ilva, quarto giorno di protesta: blocchi sulla Statale 106 ed emergenza carburante in Calabria",
+     "o": "Telemia",
+     "u": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTUdpU0dYS2ZRZFh6bFMzWVVPSl9lcktKV2NaNlprM1N0WC1ISzNCNEtSTFY0SHZXTXlxbFkyc1dDRFZ2Y21ILUZpaTRRVnNJQng5ZEZ3ZE44V1dtaXNBU2JyNHhpNFVMc2d6bmJVcTg2dnVYdExuT21yb1BVb3RQdDlHV05OUVctbXZIT0ltdk5rbXRHOWF6TmRQbFZyekdiTkpkTFBUNzl5bVNuU0FBZXBuc3p5UjZmdkJv?oc=5",
      "d": "2026-11-15"
     }
    ],
@@ -160669,7 +160652,7 @@
    "t": "Sciopero",
    "h": "Lavoro",
    "r": "Piemonte",
-   "l": "Alessandria",
+   "l": "Novara",
    "a": "CGIL, lavoratori, studenti",
    "x": "Sciopero generale. Alia garantisce i servizi essenziali",
    "m": [
@@ -160678,43 +160661,41 @@
    ],
    "o": "Sciopero generale. Alia garantisce i servizi essenziali    La Nazione",
    "s": [
-    11,
-    14,
-    28,
-    29,
-    34,
-    37,
-    38,
-    41,
-    44,
-    47,
-    49,
-    53,
-    57,
-    65,
-    71,
     76,
+    132,
+    654,
+    210,
+    47,
+    457,
+    332,
+    28,
+    34,
+    57,
+    44,
+    41,
+    37,
+    14,
+    49,
+    38,
+    29,
+    405,
     92,
+    217,
+    290,
+    829,
+    65,
+    11,
+    178,
+    591,
+    71,
+    195,
+    53,
     96,
     97,
-    108,
-    132,
-    162,
-    178,
-    195,
-    210,
-    239,
-    290,
-    332,
-    355,
-    405,
-    445,
-    457,
-    591,
-    654,
     769,
-    810,
-    829
+    108,
+    445,
+    239
    ],
    "auto": true,
    "news": [
@@ -160905,6 +160886,12 @@
      "d": "2026-11-17"
     },
     {
+     "t": "Lavoratori, pensionati e studenti in piazza venerdì per lo sciopero generale",
+     "o": "VeronaSera",
+     "u": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBJQzlYMG12NWh3V25ta0hlMzItR29aM2M5dE1aUktYQ1lhU2RnT3IzMlBRaEhzd2NiYVhPbkdkMFY1WmNYZHJ6UTJoQldtZ2hGam9PMW1ZM0M5aTRwUGtrYTNrd2FtT3p0SzZ1UlkzbDd2U3A1?oc=5",
+     "d": "2026-11-17"
+    },
+    {
      "t": "Sciopero generale, la profezia di Salvini: \"Venerdì treni regolari\". Ecco su cosa si basa la sua rischiosa previsione",
      "o": "Il Fatto Quotidiano",
      "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPeWJoZzZVM0dxWll1a3NhR2loSURyZGc2a1FsLVpDNEtQLWlNNTZyR3hXWG9yWHV2WnN5Mko1eHNuaWhzZTdXRy1Sai1qS004Zlhac1BfVFBqUFdUelpFeHVZT2tJY2hDR1E2MDVqbEJqZUZIUjVNMUIwbTZ5Mnp4dE02ZHZCWFkwekNnSk93bkNBcHN6R3V6dXpGT1ZJMm1zUlhRaGd3TGFmREpIWFgxem4xdE1obDQ?oc=5",
@@ -160923,27 +160910,15 @@
      "d": "2026-11-17"
     },
     {
-     "t": "Lavoratori, pensionati e studenti in piazza venerdì per lo sciopero generale",
-     "o": "VeronaSera",
-     "u": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBJQzlYMG12NWh3V25ta0hlMzItR29aM2M5dE1aUktYQ1lhU2RnT3IzMlBRaEhzd2NiYVhPbkdkMFY1WmNYZHJ6UTJoQldtZ2hGam9PMW1ZM0M5aTRwUGtrYTNrd2FtT3p0SzZ1UlkzbDd2U3A1?oc=5",
-     "d": "2026-11-17"
-    },
-    {
      "t": "Sciopero generale, a Bologna corteo della Cgil con i lavoratori della Kemet in testa: «In piazza per il futuro dei giovani, Piantedosi eviti repressioni»",
      "o": "Corriere di Bologna",
      "u": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxNR3FIbXJZeGkzNEthaXN2TTd2UFlxUFhVVU5pXzBVelZ6YXBaT1pmZEV0SmJTc3RoNUFURmdkX0RtX2dSYnpBQTlMSzRkVVFQLWNFMlVvVk4tLUZpVmVqeUlrQTRUUzFZRWwzMHBqSFlkV2FaT0hVYWpUOThEcDFUbEpqMmFWZDZiVkpIS0NvQ1VPWnBNb2hNVVFmR1Jfbnp4R0tfMVY4a0ppTXF6NGZ5ak9QbTRIMThrNHQ3NHVoNENXLUlneW5PQ2xMRjlYR3FaZ1V2Rm91ZnFYd2UtQldaR2tOMW5nS1ZGamlTVHdmSTFBUjl1WmhWYkhtS1hrMDVHaGxFM1dQUzNIVFhxR0pnT0VXT3poTEFNUU1TeWNPNGpCSklLZTRvMDNZcVZzbWJHUTE1VUctV1l1RGdYQlozMGhiQ0p4dlhRSmloTHQ3Y0HSAdYCQVVfeXFMTTRlTUk5SGwxSWxHOWZIVDRvYnVFNWdLZ2V4ZXladElFUm9qdnpPWjVsWnVZS1lLemhlMFE0YXRZb0NGUmhHelJ0TlNMXzBScHBmRThrTnhzc05mS2ZGT0tXYS1UcEF2ZGVEcVdwekt2YXVoNktTTkJ1aVdhbVVlWFlVbmc4UEh5XzEtRWtGNkFpNkZwNFdxYTJ4OUFNcGFDbjJJR3h6enVfTlFnR2hmNWdJYnRtQS1GSEdzMmN3aFhjdGg5OTZCTlpLT0R5d0kxSHp3SFRIb1JmRlptZjBZTFA5WS1obExuang3SHFYTlpqVHBZZEszNnNTNHhWdGdpblhaN2lnVmlnX0R6OVUzWHNNQTdZY3FlV182OFNyNnFfT21FSlF4OEtLNEIwRzJ3OGJHTi03QTBPbVRWX0ZqY1EwczhadE95WkJILW5ST2ZEU0FsaDJR?oc=5",
      "d": "2026-11-17"
     },
     {
-     "t": "Sciopero generale della Cgil, il corteo contro la legge di bilancio: \"Non tutela il 92% dei lavoratori e pensionati\"",
-     "o": "ForlìToday",
-     "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRHNZT1FkMEF6bHVvTGtVUGxSLVNmT2JWa1ZmWUt6dHphbUNUc0YtaEhfQ1ZZYXlVVmttc0FwN3NUUEFDYmJlV3JhTnVHQmxOdF9Lb0RqeGVkSXk2b1lrWnhxdl9la2pPWDhicUdpSFdjVFMzUUlSc3FRN1FXZEtZdGJpMXhZWDdJQm9YdlluU0VJZEtLdlBQZDhQZGRlQzBBclE?oc=5",
-     "d": "2026-11-17"
-    },
-    {
-     "t": "Crisi Kemet, la mobilitazione per salvare la fabbrica. «Venerdì saremo in testa al corteo dello sciopero generale»",
-     "o": "Corriere di Bologna",
-     "u": "https://news.google.com/rss/articles/CBMixgJBVV95cUxQNGEzYjV6d2doNWc3NThPYXd6eVlLQklCZlBvM2paZG9QX1lsZlRkbTdWQkhzVmZkNmVBLWNHalphangwZGozVzNQQ21rdk5NTWdTcG51QWRFUTF6TzBtODBVenNva1VXc0FZelJlVmpRcDlkdTZ2OUwzVHk3Wm51Y2hJeUMxU3dMbEFXRUJhLU03cTFMX0dZU1dWcDV2S01keHZucFhuOWRMekRzX0ozbGJVbjA0UEt4elMyamZmOGpBWnpfLWZBSExQRzR3MVV2cEZiVC1wVTdoQUlVUDdHRU42WV9vQnFIS215dzhkYzNVZHEtM19NTjByOVpVNlNxdDBYS2lnZ21VdW5mVEVsa3gwTmlHMlpaYkFWN1NNZnpuR1VkZ0FtTi01Z2tabUZSUndRZkZsWEkxWmo0YUNBenJWd2JtQdIBywJBVV95cUxOQVpBNDVQMGMwS3NDNkpwNG5LclRZSGpvb2ZnQ0liamI4a2RhMGwxSlFINW16T3NMeXhJWjRNVmI4ZVMwelFhNndjNldTaDNsM3ByS1JMQ3k3Z1NCLTc4MUtPUl9vemFhRTE2ZXRBem9reU1RWmw5YWRaVkRXdVdDelJsNmMzUVg0YTdHZjVwQUotQmVPV0c5SDV5LTltQU4tM2VScEVjX1ljVGtqVV93MTVqQUZCdjdKaFdkYzZDMFpleXdYdGJnaGxUNm1fVkpIdzJhWDdsZHJRTklCZU5wZ0pCby1UUFNIOTk0M2ZYWENLTU9RSDZ5Y2lwZDZvSURmRXVoTzFxVk9vOUVxcERvQkI1enB6U3diekVmUW1PWGNxOGlpSTNRVEdIbHUweEY0REM1cHFtWmFwZXI5ZlFZLVdEaTNrc3p0STBr?oc=5",
+     "t": "Novara torna in piazza per lo sciopero generale: attese oltre 2mila persone al corteo della Cgil",
+     "o": "NovaraToday",
+     "u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQYmp2Ymx5dkpieHREcFBGenNrblVieDRySzJUQnR5ZkxpbVZpTzJaUUp0aXhmMlhPeERYS2lEbzBBWEhGbVNveWIwUC15QnNycGxEdU5DaWlZMnFHMnJlUkc3cU5kb0RxOC1NSFdIRURtZlhkckZnT0JTN1QwbTBod1puZGdrZks3c3pBdjZn?oc=5",
      "d": "2026-11-17"
     },
     {
@@ -160971,12 +160946,6 @@
      "d": "2026-11-17"
     },
     {
-     "t": "Asl Napoli 1 Centro, tagli ai servizi di portierato e vigilanza: 40 lavoratori a rischio, domani presidio in Regione",
-     "o": "https://tvmtv.it/",
-     "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOYjRpWUs2MFJ4NXJsYUVJQTEtQW1TNTE4NU5JUERjRDdmVlBBQW42aUV4emM2WTZSUHR4Zk1qS282TlY4Ykx2S2kzWjNOTllrcHhaeDRUYVNaZ3pDSEROaXBrUGJFM0RDUUJ5NFJINXVVSWxWdkV2R05Wd1dWcl9GMjJvVHFJY2N4UU9VYmFEdVNjdTIzSFd1alRWTE1FaXZaUDZHZlVwanhWVFNmRGQtZzY1NkY1YzR3eUwteXdoUzJvdWhpZS0xdmpmNA?oc=5",
-     "d": "2026-11-17"
-    },
-    {
      "t": "Sciopero dei treni, 23 ore di possibili disagi anche in Brianza: orari e fasce garantite",
      "o": "MonzaToday",
      "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNS0l4THpZSERMTFM2Yy1IZTlqMDVaSUFWOUl2X0k5eTEwVXI3a01mc2ZwZUxJRWU2X2t5T2lZcUhPRmJoSUhJUjlHUkNrcHVyTUFUU19fYktEN05aOW01ZzB4YXY2QTFteWNYTF9Ld0xwemlvZ0c0dDBRX2U3bFc5YktDYVdCYjVFdWk2b1A5UG45cnpjMkRz?oc=5",
@@ -160987,12 +160956,6 @@
      "o": "Radio RTL 102.5",
      "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQ1NodW9JZDljaVZ6U09JeU1VYlhwbVdfRzhWYmlYNFY5M2l2SVRIbzEwS2EtVzZqRndtNkk5MFUxeWMwVHoyYmZZV0dIUG1LaGVxWEFmS0ZVZV9fQkRQLUJfOEdVMVBnd2xSOVVrWndUajdCNUd5SnJYM3J4VDc4dlgzd3ZfZjRVTURLcTBSMDF4LWdFU3prWUNuU054RGNKdWswVnc5N0F3NWFxZU5Ob0l5VFPSAb8BQVVfeXFMT01RaWtkUHlKNmk3TDNEZHVqc1pEUDd1cHZZVURpT2oyMUZUd2RHenp5UkUzcHpUbE1jSS0xV09hSGlNVmtGaUFtVTVOWlJiRWF4SC1ENkFHc3FBZDVIb3poelRGTlYwV3FIcDcyUW1qcXlubUdYb1JHYVg1QjdWZjZDV0YtRnJZcHg3XzFreFNyWllWd1VTWHZFcGJUeW0yZGNaMGFxcXFBU0RPRG1rVld3WWZCeldISHlvcDg2Z0E?oc=5",
      "d": "2026-11-17"
-    },
-    {
-     "t": "Sciopero generale a Bologna, quando sono a rischio bus e treni",
-     "o": "BolognaToday",
-     "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQMFBzN1BrU2xlZ2hqUXVBR1dQc2Y4cE5rQ0hfMndtVUJsc29aMnJ2ZU9pVjVrYy11N0d4NVVJY1J3SXNHNjJmaFJWZ2pfbEdZRzBKQUxXTTVZeU5hU3dvYVlwbE1rejJXcUpGTmZyWng4QVRZNUZ1NWQzYTF0b3lvMFgxMk1hRmlaLXc?oc=5",
-     "d": "2026-11-15"
     }
    ],
    "terms": [
@@ -161235,11 +161198,15 @@
      "temi"
     ],
     [
+     "disagi",
+     "temi"
+    ],
+    [
      "orari fasce",
      "temi"
     ],
     [
-     "possibili disagi",
+     "possibili",
      "temi"
     ],
     [
@@ -161795,7 +161762,7 @@
    "t": "Occupazione",
    "h": "Scuola e università",
    "r": "Piemonte",
-   "l": "Novara",
+   "l": "Biella",
    "a": "CGIL, CUB, lavoratori, studenti",
    "x": "Venerdì è di nuovo sciopero generale",
    "m": [
@@ -161813,14 +161780,13 @@
     57,
     65,
     71,
+    83,
     93,
     108,
     130,
     135,
-    148,
     150,
     178,
-    217,
     239,
     242,
     268,
@@ -161829,7 +161795,7 @@
     306,
     331,
     333,
-    377,
+    355,
     387,
     471,
     508,
@@ -161913,12 +161879,6 @@
      "d": "2026-11-18"
     },
     {
-     "t": "Sciopero generale, Gerosa (Cgil Lecco): «Il nostro territorio non è un’isola felice»",
-     "o": "La Provincia Unica Tv",
-     "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPTm15TjVwMnZpcGJBSG1fbmh1V0djcHliY3ZwbGNtMVNpM0pfak5IWVhzNnNfRk5HcXA3OVY4RmNiQnAwWFMwSVdldEFQUkEzcDJHR3piNDlYYjZQcmFDM1I1WGx3Mk1RZ01DOTZBekdlU3lVbUZzaDVlZDF5eUJ2YWN4eWtYZXZwbjVkVnFsUEYyS1M5akp5VFdmQnk1MUs5eVFVQ042el9UbExhU1hPNlhEVlVlTFJBWXFaVGtfQ0JHSXdiWm1IUUNkRGNRam9BRXZRcjhn?oc=5",
-     "d": "2026-11-18"
-    },
-    {
      "t": "Sciopero generale, anche la Valtellina in piazza per il futuro di giovani e lavoratori",
      "o": "SondrioToday",
      "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQS2hUbnl4U1VWcmZaVlBZQ3FNRGtnMGpwd2ROSWlTcFk5endldjRJeFFTYklxVDhEWFd2aWNvVlNXX3ZYMUVmeVZiazdDOHp4Z2JPeUpzdXNwNGppclN2Qk5WWmdUb09hdW5PTXdRY1NtRGtVeEpSQ1haQTRmeC1HSXByTzJDYkZEVmFCcGVnYVFwNVQ4ZzUycw?oc=5",
@@ -161931,15 +161891,15 @@
      "d": "2026-11-18"
     },
     {
-     "t": "Novara torna in piazza per lo sciopero generale: attese oltre 2mila persone al corteo della Cgil",
-     "o": "NovaraToday",
-     "u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQYmp2Ymx5dkpieHREcFBGenNrblVieDRySzJUQnR5ZkxpbVZpTzJaUUp0aXhmMlhPeERYS2lEbzBBWEhGbVNveWIwUC15QnNycGxEdU5DaWlZMnFHMnJlUkc3cU5kb0RxOC1NSFdIRURtZlhkckZnT0JTN1QwbTBod1puZGdrZks3c3pBdjZn?oc=5",
+     "t": "Sciopero generale della Cgil, il corteo contro la legge di bilancio: \"Non tutela il 92% dei lavoratori e pensionati\"",
+     "o": "ForlìToday",
+     "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdVp0STRfWmdjT2Q5OW01VVZHY0hsTXhKeGxsS2sxUkhQdkJaWXpRSVoxSmQwenNSakZSaTdmZm1NOUIxcV9VNjFJRGMwVU1TdHVwLTgtVU96TzJ0NFZEVmJ4SHZ0UmtqcjVlVUhpanhsWm9GWHhlTzN2UGVST1AxZzFMblBxcFAyNWZBdnIxbU5xNGYxd2FvOXBqZGxOM1BEOTk4?oc=5",
      "d": "2026-11-18"
     },
     {
      "t": "A Reggio Emilia studenti e lavoratori in corteo nel giorno dello sciopero generale. VIDEO",
      "o": "Reggionline",
-     "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVkNCY1JtVUVBTjlwWU0zYjE4TjdtbXozUG4zUnQ5VTdEZjk0Y0k4VkxYemFYQ2hNX2pVRUpyMVlxU2NUaFZwQlFpNmptMElrQ2Z6QnplRFZEb3hiTXB6QXFyQU5JeWFIZXRPZUhKRnBRLTdLLUNHODhhcDdPWFk0Q3dlNFZBSXAzWmQyaVBsa3NpUVB3N2tKRWxWVUNCX0ttbll1S1BWTQ?oc=5",
+     "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNSFhXbnVEaGZMX00zYmRLemVNOTZ5S3dDcFhmeThNM29JTUdsanROakR4bUVibEJCeXRCZ0lQZnB2TFNpRTRLcTJDTlptUWVjWXltYVJRQlFkenhtNFI0NTdPYUhjQ21lLU5FQXFLaFUzZEZiaGRSMG1XWEk2SzZpb0wxNEpBWWZVWmhuMk54MGRsOEFZSVpRcTRQLWs0QXo3THVMc2kxSzZqR2hEclpOZldIVjYyaGR6Y01LdA?oc=5",
      "d": "2026-11-18"
     },
     {
@@ -161991,15 +161951,15 @@
      "d": "2026-11-18"
     },
     {
-     "t": "Trasporti, venerdì sciopero di 24 ore: le fasce garantite",
-     "o": "La Voce del Territorio Umbro",
-     "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTkludm1rTEx0dzdTWUhsc0U3OTA3THVSOEZOSk1yNXo1TGkyc0N1LTJfcjlYMFctZFJyMlVkUWEzTl81eXJBVG9kdG1nV0N2NEtqTTFmcjJUZGY3NUlmYXEtNFRET2Rrc3ZLbGtrRTEzR2RpeUJGdkxIUTZZQ0QyMHZlRjJzeGdSSGJoaUhHTm43Uk1mdFE?oc=5",
+     "t": "La Cgil lancia lo sciopero di venerdì, ma senza Cisl e Uil: «Stop al lavoro povero»",
+     "o": "Corriere della Sera",
+     "u": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPRVBJVU9nRGNPdGZNSzByYzlsRGhMN1Y3aFBQNzNtWTZxdDhXWndOcFpkZTJVLWdSMnVKSi1mUGxwS3BiT0dMMzlWdnBObVlETGtvOFlwWk9GR3daY05VbW5ycTdYb3Y0b3BGQkhTWVZzVWkxOElPT09DQWd0cjhrUmpjWFo4NzR6cGQxWmhfUnhQZ21sQ2UwOC1FaGE4STlLb0Z5S1U0bncyTlhjMm5IWHBJZjUtbERhOF9tazFWbGhubGQtTkNFcEUxZ0JMVElwX2pjeGtYNTFWZTBtNG8tQkZFTmlzaUFIVTVZZ251eDg1WTRacmZDakt5SzFyRlB1NzNmN3NWR1XSAY4CQVVfeXFMTmk0ei1PQWNKV0czd1RxUGUtcXJhVkJDU2FqQnhsdWVKNlhUYmYzYnpjQ3Y1RXkwZnRjSXdfN2dxeUxaNVFDTmVQMXZ3NGwzX0daREJuNk1WUkNZTUxBeEhyVU1UZEh4bTRmNjBLaXpCR3o2V0tRR3U4ME54aXVzZmU0bUh4R05XaU4wLUlFOU8yZ3J2N1I1Zi13Q1A5Z0xYb0VVNndnVnBHTDJoTW1iS3dZamJTQlVoNldtZkVCZ1BLSTdhOENibUh4anVaYzdSYkFhUGZadGhyTWxwaXAyYXBxTTlSakVXMmY5WC1LdFI3dDlLM3UxY1h1NGI1ZnlFT1BSSU5PdEhQRl9ZTy13?oc=5",
      "d": "2026-11-18"
     },
     {
-     "t": "Sciopero generale e stop dei treni, due giorni di disagi nel fine settimana",
-     "o": "Espansione TV",
-     "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOWZQLUV4OW5jNUEzdGRuOThJVU03MmNYXzdCekpTTzBfNFRnbUlnQ0hhV19HaVg5Ui1DVzd0bE93RUM3MzZTRkYzQ2JhSnFoT3RkQm8xQjFEMWdhWHJmSU1xdm5PYk5NS3E0NFF0cjlqTUZqRExMM0N2WUFIU1doYk1lM3R6XzFhWFg0SnB4YlBzWTJaUzRzYmJIZnBWNUttRkllWXVYUDJSWXc?oc=5",
+     "t": "Trasporti, venerdì sciopero di 24 ore: le fasce garantite",
+     "o": "La Voce del Territorio Umbro",
+     "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTkludm1rTEx0dzdTWUhsc0U3OTA3THVSOEZOSk1yNXo1TGkyc0N1LTJfcjlYMFctZFJyMlVkUWEzTl81eXJBVG9kdG1nV0N2NEtqTTFmcjJUZGY3NUlmYXEtNFRET2Rrc3ZLbGtrRTEzR2RpeUJGdkxIUTZZQ0QyMHZlRjJzeGdSSGJoaUhHTm43Uk1mdFE?oc=5",
      "d": "2026-11-18"
     },
     {
@@ -162409,7 +162369,7 @@
     {
      "t": "Sciopero dei lavoratori, a rischio la prima della Boheme al Teatro Filarmonico: «Stipendi inadeguati e sempre meno contratti fissi»",
      "o": "Il Gazzettino",
-     "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMEZMNzFXODVhWGFQa1FIemtRM2lha0hGR2tLQUxJTFprWlJDb0hveDluX3pVX0Y3SzZnb0xMYUhXVHg4UlI2cmlBMl9EODJMU3ZWX29MZHkxN0daOUZ0a05pcnl5WVZzN0FidURacXIwM205U24xdHJIMy1RV2JmdWQ5QTlOeHdMZWp5elpQc3drUFVJa2lkVmdxcXF1NnJHbzJtWG1HQ0tEQdIBpgFBVV95cUxPVWlDM3VabllfWXR4cXdUT3dsOVp5Vy1lTDUxUzV4UXk3SkFjeGlEaUwwZ1ZUbHFNQ09IZWRXOFlMU1RodmNMUG1rT1hFd2NnUDBvMkhGS1pTR1N4d1pkM0dfbWJPaXJQN2hldjFFT3VTQ29fN3NtYTlMSVRwRnU5cGJ4TWFNMzBYQ0VQa3AyV2kxZ3plTEVwR3d0TV9zb3phYllhdHFB?oc=5",
+     "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMEZMNzFXODVhWGFQa1FIemtRM2lha0hGR2tLQUxJTFprWlJDb0hveDluX3pVX0Y3SzZnb0xMYUhXVHg4UlI2cmlBMl9EODJMU3ZWX29MZHkxN0daOUZ0a05pcnl5WVZzN0FidURacXIwM205U24xdHJIMy1RV2JmdWQ5QTlOeHdMZWp5elpQc3drUFVJa2lkVmdxcXF1NnJHbzJtWG1HQ0tEQQ?oc=5",
      "d": "2026-11-18"
     }
    ],
@@ -162453,6 +162413,12 @@
      "t": "Prosegue l'occupazione nei tre licei di Perugia: l'assessore Barcaioli presente all'assemblea del Pieralli",
      "o": "Corriere dell'Umbria",
      "u": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPT3hYdEJBSmxJNWZSdEM1blFhOFIxcTZ5bXZCOWFYOGhwN2NxNFdkOUYwYUNzX3hzbXdYNklrRDItR1BJWVl2ekFnMFk2LS0wa0l2OGp0TWhuYVVWV1FqSmpmbzVQS2JObGZVZnVuN0FFVHZZS21kYy1PemE5NFJYakN6MUMwTlJZMzM3bmpUYk5UY2lZTWZQd3FveUxINkgwdTNVaXh6UV9KZG10eGhiZzl4dWpjeG5rWlpnYmt2dG5oMDlUTkkzME4zcjRpdk84VkVlaEFsSVRaU1FrR3RDZTdiVVBacjRUYzlrZmktSWpMUmxyNVZnemFB?oc=5",
+     "d": "2026-11-18"
+    },
+    {
+     "t": "Occupazione dei licei di Perugia, la lettera di una studentessa del Mariotti: \"Ecco le vere ragioni della protesta. La storia va scritta tutti insieme\"",
+     "o": "Corriere dell'Umbria",
+     "u": "https://news.google.com/rss/articles/CBMivAJBVV95cUxPbVN4a3hGZk9uT3prU2Vrc3d0ZGhJYXVoc2tsZldrMG1wNk5ldjNkbm9YbGdid3dhSE4yR29DV2FUbXJWSnhVOXRKUTZrb1NXTzhHZlZTZkFiMHdCZzhObDQ3d2RxMzJFSnA0UnRsdFQwdDhxY1VZdzE5bnFKTTVvbHNHSG9ZZXRMQWZqZFVHWm8xR3ZoMlZVbE5GcmFLaTF4QWRnTGlPUE5STmpKVUhPS2RRS3pZVGVJUG0zVzdXeURYVkZOUW14WkZEaW90VnRIZnoxTVU3ZTM0YmNDRE45eUtRNllSZzR3bFlFZjV2bTV6cnp4U1liM2pUUElUN0NtTDdjSDNPZlpaNVRmYmFUdU9MMnM5VjhpaHdUOXZIREdYSjlyTV92MlA0MFVRN1hTTDFnVVRXamJSTUtp?oc=5",
      "d": "2026-11-18"
     },
     {
@@ -164980,13 +164946,14 @@
    "r": "Lombardia",
    "l": "Milano",
    "a": "da verificare",
-   "x": "L’onda delle occupazioni in 9 scuole di Milano: “Edifici sicuri, più prof e stop al carovita. Ora il ministro ci deve ascoltare”",
+   "x": "Proseguono le occupazioni delle scuole a Milano. La preside del Bottoni: “questi ragazzi vanno ascoltati, ponti non muri.”",
    "m": [
     "carovita"
    ],
-   "o": "L’onda delle occupazioni in 9 scuole di Milano: “Edifici sicuri, più prof e stop al carovita. Ora il ministro ci deve ascoltare”    Il Giorno",
+   "o": "Proseguono le occupazioni delle scuole a Milano. La preside del Bottoni: “questi ragazzi vanno ascoltati, ponti non muri.”    Radio Onda d`Urto",
    "s": [
-    31
+    31,
+    71
    ],
    "auto": true,
    "news": [
@@ -164995,31 +164962,29 @@
      "o": "Il Giorno",
      "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOMWZIMlMtWTRiQWdhMW5VNmpVV0FRWkpsYjVzdVNHRGRKX0ZCSFA2czNsYTZWeEJ3T0dKTHVIUlpPVGFNUVBScDh5S2FVTkxTS2VRYjJIUm8zb21hY3BmVEZiSDg3V0Q3NVhlSVlOdFRSaHFURDVHeVNhWUo2QTFWWDAxckM3Zw?oc=5",
      "d": "2026-11-17"
+    },
+    {
+     "t": "Proseguono le occupazioni delle scuole a Milano. La preside del Bottoni: “questi ragazzi vanno ascoltati, ponti non muri.”",
+     "o": "Radio Onda d'Urto",
+     "u": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQSlFnVEoxdkNFdThVM0JaVnJybWhUeWxYN1VDbXlBU0l3NGZfWXJIc0otYnVHb0ZmMVo5WmtiV2tBalpfNmt6MVZLX1ZrVEE5RDB6bG5RNmtYNFBIUHVsb3Roa21oelF1cl9GOW9DZGRueTlNYmJ0UnhoWWYxclBfXzFEMlZhb0pBZkhwcHlyck1HelMxcEtaOGlsZWxyWEhMQUFLUHp6bHJnZnhLY3FaWHZJeW5saWw2eU1FbHIyVGtucTJCV3hnZGRBV1NUVXFrTkJYU2hyQ0E5TDZQYTBTWm1MS2JobE1KbmJhQ3o2cw?oc=5",
+     "d": "2026-11-18"
     }
    ],
    "terms": [
-    [
-     "ascoltare",
-     "temi"
-    ],
     [
      "carovita",
      "temi"
     ],
     [
-     "deve",
+     "preside",
      "temi"
     ],
     [
-     "l'onda",
+     "proseguono",
      "temi"
     ],
     [
-     "ministro",
-     "temi"
-    ],
-    [
-     "prof",
+     "ragazzi",
      "temi"
     ],
     [
@@ -165027,15 +164992,11 @@
      "temi"
     ],
     [
-     "sicuri",
-     "temi"
-    ],
-    [
-     "stop",
+     "vanno ascoltati",
      "temi"
     ]
    ],
-   "v": "e-2026-11-17-l-onda-delle-occupazioni-in-9-scuole-di-milano-ed"
+   "v": "e-2026-11-17-proseguono-le-occupazioni-delle-scuole-a-milano-l"
   },
   {
    "d": "2026-11-17",
@@ -165382,38 +165343,46 @@
    "r": "Toscana",
    "l": "Firenze",
    "a": "da verificare",
-   "x": "La protesta degli educatori: \"I nostri diritti dimenticati\"",
+   "x": "Donne Insieme Valdelsa. Dieci anni di attività. Un presidio che salva le vite",
    "m": [
-    "diritti"
+    "da verificare"
    ],
-   "o": "La protesta degli educatori: \"I nostri diritti dimenticati\"    La Nazione",
+   "o": "Donne Insieme Valdelsa. Dieci anni di attività. Un presidio che salva le vite    La Nazione",
    "s": [
     38
    ],
    "auto": true,
    "news": [
     {
-     "t": "La protesta degli educatori: \"I nostri diritti dimenticati\"",
+     "t": "Donne Insieme Valdelsa. Dieci anni di attività. Un presidio che salva le vite",
      "o": "La Nazione",
-     "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRndzWUxLZGRSbTdFbXduU2k5UFptdUdVN2RTZ19ZMHRWS0x0SWRtX19hcHFyNEhxX0d5N1I4T1ZCQWVyeVkwYURDZ1kxWXcyMjlYdjR0UFc0cWxJMDA0dDk0T3dNNXoxblZReEdsd0I5cjhXZ0ZlSHMtYlpmV09Vc3dtWk80SV83?oc=5",
+     "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUDMyRmROYkQzMm9VQU9UUkI2MHpZWjlBZmJPNFkxVUo2dEp5Ym9lZ0FZT2VaYTBCdjFZY3YxZUU0bTNsSXF0Q1NhMklrTGVCNTZMTFRrWEVwS2RkVGNMdHlCbDYwcmZYbjhfd01YWGxlemVtaDlkODlOY0VFckdCdURWbDFvNmpO?oc=5",
      "d": "2026-11-17"
     }
    ],
    "terms": [
     [
-     "diritti",
+     "attività",
      "temi"
     ],
     [
-     "educatori",
+     "dieci",
      "temi"
     ],
     [
-     "nostri",
+     "donne",
+     "temi"
+    ],
+    [
+     "salva",
+     "temi"
+    ],
+    [
+     "vite",
      "temi"
     ]
    ],
-   "v": "e-2026-11-17-la-protesta-degli-educatori-i-nostri-diritti-dime"
+   "v": "e-2026-11-17-donne-insieme-valdelsa-dieci-anni-di-attivit-un-p"
   },
   {
    "d": "2026-11-17",
@@ -165458,46 +165427,38 @@
    "r": "Toscana",
    "l": "Firenze",
    "a": "da verificare",
-   "x": "Donne Insieme Valdelsa. Dieci anni di attività. Un presidio che salva le vite",
+   "x": "La protesta degli educatori: \"I nostri diritti dimenticati\"",
    "m": [
-    "da verificare"
+    "diritti"
    ],
-   "o": "Donne Insieme Valdelsa. Dieci anni di attività. Un presidio che salva le vite    La Nazione",
+   "o": "La protesta degli educatori: \"I nostri diritti dimenticati\"    La Nazione",
    "s": [
     38
    ],
    "auto": true,
    "news": [
     {
-     "t": "Donne Insieme Valdelsa. Dieci anni di attività. Un presidio che salva le vite",
+     "t": "La protesta degli educatori: \"I nostri diritti dimenticati\"",
      "o": "La Nazione",
-     "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUDMyRmROYkQzMm9VQU9UUkI2MHpZWjlBZmJPNFkxVUo2dEp5Ym9lZ0FZT2VaYTBCdjFZY3YxZUU0bTNsSXF0Q1NhMklrTGVCNTZMTFRrWEVwS2RkVGNMdHlCbDYwcmZYbjhfd01YWGxlemVtaDlkODlOY0VFckdCdURWbDFvNmpO?oc=5",
+     "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRndzWUxLZGRSbTdFbXduU2k5UFptdUdVN2RTZ19ZMHRWS0x0SWRtX19hcHFyNEhxX0d5N1I4T1ZCQWVyeVkwYURDZ1kxWXcyMjlYdjR0UFc0cWxJMDA0dDk0T3dNNXoxblZReEdsd0I5cjhXZ0ZlSHMtYlpmV09Vc3dtWk80SV83?oc=5",
      "d": "2026-11-17"
     }
    ],
    "terms": [
     [
-     "attività",
+     "diritti",
      "temi"
     ],
     [
-     "dieci",
+     "educatori",
      "temi"
     ],
     [
-     "donne",
-     "temi"
-    ],
-    [
-     "salva",
-     "temi"
-    ],
-    [
-     "vite",
+     "nostri",
      "temi"
     ]
    ],
-   "v": "e-2026-11-17-donne-insieme-valdelsa-dieci-anni-di-attivit-un-p"
+   "v": "e-2026-11-17-la-protesta-degli-educatori-i-nostri-diritti-dime"
   },
   {
    "d": "2026-11-17",
@@ -165763,7 +165724,7 @@
     {
      "t": "Il punto vendita diventa presidio di comunità: fare la spesa vuol dire anche incontrarsi",
      "o": "Tgcom24",
-     "u": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9MUE9Zb2hESG1ZbWUyd2VSOTlKdlpPdk53M09saEdpU1B0RDlLbFJzcVQ3dGl3MnlSLVo2QmkxOElPQjYzeDd4UmpnTFRDZlVBRzc3U0gxaVFUa2NMR2lRR0FDSVliZGx20gFoQVVfeXFMT0xQT1lvaERIbVltZTJ3ZVI5OUp2Wk92TnczT2xoR2lTUHREOUtsUnNxVDd0aXcyeVItWjZCaTE4SU9CNjN4N3hSamdMVENmVUFHNzdTSDFpUVRrY0xHaVFHQUNJWWJkbHY?oc=5",
+     "u": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOSmtWajAzYmFmUm05RDB4bTVVMkJxVy1VMXZaWjctZFFJNTNxZ2xYeVV0cEVycmRLbHhlWV9wTWFMb2l6ZG1nR25FQ3JyVDJCRUJ4bjBDUUppUTc3a09KaGVUR1JJR1VIYnluZU5fUEtVUU1lQXJOaG1QbmxiTi1BT0dmX3p3VVZNSzFzWlRBUGE3cDh2WEUwYXVLNTZUemt1eUZsLTNCcVo2Y0htOXlrX1RMSDFNaDRkYUE5VkxhZ0oxV2Uzc2JJWTdpb2VHOHVnaDR0UHkyZnhQdWF6WmJOMU4teHZzUWpfMFlnU3R2U3dDSHMtdGfSAWhBVV95cUxPTFBPWW9oREhtWW1lMndlUjk5SnZaT3ZOdzNPbGhHaVNQdEQ5S2xSc3FUN3RpdzJ5Ui1aNkJpMThJT0I2M3g3eFJqZ0xUQ2ZVQUc3N1NIMWlRVGtjTEdpUUdBQ0lZYmRsdg?oc=5",
      "d": "2026-11-17"
     },
     {
@@ -165974,9 +165935,9 @@
      "d": "2026-11-17"
     },
     {
-     "t": "Sciopero generale - Radio Onda d`Urto",
+     "t": "Verso lo sciopero generale: si moltiplicano le occupazioni studentesche",
      "o": "Radio Onda d'Urto",
-     "u": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOT1FCOFJxd2xlSEh2Z1hzN3dMM2lYRFJXWVhOYmdURGpHNmFRblRQM0hLQ09NRjRHdy1NUmc1aGJzSkQ4dzVJdkJJZlFuT29xWDJ2QlM0a3pOcU1wVm1FYnVsQV8wM3lIRExOeXA5Q0hZS0dSSjYtRzVsTTRlMk1YNmpqZE9nOHRSb3VUS3IyY3l6X2dRa0ZiTWhnd19peFFSWUctUVI5eXpUR1QwNDExcTRiNEY0dlJKNXk0b0lrd1hNOFd3amJ1ZUpwbWtzMndINFFXbDVEbzg3OXJOdGRIbU1FZ016TjNMTWdlNE1fel9OaC1HNjRYazU3YmRXSkdkZkRsaXJrTmJITzJuSkVRODVR?oc=5",
+     "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWlZ0UWJTOUQ1ODlRMHVGQjB6amRXVHh3d2F0Y0RwSTVFdlNhbEdSRkx4UE1tYWxjbEpQdVR6TEhWNmhSb19zNm80cVRwc1hmVGdkVDhaREVIZUMtTGhlaFlkd2d5Tjk1OWJfM3piTFcySVlOX0RWSGF5aWpPUmMteW9KNk5PSkVh?oc=5",
      "d": "2026-11-17"
     },
     {
@@ -167484,6 +167445,10 @@
    ],
    "terms": [
     [
+     "anti",
+     "temi"
+    ],
+    [
      "cani",
      "temi"
     ],
@@ -168155,6 +168120,46 @@
   },
   {
    "d": "2026-11-18",
+   "t": "Manifestazione",
+   "h": "Diritti e libertà",
+   "r": "Lazio",
+   "l": "Roma",
+   "a": "da verificare",
+   "x": "Il sindaco di Genzano attacca Fanpage su Lobby Nera e Gioventù Meloniana: “Inchieste montate per gettare fango”",
+   "m": [
+    "da verificare"
+   ],
+   "o": "Scontro in Consiglio comunale a Genzano di Roma durante il dibattito su una mozione di Fratelli d'Italia contro le violenze nelle manifestazioni. La consigliera Briziarelli cita le inchieste di Fanpage, il sindaco replica: \"Fanpage fa inchi",
+   "s": [
+    27
+   ],
+   "auto": true,
+   "news": [
+    {
+     "t": "Il sindaco di Genzano attacca Fanpage su Lobby Nera e Gioventù Meloniana: “Inchieste montate per gettare fango”",
+     "o": "Fanpage",
+     "u": "https://www.fanpage.it/roma/il-sindaco-di-genzano-attacca-fanpage-su-lobby-nera-e-gioventu-meloniana-inchieste-montate-per-gettare-fango/",
+     "d": "2026-11-18"
+    }
+   ],
+   "terms": [
+    [
+     "attacca",
+     "temi"
+    ],
+    [
+     "fanpage",
+     "temi"
+    ],
+    [
+     "sindaco",
+     "temi"
+    ]
+   ],
+   "v": "e-2026-11-18-il-sindaco-di-genzano-attacca-fanpage-su-lobby-ne"
+  },
+  {
+   "d": "2026-11-18",
    "t": "Corteo",
    "h": "Lavoro",
    "r": "Piemonte",
@@ -168321,6 +168326,7 @@
     80,
     81,
     83,
+    92,
     96,
     97,
     99,
@@ -168331,12 +168337,12 @@
     134,
     139,
     140,
+    148,
     162,
     173,
     179,
     188,
     193,
-    198,
     201,
     207,
     212,
@@ -168344,6 +168350,7 @@
     232,
     239,
     241,
+    260,
     273,
     285,
     300,
@@ -168360,6 +168367,7 @@
     373,
     376,
     377,
+    379,
     380,
     390,
     396,
@@ -168371,7 +168379,6 @@
     512,
     513,
     515,
-    522,
     573,
     576,
     677,
@@ -168379,10 +168386,12 @@
     713,
     750,
     751,
+    755,
+    764,
     787,
+    789,
     793,
     799,
-    801,
     802,
     804,
     806,
@@ -168396,7 +168405,10 @@
     826,
     831,
     832,
-    833
+    833,
+    834,
+    835,
+    836
    ],
    "auto": true,
    "news": [
@@ -168655,7 +168667,7 @@
     {
      "t": "Cobas proclamano sciopero generale il 20 novembre, esclusi trasporti",
      "o": "Rai News",
-     "u": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQY0Uya3JUR3pLcXhvLVlLTmVJSkxQZ0dEeFlUMGlYeEdWU3k2ZE4yc2l4djVMUXpadXhVcEpVNkd5WXo0THpsZ2lhelpVNU9tTnlZc0dDTjNBdVRFd1J0ZVpIRk43YkxvbDBGSUdEeDY3Sjg5cW9VV01Od0k2OVlmbkc3eHhJX0JBRHdWdWxLUTNmQ0txeEdOVlFoOV9uZVh4ekV5ejVkczZJVnR2cHZ1T1BfNTN4b0NwczV5RUIxMWdjcGRWT0p0ZzNjQi1RbHdsOHVnMk9aWmZQZmVTZk95VUtlc25RNFVJ0gHoAUFVX3lxTFBjRTJrclRHektxeG8tWUtOZUlKTFBnR0R4WVQwaVh4R1ZTeTZkTjJzaXh2NUxRelp1eFVwSlU2R3lZejRMemxnaWF6WlU1T21OeVlzR0NOM0F1VEV3UnRlWkhGTjdiTG9sMEZJR0R4NjdKODlxb1VXTU53STY5WWZuRzd4eElfQkFEd1Z1bEtRM2ZDS3F4R05WUWg5X25lWHh6RXl6NWRzNklWdHZwdnVPUF81M3hvQ3BzNXlFQjExZ2NwZFZPSnRnM2NCLVFsd2w4dWcyT1paZlBmZVNmT3lVS2VzblE0VUk?oc=5",
+     "u": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPb0RvT0p6R2dmUk5hWVRnUmhjbUktenNSZVpmUnJLaU84MHRhRUJvRDJqR09iX1NST3B6SVgzakNweG9aOFlCaHp4STBfR3ROUmpPWjFsQ2dZQmdPdXVGYldQSC1UYW53SjQ4QTVvUWZJcnhKbkFBMmd3eV9qUlZLdVIzX2dNMThFNUlqOVhFLUpES3BIenFJUlpRNW1RQ3V2cXBINWZhRUN4dzFLS1BLV0ZBSDlpQWZ6VUZMbzNwVU1lc0lONENCU2s3eDZkNkd1VFE4ZUNxYllPYi1OcTc5UWFORdIB6AFBVV95cUxQY0Uya3JUR3pLcXhvLVlLTmVJSkxQZ0dEeFlUMGlYeEdWU3k2ZE4yc2l4djVMUXpadXhVcEpVNkd5WXo0THpsZ2lhelpVNU9tTnlZc0dDTjNBdVRFd1J0ZVpIRk43YkxvbDBGSUdEeDY3Sjg5cW9VV01Od0k2OVlmbkc3eHhJX0JBRHdWdWxLUTNmQ0txeEdOVlFoOV9uZVh4ekV5ejVkczZJVnR2cHZ1T1BfNTN4b0NwczV5RUIxMWdjcGRWT0p0ZzNjQi1RbHdsOHVnMk9aWmZQZmVTZk95VUtlc25RNFVJ?oc=5",
      "d": "2026-11-15"
     },
     {
@@ -168677,16 +168689,16 @@
      "d": "2026-11-17"
     },
     {
-     "t": "Sciopero 20 novembre, gli orari dei trasporti e la mappa dei cortei città per città",
-     "o": "Sky TG24",
-     "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZXlZUUI1bnNwTXV2R29ZcFgtUnBlZUdjemdTU0JNVmJqRXBwZF94ZnVEcGd1aFhwRmxyT3ZsX0hwQ3pDcmxzLTNSdDNHdkZZOTNkRzBMeXNYUFlDMlJzaVpVSzdUV2JyMHJ6U0xXb2tWSDRjZXpiSzd6V1R0ZUxyWWQ4cS1icklQT3JlVDhVQTJCTEpMQkRZcWszVQ?oc=5",
-     "d": "2026-11-18"
-    },
-    {
      "t": "Sciopero generale 20 novembre, Cgil proclama 24 ore di stop: chi si ferma",
      "o": "Sky TG24",
      "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUmQwbVJhTlVaN0NSVlZqaGZacFh2NFg5MENMUmxPdkoxM0xtYTI3WjB1aU5QT3NVeE9felVMeDdSWFMwMFpwVWtkVjVwRDkwOUpscUlKOUowVjh2U3htZUYtZ092WkxxbkpVbGF3ZlZDUEZBUVo2cDlPWi1ZQk9sTjgwci12VjVxWnBKT19KMEE3eFhPQWc?oc=5",
      "d": "2026-11-17"
+    },
+    {
+     "t": "Sciopero 20 novembre, gli orari dei trasporti e la mappa dei cortei città per città",
+     "o": "Sky TG24",
+     "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZXlZUUI1bnNwTXV2R29ZcFgtUnBlZUdjemdTU0JNVmJqRXBwZF94ZnVEcGd1aFhwRmxyT3ZsX0hwQ3pDcmxzLTNSdDNHdkZZOTNkRzBMeXNYUFlDMlJzaVpVSzdUV2JyMHJ6U0xXb2tWSDRjZXpiSzd6V1R0ZUxyWWQ4cS1icklQT3JlVDhVQTJCTEpMQkRZcWszVQ?oc=5",
+     "d": "2026-11-18"
     },
     {
      "t": "Sciopero generale 20 novembre, orari e settori interessati",
@@ -168809,6 +168821,12 @@
      "d": "2026-11-18"
     },
     {
+     "t": "Dispositivo temporaneo di circolazione per lo sciopero generale del 20 novembre 2026",
+     "o": "Comune di Napoli",
+     "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPU0FHQzlMOElTSWhPMW9sZW1ZV3A4U2V4NEFKbUFqSmpGaWxKRU8wX1hrazBremFDaWJhM1ptNW9ENHRVaXlWQlRGaVJBdkdkbDdBWS1vbjg3cU9RSmJuMHlpSlFfdzZ1N1hsU0pwdm5hRWpzZFcxSENaQ3RrbkY4NlpzYThaUzA4T1R1cWdydGYzZVk4aXA2T2RFQnBVTmdIV04tbW83OWh0dWhsdk4zU3BUdUZJbUJLSS1ETVFB?oc=5",
+     "d": "2026-11-18"
+    },
+    {
      "t": "Sciopero generale 20 novembre: tutti i cortei in Lombardia",
      "o": "CGIL Lombardia",
      "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTlY2ZDliRVJNYU0yUGtfek5XSDhyTFVhN1A4ZTd0NmN2ZklTdmpfNXdnb1VoVmFVZ1E2TnlSWTJvSHR1MDZ5bzVLMUlac1E1N3RsRlp6T2k4UjZGeklBYzNYX05DZzJ5dWlfMFJIb1BsZ25Ta041d2NXV0dmemJnNzNaRGdlVWs?oc=5",
@@ -168851,42 +168869,6 @@
      "d": "2026-11-18"
     },
     {
-     "t": "Dispositivo temporaneo di circolazione per lo sciopero generale del 20 novembre 2026",
-     "o": "Comune di Napoli",
-     "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPU0FHQzlMOElTSWhPMW9sZW1ZV3A4U2V4NEFKbUFqSmpGaWxKRU8wX1hrazBremFDaWJhM1ptNW9ENHRVaXlWQlRGaVJBdkdkbDdBWS1vbjg3cU9RSmJuMHlpSlFfdzZ1N1hsU0pwdm5hRWpzZFcxSENaQ3RrbkY4NlpzYThaUzA4T1R1cWdydGYzZVk4aXA2T2RFQnBVTmdIV04tbW83OWh0dWhsdk4zU3BUdUZJbUJLSS1ETVFB?oc=5",
-     "d": "2026-11-18"
-    },
-    {
-     "t": "Sciopero Generale - Venerdì 20 novembre 2026",
-     "o": "| Comune di Bagno a Ripoli",
-     "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPeGFfRVZMTjlEV1ZDX0xzRElWQmxoMm1YRkJ2cHBfTlk0SmNuenoxc1E2LVRtQXlDeGlyN0ZmdmtkT0Y5M1FmSkRLa0xxMERJYkFEaUR1cTNxblF1dmJHQnBtRjlJOE1TOEpiZUVRUHRuZVF2TmhzSjFjZ0VDVVUxUG9oTGljaU5xRG1GN1RoQzV2VEYtZWJzYWFNQlhrZw?oc=5",
-     "d": "2026-11-18"
-    },
-    {
-     "t": "SCIOPERO GENERALE venerdì 20 novembre 2026",
-     "o": "ASL Biella",
-     "u": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBLU0ItT0oyZGVPUFZSSHN3ODlTOHA5M09obE9maGpxbWxpM21BT0hjdDkxZjk4WXJmYkQzbGl0cXBKRmU2S3RzX2JGUzIzWm1xbDFJU05Pb2VtRF83Nm1pb205X093SWJuMXVBRGU3WTJycFllWDI3Vw?oc=5",
-     "d": "2026-11-13"
-    },
-    {
-     "t": "Sciopero generale il 20 novembre 2026",
-     "o": "Alto Vicentino Ambiente",
-     "u": "https://news.google.com/rss/articles/CBMie0FVX3lxTE54dzk3ODhTX0tXR1pGMi1TZnlaaEZqeUNKSGVCSjNTdjUzc2Z5V09lc3phMmtEcHp4Uk90UmZqSUR4TThXSmthVjI5WUVkZjlFeC1VaVFMNmFXbTdYMl91NmV2ck1xTlQyVHljSG52S2dRV2Q3YlEyV19pNA?oc=5",
-     "d": "2026-11-17"
-    },
-    {
-     "t": "Sciopero generale venerdì 20 novembre: possibili disservizi, ma garantiti i servizi essenziali",
-     "o": "Comune di Modena",
-     "u": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQZXUwMTg5OTd5cnZMdG80TER6MUVMUUl5SmxZbWt2NTVTdUEybEpIUUZrMVF2dWE4YUVnaWs2YlJZTDYxZUhUQ1lsWjFXRnZvSVE0eXZCekR3YVR0cnE4TnFuamFhYi1KWEZwTExFem01b3BoLUp0ZWNlMkNJdVRtZGk1U0JKc2I1SWZVMVN0T3dPSjA0eXhheklnX2VCakVHWjEyV1h0UUlJOWVFd3NfY20wVkdGRWhkSk50bnM1ZUFLdmN1RndEZFV0S1RvbHdhRTV6T3ZweGM?oc=5",
-     "d": "2026-11-17"
-    },
-    {
-     "t": "Venerdì 20 novembre 2026 – Sciopero generale nazionale",
-     "o": "Comune di Cusano Milanino",
-     "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNRGJvOVp2SThlY01KZjZtRHI4UXhRYVVfaFJuX3BlOUdZMGx5cGg5MVNpS2NkaloyZXkwQmpndU8zVnVudlZTeTg0NkNMMUJxcG9wTVFWd1ZHd1dFZmpsTHhmNFZGcS1hR1VONG1oMWtsR1hhb1VSZ0hsaU5IQ0tuWXF5U0hoMU9qYnljZmUzVDRsSXEwbTNtMzNGalBHRGN3VTJzY2FuVG0?oc=5",
-     "d": "2026-11-17"
-    },
-    {
      "t": "Sciopero generale Cgil del 20 novembre: chi si ferma e chi no, fasce garantite e cortei in tutta Italia",
      "o": "Il Sole 24 ORE",
      "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOUFROeHFGRndieXNiUzhwNzd0cDNIcWFYLUp1U1UzVkVPbWo4RWhXaGRCUl9nNzdlQmhHNmpDU1E0ODhfUXhWSl9Rd3dYc1c1NW1LRnFWeE1hT2tiU3lEX29NcllaU2Y4Q1pFV1NlbzY4cUk0Xzl4YTA4a3diY0dDdkNQZWpRa09HczhfX2V0bGxBSGtzUWJxMUI5NW9nWHRWaXVCWTM0SjdKalJRWEp4aHFCbE5QQldkQXEzTlJlOFE3N2R4OV9CanN4Q180bjJ6?oc=5",
@@ -168899,15 +168881,51 @@
      "d": "2026-11-17"
     },
     {
+     "t": "SCIOPERO GENERALE venerdì 20 novembre 2026",
+     "o": "ASL Biella",
+     "u": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBLU0ItT0oyZGVPUFZSSHN3ODlTOHA5M09obE9maGpxbWxpM21BT0hjdDkxZjk4WXJmYkQzbGl0cXBKRmU2S3RzX2JGUzIzWm1xbDFJU05Pb2VtRF83Nm1pb205X093SWJuMXVBRGU3WTJycFllWDI3Vw?oc=5",
+     "d": "2026-11-13"
+    },
+    {
+     "t": "Sciopero generale venerdì 20 novembre: possibili disservizi, ma garantiti i servizi essenziali",
+     "o": "Comune di Modena",
+     "u": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQZXUwMTg5OTd5cnZMdG80TER6MUVMUUl5SmxZbWt2NTVTdUEybEpIUUZrMVF2dWE4YUVnaWs2YlJZTDYxZUhUQ1lsWjFXRnZvSVE0eXZCekR3YVR0cnE4TnFuamFhYi1KWEZwTExFem01b3BoLUp0ZWNlMkNJdVRtZGk1U0JKc2I1SWZVMVN0T3dPSjA0eXhheklnX2VCakVHWjEyV1h0UUlJOWVFd3NfY20wVkdGRWhkSk50bnM1ZUFLdmN1RndEZFV0S1RvbHdhRTV6T3ZweGM?oc=5",
+     "d": "2026-11-17"
+    },
+    {
+     "t": "Sciopero Generale venerdì 20 novembre 2026",
+     "o": "Comune di Signa",
+     "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNQnBqSzMwR0JnVkdVUzlhZi02OXVRMVdXeTdaRDQ2QVpOZnRGRjRVdjh0aDhROTZfbEpCTE15UmdwX0l6UXBvWXVUMnJWaDczZU5na3ZQNHNmbGJVRGNNS01TVmc5S1dsc0t2bUM2NjhheDJ6MUtMVmc4VFZrc056dzZOV2wzLVhE?oc=5",
+     "d": "2026-11-18"
+    },
+    {
+     "t": "Venerdì 20 novembre è previsto uno sciopero generale nazionale",
+     "o": "Il Post",
+     "u": "https://news.google.com/rss/articles/CBMiekFVX3lxTE40eDVzdzlYUUtKcDIxbEl4NDlFT0RoVm1Ub09udUtJN18tNGt0TmV5WDI5MzRaZTE5ZVM0VzhlbEd4TFlIVFdXWkRSWTdzNzJzbE5kQmxZY0Q4bHlsQWJuUDhlRjBrSjdybXU0YVBvUmkyVGlfWlRMdS1B?oc=5",
+     "d": "2026-11-17"
+    },
+    {
      "t": "Sciopero generale il 20 novembre, dalle 100 piazze Cgil ai Cobas: stop a trasporti, scuola e sanità",
      "o": "la Repubblica",
      "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcWI5TXRaQWVabU55aFp5ei1jd3Z3UDFFWWJkMGlPWVRxWFhfTl9pN2JPMERleS1GVTBVR0hRa2o5MmtLZUVPai1iYkh6N25SVW85UHRKeFBTdGlmVXlUTmNaQzQ1Y2tpa201em5SbGl3azNZQlo4bmlLSVNRaF8yTWlNdmlBeWZ4Z2tPRmNrUGk4SGZlY3M0Qk5hZDk3QXZLSmtoNHlUT2t3dktSYTB0a3ZJcnBPQQ?oc=5",
      "d": "2026-11-17"
     },
     {
-     "t": "Venerdì 20 novembre è previsto uno sciopero generale nazionale",
-     "o": "Il Post",
-     "u": "https://news.google.com/rss/articles/CBMiekFVX3lxTE40eDVzdzlYUUtKcDIxbEl4NDlFT0RoVm1Ub09udUtJN18tNGt0TmV5WDI5MzRaZTE5ZVM0VzhlbEd4TFlIVFdXWkRSWTdzNzJzbE5kQmxZY0Q4bHlsQWJuUDhlRjBrSjdybXU0YVBvUmkyVGlfWlRMdS1B?oc=5",
+     "t": "Sciopero Generale - Venerdì 20 novembre 2026",
+     "o": "| Comune di Bagno a Ripoli",
+     "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPeGFfRVZMTjlEV1ZDX0xzRElWQmxoMm1YRkJ2cHBfTlk0SmNuenoxc1E2LVRtQXlDeGlyN0ZmdmtkT0Y5M1FmSkRLa0xxMERJYkFEaUR1cTNxblF1dmJHQnBtRjlJOE1TOEpiZUVRUHRuZVF2TmhzSjFjZ0VDVVUxUG9oTGljaU5xRG1GN1RoQzV2VEYtZWJzYWFNQlhrZw?oc=5",
+     "d": "2026-11-18"
+    },
+    {
+     "t": "Sciopero generale il 20 novembre 2026",
+     "o": "Alto Vicentino Ambiente",
+     "u": "https://news.google.com/rss/articles/CBMie0FVX3lxTE54dzk3ODhTX0tXR1pGMi1TZnlaaEZqeUNKSGVCSjNTdjUzc2Z5V09lc3phMmtEcHp4Uk90UmZqSUR4TThXSmthVjI5WUVkZjlFeC1VaVFMNmFXbTdYMl91NmV2ck1xTlQyVHljSG52S2dRV2Q3YlEyV19pNA?oc=5",
+     "d": "2026-11-17"
+    },
+    {
+     "t": "20 novembre sciopero generale, presente la Cub a livello nazionale",
+     "o": "CUB",
+     "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQallWSzdJZmU2TmhZNEVDci1PZDh6bjgtZEkzdkxVSFlYaUxVUDVxWGN1am11WTJTVVdETVpzclk5TE9zTlYzbFNjZVJHenhrVV9GX1prX3JueUlCVWtLNnU2YVppcW9VRmg4UjdGY2k2QkFNS1hTNU5KZFpjenAxaU5rdnFuSS1F?oc=5",
      "d": "2026-11-17"
     },
     {
@@ -168917,22 +168935,16 @@
      "d": "2026-11-12"
     },
     {
-     "t": "20 novembre sciopero generale, presente la Cub a livello nazionale",
-     "o": "CUB",
-     "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQallWSzdJZmU2TmhZNEVDci1PZDh6bjgtZEkzdkxVSFlYaUxVUDVxWGN1am11WTJTVVdETVpzclk5TE9zTlYzbFNjZVJHenhrVV9GX1prX3JueUlCVWtLNnU2YVppcW9VRmg4UjdGY2k2QkFNS1hTNU5KZFpjenAxaU5rdnFuSS1F?oc=5",
-     "d": "2026-11-17"
-    },
-    {
      "t": "Sciopero generale del 20 novembre, il Sindaco Enzo Lattuca sostiene le ragioni della Cgil",
      "o": "Comune di Cesena",
      "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcEY2dzItODdFNHVHQTFFN3c1QVZzZk5NbVVfb3J2RndDWVBxcXdxY1hKbU9WQVNLZzhiaWNsc3E1QnJRVVZlaElvNEg4WjF5VHBlTjNldnhKQk4tWVJpQkZRdXZ6ZzRCbDRWZlE0bHZKcWpmZWJRWGdZWEh3Um05SVRJUGp2Ni12cTBqWV9kRTA3cl9jYWwyQ3NNNFk2eG9xcE16aWpHbmIyRXJGZ2d2cVdMX01yU3JESnFlalNla1JwTUxQZXFR?oc=5",
      "d": "2026-11-17"
     },
     {
-     "t": "20 novembre, sciopero generale per l'intera giornata. Garantiti i servizi essenziali del comparto ambientale",
-     "o": "Città di Empoli",
-     "u": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQck5TR2dkRWhaRVQ0NEN3MDZvb19oV21qaHQ2aDd0Y3hGX0NpWUYtSnN2LUx1Z1NPd002NFF5SGV6dGRSWE5DR1NUdklLbVQ1T2ZIb3JGRWtuVlpnU3EzUnpka3BzVGcxVHVtMGctWENncE5WOXFqNjJxTDNVRkd6U2VzUU1COWFvLTkwMDYwbVBlMUlqcHozUHVtTkJsVG9YeVd3eHlrZ05Eeko2VTIwVXZFLUFjWUd5TWo1cFZpYVJkNGRtNnBwLTFhYVd2ZmtBWVg4Vjc3bnR1M2lld0o4VVhKZHhld3pOUU9aTFdB?oc=5",
-     "d": "2026-11-16"
+     "t": "Sciopero generale per l'intera giornata del 20 novembre 2026",
+     "o": "IRCCS San gerardo",
+     "u": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQbE5xa0JENDg1TWxDWXRTMm9nZWh4cXFQeFAtc2EwTEktYmhCMDhmZTRiVG5SNTBMZ0FWMXFjbEVrTnYtRW91MFJrVDNicFZmUUJMTzIzSkxQZWlqWHJHemNybHItRlc0YWNQYlZhS1cybWJ0X1lCdFg1d2lQM2NpQjhDU1NldDlJcEdpZHlCTG5vRkF1dnpRQlE2cC1sWlJ3QlRDUTJJdVlNbG42NVk2eW9iYUsxYmVNSHQ4STYzb3oxR1JNYjlsZ1RTOHBxVTJ4OGRCUXNjaUZHcFk?oc=5",
+     "d": "2026-11-17"
     },
     {
      "t": "Sciopero generale 20 novembre: tutto quello che c'è da sapere",
@@ -168953,6 +168965,12 @@
      "d": "2026-11-17"
     },
     {
+     "t": "CGIL, proclamato lo sciopero generale per il 20 novembre 2026",
+     "o": "Sei Toscana",
+     "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0xwa1Voa1RCdzE2QkFUM0lJT0lJVUpYZmlZYXNEUFRlOFZjdDRBVkhWamlsODMwMVdLSmdUY2xUSkVLb0hoWGdMNnFjYml6ZjBqMzQ4V19acVNwcjF5d0NROE5ER1k4OTVnZ0tXRVd0c0oxdS03QS1oNGhaM0w1c3Y2MnJES3ZkN2U5YkwxQWdOVHdkdGx0OF9Vdw?oc=5",
+     "d": "2026-11-12"
+    },
+    {
      "t": "Sciopero generale nazionale del 20 novembre 2026: possibili disservizi",
      "o": "| Comune di Reggello",
      "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNcjNYbUdUQURtTUpSX1lPaWFTWWFMbWJBWDdkLXpJck5SNFVaSnF6MENMNlpjbE9BNUk0RUVqZEFXemg3WFJiYXJ4UlFzOG1pTEY4Q2UzLTdwNkFRMTh3ZHhsaHZGalp5YVNmZEw4eXEyWGJ2NE1aSkt0dVhFS1Vnd0VJWU04TnlHNGxSYXVFY2NvNEN6SWZzNl9GM1ZrM0tkX1hQZk1LS1lTWHN4Z1J1UkJKTDNnQ0N2WGc?oc=5",
@@ -168965,21 +168983,15 @@
      "d": "2026-11-18"
     },
     {
-     "t": "CGIL, proclamato lo sciopero generale per il 20 novembre 2026",
-     "o": "Sei Toscana",
-     "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0xwa1Voa1RCdzE2QkFUM0lJT0lJVUpYZmlZYXNEUFRlOFZjdDRBVkhWamlsODMwMVdLSmdUY2xUSkVLb0hoWGdMNnFjYml6ZjBqMzQ4V19acVNwcjF5d0NROE5ER1k4OTVnZ0tXRVd0c0oxdS03QS1oNGhaM0w1c3Y2MnJES3ZkN2U5YkwxQWdOVHdkdGx0OF9Vdw?oc=5",
-     "d": "2026-11-12"
+     "t": "SCIOPERO GENERALE CGIL IL 20 NOVEMBRE: IL FUTURO E’ ADESSO. A MODENA CORTEO DA PIAZZALE 1° MAGGIO, COMIZI FINALI IN PIAZZA SANT’AGOSTINO",
+     "o": "CGIL Modena",
+     "u": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNcThUbGxtdnZWZVF6SUt5c09pTDhlcVNIdlZHYThjUE45TzN1S0k5aGM1ekltNEdmS0diczNjMTVxZW9OUlZyc0JHbmhESDk3VUkzTjZvR00tS2RGVlRuajhfaW9LV2N0dE03SXByelpzTUFwandnWVp1c2VlTGVNMktCRVFPVTFsVXFXMTdoa1F6NTdoWkxXejFyd1lGemVuamhObzZ0Q0NuMjZVenNDRlVFT0Q4a2VaQVJYT0JGOTB2cERUeHkyYzlBdWxwSjNJY29Ha1RHTDZ0UTFiOFdzTHR3LXI5MHpwckZOVHFB?oc=5",
+     "d": "2026-11-17"
     },
     {
      "t": "Venerdì 20 novembre sciopero generale",
      "o": "Polo Universitario Sistemi Logistici",
      "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNM1BJWDJGa25raWJMOEdla21xY0cyb3VKYlotQkJmNVBfaGk2cG50SFdDaG0zNHhYT1pId0pOOGFpOXlsc3plQkRaajQzSzA2QXBVal9ZUmdYY3RadFpuMWdXX0M5OUFDSS1kendyallCUE1lR3ZtVFhEODFPVVRHNXkzLTFtLTQ?oc=5",
-     "d": "2026-11-18"
-    },
-    {
-     "t": "BCC: 20 novembre, sciopero generale. Perché ci riguarda?",
-     "o": "FISAC CGIL NAZIONALE",
-     "u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcndLYU10S0UxSG1QYlpXQVBBa3ZJZkd6bTFZOGU5SzhZYnN0NGJhbDhqTHVpaDhhM2ZsZ0NhOTZMejRBalM3UlZ0dnlZaDdyMkV5aTdESWNybWtCVGlzbnZrV2VOY3M1TFBUaldwQmFGV25vYkVLTjdYczgzbUNrTjhhaUlXMVZ5WHJxcTRB?oc=5",
      "d": "2026-11-18"
     },
     {
@@ -168995,6 +169007,12 @@
      "d": "2026-11-18"
     },
     {
+     "t": "BCC: 20 novembre, sciopero generale. Perché ci riguarda?",
+     "o": "FISAC CGIL NAZIONALE",
+     "u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcndLYU10S0UxSG1QYlpXQVBBa3ZJZkd6bTFZOGU5SzhZYnN0NGJhbDhqTHVpaDhhM2ZsZ0NhOTZMejRBalM3UlZ0dnlZaDdyMkV5aTdESWNybWtCVGlzbnZrV2VOY3M1TFBUaldwQmFGV25vYkVLTjdYczgzbUNrTjhhaUlXMVZ5WHJxcTRB?oc=5",
+     "d": "2026-11-18"
+    },
+    {
      "t": "20 novembre / Salari, servizi, diritti: perché scioperiamo",
      "o": "FP CGIL Lombardia",
      "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbnRIQUlHemw0TTZrOWE3aTR1SmRTRGxMVFZ0aDI1Qzh3UHZXcVlaa0J5YmF2RVdPUzBRU3oya2hodklyZGhubWtqLXZTTmVIN3kzQVByekg5MEVKOVJLUHVwOEktYlBfOXpuNzF2NHhneVpnT1ZqTFR0ZlJxM18tNHFuQjByLVg4MG16NkNGMXN5aHhJQ19zckhEZUNsNlo3VTBTbG4wcEc?oc=5",
@@ -169007,10 +169025,10 @@
      "d": "2026-11-17"
     },
     {
-     "t": "SCIOPERO GENERALE CGIL IL 20 NOVEMBRE: IL FUTURO E’ ADESSO. A MODENA CORTEO DA PIAZZALE 1° MAGGIO, COMIZI FINALI IN PIAZZA SANT’AGOSTINO",
-     "o": "CGIL Modena",
-     "u": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNcThUbGxtdnZWZVF6SUt5c09pTDhlcVNIdlZHYThjUE45TzN1S0k5aGM1ekltNEdmS0diczNjMTVxZW9OUlZyc0JHbmhESDk3VUkzTjZvR00tS2RGVlRuajhfaW9LV2N0dE03SXByelpzTUFwandnWVp1c2VlTGVNMktCRVFPVTFsVXFXMTdoa1F6NTdoWkxXejFyd1lGemVuamhObzZ0Q0NuMjZVenNDRlVFT0Q4a2VaQVJYT0JGOTB2cERUeHkyYzlBdWxwSjNJY29Ha1RHTDZ0UTFiOFdzTHR3LXI5MHpwckZOVHFB?oc=5",
-     "d": "2026-11-17"
+     "t": "L’Angolo Rosso: sciopero 20 novembre, salari e fisco equo",
+     "o": "FISAC CGIL NAZIONALE",
+     "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOOWF5bjJONFE0S1BVMklkdW9xVl9keG5vNjlpRnZyVnJYRjJLaFJ1b1JtOVMzYVFDVktKdDZtSElZWUt1UUJIQWFQbERoZlFOOUhNNUNGR2NhcDhfUVhQYy1OcWFCS1JqUEVRQndjYVhVdVNkTmhwSjI0V2YwV08xMHlMc0dWTFE?oc=5",
+     "d": "2026-11-18"
     },
     {
      "t": "APFUTU: Messaggio di solidarietà ai lavoratori e alle organizzazioni sindacali italiane in occasione dello sciopero generale nazionale del 20 novembre 2026",
@@ -169019,21 +169037,15 @@
      "d": "2026-11-18"
     },
     {
-     "t": "L’Angolo Rosso: sciopero 20 novembre, salari e fisco equo",
-     "o": "FISAC CGIL NAZIONALE",
-     "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOOWF5bjJONFE0S1BVMklkdW9xVl9keG5vNjlpRnZyVnJYRjJLaFJ1b1JtOVMzYVFDVktKdDZtSElZWUt1UUJIQWFQbERoZlFOOUhNNUNGR2NhcDhfUVhQYy1OcWFCS1JqUEVRQndjYVhVdVNkTmhwSjI0V2YwV08xMHlMc0dWTFE?oc=5",
-     "d": "2026-11-18"
+     "t": "Cgil, sciopero generale del 20 novembre a Roma: chi si ferma, trasporti e corteo. La guida",
+     "o": "la Repubblica",
+     "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQVBKcFFRbEtiVUljcnh3TkNZZm02Sl91SnY2NjB1OXlPbExmTldKUGpLbktVaGU0amZ3YXU0ejNjYXM3bzZ1eTQwNmZIZkV3YVI2Uk1HS05YcTZmSE9rcVZJc1BMY1o3WkQ2b0I2ai1VNVQtMWQwY2UwOXpxWEdHUGVrb2FBelFqTmtTRkxLSC1pNjN6bFZBek9QZXpwTGJxMm5pRHU2NHItUWdqWUtVWEdKNXkwVVR6aGc?oc=5",
+     "d": "2026-11-17"
     },
     {
      "t": "SCIOPERO GENERALE 20 Novembre 2026",
      "o": "Unisin BNL",
      "u": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1JWlQ5OXNwRzNseFViQVR6LTJyWlowbGNUYkpKTmxIVXhmNGFyMVhNM3FlVXV1OE9sYndQUHhzRnNrTUhZbFlfVFZvZ19RODFCVlBMbzA0ZmljT0lrMW41N2czTjVTUXN4SE84TQ?oc=5",
-     "d": "2026-11-17"
-    },
-    {
-     "t": "Cgil, sciopero generale del 20 novembre a Roma: chi si ferma, trasporti e corteo. La guida",
-     "o": "la Repubblica",
-     "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQVBKcFFRbEtiVUljcnh3TkNZZm02Sl91SnY2NjB1OXlPbExmTldKUGpLbktVaGU0amZ3YXU0ejNjYXM3bzZ1eTQwNmZIZkV3YVI2Uk1HS05YcTZmSE9rcVZJc1BMY1o3WkQ2b0I2ai1VNVQtMWQwY2UwOXpxWEdHUGVrb2FBelFqTmtTRkxLSC1pNjN6bFZBek9QZXpwTGJxMm5pRHU2NHItUWdqWUtVWEdKNXkwVVR6aGc?oc=5",
      "d": "2026-11-17"
     },
     {
@@ -169061,15 +169073,15 @@
      "d": "2026-11-18"
     },
     {
+     "t": "Cgil, il 20 novembre sciopero generale e manifestazioni in 100 piazze. L'adesione di Articolo21",
+     "o": "Articolo21",
+     "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVkFxOXE2WG1XMkFXTmdYNUsxVmNiOWhEdTBMRHJDYzJzaUpuWEJqdjlkVzdqSkFRdDh0R001YUs0bVFTSElYY19WbUZ3TVM5cEJ1Ni04T0xmWHVzU1JkMTRCUmNaOFhmNlUteG5ieWR3Qm43VGxMRXBwME51SVdyR0xJbHBSaDU1RHptZmJibHV5aTRkS08yT2h1ZG9VdzJPSEFmNWstek9wbEhNNl9LU0J3NkUwUVV2RUZKa2I3c1U4dkotTG1N?oc=5",
+     "d": "2026-11-18"
+    },
+    {
      "t": "Sciopero generale, le piazze dei Cobas per venerdì 20 novembre: tutti i cortei",
      "o": "Startupbusiness.it",
      "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTHdrenF6VmVBSmNkNjMxV09rVVB3eUZENXh0ZEZ4V0lwUktIeDQ2Q1d6QXh0ekNORndIQjFmczNVeUNLMTFjcG5HX0o4ODNaaUJmeVN2cVY2aGsxQ1A3SDhSRWVEOXFKYnhwaEpHUUd5Ql83OE42VU1PS0NzVEdJZkIyQS1GV25pZTFDU0IySGJzM0haRjJidWoxZk5KczQ4bzdYMElBNzVOYVNpQ1dKSXNieDFFdw?oc=5",
-     "d": "2026-11-17"
-    },
-    {
-     "t": "SCIOPERO GENERALE DEL 20 NOVEMBRE: POSSIBILI DISSERVIZI NELLA RACCOLTA DEI RIFIUTI",
-     "o": "LeccoFM",
-     "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNc2dJQnpoSEJaOWh2cWg2Zk1INzlOZl9QUndLeWl1aFVKY2NoNTZMbV9uVERmTGliQ01NajFfQ3dBSVdXdmlYVk1nUnJfZzRwc3dZMFF1SmY5MllaZndhNjY1NHRMMFBvV2pTNENlT3dHd0x5bzhiY3FiTlRJWHVOYk5kSFVHTUE1Skt1R1pNVzE5ZlJuUEpoMjFMU2Y4a3lCT1Iw?oc=5",
      "d": "2026-11-17"
     },
     {
@@ -169079,16 +169091,28 @@
      "d": "2026-11-18"
     },
     {
-     "t": "Amia: \"Sciopero generale Cgil del 20 novembre: possibili modifiche ai servizi\"",
-     "o": "TgVerona",
-     "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPcjZEMDFhUnFkcDNOUDVxbGNDNG9WNWlwU2MxVnBlWW5rTE12RXE0TVJCT3AyVHQzX1h5MVFEZFU5c0RHNk9oX1JXNk9mTEFTWmlXODNOTVcyZTNrdFYtY2hXYWdiMmVJb0lyTGY1Mk9scFZfcF9pZVpSSk9fMlhuVm15b3p4OUh6U3NCeUhXdDY1WmpjRFJUdnhZNjUxbXVSc2ZTYUlKRjBCMnE3bHpoNE9YYzBJenhrVC1CWnkzaXFObkU?oc=5",
-     "d": "2026-11-18"
+     "t": "Sciopero generale Cgil del 20 novembre, a Ravenna una manifestazione provinciale che dalla Darsena raggiungerà piazza del Popolo",
+     "o": "Settesere",
+     "u": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQdF9yZHVHYm5uRFp4X1doOTkzYmQtUHJGQVNaMHhTVFlrbjU1azZXY2dfSFZkdUNLcjBneWR2THBBMUxodXowR3Z3RVVkRFZGUjRISUpLRnF2c1FtQVBzejBaVTh0Z1JVbldzbEZ4czNrd2hsX2Q3Rnl1aTdDVGNMNjkzaWFqZUFvcUxwZ1RkdkJlaERta2xla0pYQmo2SHdmRFlObmZQY3VkQnNRNGRoWEFuWHRES3BWNWNxcTlZWC1TRS1yZ1NLSUdIS1FQejdlV2NMX20wcjRXa2Q4Xy1kblhHVkQ4Vks4bC15eVJtRmRFQlNESjl6dGZVLTRSRy1RQTZhZHhXVW9kRW5zMUE?oc=5",
+     "d": "2026-11-17"
     },
     {
      "t": "Lavoratori e studenti in piazza il 20 novembre per lo sciopero generale e studentesco, due appuntamenti e un preconcentramento indipendente: \"Non ci faremo strumentalizzare dalla Cgil\"",
      "o": "TorinoToday",
      "u": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNVlY4X19oVVV3ektWODhrVXhoVjlBc18tb2cwWGJpZkZndHNZTzRUNW1ZdTlLWl8tUFdqQUJRakwzSmdFMUJ2SjhpYmhCRUVvbks0Y2RnRmlhYVA1am1HUW5hbDRvWk1IblRBaDZpSlB3TTAwbGlGZjdBdmhnZXJuR2pn?oc=5",
      "d": "2026-11-17"
+    },
+    {
+     "t": "Amia: \"Sciopero generale Cgil del 20 novembre: possibili modifiche ai servizi\"",
+     "o": "TgVerona",
+     "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPcjZEMDFhUnFkcDNOUDVxbGNDNG9WNWlwU2MxVnBlWW5rTE12RXE0TVJCT3AyVHQzX1h5MVFEZFU5c0RHNk9oX1JXNk9mTEFTWmlXODNOTVcyZTNrdFYtY2hXYWdiMmVJb0lyTGY1Mk9scFZfcF9pZVpSSk9fMlhuVm15b3p4OUh6U3NCeUhXdDY1WmpjRFJUdnhZNjUxbXVSc2ZTYUlKRjBCMnE3bHpoNE9YYzBJenhrVC1CWnkzaXFObkU?oc=5",
+     "d": "2026-11-18"
+    },
+    {
+     "t": "Catania, sciopero generale 20 novembre: orari e percorso del corteo",
+     "o": "LiveUniCT – Notizie su Catania e Università",
+     "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOd1pQX0piQXhYQlFTaEhpODJNbkp5Yl90NEFGNWxZVkRBbnRrWGpaaUtfWGFLa3Bybl9KZnZ2NUNZSHRKdWxZdlhHTFZuSXJFdWN2SU53TVlsU1lneF9jQ2Jfb0FwMUQ0T0JvUWtlVk5XWHVzV1NnYkdrQmduY2dXVmhwOWNablJDRTRLQ280eDVQaVdvaTZ2R1lINGF4UFEzWGVjaEJOZ2psajNfZFZTRkthTnN5VXBDWHJLMzVTbnJKUmhELXp2NlR0eERpWV9M0gHWAUFVX3lxTE9hTzJ6TmZ0MDAyaERBcVpiamtYaWxSNHJoYWdHaF9YVmdld2RWTlZYbmNiMDBrcF9uMVE2ZXNTcm81RV9pUlZqYnlpM09qN3MzLU84RGI4Ti1yMUR6UmJGZXJzeFF1X3hLMFUyTmx6NzhRUmxqcXdZSGJIUTVUUURreHhsOWJXNldmSmpFVm9GeFFnaTFCeWhxWldpemNTeHc2X1pUa1VjaC1ZWWlLb093V1BUNmhNQzBKUlEtU2oxalVfZnVwZDRYNkhpZ1JkZ2ZPSmQtSlE?oc=5",
+     "d": "2026-11-18"
     },
     {
      "t": "Mobilitazione Spi Cgil in vista dello sciopero del 20 novembre. Il flash mob di Brescia",
@@ -169103,9 +169127,9 @@
      "d": "2026-11-18"
     },
     {
-     "t": "Sciopero 20 novembre: proclamato sciopero generale per la scuola",
-     "o": "News Istruzione",
-     "u": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9scGwxc2tDSnBkUnE1ZkQ1b0pFcm1xaXJCZUM5VXhsS1dOZXdoTGpOY2gtcGFYWjNqRFV5NjNMcVRESHJtalFqZjM4dXJxcUZUcm1EeVN5RXZQdl9MWi1MUmNHbDNLREJpeGZCU19zbWhPekpJVjFZSjdvQnpkZ9IBgwFBVV95cUxPVVB2ZWZ3REhDd1htcVIyM3RqNWdjRnJPTnl0dnd4My1OTDlKbDZqRjJGYmxiT0RTN2h0ZTdMRGpLMWw5T1EwNklBTFpETEFjWmp1QjU4bFF1WEU3Nld1TnhZanVuN2lZaWdFNzlvN0sxLTYyNFFzSnotaFhPYWQwSzNIQQ?oc=5",
+     "t": "Anche a Catania corteo per lo sciopero generale di venerdì 20 novembre",
+     "o": "CataniaToday",
+     "u": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9GYk9qVXBXWE10SkJjRlNBVkl4V1dXZVQ5RmEzUUdVSS1LSlF4bzFTUU5aRy1HQ1RmcjBLeVFCaGs2TnJWSkw3R0FNT0RqT0doaTZTdlk4Y2JFM3RPWUg2dHAwSUJwM2I4VFlwTDBGOUtka2hwM1hPbQ?oc=5",
      "d": "2026-11-18"
     },
     {
@@ -169121,16 +169145,16 @@
      "d": "2026-11-17"
     },
     {
-     "t": "Anche a Catania corteo per lo sciopero generale di venerdì 20 novembre",
-     "o": "CataniaToday",
-     "u": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9GYk9qVXBXWE10SkJjRlNBVkl4V1dXZVQ5RmEzUUdVSS1LSlF4bzFTUU5aRy1HQ1RmcjBLeVFCaGs2TnJWSkw3R0FNT0RqT0doaTZTdlk4Y2JFM3RPWUg2dHAwSUJwM2I4VFlwTDBGOUtka2hwM1hPbQ?oc=5",
+     "t": "Sciopero generale del 20 novembre, a Cagliari la Cgil in piazza anche contro la manovra",
+     "o": "Radio Sintony",
+     "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObUl2eXpWN0JjVUNua0JGZmdYR0VTZGpETWlFS0NxanhMWEVraGtyajVRY09RMjVkWk9fLUIxZ0RsNXYySXFmbHkydmlsYUcyNXVPcHNXUUJzcVJJRWV5R2xvb2V0Q3owc1c2Z054YzZhc3JEMHA5cnMwYUE5RGJvc2lxckZmY3RqQnVZMm5aMUZZekVzY2VJM3RnQnhuSHkwbHRSY05KUm9seFZqOVNFMHBJUGVPdUJMR1ptbjhR?oc=5",
      "d": "2026-11-18"
     },
     {
-     "t": "Sciopero generale 20 novembre, settori coinvolti e trasporti. Le fasce garantite – LMF",
-     "o": "LaMiaFinanza",
-     "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQR19pVHduR1RveWZkTS1fMzJKSm5qcllZaGRtc2hpVVlVd1RELUtySUp3aklPWGR6cDZqRkFGT0YwZENPT1dCYnlnbGszc2pyQ2c4REZRRFJRdVNmRXVWTVkyMXE1SFJOeGZCWnhPNEI5OG9rRWJROVQ0ZGNZYkFrOXprZ1BudVpzbWkzQVA2UVJ6NVc0X1FtNmdTUUE2RnpMQmlvUTA4V2FaLTVmbzBhV25yZEVmQQ?oc=5",
-     "d": "2026-11-17"
+     "t": "Sciopero 20 novembre: proclamato sciopero generale per la scuola",
+     "o": "News Istruzione",
+     "u": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9scGwxc2tDSnBkUnE1ZkQ1b0pFcm1xaXJCZUM5VXhsS1dOZXdoTGpOY2gtcGFYWjNqRFV5NjNMcVRESHJtalFqZjM4dXJxcUZUcm1EeVN5RXZQdl9MWi1MUmNHbDNLREJpeGZCU19zbWhPekpJVjFZSjdvQnpkZ9IBgwFBVV95cUxPVVB2ZWZ3REhDd1htcVIyM3RqNWdjRnJPTnl0dnd4My1OTDlKbDZqRjJGYmxiT0RTN2h0ZTdMRGpLMWw5T1EwNklBTFpETEFjWmp1QjU4bFF1WEU3Nld1TnhZanVuN2lZaWdFNzlvN0sxLTYyNFFzSnotaFhPYWQwSzNIQQ?oc=5",
+     "d": "2026-11-18"
     },
     {
      "t": "Sciopero generale il 20 novembre, a Reggio Emilia il corteo di lavoratori e studenti",
@@ -169143,6 +169167,12 @@
      "o": "GenovaToday",
      "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPODZOdnRINEVOaXlXYzZPOXlrUUpTT1NiMEhXRkd5bjhzZS1pRVFsRDFPRExhLTVjSi1Vcnc0ZDdES1V1a19hNm9jVHYzWTBLUDgyY0FEem1kRzlkTTZ2YlBTZWhrUldVRHBEWDJYbTEwR1pjZHF5bXJrT21PT0xaU3A4ZUxGVDZhdXdwYVNKZnBtSEZo?oc=5",
      "d": "2026-11-13"
+    },
+    {
+     "t": "Sciopero generale del 20 novembre, Torino scende in piazza: corteo alle 9.30, ecco chi si ferma",
+     "o": "Torino Cronaca",
+     "u": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPcUxXTzF4TnBYdXlhdm5jQm5RVDJuMmQtczRuSWhjWWRBMS1YangybTNqOUxUVFc1ZHVhR3A5d3BUQ3dfRXRZMG5ONzNyQzN2TFJYaVc2M0ROMW82dVRHdnRiTWhjU3pVVlBlVmh5bGtVTHVDNkRFX0ZDN3JLUEhfQVh5dUhyRE9KelZhcWZJb3A0eEZmNjJxSjN5QTRqejdROU4zX1VEa0I5WVNEdFhmcGRaY0lzajBrQ3JnckpZaEljOUl1LVZ4dVh4elBnMENiVW52RnU5ZEt6MU40MEE?oc=5",
+     "d": "2026-11-18"
     },
     {
      "t": "Corteo a Milano per lo sciopero generale del 20 novembre: dove sfila, info utili",
@@ -169247,15 +169277,27 @@
      "d": "2026-11-18"
     },
     {
-     "t": "Sciopero 20 novembre, si fermano scuola, sanità e trasporti: bus e metro a rischio nelle città, esclusi treni e aerei. Gilda e Cgil confermano la protesta",
-     "o": "Orizzonte Scuola Notizie",
-     "u": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOZjhzUHRMaWFYQm1SdFhramhvN3lZSlRjQjkyOFRtTUJuQ2dOMWZNUDVKaFY1SnVrMF9GcGlFYUd3dzZ4YUJUcmNHRHI3bzI5UndLajdOYmZfYng3NzJIZTNvZWRMNWF5ZmNRYnJmTnR2b1FXZ21Zc2hXMFJJeEVSSXVIUV9GMEdTb0pWeU9rdDd4QVY3UUh2dEJaZzNBeFNCckNXMjE1YWUzUDR4cVMzaXZXTnZtTFFoM1A2dGhoMldob2lEZnJHdE1HTkEwVlVkVDdHUzdHNU9Eekgza1VKekJLTnZkT3hGY3I2SzN6akVCQ193QkVGSjZBY0Z2U1JJOVU4NldnRzJSelpmWEE?oc=5",
-     "d": "2026-11-18"
+     "t": "Sciopero del 20 novembre, Cgil e Filt: esonerati ferrovie e trasporto aereo",
+     "o": "Collettiva",
+     "u": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOTmU1Q2xwZE5IS3ZNdGd1WTFvZXpJZHVjeFZvOHNLZlhXMjU3MmZOR2UteW80bm9YNC1lZ21Beld4Yk5QR3BmWElZbzRkeWRVaTNaQVQ1Y0ZFNnpzbC1YSVJjMEc3Tk1EZjdDeHdVaXRqNm53M25QekVzeUR6RWRGV2FMeHVUaWx3cG9tVnZHTFR2R2ZEQ1JMdnlTUmdDaE9NS25ONm5sZVJSN3NMemtza3FsUGktQkYxMTE0?oc=5",
+     "d": "2026-11-13"
     },
     {
      "t": "Sciopero dei trasporti venerdì 20 novembre",
      "o": "dererker.it",
      "u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOalh4eEpQdTluWVRVclJuQXRjV0RDbzV2QTJaTEpuOEFoRmZ6d1lmNTc3MnZjWnNWRkZJWjRTZVFmYno2c2hUS3FfQkQ0MnVSSnllRmVabG8wZzlXWnpPc3hYcmdiOHpqUXMwdlhoanUxWDJYLWg2SkNBVjJBODU3SDZfQzlLaGRORzNDVW1n?oc=5",
+     "d": "2026-11-17"
+    },
+    {
+     "t": "Sciopero del 20 novembre, possibili disagi per il trasporto: ecco gli avvisi",
+     "o": "Bresciaoggi",
+     "u": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOWFpfYXFMdlhWdXNiMUNpWnBYdUpuNXJUendaVy1reXRzc3pZUmZmMGRCbXJRblAtYm5ITFpyNElBX2FkaG45VDdvUWItazJIWTQ2cmhBV0VqM2dqNXMyQVpRRmJBS3c1U1lJRjJybkhwbE9BTGQ2Yk1hMUZ6N1FhR2dlMXBDX3QxaTRoemcxRmRoX2hlSmUyMU9SdEJuOWp5cHVvLTVUS3dscEVEeVd0bGZiT1ZhcjhobEhoSEhmNTh1TXV1N1otYTFpY2J6RVU4U0RPbEpoZU3SAd4BQVVfeXFMT2poZ0lENHI5OU1lODRXYzZwWkkzVUxFT1daSXJrZ1JfX0JBbTEwOTFZblJpV3RyOGRGQ3NVYkRSRWpDTVE0M2VBTmFlbmt5aDFEQUo4WVdpWGRXaWcwVThzTVJKejd4dGJPWGxaak81SFg0UmMyeXh2VUpRWjRZejhVcU0tOGpXQTFjQU9ERWQ3dndZZ05NU2hyVUFLX0hFd1Ntb0ctbHNYSGUwOU1EcllfRHlpVWctT29QcGk1QXc4RTVoV2lxVDZYSW01akxaaDlPdUZsSGd6c0hpSmF3?oc=5",
+     "d": "2026-11-17"
+    },
+    {
+     "t": "Sciopero generale il 20 novembre: scuole e trasporti a rischio, un corteo in Sardegna",
+     "o": "La Nuova Sardegna",
+     "u": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNYl9uRklUczVSaXF5dGNTSUhXWUFYYkg5QmZPb1lnQ3NxV0NYaWxoLW5iYmdGXy14ckw4V040ZFBUbnhKRWtnR3ktTi13Tm41VDJfbE1IaWMyV05NdFR6S2RpeF9IWDl1ZGNCcHZJMHlRdEJwTUlDOTF2MWNuNnJnUkpOd0ZMRTFTRnhHMWFPb2YwX2NMOFFvVDZvVktMc2JQOGxQRmJnbVhIUFZBRjFQdHpxN3VJUlN0WjBIVmV2Nlo5VHhEV3BoNXZRQl80MDZXMjdjWUNzdmdjVWJZcHJHUG9HLVQ?oc=5",
      "d": "2026-11-17"
     },
     {
@@ -169265,22 +169307,10 @@
      "d": "2026-11-16"
     },
     {
-     "t": "Sciopero generale il 20 novembre: scuole e trasporti a rischio, un corteo in Sardegna",
-     "o": "La Nuova Sardegna",
-     "u": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNYl9uRklUczVSaXF5dGNTSUhXWUFYYkg5QmZPb1lnQ3NxV0NYaWxoLW5iYmdGXy14ckw4V040ZFBUbnhKRWtnR3ktTi13Tm41VDJfbE1IaWMyV05NdFR6S2RpeF9IWDl1ZGNCcHZJMHlRdEJwTUlDOTF2MWNuNnJnUkpOd0ZMRTFTRnhHMWFPb2YwX2NMOFFvVDZvVktMc2JQOGxQRmJnbVhIUFZBRjFQdHpxN3VJUlN0WjBIVmV2Nlo5VHhEV3BoNXZRQl80MDZXMjdjWUNzdmdjVWJZcHJHUG9HLVQ?oc=5",
-     "d": "2026-11-17"
-    },
-    {
-     "t": "Sciopero del 20 novembre, Cgil e Filt: esonerati ferrovie e trasporto aereo",
-     "o": "Collettiva",
-     "u": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOTmU1Q2xwZE5IS3ZNdGd1WTFvZXpJZHVjeFZvOHNLZlhXMjU3MmZOR2UteW80bm9YNC1lZ21Beld4Yk5QR3BmWElZbzRkeWRVaTNaQVQ1Y0ZFNnpzbC1YSVJjMEc3Tk1EZjdDeHdVaXRqNm53M25QekVzeUR6RWRGV2FMeHVUaWx3cG9tVnZHTFR2R2ZEQ1JMdnlTUmdDaE9NS25ONm5sZVJSN3NMemtza3FsUGktQkYxMTE0?oc=5",
-     "d": "2026-11-13"
-    },
-    {
-     "t": "Sciopero del 20 novembre, possibili disagi per il trasporto: ecco gli avvisi",
-     "o": "Bresciaoggi",
-     "u": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOWFpfYXFMdlhWdXNiMUNpWnBYdUpuNXJUendaVy1reXRzc3pZUmZmMGRCbXJRblAtYm5ITFpyNElBX2FkaG45VDdvUWItazJIWTQ2cmhBV0VqM2dqNXMyQVpRRmJBS3c1U1lJRjJybkhwbE9BTGQ2Yk1hMUZ6N1FhR2dlMXBDX3QxaTRoemcxRmRoX2hlSmUyMU9SdEJuOWp5cHVvLTVUS3dscEVEeVd0bGZiT1ZhcjhobEhoSEhmNTh1TXV1N1otYTFpY2J6RVU4U0RPbEpoZU3SAd4BQVVfeXFMT2poZ0lENHI5OU1lODRXYzZwWkkzVUxFT1daSXJrZ1JfX0JBbTEwOTFZblJpV3RyOGRGQ3NVYkRSRWpDTVE0M2VBTmFlbmt5aDFEQUo4WVdpWGRXaWcwVThzTVJKejd4dGJPWGxaak81SFg0UmMyeXh2VUpRWjRZejhVcU0tOGpXQTFjQU9ERWQ3dndZZ05NU2hyVUFLX0hFd1Ntb0ctbHNYSGUwOU1EcllfRHlpVWctT29QcGk1QXc4RTVoV2lxVDZYSW01akxaaDlPdUZsSGd6c0hpSmF3?oc=5",
-     "d": "2026-11-17"
+     "t": "Sciopero 20 novembre, si fermano scuola, sanità e trasporti: bus e metro a rischio nelle città, esclusi treni e aerei. Gilda e Cgil confermano la protesta",
+     "o": "Orizzonte Scuola Notizie",
+     "u": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOZjhzUHRMaWFYQm1SdFhramhvN3lZSlRjQjkyOFRtTUJuQ2dOMWZNUDVKaFY1SnVrMF9GcGlFYUd3dzZ4YUJUcmNHRHI3bzI5UndLajdOYmZfYng3NzJIZTNvZWRMNWF5ZmNRYnJmTnR2b1FXZ21Zc2hXMFJJeEVSSXVIUV9GMEdTb0pWeU9rdDd4QVY3UUh2dEJaZzNBeFNCckNXMjE1YWUzUDR4cVMzaXZXTnZtTFFoM1A2dGhoMldob2lEZnJHdE1HTkEwVlVkVDdHUzdHNU9Eekgza1VKekJLTnZkT3hGY3I2SzN6akVCQ193QkVGSjZBY0Z2U1JJOVU4NldnRzJSelpmWEE?oc=5",
+     "d": "2026-11-18"
     },
     {
      "t": "Sciopero 20 novembre 2026: possibili disagi per logistica e trasporto merci",
@@ -169307,15 +169337,21 @@
      "d": "2026-11-18"
     },
     {
+     "t": "Sciopero trasporti, anche Ferrovie Sud Est aderisce alla protesta: venerdì 20 novembre stop di 24 ore",
+     "o": "Telebari",
+     "u": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNZHh0WmJCZmltWVJSWWdQSFRhdUpGN2xBS2lidHR4WWdWQ0dtVm5wV2NEdmJfWmNTNm82VFI5RWE1bFoxLTBtQWlDV0NDS2hEaHpsYi1Fa0JXOHFheWxFQk8ySEFHa3BoZVRoeTJlLTgtcG4zeGtDb21RcXRVeHNiZk1QbDVDVGlzUzJ6bGJiWnNVSGFlWlhjLTlSeW1HTVk1Ny1PRnVvVmlOVjFqakZDaHFUcTdYWjhuTWdmNGVLN2x0aGtvZDdRRVhydU1SOHI3eHpuZm5EQ2NJa1BrZ3c?oc=5",
+     "d": "2026-11-17"
+    },
+    {
      "t": "Sciopero generale del 20 novembre a Como: corteo da Porta Torre a piazza San Fedele, ecco gli orari",
      "o": "QuiComo",
      "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOaWlKRE1lU2RCb0ZFR01GV29VdHVhRWtObmFlYXpGU05qbTc3dlpyU2RrZzlEN2trbHA4UUt5QmtyOFA5Wk9FVjNfbkV6bTJnMjcyNGVqcER2VXRQQUsxN1Z6ZXBkUy1kc0I4c3FuM18zTG5oYkxRQ3ZRTGF1aWtpRTBURkRsc0lxT20wT3dIQ28zY0xsSGNhNHhWdmtqNVhCcWF1SmJSb1Z3cjFVd1pnTnYyUklyWGVjTHNDVWpobGY5Z0Vzd0lIbllKa2ZOY2th?oc=5",
      "d": "2026-11-17"
     },
     {
-     "t": "Sciopero trasporti, anche Ferrovie Sud Est aderisce alla protesta: venerdì 20 novembre stop di 24 ore",
-     "o": "Telebari",
-     "u": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNZHh0WmJCZmltWVJSWWdQSFRhdUpGN2xBS2lidHR4WWdWQ0dtVm5wV2NEdmJfWmNTNm82VFI5RWE1bFoxLTBtQWlDV0NDS2hEaHpsYi1Fa0JXOHFheWxFQk8ySEFHa3BoZVRoeTJlLTgtcG4zeGtDb21RcXRVeHNiZk1QbDVDVGlzUzJ6bGJiWnNVSGFlWlhjLTlSeW1HTVk1Ny1PRnVvVmlOVjFqakZDaHFUcTdYWjhuTWdmNGVLN2x0aGtvZDdRRVhydU1SOHI3eHpuZm5EQ2NJa1BrZ3c?oc=5",
+     "t": "Sciopero Cgil, Fal avvisa viaggiatori e pendolari: \"Il 20 novembre possibili disagi su treni e bus\"",
+     "o": "BariToday",
+     "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQXRDTzVrMklWd0JaUnBYYXdTdThKVGV1VmdURUVycm9hS3BmMFIwNk5aaEVkZDdMZkFIY1hUYWFFSXNOZmZMY3Z5TUJQZ2FvY2RHb0VaM2pzTndpd0VMalZFa0c3NDJJLVhyMDN6XzJQMnlvUmIxR05jeFVhOGlfNWkzLWZjRkxzZmNaLU96dExMd3I3amVFMy1TQm1tT0RMLU84OE41TGx2ZnM2cW1J?oc=5",
      "d": "2026-11-17"
     },
     {
@@ -169325,16 +169361,10 @@
      "d": "2026-11-16"
     },
     {
-     "t": "Sciopero Cgil, Fal avvisa viaggiatori e pendolari: \"Il 20 novembre possibili disagi su treni e bus\"",
-     "o": "BariToday",
-     "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQXRDTzVrMklWd0JaUnBYYXdTdThKVGV1VmdURUVycm9hS3BmMFIwNk5aaEVkZDdMZkFIY1hUYWFFSXNOZmZMY3Z5TUJQZ2FvY2RHb0VaM2pzTndpd0VMalZFa0c3NDJJLVhyMDN6XzJQMnlvUmIxR05jeFVhOGlfNWkzLWZjRkxzZmNaLU96dExMd3I3amVFMy1TQm1tT0RMLU84OE41TGx2ZnM2cW1J?oc=5",
+     "t": "Sciopero generale 20 novembre, settori coinvolti e trasporti. Le fasce garantite – LMF",
+     "o": "LaMiaFinanza",
+     "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQR19pVHduR1RveWZkTS1fMzJKSm5qcllZaGRtc2hpVVlVd1RELUtySUp3aklPWGR6cDZqRkFGT0YwZENPT1dCYnlnbGszc2pyQ2c4REZRRFJRdVNmRXVWTVkyMXE1SFJOeGZCWnhPNEI5OG9rRWJROVQ0ZGNZYkFrOXprZ1BudVpzbWkzQVA2UVJ6NVc0X1FtNmdTUUE2RnpMQmlvUTA4V2FaLTVmbzBhV25yZEVmQQ?oc=5",
      "d": "2026-11-17"
-    },
-    {
-     "t": "Sciopero 20 novembre: borsa di studio dello studente medio, libri e trasporti gratuiti, cosa chiede la Rete degli Studenti Medi",
-     "o": "Tecnica della Scuola",
-     "u": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOUmdIbFdBT2R3cDh2cldvXzgtWFhtejJtcXVzTC1FLTNZNDZibzhRVHRLT29KbThRQUtMN1lxSFQwb3dhUTk3ZUZKRFVYeUh2dWNyWGN6OGFPZF9fbzhHMmVldUFhM0JUbmFfZU43Z3dEaDd1OUNWLWV5MzJkdVY4WThyQ2FLX2JyTGNXb0M2emJQcEVsUmhVaGMxNGJWU2RaY1I3UUFXRk80Nm9kdGk1MmFwa1djODhvQVlKcDBGTktFVGlFdlFJbXNrMXI4eXBxbF9CeUdZemh2ODl0bDdrdzVRb3I2dFgzaXNqMVV5cWo?oc=5",
-     "d": "2026-11-14"
     },
     {
      "t": "Sciopero generale 20 novembre 2026: dalla scuola ai trasporti, chi si ferma e chi no",
@@ -169343,21 +169373,39 @@
      "d": "2026-11-16"
     },
     {
+     "t": "Sciopero generale 20 novembre, bus a rischio a Napoli e in provincia: le fasce di garanzia Eav",
+     "o": "NapoliToday",
+     "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZ1hINWVhMGQ2dFIwaEotM2JYSFdGX245MGh3QVJsS3JCVHNEYVBzR2hpSXB4OXowSEtqWHhqZXRhWnhzX014MVgzcFVCNGNBZHNsRlFQc0Z4WTZlbkEza1I2dWJNaG4ydmNpY1RmeWZtWXJObkVJRk5PNldQV3RqN0hKZElWS2djUVc2eg?oc=5",
+     "d": "2026-11-18"
+    },
+    {
      "t": "Sciopero 20 novembre per scuola e trasporti: gli orari e i cortei nelle varie città",
      "o": "Scuolainforma",
      "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPN21kZFdZWE5RdElQbG85VjJRTGVoeWFlM3lWcDF4SW1SeHNXRGRUMzFibjg2elVWVndWby1IVHZnTE5POFNObTFhUWpqd3FEQnVYZ19WR0NNTjZMSVc5X0UxVkZtMHNkZWFNZDY2aENnQnliQWdCbFFJU0RGV3Y5Z3pDZUhpeWZBSXZmYUN5LWE4cDlGY3dEMjRMTU8yUGpwTGVNc0JkYzZaWkk0eDFkZTJkU3U?oc=5",
      "d": "2026-11-18"
     },
     {
-     "t": "Sciopero 20 novembre, venerdì a rischio per chi viaggia e va a scuola: tutte le informazioni",
-     "o": "Cosmopolitan",
-     "u": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNWmhSYW5ZRWp2aGxCYko5dHZWNEVqdGlybWhtU1gtZWhpejd4WGlwemVBQ2hmN0dYc2Z6YkxsWEdOVG9uOWYwSEJHcjU0WlJOUHVHT1liRC1PaUJheTRsN0JYQ3A2dVhfSWRJMVowQnA2ckowZ0xnMkF1N1ViVEFtcEYyYUR6UnNlZkU4TVNEUWhZaTBvLUgzcnRrdVA1cTJZMnViRVNNcUcteVViaUpValExaUNhTVdNMWY5RThHbkd2SWFE?oc=5",
-     "d": "2026-11-18"
+     "t": "Sciopero generale il 20 novembre: possibili disagi per il trasporto pubblico locale",
+     "o": "Risveglio Duemila",
+     "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxONkplM1g0djRsd2ZYbjZmMXZ0YmcyUHVFYXZCZjg2S1k1NjdQaWczZUw4NHpqdlNPWm1ObWJVM3dNcTFUVzZOdVNlUE9OaGszSjNrWV95dnl1S1lzZThSSFg4NkZLdHBmNkFWSUlnWDR1eFpNc0h1NC1sbDdyMUdxVnV2SjMwZy1zQ0JodEFaZkxoaVgyYW43bFFhdHJYUnFFc0tud0VhMjlDaHY0WHhWSHpZemQ3eUZJV05KX2c2WkhQLWxCcEU4b3FIUQ?oc=5",
+     "d": "2026-11-16"
+    },
+    {
+     "t": "Sciopero del 20 novembre a Viterbo: studenti in piazza, bus e treni a rischio e disagi per scuole e servizi",
+     "o": "ViterboToday",
+     "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdm1PXzF2alV6R0xmcVdFZ2lrZTZyNmhpVndTTlVhc1VzRkxMMmhvYnFJX1VULXQxZVo2alotSVBXUVJBNXRxYnB6Y3BubFA3amZxTTlMZkJ3Sk9CTUJLYVNjdklDV1pja3hzWVgtZnI5cjZOWkJBMWpqWWJpcWFMc2VDRml2TUZrX29fRGFRYzd5ZGg5UkNfRg?oc=5",
+     "d": "2026-11-17"
     },
     {
      "t": "Venerdì 20 novembre sciopero generale: corteo della Cgil da piazza Cadorna, trasporti e scuole a rischio",
      "o": "Mi-Tomorrow",
      "u": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBSQldBNWNfdl9Hd2RkbG0xRDhIY3NZZGswYXZzWHVyQW1BeHBWTERna1hVVGxrZkRjTGZWNHI5UFJsUU1raVNTYzVIVk5pbzF6UElFVWFSUzJPSXBpQ2g1T3BDcXE1TUs0dDJkWU5GYnAzNHA2b3hWdA?oc=5",
+     "d": "2026-11-18"
+    },
+    {
+     "t": "Sciopero 20 novembre, venerdì a rischio per chi viaggia e va a scuola: tutte le informazioni",
+     "o": "Cosmopolitan",
+     "u": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNWmhSYW5ZRWp2aGxCYko5dHZWNEVqdGlybWhtU1gtZWhpejd4WGlwemVBQ2hmN0dYc2Z6YkxsWEdOVG9uOWYwSEJHcjU0WlJOUHVHT1liRC1PaUJheTRsN0JYQ3A2dVhfSWRJMVowQnA2ckowZ0xnMkF1N1ViVEFtcEYyYUR6UnNlZkU4TVNEUWhZaTBvLUgzcnRrdVA1cTJZMnViRVNNcUcteVViaUpValExaUNhTVdNMWY5RThHbkd2SWFE?oc=5",
      "d": "2026-11-18"
     },
     {
@@ -169394,6 +169442,12 @@
      "t": "Sciopero generale, venerdì dopo il corteo le voci delle donne in piazza Maggiore",
      "o": "BolognaToday",
      "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWjJXWU5hNGxLN2lFMV9aYm8xQmxMVEowTFc5TmhkVVhGRGRaa3Y4NjRSVWkxb05MMmxXMlR4NVltMHZtTFFqbS1pNV92eTNkaTJXM0g3dWJTWFpqY2RhNUIxY09pb0wxZjRZbXdWZFN1RkE4cWg2V0J4LXVfclVCMzVINDlhLXRnX0syRC1lTzBGMUg1aDJkcFdCeW53ZlNHSWVlTHlB?oc=5",
+     "d": "2026-11-18"
+    },
+    {
+     "t": "Sciopero generale, Gerosa (Cgil Lecco): «Il nostro territorio non è un’isola felice»",
+     "o": "La Provincia Unica Tv",
+     "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPTm15TjVwMnZpcGJBSG1fbmh1V0djcHliY3ZwbGNtMVNpM0pfak5IWVhzNnNfRk5HcXA3OVY4RmNiQnAwWFMwSVdldEFQUkEzcDJHR3piNDlYYjZQcmFDM1I1WGx3Mk1RZ01DOTZBekdlU3lVbUZzaDVlZDF5eUJ2YWN4eWtYZXZwbjVkVnFsUEYyS1M5akp5VFdmQnk1MUs5eVFVQ042el9UbExhU1hPNlhEVlVlTFJBWXFaVGtfQ0JHSXdiWm1IUUNkRGNRam9BRXZRcjhn?oc=5",
      "d": "2026-11-18"
     },
     {
@@ -169494,7 +169548,8 @@
    ],
    "o": "Protesta: Tutte le ultime notizie in tempo reale su Protesta - Pagina 100    Il Giorno",
    "s": [
-    31
+    31,
+    39
    ],
    "auto": true,
    "news": [
@@ -169502,6 +169557,12 @@
      "t": "Protesta: Tutte le ultime notizie in tempo reale su Protesta - Pagina 100",
      "o": "Il Giorno",
      "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBYMV83U2s1ZE0tTkFrN3N4eHYyVW5zQW8yWGQzQlR1bU9ZYmZoQW1RS3ViMl9TSUItanFvZU9PYXNiOW1BMUI0YTk1M0Q5bDhMQUE?oc=5",
+     "d": "2026-11-18"
+    },
+    {
+     "t": "Tutte le notizie aggiornate su licei-occupati",
+     "o": "Corriere dell'Umbria",
+     "u": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9MQUoycnJOd3h4dlB3dEhUY3pXSm9ZLWFUeTg4WGtkb1ByZWFaX3I5REVuTTdIVHZUTnJWSjUzOGFicC11NlZGdms4M19aSWJFVW1ZQ3k5MFdiQVg0QjgxOWFB?oc=5",
      "d": "2026-11-18"
     }
    ],
@@ -169678,10 +169739,12 @@
    ],
    "o": "Anche a Ravenna mobilitazione per lo sciopero generale    Il Resto del Carlino",
    "s": [
+    27,
+    29,
     37,
     47,
     290,
-    693,
+    575,
     819
    ],
    "auto": true,
@@ -169699,6 +169762,24 @@
      "d": "2026-11-18"
     },
     {
+     "t": "Sciopero generale a Napoli Il reportage fotografico",
+     "o": "Università degli Studi Suor Orsola Benincasa",
+     "u": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9XaXhUTGVNUThSSm9Ta3lzTC1iM2pTc045MnMyQ3d1QUV6VExuTzFMS3BIcGp1WUJLemtOV1RCaS1EdTMxTmNUdHUzQXBRUEpnaVhxSUpkMmVHSmxUS0oxZDYzSGI1Mmc?oc=5",
+     "d": "2026-11-18"
+    },
+    {
+     "t": "Sciopero generale 20 novembre, il piano traffico di Napoli: strade chiuse e soste vietate",
+     "o": "Fanpage",
+     "u": "https://www.fanpage.it/napoli/sciopero-generale-20-novembre-il-piano-traffico-di-napoli-strade-chiuse-e-soste-vietate/",
+     "d": "2026-11-18"
+    },
+    {
+     "t": "Il Piemonte si organizza per lo sciopero generale del 20 novembre: i cortei in tutta la regione",
+     "o": "La Stampa",
+     "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQzU2a1JjNWU2SHgxUEdvUTB4R1FNWnkwT2hudnJvQWVrUFh0Sk8xcnhQWnoxZWFBREhMUjJKUWRBLXRIUzhJX1otUFhsX1FMb2loZVMwT0hJMzhlUV9xODNHbTZFZEtiWjh4SGRGX0lOSjR3T3Z0LU8zNS1ObzRjLUJPeFloN1EtelFFRzVCTUEwY1UyeURJekktZG9iYlBBRTRpag?oc=5",
+     "d": "2026-11-17"
+    },
+    {
      "t": "Sciopero generale e generalizzato",
      "o": "DINAMOpress",
      "u": "https://news.google.com/rss/articles/CBMidEFVX3lxTE92QnZuUGZqUHpBNDdlcU5CRm5SQUVNSl9uMmlicUFMN2NjaWZrZ1NNY01xUUxvZVVnSG1lWkdndFdINXctRi1QcFRkMHJjX0RIa3NKM0hSRC1LRnRIZk9fa0g0LXFrbG9faVlrSUZ3Si0yRGFK?oc=5",
@@ -169708,12 +169789,6 @@
      "t": "Sciopero generale, il segretario Fiom Lodi: “Aspettative positive, ci aspettiamo luoghi di lavoro vuoti” – ASCOLTA",
      "o": "Novaradio Città Futura",
      "u": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNejBib1BfSVlUQWt2WDZOLXpsdk90LVFmV1V4eDdGVzBsSHhldHdJMjdhMnBSOGtkdmQ3bnZKNmY2MFJGdjUzV0Q2QzE3SzNiVHQ3LXNlZGFpWVh6ZFltbWliZVRXdjhjY0hEdnVWY0dGbHdJNG1ZUjlYUjVsSmlPWDdaNWRWT2lSbzlzZzN3eWI2STNfVlFrU1B2OVVFb21LWWFXbFYxcjZWUURiZzAyUy0taGkxMnZwdnQ2aVdMazdtVEUyYXlFTnVwQm1mWEl0Z0o2ajJPQkJOT3NXX3Y4?oc=5",
-     "d": "2026-11-18"
-    },
-    {
-     "t": "Sciopero generale, Cobas Brindisi: \"Subito il tavolo sulla decarbonizzazione\"",
-     "o": "BrindisiReport",
-     "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPV0dHSm5wa1hQVkUxWm03VGtDNV9YMjR3N09EZlM2V0xEclZuSEozdjVNWUZEYzFEbTVBR0pWTV9DaTZuLUVPRXVMbDV4LWM3V3dHX1A0LWZ6bE5XN2tZTENBaG1KOEktSklyZWpWZnZTVk82ZDRCelVKaW9vWG9PQXNBZUdmcm9vRVowa0JMWTVkZXp0aENrVkxIdkFrc1ZYOW5RM05LMWk?oc=5",
      "d": "2026-11-18"
     }
    ],
@@ -170662,6 +170737,50 @@
   },
   {
    "d": "2026-11-18",
+   "t": "Corteo",
+   "h": "Diritti e libertà",
+   "r": "Nazionale",
+   "l": "Dobbiaco",
+   "a": "da verificare",
+   "x": "Troppa gente, a Dobbiaco il corteo dei krampus si sposta al Grand Hotel",
+   "m": [
+    "da verificare"
+   ],
+   "o": "Troppa gente, a Dobbiaco il corteo dei krampus si sposta al Grand Hotel    RaiNews",
+   "s": [
+    53
+   ],
+   "auto": true,
+   "news": [
+    {
+     "t": "Troppa gente, a Dobbiaco il corteo dei krampus si sposta al Grand Hotel",
+     "o": "Rai News",
+     "u": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQRDYzZ0prS0R3NzlPcEdVUXEzMFFMWGlZQm9xZFlVMUFJd3pMRWgwdllGcWo5VGRNN1Y3ZmhadEdZMHRlRzBPbHdKYXVsTHBjamt1YTk2WHYwbHhhSlBJNEtHUmpEM0tVQWpCMzd1bkt5UXhqTTJLU2tTakVwQlk1WWpaeW5XX25PLXZHTWZma095bVJhbGRSOGdNMWxhUW5tUFR0YWdnQ1NwblAtNkpRWFg1cEFXUm5PWVA3UVcwbi1DTE9SakRwQUIwTzcxaUNOVDJDZWhJeWF2dmE1TFNKT1BfdXVXb2dPQ01GT05qOEs5R2NqUmVYeUVtdXHSAfwBQVVfeXFMUEQ2M2dKa0tEdzc5T3BHVVFxMzBRTFhpWUJvcWRZVTFBSXd6TEVoMHZZRnFqOVRkTTdWN2ZoWnRHWTB0ZUcwT2x3SmF1bExwY2prdWE5Nlh2MGx4YUpQSTRLR1JqRDNLVUFqQjM3dW5LeVF4ak0yS1NrU2pFcEJZNVlqWnluV19uTy12R01mZmtPeW1SYWxkUjhnTTFsYVFubVBUdGFnZ0NTcG5QLTZKUVhYNXBBV1JuT1lQN1FXMG4tQ0xPUmpEcEFCME83MWlDTlQyQ2VoSXlhdnZhNUxTSk9QX3V1V29nT0NNRk9OajhLOUdjalJlWHlFbXVx?oc=5",
+     "d": "2026-11-18"
+    }
+   ],
+   "terms": [
+    [
+     "gente",
+     "temi"
+    ],
+    [
+     "hotel",
+     "temi"
+    ],
+    [
+     "sposta",
+     "temi"
+    ],
+    [
+     "troppa",
+     "temi"
+    ]
+   ],
+   "v": "e-2026-11-18-troppa-gente-a-dobbiaco-il-corteo-dei-krampus-si-"
+  },
+  {
+   "d": "2026-11-18",
    "t": "Sciopero",
    "h": "Diritti e libertà",
    "r": "Nazionale",
@@ -170767,7 +170886,8 @@
    ],
    "o": "L'appello di Sergio Muniz per la biotech Holostem: \"Mio figlio merita speranza\". Sabato un presidio    RaiNews",
    "s": [
-    53
+    53,
+    71
    ],
    "auto": true,
    "news": [
@@ -170775,6 +170895,12 @@
      "t": "L'appello di Sergio Muniz per la biotech Holostem: \"Mio figlio merita speranza\". Sabato un presidio",
      "o": "Rai News",
      "u": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNTFNhUkhLY3ZkU2ZkNWhDUVhIU1NEZW9MMVF5OU5XLWxZOTE3ekM0MVZHUzJ2aG52b2NKWFdocDlud0poZWJiUkNOc2VWWFVDZDZnMll2ZlJpTzZRbmdNcEwydW1ucS1kQ2NGWWJWNmJsY2dQaGRhWmJqOWZMQmdpWWpkWGRlbXo2Y21OOHZha01HNU5oRzFrWk43TjhPSGhxek5JUVo1NXpsVjJXZ1lrYld4WlBUSmlmQ1I0Ql9LRlFwVEJUUlpocC0yMG5VV2dhbTdIa3J4RjBCVWdSeVVPRWI3TkZ1NTAybm9FV2QzWVJ3MzdjSWdFaUFEbV82TElPelV0anRB0gGLAkFVX3lxTE5YSmJEV0d5eEl0WU9hT3VGaTd6S3lNdnQxM0tMd2JOUWlFYW16eTVQa3FqTklQbk9SWWlKWS02ZlFxZmNVbUpBOWNYZzc2VU1SSXl3UU1rT2VqUnNJeGhtVU5sTHViQVotRlVkM1BMdUZ5aE5VZkhiN290RWJLSk43ZlUxd0o0X0VtMjhzZGhFaDNQRER5YVdJYll3MkhpcXd0ZmZaSnBHR3ZGdzI2eDc2Si02cVgyMmtaYXo3dEZjdThnUnl5ZzJHOUdKZ09fNGdUWExUbkNwd0RvN05rTjJUYWdlN2pZanNtUWZKcEtzTXdGZjduODI0WVo5aWJXdDdlOUJlU2Y0Y2k4TQ?oc=5",
+     "d": "2026-11-18"
+    },
+    {
+     "t": "Regista violenta due giovani attrici al Teatro Due di Parma. Condannato in primo grado, domani l’appello. Presidio e conferenza stampa fuori dal tribunale",
+     "o": "Radio Onda d'Urto",
+     "u": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNYkdMMElOQlVzNDM5d0ZlLTRCbjhONW5qTWdNS2VlVWVFOG5UNkszdndKMjk4QmkwMlhOV3RaOWxweVdqZl9nWFdZd1ZtcW84VmFuLTkzRmlBSTFaRTFLbTFMZzVqc3UtSjlxUmwzVjJhQmhVZmtvOFFCaGdBaU1hVFhxLVZWeXM1eE9QYnpoNUd4QTRTdTJiOUlfcDdLcmdVSGxPcnpjUEFHa0NNRmFoVEcyUWxFZjd6TGNIcHpDczRpY0ZWdi1SbDN6Tko4R2U3cXBFemtYRVlMVU5JbkZVQy1uX09zbE5RMFhPYkE0M1kwaGN2WXgxNkwxbzI1RWFZWk9iRzJZenU3QXBmOWtkdzQxTHlHZDdyS29KOQ?oc=5",
      "d": "2026-11-18"
     }
    ],
@@ -170949,6 +171075,50 @@
    "r": "Nazionale",
    "l": "Italia",
    "a": "da verificare",
+   "x": "Praga in piazza per la tv pubblica. Un cartoon simbolo della protesta",
+   "m": [
+    "da verificare"
+   ],
+   "o": "Praga in piazza per la tv pubblica. Un cartoon simbolo della protesta    Quotidiano Nazionale",
+   "s": [
+    11
+   ],
+   "auto": true,
+   "news": [
+    {
+     "t": "Praga in piazza per la tv pubblica. Un cartoon simbolo della protesta",
+     "o": "Quotidiano.net",
+     "u": "https://news.google.com/rss/articles/CBMic0FVX3lxTE41RkRRQ093TllxNXRqTUtZZ2Z5eHd2Y210Vm85aG90MVUtTUVfd2E1NXdnMDRqbmZ3M0d2dlgxM1llcDNqTEJuUGVGektCLThBOWx1dnMyVWV3dmhWbG56TlBSRW0yMEdGaXl6VWlyeC1hRDg?oc=5",
+     "d": "2026-11-18"
+    }
+   ],
+   "terms": [
+    [
+     "piazza",
+     "temi"
+    ],
+    [
+     "praga",
+     "temi"
+    ],
+    [
+     "pubblica",
+     "temi"
+    ],
+    [
+     "simbolo",
+     "temi"
+    ]
+   ],
+   "v": "e-2026-11-18-praga-in-piazza-per-la-tv-pubblica-un-cartoon-sim"
+  },
+  {
+   "d": "2026-11-18",
+   "t": "Manifestazione",
+   "h": "Diritti e libertà",
+   "r": "Nazionale",
+   "l": "Italia",
+   "a": "da verificare",
    "x": "Alla sanità servono fondi. Protesta in sette città",
    "m": [
     "da verificare"
@@ -171097,6 +171267,90 @@
     ]
    ],
    "v": "e-2026-11-18-presidio-per-chiudere-il-cpr-di-torino"
+  },
+  {
+   "d": "2026-11-18",
+   "t": "Manifestazione",
+   "h": "Diritti e libertà",
+   "r": "Nazionale",
+   "l": "Italia",
+   "a": "da verificare",
+   "x": "Francia. L’impatto shock dei gas lacrimogeni sulla salute delle manifestanti",
+   "m": [
+    "da verificare"
+   ],
+   "o": "Francia. L’impatto shock dei gas lacrimogeni sulla salute delle manifestanti    Radio Popolare",
+   "s": [
+    67
+   ],
+   "auto": true,
+   "news": [
+    {
+     "t": "Francia. L’impatto shock dei gas lacrimogeni sulla salute delle manifestanti",
+     "o": "Radio Popolare",
+     "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZWplaElicTdUbXZfSGhTdHExTndEUzJieHdDS3U2eTRKRFIwYzNlY2ZUMnZxWk9kaGhXT1hLV1VCbmVnMzRCclh6enlPTkZzSXF5S3JMbWl4d1ZWT3ZPTVhlY0NXUG5IYm5jWGxEbm1mWUJMSTRYbW5rNHIyem1td3dmcXJiNjZmdFh0eV9kdmZfbGF1eV9fYm9sS0tqVXBaelFpZDZB?oc=5",
+     "d": "2026-11-18"
+    }
+   ],
+   "terms": [
+    [
+     "francia",
+     "temi"
+    ],
+    [
+     "lacrimogeni",
+     "temi"
+    ],
+    [
+     "manifestanti",
+     "temi"
+    ],
+    [
+     "salute",
+     "temi"
+    ]
+   ],
+   "v": "e-2026-11-18-francia-l-impatto-shock-dei-gas-lacrimogeni-sulla"
+  },
+  {
+   "d": "2026-11-18",
+   "t": "Occupazione",
+   "h": "Diritti e libertà",
+   "r": "Nazionale",
+   "l": "Luogosano",
+   "a": "da verificare",
+   "x": "Reindustrializzazione a Luogosano, Pico rileva l'ex ArcelorMittal: investimenti e occupazione in crescita",
+   "m": [
+    "da verificare"
+   ],
+   "o": "Reindustrializzazione a Luogosano, Pico rileva l'ex ArcelorMittal: investimenti e occupazione in crescita    AvellinoToday",
+   "s": [
+    146
+   ],
+   "auto": true,
+   "news": [
+    {
+     "t": "Reindustrializzazione a Luogosano, Pico rileva l'ex ArcelorMittal: investimenti e occupazione in crescita",
+     "o": "AvellinoToday",
+     "u": "https://news.google.com/rss/articles/CBMifEFVX3lxTE15Z1U1ZC11c0d2NmVaZEVWSmt2Y1RfOW5YZEdFVHR0NVJtM1E5SmcxRFp3bDhGNno5aXhaTXBEbHdQT3pUTjFDeTdqckhTRW90N001ZjBxRThWektYQlBmSWdKSm85WTNmZ1MzRWFodXZSUUtValpUUW50Ymk?oc=5",
+     "d": "2026-11-18"
+    }
+   ],
+   "terms": [
+    [
+     "crescita",
+     "temi"
+    ],
+    [
+     "investimenti",
+     "temi"
+    ],
+    [
+     "l'ex",
+     "temi"
+    ]
+   ],
+   "v": "e-2026-11-18-reindustrializzazione-a-luogosano-pico-rileva-l-e"
   },
   {
    "d": "2026-11-18",
@@ -171851,23 +172105,7 @@
    ],
    "o": "Annunciato dal palco di piazza del Popolo il 17 ottobre.",
    "s": [
-    3,
-    27,
-    29
-   ],
-   "news": [
-    {
-     "t": "Sciopero generale 20 novembre, il piano traffico di Napoli: strade chiuse e soste vietate",
-     "o": "Fanpage",
-     "u": "https://www.fanpage.it/napoli/sciopero-generale-20-novembre-il-piano-traffico-di-napoli-strade-chiuse-e-soste-vietate/",
-     "d": "2026-11-18"
-    },
-    {
-     "t": "Il Piemonte si organizza per lo sciopero generale del 20 novembre: i cortei in tutta la regione",
-     "o": "La Stampa",
-     "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQzU2a1JjNWU2SHgxUEdvUTB4R1FNWnkwT2hudnJvQWVrUFh0Sk8xcnhQWnoxZWFBREhMUjJKUWRBLXRIUzhJX1otUFhsX1FMb2loZVMwT0hJMzhlUV9xODNHbTZFZEtiWjh4SGRGX0lOSjR3T3Z0LU8zNS1ObzRjLUJPeFloN1EtelFFRzVCTUEwY1UyeURJekktZG9iYlBBRTRpag?oc=5",
-     "d": "2026-11-17"
-    }
+    3
    ],
    "terms": [
     [
@@ -172053,7 +172291,11 @@
    ],
    "o": "Scioperi, in arrivo un altro weekend di disagi: tutti i settori coinvolti il 20 e 21 novembre    La Verità",
    "s": [
-    60
+    60,
+    99,
+    159,
+    602,
+    828
    ],
    "auto": true,
    "news": [
@@ -172062,48 +172304,7 @@
      "o": "La Verità",
      "u": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5pSW9oeXhsRXVJOWUxWUVYa0VsRnN2bnJBUzVvX1R1VVBXalp2Sm5ocEpLUkx2bkFWb2tLd0NxanNJOVlYTVJmVG42bTIwU0M1SHZrZWZoWVMtUGNwN0xleUFiVFRqWXFVS2JtVWg0b1c5eWs2WF9SaXFmQjRRUQ?oc=5",
      "d": "2026-11-16"
-    }
-   ],
-   "terms": [
-    [
-     "arrivo",
-     "temi"
-    ],
-    [
-     "disagi",
-     "temi"
-    ],
-    [
-     "weekend",
-     "temi"
-    ]
-   ],
-   "v": "e-2026-11-21-scioperi-in-arrivo-un-altro-weekend-di-disagi-tut"
-  },
-  {
-   "d": "2026-11-21",
-   "t": "Sciopero",
-   "h": "Diritti e libertà",
-   "r": "Trentino-Alto Adige",
-   "l": "Trento",
-   "a": "da verificare",
-   "x": "Sciopero treni Italo, treni garantiti il 20 e 21 novembre 2026",
-   "m": [
-    "da verificare"
-   ],
-   "o": "Sciopero treni Italo, treni garantiti il 20 e 21 novembre 2026    Trasporti-Italia.com",
-   "s": [
-    99,
-    159,
-    175,
-    233,
-    235,
-    343,
-    602,
-    828
-   ],
-   "auto": true,
-   "news": [
+    },
     {
      "t": "Venerdì 20 e sabato 21 novembre, scioperi nel settore trasporti",
      "o": "Ufficio Stampa della Provincia autonoma di Trento",
@@ -172127,13 +172328,44 @@
      "o": "Virgilio",
      "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNZ3Y3MXdNbWxoMl9vbTVNLWtpUWllUUxFZTE1YTZOZmZ6NTV3eG83b2Jpa3lleVBFQ19zcGQ5cW5EMVF3NUZRZnNpT1ZQTDFxSk5rUURJeld6Q01xY3g5NlNVRUdvaWkwdW1qaldNTXJxZHpscmxvZGlsZm13TUwtT2hKUFpFbHFVTDZMaFQ1WGdJMWo4S0pETmJsbTRhUUZVbW1QdGFBYlVoZkUxWjBOVjRSV01IQll0NFHSAb8BQVVfeXFMTnVHUXVqdkxqdWpTb3hDRERlMVJ0TDZ5cHFscURiWVB3WjJtMDdLa0ZzZmJzNkNLV1A4LXV5Q2lOc0tQTFVfaFcyZ0xpWnFNdXpZWUhVRnh6dmRhZ0w3ajBBbzJxcXlYNmVLdE5XeE5ncU9QYmNQVWo3MnNMdWxZR3Z6YzgzNThKTkYyOXE0VFc1eDBiTVY2VXpMdWVBTTlMZjZfcmtBWUN5THMyUi1iN2pTVExVa2NYVDZ3MGduT1U?oc=5",
      "d": "2026-11-17"
-    },
-    {
-     "t": "Sciopero treni Italo, treni garantiti il 20 e 21 novembre 2026",
-     "o": "Trasporti-Italia.com",
-     "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOV1RRS3pNcmc1MGZzMWttb1FvYm9TR2UxcnVTMjE3MVE3SWJmVjlFd291eXNpNzZOMENNRzBxVi15dURTcHQ2blg4QUxUWFoxbFdNN0kzdmhnLUl3TVNrQ0xIQ0Z3TEk0Ylp0SnYtS1lTcGpjRWpGRVZMdmR1UGFsTV81QWlYWHdoSkFPSXBpY2xkYjUyODZRbUJTdnZZRGR3Ti0zQkVjTFBRTFhJUW9Dd3NhUEFhdFJPX3fSAcIBQVVfeXFMT1ZMd0I0ZUVaYlFMVkNqUmZhTm1jZHRSVWRRdldJUi14SDVvZWtFVHJ1SUJYQUdLQnlSdExpNWl1ejZBTk5FUERDQ2huQWZTSHhNa2xfYzRmeW9sYWE1ZzJjRlMzZzE2TUkyR1plUnA5VVdQVUxXUW0zVjlZRV9lS0NOOXY4Q3dZVEdSSDJsNURtczRWek9Ka19OYjZtN05fUnd6WE9xMm1hRm9pUVUtNk5RblR4SlpKeWstQXBtY29IMVE?oc=5",
-     "d": "2026-11-17"
-    },
+    }
+   ],
+   "terms": [
+    [
+     "arrivo",
+     "temi"
+    ],
+    [
+     "disagi",
+     "temi"
+    ],
+    [
+     "weekend",
+     "temi"
+    ]
+   ],
+   "v": "e-2026-11-21-scioperi-in-arrivo-un-altro-weekend-di-disagi-tut"
+  },
+  {
+   "d": "2026-11-21",
+   "t": "Sciopero",
+   "h": "Diritti e libertà",
+   "r": "Lombardia",
+   "l": "Lombardia",
+   "a": "da verificare",
+   "x": "Sciopero 20-21 novembre 2026 Roma, Atac, Cotral e treni",
+   "m": [
+    "da verificare"
+   ],
+   "o": "Sciopero 20-21 novembre 2026 Roma, Atac, Cotral e treni    Vivere Roma",
+   "s": [
+    175,
+    233,
+    235,
+    343
+   ],
+   "auto": true,
+   "news": [
     {
      "t": "Sciopero dei trasporti 20-21 novembre: treni a rischio in Lombardia e a Milano",
      "o": "MilanoToday",
@@ -172157,6 +172389,12 @@
      "o": "Vivere Roma",
      "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNV2dkUHpZblV6cHlKTlZYX1dRN0Y4WVdVc210TDNJU25VakNNaTVlOVpFTmd0VENXMU80cGkwdmFnTnBKcHg1R0h4em5OaU5YOThpbENCNHFHTW1WOGVZUnBpdlVyNHVhOWRRUGhoaFVidnNpRWZfeURxVDhpLXI0QmlCbEdROUN5b0RmTnlvX0loQTBfNTVJYUR4b1BoS3pX?oc=5",
      "d": "2026-11-16"
+    },
+    {
+     "t": "Sciopero treni Italo, treni garantiti il 20 e 21 novembre 2026",
+     "o": "Trasporti-Italia.com",
+     "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOV1RRS3pNcmc1MGZzMWttb1FvYm9TR2UxcnVTMjE3MVE3SWJmVjlFd291eXNpNzZOMENNRzBxVi15dURTcHQ2blg4QUxUWFoxbFdNN0kzdmhnLUl3TVNrQ0xIQ0Z3TEk0Ylp0SnYtS1lTcGpjRWpGRVZMdmR1UGFsTV81QWlYWHdoSkFPSXBpY2xkYjUyODZRbUJTdnZZRGR3Ti0zQkVjTFBRTFhJUW9Dd3NhUEFhdFJPX3fSAcIBQVVfeXFMT1ZMd0I0ZUVaYlFMVkNqUmZhTm1jZHRSVWRRdldJUi14SDVvZWtFVHJ1SUJYQUdLQnlSdExpNWl1ejZBTk5FUERDQ2huQWZTSHhNa2xfYzRmeW9sYWE1ZzJjRlMzZzE2TUkyR1plUnA5VVdQVUxXUW0zVjlZRV9lS0NOOXY4Q3dZVEdSSDJsNURtczRWek9Ka19OYjZtN05fUnd6WE9xMm1hRm9pUVUtNk5RblR4SlpKeWstQXBtY29IMVE?oc=5",
+     "d": "2026-11-17"
     }
    ],
    "terms": [
@@ -172165,15 +172403,15 @@
      "temi"
     ],
     [
-     "garantiti",
+     "roma",
      "temi"
     ],
     [
-     "treni italo",
+     "treni",
      "temi"
     ]
    ],
-   "v": "e-2026-11-21-sciopero-treni-italo-treni-garantiti-il-20-e-21-n"
+   "v": "e-2026-11-21-sciopero-20-21-novembre-2026-roma-atac-cotral-e-t"
   },
   {
    "d": "2026-11-22",
@@ -172461,27 +172699,20 @@
   {
    "d": "2026-12-04",
    "t": "Sciopero",
-   "h": "Lavoro",
+   "h": "Diritti e libertà",
    "r": "Nazionale",
    "l": "Italia",
-   "a": "lavoratori",
-   "x": "Galliera, cresce la protesta dei lavoratori: confermato lo sciopero del 4 dicembre",
+   "a": "USB",
+   "x": "USB trasporti rilancia la battaglia decisiva contro la legge anti sciopero; il comparto torna a scioperare il 4 dicembre. Ore 11:00 presidio davanti al Ministero dei Trasporti",
    "m": [
-    "lavorator"
+    "da verificare"
    ],
-   "o": "Galliera, cresce la protesta dei lavoratori: confermato lo sciopero del 4 dicembre    RaiNews",
+   "o": "USB trasporti rilancia la battaglia decisiva contro la legge anti sciopero; il comparto torna a scioperare il 4 dicembre. Ore 11:00 presidio davanti al Ministero dei Trasporti    Unione Sindacale di Base",
    "s": [
-    53,
     238
    ],
    "auto": true,
    "news": [
-    {
-     "t": "Galliera, cresce la protesta dei lavoratori: confermato lo sciopero del 4 dicembre",
-     "o": "Rai News",
-     "u": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPbXgycFZUTUFPM0NrTDZDSEpEc21UWVpWMHV6TU5xVG5PNW1qM1FZU3JHSmZrcE04RVFLUWh1d1BHT0RyRG9iaU1JeVN1aklacWdGZTVSbFRET1dQdFd3cnY2cmV5TEJjN3c4ZmNUX1JIckRNMzV5WDM3c2NNS1FXbEYxaW9sZWdoMDFJZXVvdW10bFZ0LXBZekt3YnVPVDNuZm5nNUlucWc3NTdkeW5mMTA0UnMxczI0MTRoaEJ5enZVemZqSVAxS0RuUE96SnF0bHZxc9IB2gFBVV95cUxOOTdhTml4TFhsd0ZUSUxYX3lmeURlRXZhdUpaYWt6MUdrQ0tHZnpBd3ByRHdDVzFLNXZOYmVwQ205QkJlLTd2anFBaW9maEJILTlGTDJYd2l4ZW4tRzVkUGRKbVdENEdLakotR20xTXFKRW0xTm5penB0enhXbDVjc0NGajcyd2tyUmJzWi1vWW54U3gzX2FxbmVteUJtLVFxZDVBcVA5cEVhRTVPdzB1d0FiUHNiR0FabDcySnhBY3ltVjVIRE9CV2kzLW9hUUFubGFTTVh4ZF9ZZw?oc=5",
-     "d": "2026-11-17"
-    },
     {
      "t": "USB trasporti rilancia la battaglia decisiva contro la legge anti sciopero; il comparto torna a scioperare il 4 dicembre. Ore 11:00 presidio davanti al Ministero dei Trasporti",
      "o": "Unione Sindacale di Base",
@@ -172491,19 +172722,39 @@
    ],
    "terms": [
     [
-     "confermato",
+     "anti",
      "temi"
     ],
     [
-     "cresce",
+     "battaglia",
      "temi"
     ],
     [
-     "lavorator",
+     "comparto",
      "temi"
+    ],
+    [
+     "legge",
+     "temi"
+    ],
+    [
+     "ministero trasporti",
+     "temi"
+    ],
+    [
+     "rilancia",
+     "temi"
+    ],
+    [
+     "torna",
+     "temi"
+    ],
+    [
+     "usb",
+     "attori"
     ]
    ],
-   "v": "e-2026-12-04-galliera-cresce-la-protesta-dei-lavoratori-confer"
+   "v": "e-2026-12-04-usb-trasporti-rilancia-la-battaglia-decisiva-cont"
   },
   {
    "d": "2026-12-05",
@@ -173117,6 +173368,58 @@
     ]
    ],
    "v": "e-2027-04-25-spari-al-corteo-del-25-aprile-condannato-a-quattr"
+  },
+  {
+   "d": "2027-08-09",
+   "t": "Manifestazione",
+   "h": "Diritti e libertà",
+   "r": "Nazionale",
+   "l": "Lonato",
+   "a": "da verificare",
+   "x": "Depuratore del Garda: il Presidio 9 Agosto rilancia “progetto da ripensare. Incontro pubblico a Lonato giovedì 19 novembre",
+   "m": [
+    "da verificare"
+   ],
+   "o": "Depuratore del Garda: il Presidio 9 Agosto rilancia “progetto da ripensare. Incontro pubblico a Lonato giovedì 19 novembre    Radio Onda d`Urto",
+   "s": [
+    71
+   ],
+   "auto": true,
+   "news": [
+    {
+     "t": "Depuratore del Garda: il Presidio 9 Agosto rilancia “progetto da ripensare. Incontro pubblico a Lonato giovedì 19 novembre",
+     "o": "Radio Onda d'Urto",
+     "u": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOcWVNaW82cDdTTVZoSVlIRjBzaTFjdWhvMVloVTlEcDJITmd4dzYxMXUxc0g2WDlPdzg1aWNzeHdqUl82WGFFbVFTVTZCZUlDd24zQ3E2NFljcmY0YkRFWHBTUTRMWW5FaGp6cjBobmI5QzY4MEV1VEpFS2xZWHB3VGZNNFoySTdGbzhKMTNwTS1XQmpyek5XM09qUjJLYTdjbmtlNXJ3Y1lhaC1JZnFNMk9YQmJia0szV0FDXzNzdmI4TWF0ZkxXVGpYd24wWWpnNVpRQ081VDFTYVdQaUtZTjVNdzNPSlBEOTljRHpTT1BsYVk?oc=5",
+     "d": "2026-11-18"
+    }
+   ],
+   "terms": [
+    [
+     "agosto",
+     "temi"
+    ],
+    [
+     "giovedì",
+     "temi"
+    ],
+    [
+     "incontro",
+     "temi"
+    ],
+    [
+     "progetto",
+     "temi"
+    ],
+    [
+     "pubblico",
+     "temi"
+    ],
+    [
+     "rilancia",
+     "temi"
+    ]
+   ],
+   "v": "e-2027-08-09-depuratore-del-garda-il-presidio-9-agosto-rilanci"
   },
   {
    "d": "2027-09-11",
